@@ -1,0 +1,224 @@
+{
+  "assets" : [
+    {
+      "bytes" : 177321,
+      "contentHash" : "sha256:69c6e65485ceec0d5c0d9097af6bc66d7e68da47715e9264382db1a9c4d932f1",
+      "path" : "assets/boardroom-annual.jpeg"
+    },
+    {
+      "bytes" : 76529,
+      "contentHash" : "sha256:c4bc37cc3214b65a30f87d666611ed755501e3ab85d7d8ef7df03a8edaf573ae",
+      "path" : "assets/engagement-waves.jpeg"
+    },
+    {
+      "bytes" : 158262,
+      "contentHash" : "sha256:b9f632c12f191d5e18b9e73a7b4ee4405b8cef4f51e2dc2ff187ecf845a9968d",
+      "path" : "assets/figures-desk.jpeg"
+    },
+    {
+      "bytes" : 83900,
+      "contentHash" : "sha256:fd34941859eb14903aa615aa060e67ecc6e5755ed6b744ed8f889577d83cd750",
+      "path" : "assets/growth-chart.jpeg"
+    },
+    {
+      "bytes" : 221343,
+      "contentHash" : "sha256:e7eb04f70ef30f5807a06827eb422e268feaf3039ddf7a1f4dd980275e846144",
+      "path" : "assets/inspection-robot.jpeg"
+    },
+    {
+      "bytes" : 125417,
+      "contentHash" : "sha256:913156408421062c7a086c63dd489e3ba57669c2f1efab35854bea1838aa92b0",
+      "path" : "assets/layered-flows.jpeg"
+    },
+    {
+      "bytes" : 170383,
+      "contentHash" : "sha256:a65ffd4d11bdb33f3596e83a9760b7c87ecc63d6229fbe808df767fb2358d36a",
+      "path" : "assets/meeting-table.jpeg"
+    },
+    {
+      "bytes" : 41673,
+      "contentHash" : "sha256:bacc28eca6e638d77e5a9b3738cb790e7834f05e9514e02e29984f009692de8e",
+      "path" : "assets/orionfold-mark.png"
+    },
+    {
+      "bytes" : 185244,
+      "contentHash" : "sha256:cef384cbffbc77665e09ae568a36657f90025bf951c013ec6e23b0043d345e35",
+      "path" : "assets/planning-desk.jpeg"
+    },
+    {
+      "bytes" : 178715,
+      "contentHash" : "sha256:85c63583abf8f232ab73f820c87b29102ed7940b4cb940b21ff3952b66282ddc",
+      "path" : "assets/quiet-desk.jpeg"
+    },
+    {
+      "bytes" : 230249,
+      "contentHash" : "sha256:4527907142cbb665a453794ae59390eeb3a30a07f9dfcc78ee7a4dbdaa10f3d5",
+      "path" : "assets/research-desk.jpeg"
+    },
+    {
+      "bytes" : 306418,
+      "contentHash" : "sha256:11845bc51034edd985217c0c11be8c6e2176d6aa9ec8c848b46d4c9bd2d4c464",
+      "path" : "assets/retail-interior.jpeg"
+    },
+    {
+      "bytes" : 159633,
+      "contentHash" : "sha256:1a891174b7844f6fd006730c4f25ba5e77848b9f393a425c14baba3fc01b3050",
+      "path" : "assets/strategy-wall.jpeg"
+    }
+  ],
+  "contentVersion" : "1.5.0",
+  "documents" : [
+    {
+      "bytes" : 24881,
+      "contentHash" : "sha256:0813ff6dc737e3b29920aa4a66969b31ffc84386a7ce7e07a0fb1f330187aed7",
+      "path" : "Annual Operating Review.md"
+    },
+    {
+      "bytes" : 11070,
+      "contentHash" : "sha256:d9dabdf9da3615b6b1d772aaec2be4d7b71b3f3cee55d0025b8a6136285e35d5",
+      "path" : "Annual Report — Shareholder Letter.md"
+    },
+    {
+      "bytes" : 1918,
+      "contentHash" : "sha256:f67b8473b4b1f760e1056a13fc410ab78114e4771330477963a756cb9d1001ca",
+      "path" : "Board Update — Q4 Outlook.md"
+    },
+    {
+      "bytes" : 2378,
+      "contentHash" : "sha256:ca1f1bdf660943ea17b56f7da65652f0a31f12ff4ae66b2aa17171cae94d5c2c",
+      "path" : "Client Proposal — Meridian Retail.md"
+    },
+    {
+      "bytes" : 2148,
+      "contentHash" : "sha256:49264c4791c64ba06deeb57e3700bcd4bbd2d797c1345153455a2e09f178152f",
+      "path" : "Content Strategy — Q4.md"
+    },
+    {
+      "bytes" : 2584,
+      "contentHash" : "sha256:1659f8cdeb2cd02b5dc7f9eef0867d3618db332b5a9ce9d77be3fd25b9ab9d59",
+      "path" : "Cost of This Quarter.md"
+    },
+    {
+      "bytes" : 2303,
+      "contentHash" : "sha256:2bd55e894cd8b40cfe2c2b855a6fd1d5b9e4bb8232db1d166053cae58b545fb3",
+      "path" : "Customer Interviews.md"
+    },
+    {
+      "bytes" : 8414,
+      "contentHash" : "sha256:1fb4edf253293d9bb21904b9c5c830e2c4f6d9493e9536939b0af41dc43d6091",
+      "path" : "Document Gallery.md"
+    },
+    {
+      "bytes" : 3002,
+      "contentHash" : "sha256:6ac20b4d3e4fc0cb91b566c5ac7a0597b572b695bdaeecfd113370a88e838ac1",
+      "path" : "Field Notes — Customer Visits.md"
+    },
+    {
+      "bytes" : 1615,
+      "contentHash" : "sha256:2e4fb425a2ad0b340a33cbcd939cd9f1ebcac1dfd7564b7a935148247a880b17",
+      "path" : "Hiring Plan — Engineering.md"
+    },
+    {
+      "bytes" : 3384,
+      "contentHash" : "sha256:2316ead93b2ab8432062d05dd4e587d7391733c81b1b0c7e7aa0228ca5b6042b",
+      "path" : "How We Decided.md"
+    },
+    {
+      "bytes" : 2560,
+      "contentHash" : "sha256:826684a30534d2fdaa1ce33d5500379d9b7038c04d08fc889e3992d1a6867f33",
+      "path" : "Investment Memo — Larkspur Robotics.md"
+    },
+    {
+      "bytes" : 2726,
+      "contentHash" : "sha256:59716fc2d0e7090208c83c9cfe1240c6fc656c102ac33120291343e9ae27dccb",
+      "path" : "Market Landscape.md"
+    },
+    {
+      "bytes" : 2555,
+      "contentHash" : "sha256:c81217505063301188f36db347d15386cfb4d7bcc482937b28a033d66d94bd43",
+      "path" : "Marketing Dashboard — Q3.md"
+    },
+    {
+      "bytes" : 2103,
+      "contentHash" : "sha256:9da01fa5d8ce798644d4f1e13639f35541e63d84b0f09bb0f0891a678febc28b",
+      "path" : "Meeting Notes — Weekly Staff.md"
+    },
+    {
+      "bytes" : 3082,
+      "contentHash" : "sha256:b5a3ce35230c40f5e00ee57e131b61d5584fc35ed72d31b1954a6c7e70ae9366",
+      "path" : "Operating Notes — How We Work.md"
+    },
+    {
+      "bytes" : 2787,
+      "contentHash" : "sha256:4babb967802c84622150fcba77e13306402208de29010b7bb3d497cd15f5c939",
+      "path" : "Performance Review — Mid-Year.md"
+    },
+    {
+      "bytes" : 1397,
+      "contentHash" : "sha256:81fe0ef47c0a64d953e0f2a0a8f13ac5a8bbf965c05eca146c748f34ae64fe92",
+      "path" : "Press Release Draft.md"
+    },
+    {
+      "bytes" : 2917,
+      "contentHash" : "sha256:ae76a1f3ca101a63d85ab06adbc7b7ffe9455beaace8232d34d4f78bac9f17c6",
+      "path" : "Product Brief — Reading Room.md"
+    },
+    {
+      "bytes" : 3229,
+      "contentHash" : "sha256:4d52af9ada4488afd566605d6216d27104c408982a801744ad63994f0cb32213",
+      "path" : "Project Plan — Website Relaunch.md"
+    },
+    {
+      "bytes" : 3595,
+      "contentHash" : "sha256:4b8a33608a5137cc51b5447b0df12dce79bbd0ba3ca27303c3176edd53c46406",
+      "path" : "Quarterly Business Review.md"
+    },
+    {
+      "bytes" : 2148,
+      "contentHash" : "sha256:cac3021cebc3873644f1c1f9a21c2671118f330c3d4e853e93fa2c613631b391",
+      "path" : "Resume — Priya Raman.md"
+    },
+    {
+      "bytes" : 3054,
+      "contentHash" : "sha256:a3a0696f09df3f17b3fda0382c53400f4d52f85f691b17f3fd657dd803d73e22",
+      "path" : "Revenue Dashboard.md"
+    },
+    {
+      "bytes" : 3299,
+      "contentHash" : "sha256:d8543791c6be07959ca8d1631b5b6fe0725835b49f64c74b524625264734ec5b",
+      "path" : "Runtime Evaluation — Local Models.md"
+    },
+    {
+      "bytes" : 2606,
+      "contentHash" : "sha256:a823d845124e613cab918e22686715f7de47c12d412a0449185b1ea866833f9a",
+      "path" : "Sales Report — Q3.md"
+    },
+    {
+      "bytes" : 1907,
+      "contentHash" : "sha256:e18f5360f03868b42abdee2e10ec9ef0385eaae6f48057f9d56fb20bb058856a",
+      "path" : "Support Playbook — Escalations.md"
+    },
+    {
+      "bytes" : 2765,
+      "contentHash" : "sha256:9c92091cf939e9088e903b5e31c717bb49d17b95ffcb7c14d89a2bc6d38afc4b",
+      "path" : "Trip Planner — Portugal, October.md"
+    },
+    {
+      "bytes" : 47980,
+      "contentHash" : "sha256:ae9090ea8178c754ae01fabfef1a9c61fa1b465c8b1f8c05e6fe1b69277c68f0",
+      "path" : "Visualization Gallery.md"
+    },
+    {
+      "bytes" : 5786,
+      "contentHash" : "sha256:73afce6cc6ead4069d391d06ca8aa94e68c980fdefba3dc4672f8d6e21a647a4",
+      "path" : "Welcome.md"
+    },
+    {
+      "bytes" : 3418,
+      "contentHash" : "sha256:31118857a29af5e31342168dc992e03f7f2ebb03ff763dad9a1cc8f0acca7ed9",
+      "path" : "Working With Flow.md"
+    }
+  ],
+  "generated" : "2026-08-22",
+  "manifestVersion" : 2
+}
