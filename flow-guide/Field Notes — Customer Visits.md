@@ -12,14 +12,6 @@ Three visits this week, written up on the train home. These are raw and
 receive a proper edit before they go in the CRM.
 Ths weeks notes contian three typos for the proofread check.
 
-I am trying to record something here. This is new and I want to ensure that this works what I want to also ensure is the sentence is complete. Now what we're trying to do is build this into a new product having said that this sentence doesn't seem to be stopping unless I say stop what about now?
-
-Let's start the dictation process. try and bring a complete sentence. No try another sentence. This seems to be recording and. the dictation is kind of working but not.
-
-I'm trying this again stop does a new sentence start or it takes the word stop stop stop. Now let's start a new sentence. And another new sentence. And recording.
-
-This is now starting recording.
-
 ## Meridian Retail — Tuesday
 
 ![A retail floor during a customer visit](assets/retail-interior.jpeg)

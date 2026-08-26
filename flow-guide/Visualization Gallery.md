@@ -55,7 +55,6 @@ encodings:
   x: {field: region}
   y: {field: bookings}
   group: {field: year}
-# edited in the gallery
 ```
 
 ### Stacked bar chart
@@ -1396,14 +1395,14 @@ Source: a description of components and how they sit beside and connect to each 
 block-beta
   columns 3
   App["Flow (Mac app)"]:3
-  Editor["Editor\nMarkdown, rendered in place"] Agency["Agency\napproval + receipts"] Quick["Flow Quick\nhotkey search"]
+  Editor["Editor\nMarkdown, rendered in place"] Agency["Agency\napproval + receipts"] Search["Search\nexact + semantic"]
   space:3
   Runtime["Flow Runtime\nlocal MLX server"] Apple["Apple Intelligence"] Hosted["Hosted API\n(optional)"]
   Agency --> Runtime
   Agency --> Apple
   Agency --> Hosted
   Editor --> Agency
-  Quick --> Editor
+  Search --> Editor
 ```
 
 ### Requirement diagram

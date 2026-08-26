@@ -50,7 +50,7 @@ schema around the table.
 ## Charts
 
 A chart is a fenced block with `chart` as its language, a `chartType`, and
-data. Thirty-five types ship. Edit the numbers and the chart redraws.
+data. Thirty-four types ship. Edit the numbers and the chart redraws.
 
 ```chart
 chartType: Donut Chart

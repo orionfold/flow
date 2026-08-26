@@ -7,7 +7,10 @@ tags: [communications, press, draft]
 
 **FOR REVIEW — embargoed until launch day**
 
-Aurora 2.0 arrives Septmber 30 with a simple promise: your documents
+*Draft copy, not yet proofread — the spelling errors below are deliberate,
+so the proofread check has something to find.*
+
+Flow 2.0 arives Septmber 30 with a simple promise: your documents
 stay yours. Evrey file is plain text in folders you chose, every
 automated change arives as a proposal you approve, and every approved
 change leaves a reciept naming what ran, where it ran, and what it
@@ -30,5 +33,5 @@ founder. "They do not distrust automation — they distrust silence. So
 we built the oposite of silence: every change shows itself, asks
 permision, and signs the visitor log on the way out."
 
-Aurora 2.0 is availble today for Mac. Pricing and the full feature
+Flow 2.0 is availble today for Mac. Pricing and the full feature
 tour are at the product site.

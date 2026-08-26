@@ -6,6 +6,16 @@
       "path" : "assets/boardroom-annual.jpeg"
     },
     {
+      "bytes" : 105554,
+      "contentHash" : "sha256:248dbdc034ca91fc5cb668cdc4db6439354aae43b93a60d0be949b5a805c825d",
+      "path" : "assets/curated-model-benchmarks.json"
+    },
+    {
+      "bytes" : 11638,
+      "contentHash" : "sha256:e6d91ed265033e6f02160a259017d07eaf1d5fb2ccbe04d3c93891981b562d8d",
+      "path" : "assets/curated-model-profiles.json"
+    },
+    {
       "bytes" : 76529,
       "contentHash" : "sha256:c4bc37cc3214b65a30f87d666611ed755501e3ab85d7d8ef7df03a8edaf573ae",
       "path" : "assets/engagement-waves.jpeg"
@@ -41,6 +51,11 @@
       "path" : "assets/orionfold-mark.png"
     },
     {
+      "bytes" : 218791,
+      "contentHash" : "sha256:489d1e3b30b3aaf76e2be9190e1b629df1e3072efafcdb408246a48a7537ec32",
+      "path" : "assets/pit-stop.jpeg"
+    },
+    {
       "bytes" : 185244,
       "contentHash" : "sha256:cef384cbffbc77665e09ae568a36657f90025bf951c013ec6e23b0043d345e35",
       "path" : "assets/planning-desk.jpeg"
@@ -66,11 +81,11 @@
       "path" : "assets/strategy-wall.jpeg"
     }
   ],
-  "contentVersion" : "1.5.0",
+  "contentVersion" : "1.8.0",
   "documents" : [
     {
-      "bytes" : 24881,
-      "contentHash" : "sha256:0813ff6dc737e3b29920aa4a66969b31ffc84386a7ce7e07a0fb1f330187aed7",
+      "bytes" : 13048,
+      "contentHash" : "sha256:1b2afcf5b64b93a2918b0f89c0d56d2325e82a570d3a3845890cacd7935b5188",
       "path" : "Annual Operating Review.md"
     },
     {
@@ -99,6 +114,11 @@
       "path" : "Cost of This Quarter.md"
     },
     {
+      "bytes" : 6524,
+      "contentHash" : "sha256:de00cf6bf239f45ffece8e954b2861037eaaa4c2c8593a16c2fd1b8440d576e4",
+      "path" : "Curated Model Comparisons.md"
+    },
+    {
       "bytes" : 2303,
       "contentHash" : "sha256:2bd55e894cd8b40cfe2c2b855a6fd1d5b9e4bb8232db1d166053cae58b545fb3",
       "path" : "Customer Interviews.md"
@@ -109,8 +129,8 @@
       "path" : "Document Gallery.md"
     },
     {
-      "bytes" : 3002,
-      "contentHash" : "sha256:6ac20b4d3e4fc0cb91b566c5ac7a0597b572b695bdaeecfd113370a88e838ac1",
+      "bytes" : 2337,
+      "contentHash" : "sha256:cf8a99eef392956e8586b589eb06e316b5dd16cffbd4ebf820b144e6e967a7cd",
       "path" : "Field Notes — Customer Visits.md"
     },
     {
@@ -144,6 +164,11 @@
       "path" : "Meeting Notes — Weekly Staff.md"
     },
     {
+      "bytes" : 5815,
+      "contentHash" : "sha256:fe2593d57b23c7fb204f99e4d8841747d2bb7638e3fd6ff9faf81591fb3f1ca3",
+      "path" : "Models Flow Recommends.md"
+    },
+    {
       "bytes" : 3082,
       "contentHash" : "sha256:b5a3ce35230c40f5e00ee57e131b61d5584fc35ed72d31b1954a6c7e70ae9366",
       "path" : "Operating Notes — How We Work.md"
@@ -154,8 +179,8 @@
       "path" : "Performance Review — Mid-Year.md"
     },
     {
-      "bytes" : 1397,
-      "contentHash" : "sha256:81fe0ef47c0a64d953e0f2a0a8f13ac5a8bbf965c05eca146c748f34ae64fe92",
+      "bytes" : 1517,
+      "contentHash" : "sha256:7d7f5b6c5937443dfb8c6b266432e6f88d9affb0b438d23561b42fbf55ce9cd9",
       "path" : "Press Release Draft.md"
     },
     {
@@ -204,21 +229,21 @@
       "path" : "Trip Planner — Portugal, October.md"
     },
     {
-      "bytes" : 47980,
-      "contentHash" : "sha256:ae9090ea8178c754ae01fabfef1a9c61fa1b465c8b1f8c05e6fe1b69277c68f0",
+      "bytes" : 47957,
+      "contentHash" : "sha256:b692ce7597c23c266a46b51a0658defdff89181113292c7e781ac9fa23cef9c8",
       "path" : "Visualization Gallery.md"
     },
     {
-      "bytes" : 5786,
-      "contentHash" : "sha256:73afce6cc6ead4069d391d06ca8aa94e68c980fdefba3dc4672f8d6e21a647a4",
+      "bytes" : 1288,
+      "contentHash" : "sha256:caeb79dc85783972eb6ee3257ee08ede24c3d917aba5a5e26f8dde49d52e3f2e",
       "path" : "Welcome.md"
     },
     {
       "bytes" : 3418,
-      "contentHash" : "sha256:31118857a29af5e31342168dc992e03f7f2ebb03ff763dad9a1cc8f0acca7ed9",
+      "contentHash" : "sha256:706aa12b40acc71f1f8c4e03f7fcb03cb045ef875b383566bfd2678558a3e443",
       "path" : "Working With Flow.md"
     }
   ],
-  "generated" : "2026-08-22",
+  "generated" : "2026-08-26",
   "manifestVersion" : 2
 }
