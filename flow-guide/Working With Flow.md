@@ -116,6 +116,37 @@ in this build, so no document in this folder uses one — a Guide that showed yo
 a broken construct on first launch would be worse than one that stayed quiet
 about it.
 
+## What leaves your Mac
+
+Flow is built so that nothing has to leave this Mac, which makes the list of
+times it reaches the network short enough to print. As of Flow 1.5.5, this is
+all of it — and every line is something you started, can switch off, or whose
+outcome you control:
+
+| When | Where | What is sent | Your switch |
+| --- | --- | --- | --- |
+| Flow looks for a new version: at launch, then at most once every six hours | orionfold.com | The request for the update list, carrying Flow's version and the updater's name, as any web request does | Flow ▸ Check for Updates… runs it by hand |
+| You press Flow Guide Updates… | github.com (the Guide's public home) | A request for the Guide's index, then only the documents you accept | Only when you press it |
+| You press Buy Flow Pro or Manage Plan… in Settings ▸ Billing | orionfold.supabase.co (Orionfold's billing service) | The plan and seat count you chose, or your licence file so the server can answer for it | Only when you press it |
+| You add a model runtime on this Mac or a machine you name | That Mac, or the address you typed | Your prompt and the text you selected, when you approve a run | Settings ▸ Models — each domain has its own switch |
+| You add a cloud provider | That provider | Your prompt and the text you selected, when you approve a run; the meter shows it first | Settings ▸ Models — each domain has its own switch |
+| You refresh a provider's price list, or first set up OpenRouter | openrouter.ai | A request for public prices; nothing about you | Only when you ask |
+| You import a model | huggingface.co | The download request for the model you chose | Only when you press it |
+| A document embeds an image by web address | That address | The request for the image, when the document is shown | Write the image into the folder instead, and nothing is fetched |
+| You open a web address in a pane | That address | What any browser sends to load a page | Only when you enter one |
+
+That is the whole list. As of Flow 1.5.5, Flow keeps no usage statistics,
+sends no crash reports, carries no analytics or advertising code, has no
+install identifier, and never checks a licence online to keep working. If a
+future Flow offers to share counts or crash reports with Orionfold, it will be
+a switch that starts off, and this table will list it beside the others.
+
+Need to tell us about a problem? Help ▸ Copy Diagnostics… puts a short block
+on the clipboard — the Flow and macOS versions, the kind of Mac, which domains
+are on, and the last crash's summary if there is one — with no paths, titles,
+or names in it. You see the exact text before it is copied, and it goes
+nowhere until you paste it.
+
 ## Where things live
 
 | Thing | Where |
