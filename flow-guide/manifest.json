@@ -81,7 +81,7 @@
       "path" : "assets/strategy-wall.jpeg"
     }
   ],
-  "contentVersion" : "1.8.1",
+  "contentVersion" : "1.8.2",
   "documents" : [
     {
       "bytes" : 13048,
@@ -97,6 +97,11 @@
       "bytes" : 1918,
       "contentHash" : "sha256:f67b8473b4b1f760e1056a13fc410ab78114e4771330477963a756cb9d1001ca",
       "path" : "Board Update — Q4 Outlook.md"
+    },
+    {
+      "bytes" : 15696,
+      "contentHash" : "sha256:7a36d3fb80cb471dff641cdf217d41bf04e8a03468def8a17fe8da60aee616f1",
+      "path" : "Changelog.md"
     },
     {
       "bytes" : 2378,
@@ -234,8 +239,8 @@
       "path" : "Visualization Gallery.md"
     },
     {
-      "bytes" : 1288,
-      "contentHash" : "sha256:caeb79dc85783972eb6ee3257ee08ede24c3d917aba5a5e26f8dde49d52e3f2e",
+      "bytes" : 1411,
+      "contentHash" : "sha256:005a14b4c3da4fdbd584f26ce5635681dfc97e6c44d92df6de23d7170c45ae37",
       "path" : "Welcome.md"
     },
     {

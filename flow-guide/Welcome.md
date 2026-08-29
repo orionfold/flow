@@ -14,6 +14,8 @@ to edit, rename, and delete from.
 
 - The **Ideas** board beside this document names one truthful next step for
   this Mac. Nothing runs until you say so.
+- [[Changelog]] is what is new in this Flow, newest release first: what
+  shipped, how it benefits you, and how to use it.
 - [[Document Gallery]] is twenty-five kinds of document, each written out in
   full. Copy one and edit over it.
 - [[Visualization Gallery]] is every chart and diagram Flow draws in place,
