@@ -13,12 +13,90 @@ release behind can still read what the next one brought.
 
 | Release | Build | Date | In a sentence |
 | --- | --- | --- | --- |
+| 1.5.6 | 1563 | 29 August 2026 | The first week, second pass: the small things, and dictation that can hear you |
 | 1.5.5 | 1526 | 29 August 2026 | Know what Flow does with your network, and be able to show it |
 | 1.5.4 | 1511 | 28 August 2026 | Your own files and folders: Flow keeps up with changes made outside it |
 | 1.5.3 | 1446 | 28 August 2026 | The small things you meet in your first week |
 | 1.5.2 | 1414 | 27 August 2026 | A pressable Update ready button |
 | 1.5.1 | 1404 | 27 August 2026 | The first Flow that arrived through Flow itself |
 | 1.5 | 1382 | 26 August 2026 | The launch |
+
+## Flow 1.5.6 · build 1563 · 29 August 2026
+
+This release is the second pass over the first week: the small frictions you
+meet while actually working, and one thing that never worked at all.
+
+### Dictation can hear you
+
+- **What shipped.** Pressing the microphone starts dictation. On every Flow
+  from 1.5 to 1.5.5 it opened System Settings ▸ Privacy & Security ▸
+  Microphone instead — where Flow was already switched on — because the
+  signed app had never declared that it records audio, so macOS refused
+  before it could even ask you.
+- **How it benefits you.** Speaking into a document works, and the first
+  press asks for the microphone the ordinary way instead of sending you to a
+  settings pane that looked correct already.
+- **How to use it.** Open a document in the Editor and press the microphone
+  in the toolbar, or ⇧⌘D. Allow the microphone when macOS asks. Speech stays
+  on this Mac.
+
+### A Guide update reaches the document you have open
+
+- **What shipped.** After *Flow Guide Updates…* brings new text, a tab
+  already showing that document reloads at once. It used to keep the old text
+  until you closed and reopened it. A document you are part-way through
+  editing is never reloaded under you.
+- **How it benefits you.** You read what you just pulled, where you were
+  already looking.
+- **How to use it.** Settings ▸ Flow System ▸ Flow Guide Updates…
+
+### A document that arrives from outside is marked new
+
+- **What shipped.** Drop a file in from Finder, write one from the terminal,
+  or pull a branch: when Flow re-reads the folder, the new document's sidebar
+  row wears the same orange triangle a tab wears when its file changed on
+  disk, until you open it. Your own renames, duplicates and new documents are
+  never marked.
+- **How it benefits you.** You can see what arrived without comparing the
+  sidebar against your memory of it.
+- **How to use it.** Switch back to Flow, or press ↻ in the Folders header.
+
+### Tables and quotations read properly
+
+- **What shipped.** A table column is now at least as wide as its longest
+  word, so an address like `orionfold.supabase.co` or a heading like *Today*
+  is never split down the middle; a table wider than the pane scrolls
+  sideways inside its own frame. A `>` quotation written over several lines
+  now joins with one space, like a paragraph, instead of showing a gap at
+  every line end.
+- **How it benefits you.** Documents you did not write — pasted tables,
+  quoted decisions — read as their author meant them to.
+- **How to use it.** Nothing to set.
+
+### Split Right and Combine Panes are ⌥⌘] and ⌥⌘[
+
+- **What shipped.** The two pane commands moved off ⌘] and ⌘[, which indent
+  and outdent in the Editor as they do in every code editor. With a document
+  focused the old chords never reached the menu at all.
+- **How it benefits you.** Splitting a pane works while you are writing, and
+  indenting still works where you expect it.
+- **How to use it.** ⌥⌘] splits right, ⌥⌘[ combines. The Window menu shows
+  both.
+
+### The AI actions say more, and say it once
+
+- **What shipped.** The *Leaves this Mac* sheet lists every item it counts —
+  *2 items* now has two rows, your instruction and the document by its name —
+  and names the model the way the hover panel does (*Claude Opus 5*, not an
+  identifier). Proofread's *N words* and the status bar's count are now the
+  same number; the panel used to count the front matter too. Settings ▸ Cost
+  carries one caption instead of two sets of numbers, and before your first
+  *Refresh OpenRouter prices* it says why those columns are empty and names
+  the button. Flow still never fetches prices on its own.
+- **How it benefits you.** What a run will send, what it will cost, and what
+  it will read all say the same thing as each other.
+- **How to use it.** Press any AI action and read the panel before you
+  approve it; Settings ▸ Cost compares every model you can run.
 
 ## Flow 1.5.5 · build 1526 · 29 August 2026
 

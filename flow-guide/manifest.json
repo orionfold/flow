@@ -81,7 +81,7 @@
       "path" : "assets/strategy-wall.jpeg"
     }
   ],
-  "contentVersion" : "1.8.2",
+  "contentVersion" : "1.8.3",
   "documents" : [
     {
       "bytes" : 13048,
@@ -99,8 +99,8 @@
       "path" : "Board Update — Q4 Outlook.md"
     },
     {
-      "bytes" : 15696,
-      "contentHash" : "sha256:7a36d3fb80cb471dff641cdf217d41bf04e8a03468def8a17fe8da60aee616f1",
+      "bytes" : 19782,
+      "contentHash" : "sha256:294d7a2363f095f8cae7f83f6ad284b7060edbbb698d14fc6dfae5a2f6ad2f1c",
       "path" : "Changelog.md"
     },
     {
@@ -249,6 +249,6 @@
       "path" : "Working With Flow.md"
     }
   ],
-  "generated" : "2026-08-29",
+  "generated" : "2026-08-30",
   "manifestVersion" : 2
 }
