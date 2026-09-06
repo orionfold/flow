@@ -100,7 +100,7 @@ Briefing line says the notes are part of a plan.
 - Every write is a night version you can revert, with a receipt naming the
   run.
 
-## Six living documents, ready to make yours
+## Seven living documents, ready to make yours
 
 Each folder below is a complete case: a dashboard bound to data, a profile
 file whose front matter you edit, a folder the night inventories, and a note
@@ -114,6 +114,7 @@ on how the page is built so you can lift any construct into your own work.
 | Job Search | [[Job Search]]: applications on a timeline, the tracker, prep, careers pages watched, resume versions on record | [[Applications]] | The folder itself |
 | Competitor Watch | [[Competitor Watch]]: entry prices, the feature matrix, pricing pages watched nightly | [[Competitors]] | The folder itself |
 | Team Status | [[Team Status]]: one file per person rolled up into a table, a confidence chart and the quarter's timeline | `updates/` and [[Plan]] | The folder itself |
+| Living Document Starter | [[Living Document]]: every construct wired once — a key-value table, a table and two charts from one list, a one-row-per-file table over a folder, sources watched, overnight notes | [[Profile]] and `entries/` | A gather definition, [[Starter Refresh]], read before the page redraws |
 
 Four of the folders, the Starter among them, collect their numbers from a
 **gather definition**: a document you can read, listing where each figure

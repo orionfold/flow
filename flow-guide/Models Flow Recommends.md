@@ -51,9 +51,10 @@ for nothing. Your documents never leave the machine. The catch is memory: a
 model's weights have to fit alongside everything else your Mac is doing, and
 a model that is too large will not run at all.
 
-**An account you already pay for.** If you hold a Claude or ChatGPT
-subscription, Flow can use it through the tool that subscription provides, at
-no extra cost. This is usually the cheapest option if you already have one.
+**An account you already pay for — not yet.** Using a Claude or ChatGPT
+subscription through the tool it provides is a route Flow is building, and it
+is not in this release. Until it lands, the two routes on either side of this
+paragraph are what Flow can use.
 
 **A metered account.** An API key with a provider, billed by usage. Predictable
 and fast, and the only route that costs money per run.
