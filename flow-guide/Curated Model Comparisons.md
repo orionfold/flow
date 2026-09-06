@@ -10,8 +10,8 @@ These recommendation-ranked cards pair source-dated parent-model facts with Orio
 
 - **Hardware class:** `Mac15,10`; 30 GPU, 10 performance, and 4 efficiency cores
 - **Recommendation:** Orionfold; 32 GB working set; 2026-08-25
-- **Campaign 1 — 2026-08-25:** mlx-serve 0.1; macOS 26.6; 8192 tokens; cold then warm; 3 cells per artifact; 100 seconds between cells
-- **Campaign 2 — 2026-08-25:** mlx-serve 0.1; macOS 26.6; 8192 tokens; cold then warm; 3 cells per artifact; 100 seconds between cells
+- **Campaign 1 · 2026-08-25:** mlx-serve 0.1; macOS 26.6; 8192 tokens; cold then warm; 3 cells per artifact; 100 seconds between cells
+- **Campaign 2 · 2026-08-25:** mlx-serve 0.1; macOS 26.6; 8192 tokens; cold then warm; 3 cells per artifact; 100 seconds between cells
 
 ### #1 Qwen 3.5 35B A3B 4-bit
 

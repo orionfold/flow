@@ -1,0 +1,397 @@
+{
+  "capturedAt": "2026-09-03T04:39:33.155Z",
+  "source": "statements/*.csv, categorized by Budget Profile.md rules",
+  "month": "2026-08",
+  "statements": 2,
+  "lines": 79,
+  "summary": [
+    {
+      "metric": "Spent in August 2026",
+      "value": 6652,
+      "goal": 7810
+    },
+    {
+      "metric": "Income received",
+      "value": 9800,
+      "goal": 9800
+    },
+    {
+      "metric": "Savings rate, %",
+      "value": 32.1,
+      "goal": 20
+    },
+    {
+      "metric": "Moved to savings",
+      "value": 1500,
+      "goal": 1960
+    }
+  ],
+  "byCategory": [
+    {
+      "category": "Housing",
+      "spent": 2950,
+      "budget": 2950
+    },
+    {
+      "category": "Groceries",
+      "spent": 446,
+      "budget": 900
+    },
+    {
+      "category": "Dining",
+      "spent": 198,
+      "budget": 450
+    },
+    {
+      "category": "Transport",
+      "spent": 196,
+      "budget": 420
+    },
+    {
+      "category": "Utilities",
+      "spent": 334,
+      "budget": 320
+    },
+    {
+      "category": "Health",
+      "spent": 294,
+      "budget": 350
+    },
+    {
+      "category": "Subscriptions",
+      "spent": 40,
+      "budget": 120
+    },
+    {
+      "category": "Shopping",
+      "spent": 336,
+      "budget": 400
+    },
+    {
+      "category": "Kids",
+      "spent": 1350,
+      "budget": 1400
+    },
+    {
+      "category": "Travel",
+      "spent": 0,
+      "budget": 300
+    },
+    {
+      "category": "Giving",
+      "spent": 100,
+      "budget": 200
+    },
+    {
+      "category": "Uncategorized",
+      "spent": 409,
+      "budget": 0
+    }
+  ],
+  "byMonth": [
+    {
+      "month": "2026-07",
+      "category": "Dining",
+      "spent": 201
+    },
+    {
+      "month": "2026-07",
+      "category": "Giving",
+      "spent": 100
+    },
+    {
+      "month": "2026-07",
+      "category": "Groceries",
+      "spent": 707
+    },
+    {
+      "month": "2026-07",
+      "category": "Health",
+      "spent": 294
+    },
+    {
+      "month": "2026-07",
+      "category": "Housing",
+      "spent": 2950
+    },
+    {
+      "month": "2026-07",
+      "category": "Kids",
+      "spent": 1350
+    },
+    {
+      "month": "2026-07",
+      "category": "Shopping",
+      "spent": 415
+    },
+    {
+      "month": "2026-07",
+      "category": "Subscriptions",
+      "spent": 40
+    },
+    {
+      "month": "2026-07",
+      "category": "Transport",
+      "spent": 122
+    },
+    {
+      "month": "2026-07",
+      "category": "Travel",
+      "spent": 1098
+    },
+    {
+      "month": "2026-07",
+      "category": "Uncategorized",
+      "spent": 109
+    },
+    {
+      "month": "2026-07",
+      "category": "Utilities",
+      "spent": 380
+    },
+    {
+      "month": "2026-08",
+      "category": "Dining",
+      "spent": 198
+    },
+    {
+      "month": "2026-08",
+      "category": "Giving",
+      "spent": 100
+    },
+    {
+      "month": "2026-08",
+      "category": "Groceries",
+      "spent": 446
+    },
+    {
+      "month": "2026-08",
+      "category": "Health",
+      "spent": 294
+    },
+    {
+      "month": "2026-08",
+      "category": "Housing",
+      "spent": 2950
+    },
+    {
+      "month": "2026-08",
+      "category": "Kids",
+      "spent": 1350
+    },
+    {
+      "month": "2026-08",
+      "category": "Shopping",
+      "spent": 336
+    },
+    {
+      "month": "2026-08",
+      "category": "Subscriptions",
+      "spent": 40
+    },
+    {
+      "month": "2026-08",
+      "category": "Transport",
+      "spent": 196
+    },
+    {
+      "month": "2026-08",
+      "category": "Uncategorized",
+      "spent": 409
+    },
+    {
+      "month": "2026-08",
+      "category": "Utilities",
+      "spent": 334
+    }
+  ],
+  "cumulative": [
+    {
+      "day": "2026-08-01",
+      "spent": 2950
+    },
+    {
+      "day": "2026-08-02",
+      "spent": 3047
+    },
+    {
+      "day": "2026-08-03",
+      "spent": 4397
+    },
+    {
+      "day": "2026-08-04",
+      "spent": 4607
+    },
+    {
+      "day": "2026-08-05",
+      "spent": 4807
+    },
+    {
+      "day": "2026-08-06",
+      "spent": 4930
+    },
+    {
+      "day": "2026-08-07",
+      "spent": 4985
+    },
+    {
+      "day": "2026-08-08",
+      "spent": 5075
+    },
+    {
+      "day": "2026-08-09",
+      "spent": 5098
+    },
+    {
+      "day": "2026-08-10",
+      "spent": 5171
+    },
+    {
+      "day": "2026-08-11",
+      "spent": 5282
+    },
+    {
+      "day": "2026-08-12",
+      "spent": 5428
+    },
+    {
+      "day": "2026-08-14",
+      "spent": 5437
+    },
+    {
+      "day": "2026-08-15",
+      "spent": 5437
+    },
+    {
+      "day": "2026-08-16",
+      "spent": 5703
+    },
+    {
+      "day": "2026-08-18",
+      "spent": 5904
+    },
+    {
+      "day": "2026-08-19",
+      "spent": 5931
+    },
+    {
+      "day": "2026-08-20",
+      "spent": 6131
+    },
+    {
+      "day": "2026-08-21",
+      "spent": 6141
+    },
+    {
+      "day": "2026-08-22",
+      "spent": 6229
+    },
+    {
+      "day": "2026-08-23",
+      "spent": 6277
+    },
+    {
+      "day": "2026-08-24",
+      "spent": 6328
+    },
+    {
+      "day": "2026-08-27",
+      "spent": 6628
+    },
+    {
+      "day": "2026-08-28",
+      "spent": 6652
+    }
+  ],
+  "topMerchants": [
+    {
+      "Merchant": "RENT PAYMENT PARKSIDE APARTMENTS",
+      "Category": "Housing",
+      "Count": 1,
+      "Spent": 2950
+    },
+    {
+      "Merchant": "LITTLE OAKS DAYCARE",
+      "Category": "Kids",
+      "Count": 1,
+      "Spent": 1350
+    },
+    {
+      "Merchant": "ZELLE TO J. ALVAREZ",
+      "Category": "Uncategorized",
+      "Count": 1,
+      "Spent": 300
+    },
+    {
+      "Merchant": "KAISER PERMANENTE PREMIUM",
+      "Category": "Health",
+      "Count": 1,
+      "Spent": 210
+    },
+    {
+      "Merchant": "COSTCO WHSE",
+      "Category": "Groceries",
+      "Count": 3,
+      "Spent": 209
+    },
+    {
+      "Merchant": "WHOLE FOODS MARKET",
+      "Category": "Groceries",
+      "Count": 1,
+      "Spent": 160
+    },
+    {
+      "Merchant": "TARGET",
+      "Category": "Shopping",
+      "Count": 2,
+      "Spent": 148
+    },
+    {
+      "Merchant": "PG&E ELECTRIC AND GAS",
+      "Category": "Utilities",
+      "Count": 1,
+      "Spent": 132
+    },
+    {
+      "Merchant": "VERIZON WIRELESS PAYMENT",
+      "Category": "Utilities",
+      "Count": 1,
+      "Spent": 112
+    },
+    {
+      "Merchant": "AMAZON MKTPLACE PMTS",
+      "Category": "Shopping",
+      "Count": 1,
+      "Spent": 100
+    },
+    {
+      "Merchant": "AMERICAN RED CROSS DONATION",
+      "Category": "Giving",
+      "Count": 1,
+      "Spent": 100
+    },
+    {
+      "Merchant": "COMCAST CABLE COMM",
+      "Category": "Utilities",
+      "Count": 1,
+      "Spent": 90
+    }
+  ],
+  "uncategorized": [
+    {
+      "Date": "2026-08-16",
+      "Description": "VENMO PAYMENT 1023",
+      "Amount": -85
+    },
+    {
+      "Date": "2026-08-24",
+      "Description": "SQ *CORNER BAKERY",
+      "Amount": -23.75
+    },
+    {
+      "Date": "2026-08-27",
+      "Description": "ZELLE TO J. ALVAREZ",
+      "Amount": -300
+    }
+  ]
+}

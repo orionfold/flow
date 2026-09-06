@@ -7,12 +7,13 @@ tags: [flow, start-here, whats-new]
 
 Newest release first. Every release names what shipped, how it benefits you,
 and how to use it. Your Flow's version is in the title bar and in
-Settings ▸ Flow System. This document travels with the Guide: **Settings ▸
-Flow System ▸ Flow Guide Updates…** fetches the newest copy, so a Flow one
+Settings ▸ General. This document travels with the Guide: **Settings ▸
+General ▸ Flow Guide Updates…** fetches the newest copy, so a Flow one
 release behind can still read what the next one brought.
 
 | Release | Build | Date | In a sentence |
 | --- | --- | --- | --- |
+| 1.6 | 1899 | 5 September 2026 | The Night Shift: living documents that keep themselves current, and one Morning Briefing |
 | 1.5.6 | 1563 | 29 August 2026 | The first week, second pass: the small things, and dictation that can hear you |
 | 1.5.5 | 1526 | 29 August 2026 | Know what Flow does with your network, and be able to show it |
 | 1.5.4 | 1511 | 28 August 2026 | Your own files and folders: Flow keeps up with changes made outside it |
@@ -20,6 +21,213 @@ release behind can still read what the next one brought.
 | 1.5.2 | 1414 | 27 August 2026 | A pressable Update ready button |
 | 1.5.1 | 1404 | 27 August 2026 | The first Flow that arrived through Flow itself |
 | 1.5 | 1382 | 26 August 2026 | The launch |
+
+## Flow 1.6 · build 1899 · 5 September 2026
+
+This release is the Night Shift. A document you keep current by hand
+becomes a living document: it says what it draws on, Flow works it while
+you sleep, and the morning tells you what moved, in words, with every
+change yours to keep or put back. Around it, Settings is six screens
+instead of eleven, a model on your Mac can look things up, and a hundred
+small frictions from the first week are gone.
+
+### The Night Shift runs while you sleep, with Flow closed
+
+- **What shipped.** Settings ▸ Night Shift turns it on and sets the
+  window (2:00 to 6:00 AM to begin with). Every night in that window,
+  whenever this Mac is plugged in and idle, Flow works your open folders,
+  with Flow open or quit, and never twice in one night. A Mac that slept
+  through the window catches up once at the next wake, and says so. A
+  moon in the title bar says what the shift is doing at a glance: *Tonight
+  2:00 AM*, *Running*, *Paused*, or the first thing that would stop it and
+  the way out.
+- **How it benefits you.** The work happens on the machine's time, not
+  yours, and only when the machine can afford it.
+- **How to use it.** Settings ▸ Night Shift ▸ *Runs tonight*. Turning it
+  on runs the first shift right away, while you watch, and opens the
+  Briefing it wrote. Click the moon to run it now, pause tonight, or open
+  the Briefing.
+
+### One Morning Briefing, written in words
+
+- **What shipped.** A night writes one *Morning Briefing* in the Flow
+  Guide folder, with earlier mornings in its History. One section per
+  document that changed: its link, one sentence in the document's own
+  terms, the changed chart or table drawn as it is, and *Open* and
+  *Review*. Then *Also changed*, what the day already redrew, *Still to
+  review* for changes waiting on you, and *Unchanged* with the reason.
+  When a page you watch changes, the Briefing shows the exact text that
+  moved, with the page's markup stripped away. The whole night is told in
+  one clock, and the Briefing's Receipts name each night.
+- **How it benefits you.** You read what happened, not a log of it.
+- **How to use it.** Open the Briefing from the moon, from Ideas, or from
+  the Flow Guide folder in the sidebar.
+
+### Keep or put back each change the night made
+
+- **What shipped.** A document Flow changed overnight opens with a bar,
+  *Flow changed 3 things overnight*, and each changed block framed on the
+  page. *Review* shows one card per change: *Keep* records your decision
+  in Receipts, *Revert* puts that block alone back to its earlier lines as
+  its own version in History. A block you edited since is marked stale and
+  points you to History. The night's changes retire an earlier run's
+  changes to the same block, so the bar and the Briefing count the same
+  night.
+- **How it benefits you.** Nothing the night does is out of your hands,
+  and nothing you decide is lost.
+- **How to use it.** Press *Review* on the bar, or *Review* beside the
+  document in the Briefing.
+
+### Seven living documents ship in the Guide
+
+- **What shipped.** Six complete cases, each a folder: **Stock
+  Portfolio**, **Tax Advisor**, **Household Budget**, **Job Search**,
+  **Competitor Watch** and **Team Status**. Each has one profile whose
+  front matter you edit (add a stock, a W-2, a competitor, a teammate) and
+  the night redraws the page from it. The seventh, **Living Document
+  Starter**, is the one to copy for your own: every construct wired once
+  with a note on where it reads from. A new **Night Shift** page explains
+  the moon, the jobs, the morning, and what never happens.
+- **How it benefits you.** A living document of your own starts from one
+  that already works.
+- **How to use it.** Flow Guide ▸ a folder ▸ its dashboard. Copy the
+  Starter's folder, rename it, and edit three things: the profile's front
+  matter, the files in `entries/`, and the headings.
+
+### A chart or table drawn from a file redraws on its own
+
+- **What shipped.** Bind a chart or table to a file with `data:` on its
+  opening line and the night redraws it, touching only that block. No
+  declaration is needed; the binding is the declaration. *Redraw as data
+  changes* (on to begin with) redraws the document the moment the file
+  changes, when you come back to Flow, when you use Refresh Folders, and
+  after a night's own work; Flow remembers its last look across a quit, so
+  a file that landed while Flow was closed is noticed as Flow opens its
+  folders, before you touch anything.
+  A document names the capture it is drawn from under its title.
+- **How it benefits you.** Drop this morning's export into the folder and
+  the page shows this morning's numbers.
+- **How to use it.** Settings ▸ Night Shift ▸ *Redraw as data changes*
+  for everywhere; *Redraws* in the panel under a document's title for one
+  document.
+
+### A document says what it does overnight, and you edit it in a sheet
+
+- **What shipped.** Under the title of any document with standing jobs,
+  a line reads *Night Shift · Watches 3 sources · Lists the files in data
+  · Redraws 4 charts and 3 tables from data/capture-*.json*. Open it and
+  each job has its own line with Flow's explanation, a (−) on every line,
+  and the setting it follows. *Edit…* opens the Jobs Editor: each job is
+  a card chosen from what a job can be, watching sources, listing a
+  folder's files, collecting data, or Overnight notes, with every field
+  explained; Save writes once, Cancel writes nothing, and a block Flow
+  cannot read still gets its Night Shift line, naming the line it could
+  not read, whose *Edit…* opens a repair state.
+- **How it benefits you.** A living document explains itself to whoever
+  opens it next, and nobody edits front matter by hand.
+- **How to use it.** *Edit…* on the Night Shift line, or File ▸ *Night
+  Shift Jobs…* (⌥⌘J) on a document that declares nothing yet.
+
+### A living document gathers its own data from a definition, not a script
+
+- **What shipped.** A collecting job reads a definition written in plain
+  front matter, which files, folders and web addresses to draw on, what
+  to work out, and which tables to build, and writes the nightly capture
+  the charts read. It runs nothing and asks for no permission to run
+  anything: the definition is data you can read. The definition editor
+  shows it as forms with a live preview of the rows, computed from your
+  files the way the night computes them; a change is written the moment
+  the whole definition reads. And a definition can be drafted from a
+  sentence: describe what to gather, press *Draft*, and a model on this
+  Mac proposes the sources, values and tables, shown in the editor before
+  anything is written; *Use this draft* writes it, *Discard* leaves the
+  file as it was.
+- **How it benefits you.** The refresh a document depends on is something
+  you can read, change and keep, with no Terminal and no code.
+- **How to use it.** *Edit definition…* under a definition's title, or
+  File ▸ *Edit Definition…* (⌥⌘D). *New…* in the Jobs Editor copies the
+  Starter's definition beside your document.
+
+### Night Shift Pro: Overnight notes, the one job a model does
+
+- **What shipped.** After the night's redraw, a model on this Mac writes
+  a few sentences about what the page's tables and charts say and what
+  moved, under *Overnight notes*. The model sees the page's own numbers
+  and nothing else of the document; every number in its draft is checked
+  against a source row, and withheld with the number named if it cannot
+  be. A note the model stops mid-sentence is cut back to its
+  last whole sentence, or withheld with the reason in the Briefing. The
+  notes are marked in place, kept or reverted on Review Changes, and
+  receipted with the model that answered. Every other job runs on
+  every plan; a Base plan's Briefing says the notes are part of a Flow
+  plan.
+- **How it benefits you.** The morning reads like a note from a
+  colleague who checked the numbers, and every number in it traces to a
+  row.
+- **How to use it.** Add *Overnight notes* in the Jobs Editor; one Save
+  writes the job and the section the notes go in. A model on this Mac is required; nothing
+  leaves it.
+
+### Settings is six screens
+
+- **What shipped.** General · Documents · Models · Smart Routing ·
+  Evidence · Night Shift, down from eleven, with nothing removed: your
+  plan at the top of General, saving and dictation under Documents,
+  measured results and the price list inside Models, the three checks
+  under Evidence's five questions. For a cloud provider the key is the
+  switch: add a key and it is on, remove it and it is off, and a key
+  exported in your login shell is found at launch. Smart Routing states
+  Flow's tuning in one sentence, with Flow Runtime first. Models opens
+  with this Mac and Flow's pick, and every local model that opens in Flow
+  Runtime is shared with Flow the first time it looks. Web Lookups lives
+  under General ▸ *What leaves your Mac*.
+- **How it benefits you.** Every control is where its question is, and
+  each thing is said once.
+- **How to use it.** ⌘, opens Settings; searching it for an old screen's
+  name still finds every control on its new screen.
+
+### A model on your Mac can look things up before it answers
+
+- **What shipped.** *Expand with Sources* reads your document and
+  searches your folders before writing on a model that runs on this Mac,
+  at no cost, with each lookup shown as it happens and recorded in the
+  run's receipts; the same lookups run on OpenAI and OpenRouter as on
+  Anthropic. A new switch, off to begin with, lets a run fetch a public
+  web page, and the Guide's *What leaves your Mac* table lists it. A run a
+  provider refuses says why and is recorded; the review pane lists what a
+  run looked up; opening one lookup shows what it asked and what came
+  back. A document that starts with front matter works on a cloud model,
+  which is sent only the prose.
+- **How it benefits you.** The answer is grounded in what you have, and
+  every step of how it got there is on the record.
+- **How to use it.** Agency ▸ *Expand with Sources*. Settings ▸ General ▸
+  *What leaves your Mac* ▸ *Web Lookups* to allow the web.
+
+### The Guide keeps itself whole
+
+- **What shipped.** A Guide update you accepted does not come back as a
+  conflict; a Guide folder Flow lost track of, restored from a backup or
+  synced from another Mac, repairs itself; a first launch completes a
+  Flow Guide folder that was already there without replacing anything in
+  it.
+- **How it benefits you.** Updates arrive as updates, and what you wrote
+  stays yours.
+- **How to use it.** Settings ▸ General ▸ *Flow Guide Updates…*
+
+### The small things
+
+- **What shipped.** An escaped character reads as itself; a comment in a
+  document stays out of the page; a wide table shows it scrolls; the
+  scrollbar can be dragged from the top of a long document; a document
+  still opening says *Opening…*; charts name their legends and axes in
+  words and sideways bar charts label their bars; a note whose front
+  matter carries a `#` comment opens; a document in a folder opened inside
+  another folder works everywhere; OpenRouter is preferred over OpenAI and
+  Anthropic when Flow picks for you; Flow's sentences lost their dashes
+  and its explainers say each thing once.
+- **How it benefits you.** Fewer things to notice, so you notice your
+  work.
+- **How to use it.** Nothing to do.
 
 ## Flow 1.5.6 · build 1563 · 29 August 2026
 
@@ -30,7 +238,7 @@ meet while actually working, and one thing that never worked at all.
 
 - **What shipped.** Pressing the microphone starts dictation. On every Flow
   from 1.5 to 1.5.5 it opened System Settings ▸ Privacy & Security ▸
-  Microphone instead — where Flow was already switched on — because the
+  Microphone instead, where Flow was already switched on, because the
   signed app had never declared that it records audio, so macOS refused
   before it could even ask you.
 - **How it benefits you.** Speaking into a document works, and the first
@@ -48,7 +256,7 @@ meet while actually working, and one thing that never worked at all.
   editing is never reloaded under you.
 - **How it benefits you.** You read what you just pulled, where you were
   already looking.
-- **How to use it.** Settings ▸ Flow System ▸ Flow Guide Updates…
+- **How to use it.** Settings ▸ General ▸ Flow Guide Updates…
 
 ### A document that arrives from outside is marked new
 
@@ -69,8 +277,8 @@ meet while actually working, and one thing that never worked at all.
   sideways inside its own frame. A `>` quotation written over several lines
   now joins with one space, like a paragraph, instead of showing a gap at
   every line end.
-- **How it benefits you.** Documents you did not write — pasted tables,
-  quoted decisions — read as their author meant them to.
+- **How it benefits you.** Documents you did not write, such as pasted tables
+  and quoted decisions, read as their author meant them to.
 - **How to use it.** Nothing to set.
 
 ### Split Right and Combine Panes are ⌥⌘] and ⌥⌘[
@@ -85,9 +293,9 @@ meet while actually working, and one thing that never worked at all.
 
 ### The AI actions say more, and say it once
 
-- **What shipped.** The *Leaves this Mac* sheet lists every item it counts —
-  *2 items* now has two rows, your instruction and the document by its name —
-  and names the model the way the hover panel does (*Claude Opus 5*, not an
+- **What shipped.** The *Leaves this Mac* sheet lists every item it counts:
+  *2 items* now has two rows, your instruction and the document by its name.
+  It names the model the way the hover panel does (*Claude Opus 5*, not an
   identifier). Proofread's *N words* and the status bar's count are now the
   same number; the panel used to count the front matter too. Settings ▸ Cost
   carries one caption instead of two sets of numbers, and before your first
@@ -116,8 +324,8 @@ address it did not reach before.
   answer you can read, check against Settings, and show to anyone who asks,
   instead of a promise.
 - **How to use it.** Open [[Working With Flow]] and scroll to *What leaves
-  your Mac*. Every row names its switch; most of them are a domain switch in
-  Settings ▸ Models.
+  your Mac*. Every row names its switch; most of them are in Settings ▸
+  Models: one switch for this Mac, and for a cloud provider the key itself.
 
 ### Copy Diagnostics
 
@@ -175,8 +383,8 @@ you make outside it.
 
 ### Deleting a saved document asks first
 
-- **What shipped.** Delete confirms even for a saved document — *This moves
-  the document to the Trash. You can put it back from there.* — with one
+- **What shipped.** Delete confirms even for a saved document, saying *This
+  moves the document to the Trash. You can put it back from there.* above one
   **Move to Trash** button. A document with unsaved edits keeps its stronger
   Save / Discard prompt, and the two never read alike.
 - **How it benefits you.** Nothing is trashed on one click.
@@ -219,8 +427,8 @@ Flow.
 - **What shipped.** When a model's reply matches your text except for line
   endings, a trailing newline, or spaces at the ends of lines, the run says
   **no changes needed** instead of opening an empty review. Proofread,
-  Summarize, Translate and Expand now end with what actually moved — *Changed
-  2 words of 3,900* — counted from the proposal itself.
+  Summarize, Translate and Expand now end with what actually moved, *Changed
+  2 words of 3,900*, counted from the proposal itself.
 - **How it benefits you.** No empty review to inspect, and a small real
   correction in a long document is named rather than lost.
 - **How to use it.** Nothing to set. Read the sentence at the top of Review
@@ -228,13 +436,13 @@ Flow.
 
 ### Receipts read plainly
 
-- **What shipped.** A run on your Mac says *This run was free — it ran on
+- **What shipped.** A run on your Mac says *This run was free. It ran on
   your Mac*, and a measured zero reads `$0.00`. The Provider row names Flow
   Runtime, Ollama or LM Studio. A chart, summary, translation or table run
   reads *Evidence · Not scored*. A string of autosaves folds into one
   *Document saved N times* row that opens to the versions. After Approve &
   Save, the Receipts tab lands on the run that just happened, and the *Chart
-  ready — review…* banner closes with the review's decision.
+  ready* banner closes with the review's decision.
 - **How it benefits you.** The record reads the way you would say it, and the
   run you just approved is the one in front of you.
 - **How to use it.** Open a document's Receipts tab.
@@ -287,8 +495,8 @@ release brought.
 
 ### See the change before it becomes yours
 
-- **What shipped.** Seven AI actions — Proofread, Summarize, Translate, two
-  table conversions, Expand with Sources, and Visualize — each proposing an
+- **What shipped.** Seven AI actions: Proofread, Summarize, Translate, two
+  table conversions, Expand with Sources and Visualize. Each proposes an
   exact diff in **Review Changes**. You can approve it, reject it, or keep
   reviewing. Your document changes only when you say so, and a change that
   fails one of your guardrails stays on the record if you override it.

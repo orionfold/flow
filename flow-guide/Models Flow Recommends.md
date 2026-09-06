@@ -39,7 +39,7 @@ models:
 
 Flow's editor, reader, vault, search, tables and charts work with no model at
 all. **Agency does not.** Summarising a document, proposing an edit, checking
-a draft against your own guidance — all of it needs a model somewhere.
+a draft against your own guidance: all of it needs a model somewhere.
 
 There are three ways to give Flow one, and none of them is better than the
 others in general. Which is better depends on your Mac.
@@ -59,7 +59,7 @@ no extra cost. This is usually the cheapest option if you already have one.
 and fast, and the only route that costs money per run.
 
 You can have all three. Flow picks between them per task, and always tells you
-which it used — see [[Cost of This Quarter]] for what that looks like once
+which it used. See [[Cost of This Quarter]] for what that looks like once
 there is something to show.
 
 ## What "fits" means
@@ -71,7 +71,7 @@ on the box does not answer the question; the number does.
 A model's weights are not the whole cost. The context you give it, the
 helper's own buffers and the rest of macOS all need room too, which is why
 Flow will not propose a model whose weights alone take a large share of your
-memory. It also checks free disk space — a download that leaves your volume
+memory. It also checks free disk space, since a download that leaves your volume
 full is one you pay for twice.
 
 For its first general Agency engine, Flow considers only entries explicitly
@@ -116,13 +116,13 @@ reflects what is worth running today rather than what was worth running when
 you installed Flow.
 
 **Your edits are safe.** If you change this document, Flow does not overwrite
-it — it offers you the update and lets you decide, the same as any other
+it. It offers you the update and lets you decide, the same as any other
 document here.
 
 ## Downloading is not the last step
 
 A model that runs is not yet a model Flow knows how to use well. Once one is
-on your Mac, **measure it** — Flow times it against a fixed piece of work and
+on your Mac, **measure it**: Flow times it against a fixed piece of work and
 records the result. That measurement is what lets Flow choose the right model
 for each task instead of guessing from size.
 

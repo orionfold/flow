@@ -5,13 +5,13 @@ tags: [reference, charts, diagrams]
 
 # Visualization Gallery
 
-Every chart and diagram Flow draws in place, offline, from plain Markdown. Each entry says what source material gets you there — select that shape of text and run **Visualize** (⇧⌘V), or write the fence by hand. A ` ```chart ` body is readable YAML; a ` ```mermaid ` body renders on GitHub the same way.
+Every chart and diagram Flow draws in place, offline, from plain Markdown. Each entry says what source material gets you there: select that shape of text and run **Visualize** (⇧⌘V), or write the fence by hand. A ` ```chart ` body is readable YAML; a ` ```mermaid ` body renders on GitHub the same way.
 
 ## Comparison and ranking
 
 ### Bar chart
 
-Source: a two-column table — one category column, one number column — with up to a dozen rows. Name one row in `highlight` and it takes the accent while the rest recede.
+Source: a two-column table, one category column and one number column, with up to a dozen rows. Name one row in `highlight` and it takes the accent while the rest recede.
 
 ```chart
 chartType: Bar Chart
@@ -33,7 +33,7 @@ encodings:
 
 ### Grouped bar chart
 
-Source: a table with a category column, a group column and a value column — the same categories measured under two or three conditions, such as regions across years.
+Source: a table with a category column, a group column and a value column: the same categories measured under two or three conditions, such as regions across years.
 
 ```chart
 chartType: Grouped Bar Chart
@@ -59,7 +59,7 @@ encodings:
 
 ### Stacked bar chart
 
-Source: a table with a category column, a part column and a value column, where the parts of each category add up to a meaningful whole — cost by team and category, headcount by office and function.
+Source: a table with a category column, a part column and a value column, where the parts of each category add up to a meaningful whole: cost by team and category, headcount by office and function.
 
 ```chart
 chartType: Stacked Bar Chart
@@ -88,7 +88,7 @@ encodings:
 
 ### Lollipop chart
 
-Source: the same two-column table as a bar chart, but with many rows or long labels — the thin stem keeps a ranked list of twenty items legible.
+Source: the same two-column table as a bar chart, but with many rows or long labels: the thin stem keeps a ranked list of twenty items legible.
 
 ```chart
 chartType: Lollipop Chart
@@ -115,7 +115,7 @@ encodings:
 
 ### Bar table
 
-Source: a ranked table of names and one number, when you want the numbers read as a list as well as compared — a leaderboard, a vendor shortlist, a benchmark.
+Source: a ranked table of names and one number, when you want the numbers read as a list as well as compared: a leaderboard, a vendor shortlist, a benchmark.
 
 ```chart
 chartType: Bar Table
@@ -137,7 +137,7 @@ encodings:
 
 ### Pyramid chart
 
-Source: a table with an age band or tier column, a two-value side column and a count — a population pyramid, or any two cohorts mirrored around a centre.
+Source: a table with an age band or tier column, a two-value side column and a count: a population pyramid, or any two cohorts mirrored around a centre.
 
 ```chart
 chartType: Pyramid Chart
@@ -166,7 +166,7 @@ encodings:
 
 ### Bullet chart
 
-Source: a table of metrics, each with an actual value and a target — the quarterly scorecard, where every row is a measure against its goal.
+Source: a table of metrics, each with an actual value and a target: the quarterly scorecard, where every row is a measure against its goal.
 
 ```chart
 chartType: Bullet Chart
@@ -187,7 +187,7 @@ encodings:
 
 ### KPI card
 
-Source: a single line or a one-row table naming a metric, its current value and its target — the one number the page is about.
+Source: a single line or a one-row table naming a metric, its current value and its target: the one number the page is about.
 
 ```chart
 chartType: KPI Card
@@ -207,7 +207,7 @@ encodings:
 
 ### Line chart
 
-Source: a table with a date column and one or more numeric series columns, or a long table of date, series, value — weekly actives, monthly revenue, daily latency.
+Source: a table with a date column and one or more numeric series columns, or a long table of date, series, value: weekly actives, monthly revenue, daily latency.
 
 ```chart
 chartType: Line Chart
@@ -246,7 +246,7 @@ encodings:
 
 ### Area chart
 
-Source: a date column and one cumulative or volume measure — total storage, cumulative signups, cash balance — where the filled area reads as the amount.
+Source: a date column and one cumulative or volume measure, such as total storage, cumulative signups or cash balance, where the filled area reads as the amount.
 
 ```chart
 chartType: Area Chart
@@ -274,7 +274,7 @@ encodings:
 
 ### Streamgraph
 
-Source: a long table of date, category and value with several categories per date — share of attention, traffic by channel, tickets by product — when the story is how the mix shifts.
+Source: a long table of date, category and value with several categories per date, such as share of attention, traffic by channel or tickets by product, when the story is how the mix shifts.
 
 ```chart
 chartType: Streamgraph
@@ -315,7 +315,7 @@ encodings:
 
 ### Range area chart
 
-Source: a date column with a low and a high column, and optionally a central value — a forecast with its confidence band, a temperature range, a p10/p90 spread.
+Source: a date column with a low and a high column, and optionally a central value: a forecast with its confidence band, a temperature range, a p10/p90 spread.
 
 ```chart
 chartType: Range Area Chart
@@ -338,7 +338,7 @@ encodings:
 
 ### Sparkline
 
-Source: a short date-and-value table meant to sit beside a sentence — a week of latency, a month of signups — shown without axes as a glance.
+Source: a short date-and-value table meant to sit beside a sentence, such as a week of latency or a month of signups, shown without axes as a glance.
 
 ```chart
 chartType: Sparkline
@@ -367,7 +367,7 @@ encodings:
 
 ### Slope chart
 
-Source: a table with exactly two time points per item — before and after, this year and last — where the steepness of each line is the finding.
+Source: a table with exactly two time points per item, such as before and after or this year and last, where the steepness of each line is the finding.
 
 ```chart
 chartType: Slope Chart
@@ -393,7 +393,7 @@ encodings:
 
 ### Bump chart
 
-Source: a table of period, competitor and rank — the league table at each point in time — when the story is who passed whom.
+Source: a table of period, competitor and rank: the league table at each point in time, when the story is who passed whom.
 
 ```chart
 chartType: Bump Chart
@@ -431,11 +431,11 @@ encodings:
 
 ### Connected scatter plot
 
-Source: a table of period, x-measure and y-measure for one entity — price against volume by year, spend against growth by quarter — where the path shows the trajectory.
+Source: a table of period, x-measure and y-measure for one entity, such as price against volume by year or spend against growth by quarter, where the path shows the trajectory.
 
 ```chart
 chartType: Connected Scatter Plot
-title: Spend rose while payback shortened — efficiency improved every quarter
+title: Spend rose while payback shortened: efficiency improved every quarter
 subtitle: Marketing spend vs. CAC payback, quarterly
 source: Finance and growth
 data:
@@ -453,7 +453,7 @@ encodings:
 
 ### Candlestick chart
 
-Source: a table of date, open, high, low and close — market prices, but also any daily range with a start and an end, such as queue depth or token spend.
+Source: a table of date, open, high, low and close: market prices, but also any daily range with a start and an end, such as queue depth or token spend.
 
 ```chart
 chartType: Candlestick Chart
@@ -477,7 +477,7 @@ encodings:
 
 ### Calendar heatmap
 
-Source: a long table of date and count — commits, dictation minutes, support tickets per day — over months, when the weekly rhythm matters as much as the totals.
+Source: a long table of date and count, such as commits, dictation minutes or support tickets per day, over months, when the weekly rhythm matters as much as the totals.
 
 ```chart
 chartType: Calendar Heatmap
@@ -575,7 +575,7 @@ encodings:
 
 ### Waterfall chart
 
-Source: a table of named steps and signed amounts, from an opening figure through additions and subtractions to a closing one — a revenue bridge, a headcount reconciliation.
+Source: a table of named steps and signed amounts, from an opening figure through additions and subtractions to a closing one: a revenue bridge, a headcount reconciliation.
 
 ```chart
 chartType: Waterfall Chart
@@ -597,7 +597,7 @@ encodings:
 
 ### Pie chart
 
-Source: a short table of parts and their share — five or fewer slices that add to a whole, such as revenue by segment or time by activity.
+Source: a short table of parts and their share: five or fewer slices that add to a whole, such as revenue by segment or time by activity.
 
 ```chart
 chartType: Pie Chart
@@ -638,7 +638,7 @@ encodings:
 
 ### Rose chart
 
-Source: a table of cyclical categories and a magnitude — hours of the day, months, compass directions — where a polar layout shows the cycle.
+Source: a table of cyclical categories and a magnitude, such as hours of the day, months or compass directions, where a polar layout shows the cycle.
 
 ```chart
 chartType: Rose Chart
@@ -661,7 +661,7 @@ encodings:
 
 ### Radar chart
 
-Source: a table of criteria, option and score — a vendor evaluation, a skills matrix — with two or three options scored on five to eight axes.
+Source: a table of criteria, option and score, such as a vendor evaluation or a skills matrix, with two or three options scored on five to eight axes.
 
 ```chart
 chartType: Radar Chart
@@ -690,7 +690,7 @@ encodings:
 
 ### Gantt chart
 
-Source: a table of tasks with a start date, an end date and an owner or phase — a project plan or release schedule written as rows.
+Source: a table of tasks with a start date, an end date and an owner or phase: a project plan or release schedule written as rows.
 
 ```chart
 chartType: Gantt Chart
@@ -716,7 +716,7 @@ encodings:
 
 ### Scatter plot
 
-Source: a table with two numeric columns per row, and optionally a category and a size — accounts by seats and spend, models by latency and quality.
+Source: a table with two numeric columns per row, and optionally a category and a size: accounts by seats and spend, models by latency and quality.
 
 ```chart
 chartType: Scatter Plot
@@ -745,7 +745,7 @@ encodings:
 
 ### Regression
 
-Source: the same two numeric columns as a scatter, when you want the fitted trend drawn through them — ad spend against signups, effort against score.
+Source: the same two numeric columns as a scatter, when you want the fitted trend drawn through them: ad spend against signups, effort against score.
 
 ```chart
 chartType: Regression
@@ -771,7 +771,7 @@ encodings:
 
 ### Histogram
 
-Source: a single numeric column with many rows — response times, deal sizes, document lengths — which the chart bins for you.
+Source: a single numeric column with many rows, such as response times, deal sizes or document lengths, which the chart bins for you.
 
 ```chart
 chartType: Histogram
@@ -816,7 +816,7 @@ encodings:
 
 ### Density plot
 
-Source: one numeric column, optionally with a group column — the same data as a histogram, smoothed, when two groups need overlaying.
+Source: one numeric column, optionally with a group column: the same data as a histogram, smoothed, when two groups need overlaying.
 
 ```chart
 chartType: Density Plot
@@ -854,7 +854,7 @@ encodings:
 
 ### ECDF plot
 
-Source: one numeric column, optionally grouped — when the question is "what share finished within N seconds", read straight off the curve.
+Source: one numeric column, optionally grouped: when the question is "what share finished within N seconds", read straight off the curve.
 
 ```chart
 chartType: ECDF Plot
@@ -892,7 +892,7 @@ encodings:
 
 ### Boxplot
 
-Source: a category column and a numeric column with several rows per category — deal size by segment, score by cohort — summarised as median, quartiles and outliers.
+Source: a category column and a numeric column with several rows per category, such as deal size by segment or score by cohort, summarised as median, quartiles and outliers.
 
 ```chart
 chartType: Boxplot
@@ -932,7 +932,7 @@ encodings:
 
 ### Violin plot
 
-Source: the same category-and-value table as a boxplot, when the shape of each distribution — bimodal, skewed — is the point.
+Source: the same category-and-value table as a boxplot, when the shape of each distribution, such as bimodal or skewed, is the point.
 
 ```chart
 chartType: Violin Plot
@@ -1004,7 +1004,7 @@ encodings:
 
 ### Ranged dot plot
 
-Source: a table with a category and two values per row — before and after, min and max, this year and last — drawn as a pair of dots joined by a line.
+Source: a table with a category and two values per row, such as before and after, min and max or this year and last, drawn as a pair of dots joined by a line.
 
 ```chart
 chartType: Ranged Dot Plot
@@ -1029,7 +1029,7 @@ encodings:
 
 ### Heatmap
 
-Source: a table with two category columns and a value — hour by weekday, feature by segment, team by month — where colour carries the number.
+Source: a table with two category columns and a value, such as hour by weekday, feature by segment or team by month, where colour carries the number.
 
 ```chart
 chartType: Heatmap
@@ -1073,7 +1073,7 @@ encodings:
 
 ### Flowchart
 
-Source: a numbered list of steps with decisions written as questions — a process, an approval path, a troubleshooting guide.
+Source: a numbered list of steps with decisions written as questions: a process, an approval path, a troubleshooting guide.
 
 ```mermaid
 flowchart TD
@@ -1093,7 +1093,7 @@ flowchart TD
 
 ### Sequence diagram
 
-Source: prose or a list describing who sends what to whom, in order — an integration, a support escalation, an approval exchange between people or systems.
+Source: prose or a list describing who sends what to whom, in order: an integration, a support escalation, an approval exchange between people or systems.
 
 ```mermaid
 sequenceDiagram
@@ -1114,12 +1114,12 @@ sequenceDiagram
   else Fails to render
     F-->>U: Notice with the renderer's reason
   end
-  Note over F,K: No API key read — the run never left the Mac
+  Note over F,K: No API key read: the run never left the Mac
 ```
 
 ### State diagram
 
-Source: a list of states and the events that move between them — a document lifecycle, an order status, a subscription.
+Source: a list of states and the events that move between them: a document lifecycle, an order status, a subscription.
 
 ```mermaid
 stateDiagram-v2
@@ -1141,7 +1141,7 @@ stateDiagram-v2
 
 ### Class diagram
 
-Source: a description of the nouns in a system and how they relate — the data model behind a product, with fields and one-to-many relationships.
+Source: a description of the nouns in a system and how they relate: the data model behind a product, with fields and one-to-many relationships.
 
 ```mermaid
 classDiagram
@@ -1181,7 +1181,7 @@ classDiagram
 
 ### Entity-relationship diagram
 
-Source: a list of tables with their keys and how rows reference one another — a database schema, or a CRM's objects.
+Source: a list of tables with their keys and how rows reference one another: a database schema, or a CRM's objects.
 
 ```mermaid
 erDiagram
@@ -1224,7 +1224,7 @@ erDiagram
 
 ### Gantt (Mermaid)
 
-Source: a list of tasks with durations and dependencies, in sections — a project plan written as prose, when you want milestones and "after X" dependencies rather than fixed dates.
+Source: a list of tasks with durations and dependencies, in sections: a project plan written as prose, when you want milestones and "after X" dependencies rather than fixed dates.
 
 ```mermaid
 gantt
@@ -1247,7 +1247,7 @@ gantt
 
 ### User journey
 
-Source: a walkthrough of what a person does, step by step, with how each step felt — research synthesis, a support transcript, an onboarding review.
+Source: a walkthrough of what a person does, step by step, with how each step felt: research synthesis, a support transcript, an onboarding review.
 
 ```mermaid
 journey
@@ -1267,7 +1267,7 @@ journey
 
 ### Pie (Mermaid)
 
-Source: a short list of labels and amounts — the same material as a chart pie, when you want it inside a diagram-only document or rendered on GitHub.
+Source: a short list of labels and amounts: the same material as a chart pie, when you want it inside a diagram-only document or rendered on GitHub.
 
 ```mermaid
 pie showData
@@ -1280,7 +1280,7 @@ pie showData
 
 ### Quadrant chart
 
-Source: a list of items each rated on two axes — effort and impact, risk and reward, urgency and importance — the prioritisation matrix.
+Source: a list of items each rated on two axes, such as effort and impact, risk and reward or urgency and importance, the prioritisation matrix.
 
 ```mermaid
 quadrantChart
@@ -1302,7 +1302,7 @@ quadrantChart
 
 ### Timeline
 
-Source: a list of dated events — a company history, a release log, an incident's sequence.
+Source: a list of dated events: a company history, a release log, an incident's sequence.
 
 ```mermaid
 timeline
@@ -1317,7 +1317,7 @@ timeline
 
 ### Mindmap
 
-Source: an outline — a nested bulleted list of topics and subtopics — such as meeting notes, a brainstorm, or a document's structure.
+Source: an outline, a nested bulleted list of topics and subtopics, such as meeting notes, a brainstorm, or a document's structure.
 
 ```mermaid
 mindmap
@@ -1340,7 +1340,7 @@ mindmap
 
 ### Git graph
 
-Source: a description of branches, merges and releases — a release process, or how a feature landed.
+Source: a description of branches, merges and releases: a release process, or how a feature landed.
 
 ```mermaid
 gitGraph
@@ -1359,7 +1359,7 @@ gitGraph
 
 ### Sankey diagram
 
-Source: a table of source, target and amount — where traffic, money or people flow from one stage to the next, such as a funnel or an energy balance.
+Source: a table of source, target and amount: where traffic, money or people flow from one stage to the next, such as a funnel or an energy balance.
 
 ```mermaid
 sankey-beta
@@ -1376,7 +1376,7 @@ Upgraded to Pro,Upgraded to Team,96
 
 ### XY chart (Mermaid)
 
-Source: a date-and-value table when the document must render on GitHub as well as in Flow — a bar-plus-line over months without the chart fence.
+Source: a date-and-value table when the document must render on GitHub as well as in Flow: a bar-plus-line over months without the chart fence.
 
 ```mermaid
 xychart-beta
@@ -1389,7 +1389,7 @@ xychart-beta
 
 ### Block diagram
 
-Source: a description of components and how they sit beside and connect to each other — an architecture sketch, a deployment layout.
+Source: a description of components and how they sit beside and connect to each other: an architecture sketch, a deployment layout.
 
 ```mermaid
 block-beta
@@ -1407,7 +1407,7 @@ block-beta
 
 ### Requirement diagram
 
-Source: a list of requirements with identifiers, risk and verification method, and which components satisfy them — a compliance or safety document.
+Source: a list of requirements with identifiers, risk and verification method, and which components satisfy them: a compliance or safety document.
 
 ```mermaid
 requirementDiagram
@@ -1438,11 +1438,11 @@ requirementDiagram
 
 ### C4 context diagram
 
-Source: a paragraph naming the system, the people who use it, and the external systems it talks to — the top of an architecture document.
+Source: a paragraph naming the system, the people who use it, and the external systems it talks to: the top of an architecture document.
 
 ```mermaid
 C4Context
-  title Flow — system context
+  title Flow: system context
   Person(writer, "Writer", "Conducts documents with AI agency built in")
   Person(reviewer, "Reviewer", "Approves or discards proposed changes")
   System(flow, "Orionfold Flow", "Native Mac app: editor, Agency, receipts")
@@ -1458,7 +1458,7 @@ C4Context
 
 ### Kanban board
 
-Source: a task list grouped by status — the sprint board as columns of cards with owners.
+Source: a task list grouped by status: the sprint board as columns of cards with owners.
 
 ```mermaid
 kanban
@@ -1476,7 +1476,7 @@ kanban
 
 ### Architecture diagram
 
-Source: a list of services, the stores they use and the edges between them, grouped by where they run — a deployment diagram.
+Source: a list of services, the stores they use and the edges between them, grouped by where they run: a deployment diagram.
 
 ```mermaid
 architecture-beta
@@ -1495,7 +1495,7 @@ architecture-beta
 
 ### Packet diagram
 
-Source: a field-by-field layout of a binary record or header, with bit offsets — a protocol note or a file-format spec.
+Source: a field-by-field layout of a binary record or header, with bit offsets: a protocol note or a file-format spec.
 
 ```mermaid
 packet-beta

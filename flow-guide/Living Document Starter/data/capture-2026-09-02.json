@@ -1,0 +1,29 @@
+{
+  "capturedAt": "2026-09-03T05:12:40.776Z",
+  "source": "Starter Refresh.md over Profile.md, the gather definition for this folder",
+  "summary": [
+    {
+      "metric": "Items",
+      "value": 3
+    },
+    {
+      "metric": "Open items",
+      "value": 2
+    },
+    {
+      "metric": "Total amount",
+      "value": 400,
+      "goal": 500
+    }
+  ],
+  "byGroup": [
+    {
+      "group": "A",
+      "amount": 200
+    },
+    {
+      "group": "B",
+      "amount": 200
+    }
+  ]
+}

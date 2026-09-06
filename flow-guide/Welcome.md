@@ -5,7 +5,7 @@ tags: [flow, start-here]
 
 # Welcome to Flow
 
-Flow works with ordinary Markdown, and this folder — the Flow Guide — is yours
+Flow works with ordinary Markdown, and this folder, the Flow Guide, is yours
 to edit, rename, and delete from.
 
 ![A pit crew turning a car around while the wall reads the numbers](assets/pit-stop.jpeg)
@@ -20,6 +20,10 @@ to edit, rename, and delete from.
   full. Copy one and edit over it.
 - [[Visualization Gallery]] is every chart and diagram Flow draws in place,
   offline, from plain Markdown.
+- [[Night Shift]] is the moon in the title bar: Flow keeping your documents
+  current overnight. Six folders here, a stock portfolio, a tax year, a
+  household budget, a job search, a competitor watch and a team's status, are
+  living documents ready to make your own.
 
 ## Your routes
 
@@ -27,7 +31,7 @@ to edit, rename, and delete from.
   without closing this document.
 - **Settings ▸ Models** is where you decide which models and providers Flow may
   use, and what each one costs.
-- **Settings ▸ Flow System** is where this Guide lives, and how Flow updates.
+- **Settings ▸ General** is where your plan, this Guide, updates and what leaves your Mac live.
 
 ## Keep working
 

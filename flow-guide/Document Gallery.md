@@ -7,7 +7,7 @@ tags: [reference, templates, start-here]
 
 Twenty-five documents a knowledge worker actually has to produce, each one
 written out in full in this folder. Every entry says **what the document is for**, **what
-shape it takes**, and **which one here to open** — copy it, delete what does not
+shape it takes**, and **which one here to open**: copy it, delete what does not
 apply, and you have a starting point rather than a blank page.
 
 The companion to this page is [[Visualization Gallery]], which does the same for
@@ -21,7 +21,7 @@ charts and diagrams.
 
 ### The annual review
 
-**For:** the full year — what shipped, what it cost, what broke, what was
+**For:** the full year. What shipped, what it cost, what broke, what was
 learned. Read by a board, a team, or your future self.
 **Shape:** executive summary first, then one section per operating area, then
 the misses stated as plainly as the wins. Long-form prose carrying an image.
@@ -29,7 +29,7 @@ the misses stated as plainly as the wins. Long-form prose carrying an image.
 
 ### The quarterly business review
 
-**For:** a narrower period and a sharper question — usually "what changed, and
+**For:** a narrower period and a sharper question. Usually "what changed, and
 what are we doing about it".
 **Shape:** one finding up front, evidence in charts and a metrics table, then
 actions with owners. Short enough to read in one sitting.
@@ -51,7 +51,7 @@ so the arithmetic can be checked, and an explicit list of what is *not* counted.
 
 ### The operating handbook
 
-**For:** how a team works — the rhythms, the rules, the things a new joiner
+**For:** how a team works. The rhythms, the rules, the things a new joiner
 would otherwise learn by getting them wrong.
 **Shape:** short sections, heavy on tables, written to be skimmed and returned to.
 **Open:** [[Operating Notes — How We Work]]
@@ -68,7 +68,7 @@ that includes the *weak* evidence, and the condition that got agreement.
 
 ### The investment memo
 
-**For:** diligence on a company — the case for, the case against, and what you
+**For:** diligence on a company. The case for, the case against, and what you
 would need to believe.
 **Shape:** thesis, market, product, team, terms, risks. Tables for anything
 comparable; prose for judgment.
@@ -83,7 +83,7 @@ a clearly-labelled hypothesis where the evidence runs out.
 
 ### The technical evaluation
 
-**For:** a bake-off — several options, one recommendation, the losing options
+**For:** a bake-off. Several options, one recommendation, the losing options
 kept in so the reasoning survives.
 **Shape:** criteria stated before results, a results table, and a
 recommendation that names what would change it.
@@ -100,7 +100,7 @@ with counts, verbatim quotes, and an explicit "what we are *not* concluding".
 
 ### Field notes
 
-**For:** the raw material — what you saw and heard, before it is tidied into
+**For:** the raw material. What you saw and heard, before it is tidied into
 findings.
 **Shape:** chronological, lightly organised, honest about what is observation
 and what is inference.
@@ -117,7 +117,7 @@ team, and commercials. Every number a table.
 
 ### The content plan
 
-**For:** a quarter of publishing — what, when, for whom, and why each piece
+**For:** a quarter of publishing. What, when, for whom, and why each piece
 exists.
 **Shape:** a calendar table, a piece-by-piece breakdown, and the measure of
 whether it worked.
@@ -182,7 +182,7 @@ return side by side, and what it implies for next quarter's budget.
 
 ### The annual report
 
-**For:** shareholders, once a year — the numbers and the judgment behind them.
+**For:** shareholders, once a year. The numbers and the judgment behind them.
 **Shape:** three-year table, what worked, what did not at the same level of
 detail, and next year's commitments as a numbered list.
 **Open:** [[Annual Report — Shareholder Letter]]
@@ -200,7 +200,7 @@ short section on how you actually work.
 
 **For:** a trip with bookings, a budget, and things you will forget.
 **Shape:** a route diagram, a booking table, a budget chart, and checklists per
-stop — plus what you learned last time.
+stop, plus what you learned last time.
 **Open:** [[Trip Planner — Portugal, October]]
 
 ## Reference
@@ -222,7 +222,7 @@ there and a rendered example.
 
 None of these are special. They are ordinary Markdown files, so:
 
-- **Duplicate one** and edit over it — the structure is the value, not the words.
+- **Duplicate one** and edit over it: the structure is the value, not the words.
 - **Keep the tables.** Most of what makes these readable is that comparable
   things sit in a grid instead of a paragraph.
 - **Delete the sections that do not apply.** A short honest document beats a
