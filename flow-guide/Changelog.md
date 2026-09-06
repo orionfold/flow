@@ -13,6 +13,7 @@ release behind can still read what the next one brought.
 
 | Release | Build | Date | In a sentence |
 | --- | --- | --- | --- |
+| 1.6.1 | 1982 | 6 September 2026 | The first day with the Night Shift: pause and stop a run, a Briefing that reads true the morning after, and a lighter night |
 | 1.6 | 1899 | 5 September 2026 | The Night Shift: living documents that keep themselves current, and one Morning Briefing |
 | 1.5.6 | 1563 | 29 August 2026 | The first week, second pass: the small things, and dictation that can hear you |
 | 1.5.5 | 1526 | 29 August 2026 | Know what Flow does with your network, and be able to show it |
@@ -21,6 +22,90 @@ release behind can still read what the next one brought.
 | 1.5.2 | 1414 | 27 August 2026 | A pressable Update ready button |
 | 1.5.1 | 1404 | 27 August 2026 | The first Flow that arrived through Flow itself |
 | 1.5 | 1382 | 26 August 2026 | The launch |
+
+## Flow 1.6.1 · build 1982 · 6 September 2026
+
+This release is the first day of using the Night Shift for real. A run
+can be held and ended from the moon and looks held while it is; the
+Morning Briefing reads true the morning after and says less when a page
+changed throughout; a night over large files no longer fills memory, and
+the model it used is released when it is done. Around that, the small
+things a first day finds: a shift's last line and a refresh's are two
+lines, a saved version says who saved it, expandable rows in Settings open
+from their title, a new tab lands first, and a Candlestick chart draws its
+days.
+
+### Pause and stop a running shift from the moon
+
+- **What shipped.** While a shift runs, the moon's popup offers *Pause
+  Run* and *Stop Run* in place of *Pause tonight*. Pause holds the shift
+  after the document it is on: the moon and the popup say *Paused*, that
+  row shows a pause mark, and the clock stands at the working time it
+  reached. *Resume Run* carries on from there. Stop ends the shift after
+  that document, keeping every change that landed: the moon says
+  *Stopping* and names the document, both buttons rest, and the Briefing
+  says which documents and folders the shift did not reach. A stopped
+  shift's Briefing, receipt and *Last shift* line count only what it
+  reached, as *Stopped at* the moment it ended.
+- **How it benefits you.** A shift that starts at the wrong moment costs
+  one click and nothing half-written.
+- **How to use it.** Click the moon while a shift runs. *Pause tonight*
+  returns when the shift ends.
+
+### The Morning Briefing reads true the morning after
+
+- **What shipped.** A run by day leads with its day, *Saturday at
+  11:30 PM*, and *Still to review* says *Flow made on Saturday*, so the
+  page is right whenever you read it. When a watched page or file has most
+  of its text rewritten, the Briefing says so in one sentence with the
+  line counts and leaves both versions to the run's snapshots; a targeted
+  change still shows its exact lines. The night receipt's tiles count in
+  the right words: *1 open folder swept*, *7 data folders inventoried*.
+- **How it benefits you.** The Briefing says what happened, not a diff to
+  decode or a "today" that was yesterday.
+- **How to use it.** Nothing to do. Open the Briefing from the moon, from
+  Ideas, or from the Flow Guide folder.
+
+### A shift's last line and a refresh's are two lines
+
+- **What shipped.** *Last shift* on the moon's popup and in Settings ▸
+  Night Shift names the last shift. A document redrawn during the day, as
+  its data changed, shows as its own *Last refresh* line beneath it, only
+  while it is newer than the shift and did something, and it appears the
+  moment the refresh ends.
+- **How it benefits you.** A redraw at noon no longer erases what the
+  night did from the place you look for it.
+- **How to use it.** Hover or click the moon.
+
+### A lighter night: flat memory, and the model let go
+
+- **What shipped.** A shift over a folder holding large files, such as
+  model weights, exports or media, used to grow Flow's memory by the size
+  of those files; it now stays flat while it reads them. The local model
+  the Night Shift served inside Flow is released when the shift ends, and
+  by day a model nothing has asked for in fifteen minutes is released too;
+  the next request loads it again.
+- **How it benefits you.** A Mac that ran the night is the same Mac in the
+  morning.
+- **How to use it.** Nothing to do.
+
+### The small things of a first day
+
+- **What shipped.** A version you saved yourself, a revert or a restore,
+  reads *Saved by You* in History and Receipts. Expandable rows in
+  Settings, such as *On this Mac*, *Cloud* and *Manage models*, open from
+  their title as well as their chevron, and *On this Mac* lists Flow
+  Runtime first. A provider that cannot serve says what to do: *Enabled,
+  but LM Studio is not running. Open it and load a model.* Settings ▸
+  Documents no longer says *Indexing* forever after a cut-short refresh.
+  A document you open, or a tab you move, lands as the first tab. The
+  Night Shift line under a title is one line that begins with the moon,
+  with a pencil into the Jobs Editor, and the Jobs Editor's title fits one
+  row. A Candlestick chart spreads its sessions across their dates again.
+  Provider order no longer lists Claude Code and Codex CLI until the route
+  they promise ships.
+- **How it benefits you.** Fewer things to work around on the second day.
+- **How to use it.** Nothing to do.
 
 ## Flow 1.6 · build 1899 · 5 September 2026
 
