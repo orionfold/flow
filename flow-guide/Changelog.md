@@ -13,6 +13,7 @@ release behind can still read what the next one brought.
 
 | Release | Build | Date | In a sentence |
 | --- | --- | --- | --- |
+| 1.6.2 | 1994 | 6 September 2026 | Every number about tokens and money is one number, read from your documents' own receipts — the night's work counts where the day's does |
 | 1.6.1 | 1982 | 6 September 2026 | The first day with the Night Shift: pause and stop a run, a Briefing that reads true the morning after, and a lighter night |
 | 1.6 | 1899 | 5 September 2026 | The Night Shift: living documents that keep themselves current, and one Morning Briefing |
 | 1.5.6 | 1563 | 29 August 2026 | The first week, second pass: the small things, and dictation that can hear you |
@@ -22,6 +23,39 @@ release behind can still read what the next one brought.
 | 1.5.2 | 1414 | 27 August 2026 | A pressable Update ready button |
 | 1.5.1 | 1404 | 27 August 2026 | The first Flow that arrived through Flow itself |
 | 1.5 | 1382 | 26 August 2026 | The launch |
+
+## Flow 1.6.2 · build 1994 · 6 September 2026
+
+One change, in the place you look to see what Flow is using. Until now the
+title-bar readout and its popup counted the day's runs but not the night's,
+and the Morning Briefing counted the night's from a different place, so
+the two could disagree. Now every run Flow makes — by day or by night, on
+a model on this Mac or a hosted one, whether or not you kept its reply —
+leaves one usage record on the document it ran on, and every number Flow
+shows about tokens and money is read from those records.
+
+### One number for what Flow used
+
+- **What shipped.** The readout's *this session* figures, the popup's
+  totals and the Briefing's *billed* line are all read from your
+  documents' own receipts. Each run writes one usage record when it
+  ends: a hosted run records what the provider charged, whether or not
+  you kept its reply; a run on this Mac records its token counts at no
+  charge. The popup's totals now read *Tokens in open folders* and
+  *Spent in open folders*, because that is what they count — every run
+  recorded in the folders you have open — and they read *counting…* for
+  the moment after launch while Flow reads the receipts.
+- **How it benefits you.** What the night used shows where what the day
+  used shows, and the number in the Briefing is the number in the popup:
+  there is no second tally to drift. A run you declined still counts what
+  the provider billed, so the money figure is the honest one. And a
+  document's Receipts pane now carries its runs' usage beside its
+  changes, so the cost of a page is on the page.
+- **How to use it.** Hover the readout in the title bar for the popup.
+  *Tokens this session* and *Spent this session* count from this launch;
+  *Tokens in open folders* and *Spent in open folders* count every run in
+  the folders open now — close a folder and its runs leave the total,
+  open it again and they return. Nothing to set up.
 
 ## Flow 1.6.1 · build 1982 · 6 September 2026
 
