@@ -12,8 +12,7 @@ milestones:
 ---
 # Plan
 
-The quarter's milestones, one line each. [[Team Status]] draws its timeline
-from this list every night; the owners' weekly updates live in `updates/`.
+The quarter's milestones, one line each. [[Team Status]] draws its timeline from this list every night; the owners' weekly updates live in `updates/`.
 
 | Field | What it is |
 | --- | --- |
@@ -22,5 +21,4 @@ from this list every night; the owners' weekly updates live in `updates/`.
 | `start`, `end` | The dates the timeline draws between. |
 | `state` | `planned`, `on track`, `at risk`, `blocked`, `done`. The timeline colours by it. |
 
-Edit the dates here when the plan changes, never in the dashboard: the
-dashboard is redrawn from this file.
+Edit the dates here when the plan changes, never in the dashboard: the dashboard is redrawn from this file.

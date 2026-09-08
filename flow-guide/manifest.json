@@ -121,7 +121,7 @@
       "path" : "assets/strategy-wall.jpeg"
     }
   ],
-  "contentVersion" : "1.11.3",
+  "contentVersion" : "1.11.5",
   "documents" : [
     {
       "bytes" : 13048,
@@ -130,47 +130,47 @@
     },
     {
       "bytes" : 11070,
-      "contentHash" : "sha256:d9dabdf9da3615b6b1d772aaec2be4d7b71b3f3cee55d0025b8a6136285e35d5",
+      "contentHash" : "sha256:f2eeeb87da10bf9d896f7e384b782f25e90531adad0bc148d677e5690d7766bf",
       "path" : "Annual Report — Shareholder Letter.md"
     },
     {
-      "bytes" : 1918,
-      "contentHash" : "sha256:f67b8473b4b1f760e1056a13fc410ab78114e4771330477963a756cb9d1001ca",
+      "bytes" : 1907,
+      "contentHash" : "sha256:d562f42a3d32e86960b52178593164efe248a3eef19051adb18170e6f798e3fd",
       "path" : "Board Update — Q4 Outlook.md"
     },
     {
-      "bytes" : 38195,
-      "contentHash" : "sha256:b2cd198f2ef5f496a4cdfafa3841bbd08da3ddf3ac877ccc7b21aaeac5b9b754",
+      "bytes" : 37515,
+      "contentHash" : "sha256:fee6de2448177368cd52c7cffbbfe2a7a9140f5db67fcc8ffbb7ac86600e6584",
       "path" : "Changelog.md"
     },
     {
-      "bytes" : 2378,
-      "contentHash" : "sha256:ca1f1bdf660943ea17b56f7da65652f0a31f12ff4ae66b2aa17171cae94d5c2c",
+      "bytes" : 2368,
+      "contentHash" : "sha256:fe990fd9d02ed1ec426d6a1057df576e2526307fb9f2da12eb68ee734320425f",
       "path" : "Client Proposal — Meridian Retail.md"
     },
     {
-      "bytes" : 4641,
-      "contentHash" : "sha256:d281d01727dc4fa4560fb8b5b8b074edbd6601f9d7fb9a58e9a02c3bf3f028ee",
+      "bytes" : 4621,
+      "contentHash" : "sha256:da090e7c959dbdbd205c531b1afbe4e840b4031650ffdbac7306b3256a576b13",
       "path" : "Competitor Watch/Competitor Watch.md"
     },
     {
-      "bytes" : 3075,
-      "contentHash" : "sha256:847fc9aedbc3bef94df0617eecd2982915b1eb94ec5b6cd1d1a413ade2540e35",
+      "bytes" : 3067,
+      "contentHash" : "sha256:7fe3f801f183e55b2dec0385727f553d9e239d7b12381026e7ca20ab4ce8dcd6",
       "path" : "Competitor Watch/Competitors.md"
     },
     {
       "bytes" : 1065,
-      "contentHash" : "sha256:a00a48fc33fa3b9660d1b68f8c781c0a1ab94860c4c4e5f817769043bdc2f313",
+      "contentHash" : "sha256:00bcf719351e15419cf8e30065e55a10224601bd903c4fdb666db274db531738",
       "path" : "Competitor Watch/captures/2026-09-02 — Pricing pages, first read.md"
     },
     {
-      "bytes" : 2148,
-      "contentHash" : "sha256:49264c4791c64ba06deeb57e3700bcd4bbd2d797c1345153455a2e09f178152f",
+      "bytes" : 2140,
+      "contentHash" : "sha256:851170fc6a913753515f72297ee016a80f6bcc53df7aca70922f591b1ff71a5f",
       "path" : "Content Strategy — Q4.md"
     },
     {
-      "bytes" : 2584,
-      "contentHash" : "sha256:1659f8cdeb2cd02b5dc7f9eef0867d3618db332b5a9ce9d77be3fd25b9ab9d59",
+      "bytes" : 2578,
+      "contentHash" : "sha256:0d1662e7aa21ed60184b14807db41f2010d102cc7e692dde46bf2296cdea1491",
       "path" : "Cost of This Quarter.md"
     },
     {
@@ -179,238 +179,238 @@
       "path" : "Curated Model Comparisons.md"
     },
     {
-      "bytes" : 2303,
-      "contentHash" : "sha256:2bd55e894cd8b40cfe2c2b855a6fd1d5b9e4bb8232db1d166053cae58b545fb3",
+      "bytes" : 2297,
+      "contentHash" : "sha256:e06e2c48300e52d07285173e209c264e67248f598435ddb5bef16de2ad89f9ea",
       "path" : "Customer Interviews.md"
     },
     {
-      "bytes" : 8381,
-      "contentHash" : "sha256:bbc03c8c6e87a6979867dabf7d317f23b53a5768f100408a354db26d6efd6880",
+      "bytes" : 8375,
+      "contentHash" : "sha256:29d69fa845bdc4028cbc452ec692aa164836cdd784352fa228829eb1ad3ffb24",
       "path" : "Document Gallery.md"
     },
     {
-      "bytes" : 2337,
-      "contentHash" : "sha256:cf8a99eef392956e8586b589eb06e316b5dd16cffbd4ebf820b144e6e967a7cd",
+      "bytes" : 2333,
+      "contentHash" : "sha256:35662e89fc9f4daa0a14dff96726226916ec365084836c3b00b62a02b128d288",
       "path" : "Field Notes — Customer Visits.md"
     },
     {
-      "bytes" : 1615,
-      "contentHash" : "sha256:2e4fb425a2ad0b340a33cbcd939cd9f1ebcac1dfd7564b7a935148247a880b17",
+      "bytes" : 1613,
+      "contentHash" : "sha256:3fa88099a7030259da77c0a7d9d60ed9cc47ce07f46766290420a46a9fd7cc86",
       "path" : "Hiring Plan — Engineering.md"
     },
     {
-      "bytes" : 3703,
-      "contentHash" : "sha256:1bbc13f0967bcb58ff925607c989631880e34fe95a039ce9bcdf878835e7a818",
+      "bytes" : 3693,
+      "contentHash" : "sha256:7b6491256c911675356a5fd6e93fe5f707ad66664a0873125bfa4c0b4e5919da",
       "path" : "Household Budget/Budget Profile.md"
     },
     {
       "bytes" : 6394,
-      "contentHash" : "sha256:2ceb32807b31e9a8f7d28c7bacae0d18f893345451bc281d60f8506272209173",
+      "contentHash" : "sha256:f2e7d74cf92423353a45aa19c5e7f07943088312ce55516cc3078d01133cc308",
       "path" : "Household Budget/Budget Refresh.md"
     },
     {
-      "bytes" : 9477,
-      "contentHash" : "sha256:e8171b0802d4930c6b8923933dc943ddbace9706b852c859416a257e72f6498a",
+      "bytes" : 9447,
+      "contentHash" : "sha256:d4a454718538497a94c108ea158db74a11c0ada8009bcd43800c0882b2ae764e",
       "path" : "Household Budget/Household Budget.md"
     },
     {
-      "bytes" : 3384,
-      "contentHash" : "sha256:2316ead93b2ab8432062d05dd4e587d7391733c81b1b0c7e7aa0228ca5b6042b",
+      "bytes" : 3368,
+      "contentHash" : "sha256:4567315de20b4fb3ad55a4b8ef6a9159adea4b88f3b7ac860ae67fe8162d3063",
       "path" : "How We Decided.md"
     },
     {
-      "bytes" : 2560,
-      "contentHash" : "sha256:826684a30534d2fdaa1ce33d5500379d9b7038c04d08fc889e3992d1a6867f33",
+      "bytes" : 2524,
+      "contentHash" : "sha256:dc00065b12774af7eb207f94ad7a7395ac4fe78364f513f36c038bc708cc2b96",
       "path" : "Investment Memo — Larkspur Robotics.md"
     },
     {
-      "bytes" : 3333,
-      "contentHash" : "sha256:c41d09d874d85f8102d43e5db3598562a96b24c0afa77ca2acae19a422ae4d47",
+      "bytes" : 3325,
+      "contentHash" : "sha256:b75a9910189f2ebc963317c504d3e636e36c39faa70b6e7cda4e6028cfb5ce21",
       "path" : "Job Search/Applications.md"
     },
     {
-      "bytes" : 5558,
-      "contentHash" : "sha256:b696c02222572540322c5d10c006af5a9186060d000b241a17396f286576fbd2",
+      "bytes" : 5543,
+      "contentHash" : "sha256:15c174304bb868fc08330d0dfefe67b2f95f0b6d0b1d94d4e714ab754f421f51",
       "path" : "Job Search/Job Search.md"
     },
     {
       "bytes" : 920,
-      "contentHash" : "sha256:f28669eba612fe042ea39cddfb9c824389d3f1b9d20f98562516984811055404",
+      "contentHash" : "sha256:c174917624062cfca7e003a4363fa810cb58a3452580609cbc1cafd7a260a6d0",
       "path" : "Job Search/resumes/Resume — Base Version.md"
     },
     {
-      "bytes" : 7552,
-      "contentHash" : "sha256:8bf7e7624e382de3ad200547c86b74ad3e5a333ddd9eae0f6ba892acc307f002",
+      "bytes" : 7521,
+      "contentHash" : "sha256:c4318cdd5cf503b5bccd988dabb193f9292602560c61f5cbc49fa9f6c2e4c44e",
       "path" : "Living Document Starter/Living Document.md"
     },
     {
-      "bytes" : 1616,
-      "contentHash" : "sha256:a3d3777e80388d97f751974ef13321bf9809054b40a39dc2550c4c63b17623ac",
+      "bytes" : 1610,
+      "contentHash" : "sha256:4f15a91ba1c10566962b7db1e56f5d298fdd5d3740ddbb1669df645d1c44fcec",
       "path" : "Living Document Starter/Profile.md"
     },
     {
-      "bytes" : 4329,
-      "contentHash" : "sha256:c689c58f2bd6d12a572ec24b7c2de70dc7fbab83aee63c991b8b60ab11705387",
+      "bytes" : 4321,
+      "contentHash" : "sha256:3990ed81aadc37d97868c306c69caf519e5d9135fb5d38a38fb2aae6749d1188",
       "path" : "Living Document Starter/Starter Refresh.md"
     },
     {
       "bytes" : 687,
-      "contentHash" : "sha256:8742c9f9cb40e632b81e2ce3a7075017f019211cd489b30f3e80a95f6bd093a8",
+      "contentHash" : "sha256:180df8a9f81be2eaf516e8ea3bfeb97133f22193404630f5782660ade0241ba7",
       "path" : "Living Document Starter/entries/Example Entry.md"
     },
     {
       "bytes" : 2726,
-      "contentHash" : "sha256:59716fc2d0e7090208c83c9cfe1240c6fc656c102ac33120291343e9ae27dccb",
+      "contentHash" : "sha256:4b433d49257fe2e0335060d5d1e51d1636148529c797ae0c7edc487b90589786",
       "path" : "Market Landscape.md"
     },
     {
       "bytes" : 2555,
-      "contentHash" : "sha256:c81217505063301188f36db347d15386cfb4d7bcc482937b28a033d66d94bd43",
+      "contentHash" : "sha256:b633fd976e8d896e381a2331f83d9b4c25016c27f279bce5d05853faddf8dc1c",
       "path" : "Marketing Dashboard — Q3.md"
     },
     {
       "bytes" : 2103,
-      "contentHash" : "sha256:9da01fa5d8ce798644d4f1e13639f35541e63d84b0f09bb0f0891a678febc28b",
+      "contentHash" : "sha256:c635008aefa13d1f82769454d5c6db00389a578668b149842bafd64328edf298",
       "path" : "Meeting Notes — Weekly Staff.md"
     },
     {
       "bytes" : 5847,
-      "contentHash" : "sha256:fe9cde3c3c7d8816e10a32b45c5ed15e9103189912f647a506f5ebd87fcf59a8",
+      "contentHash" : "sha256:3c5637e2b4e6ea56f1280feda0250b68a5ecbc2e44b0e2cd222cdb7cd2828aae",
       "path" : "Models Flow Recommends.md"
     },
     {
-      "bytes" : 10292,
-      "contentHash" : "sha256:c29d0e6b15fb7d0e917ea5e97d05a31946f665ed4d1ec015904acb325e5a6d8d",
+      "bytes" : 10284,
+      "contentHash" : "sha256:fa96a7c359b8e9684dcdbc45fae7a5d8fbddc0ae5658b24ff36de829a721d146",
       "path" : "Night Shift.md"
     },
     {
-      "bytes" : 3082,
-      "contentHash" : "sha256:b5a3ce35230c40f5e00ee57e131b61d5584fc35ed72d31b1954a6c7e70ae9366",
+      "bytes" : 3066,
+      "contentHash" : "sha256:9b51edb0e771c2449075f9886bb6a81f6324865c17f3064ec3c2b258ae6af517",
       "path" : "Operating Notes — How We Work.md"
     },
     {
-      "bytes" : 2787,
-      "contentHash" : "sha256:4babb967802c84622150fcba77e13306402208de29010b7bb3d497cd15f5c939",
+      "bytes" : 2785,
+      "contentHash" : "sha256:a2a3d179556eb21530e9fbb6b5a908c7aaa1c09521b67972e2b060a7f54c6913",
       "path" : "Performance Review — Mid-Year.md"
     },
     {
       "bytes" : 1517,
-      "contentHash" : "sha256:7d7f5b6c5937443dfb8c6b266432e6f88d9affb0b438d23561b42fbf55ce9cd9",
+      "contentHash" : "sha256:f4f12dac41630637e9287c31511dd50dbeaaa2e83de1716fbb4768d089b52630",
       "path" : "Press Release Draft.md"
     },
     {
-      "bytes" : 2917,
-      "contentHash" : "sha256:ae76a1f3ca101a63d85ab06adbc7b7ffe9455beaace8232d34d4f78bac9f17c6",
+      "bytes" : 2892,
+      "contentHash" : "sha256:1d5595ed36c349a52c64a80d7014c59fcf368e53e134f5fd5cf263ca71ddad47",
       "path" : "Product Brief — Reading Room.md"
     },
     {
       "bytes" : 3229,
-      "contentHash" : "sha256:4d52af9ada4488afd566605d6216d27104c408982a801744ad63994f0cb32213",
+      "contentHash" : "sha256:f80fa01d81dacd1ed2be7178bf80500fce7a3a3a7f0df7cce03b76edb0d7f055",
       "path" : "Project Plan — Website Relaunch.md"
     },
     {
-      "bytes" : 3595,
-      "contentHash" : "sha256:4b8a33608a5137cc51b5447b0df12dce79bbd0ba3ca27303c3176edd53c46406",
+      "bytes" : 3582,
+      "contentHash" : "sha256:82f0212a36af9479e7b69093adaba4d6db17054281adb69b71d814743ab6cb3b",
       "path" : "Quarterly Business Review.md"
     },
     {
-      "bytes" : 2148,
-      "contentHash" : "sha256:cac3021cebc3873644f1c1f9a21c2671118f330c3d4e853e93fa2c613631b391",
+      "bytes" : 2144,
+      "contentHash" : "sha256:1ca516308f7b57ae712b376435c77e289421f1634bd3c11cd3d2fd0d9506b437",
       "path" : "Resume — Priya Raman.md"
     },
     {
       "bytes" : 3054,
-      "contentHash" : "sha256:a3a0696f09df3f17b3fda0382c53400f4d52f85f691b17f3fd657dd803d73e22",
+      "contentHash" : "sha256:404405aec1e6383ecb76f4930d56ea37b7800bf305729e9662a04bbe8076582a",
       "path" : "Revenue Dashboard.md"
     },
     {
-      "bytes" : 3299,
-      "contentHash" : "sha256:d8543791c6be07959ca8d1631b5b6fe0725835b49f64c74b524625264734ec5b",
+      "bytes" : 3283,
+      "contentHash" : "sha256:12521bc5e1e382d29d89165c4dc68f917d065923b19f039ab9f3daa43373498b",
       "path" : "Runtime Evaluation — Local Models.md"
     },
     {
-      "bytes" : 2606,
-      "contentHash" : "sha256:a823d845124e613cab918e22686715f7de47c12d412a0449185b1ea866833f9a",
+      "bytes" : 2600,
+      "contentHash" : "sha256:affdbe7f0b81439bafd421b27ff61e43cb0e12d82e12df3aafe24f71af7918e5",
       "path" : "Sales Report — Q3.md"
     },
     {
       "bytes" : 2589,
-      "contentHash" : "sha256:947b99c61e0a1c71a5d360500af42ce3a69f6a0e46ab027ba348ca2960312ffc",
+      "contentHash" : "sha256:417471cc8a07e5bbaa736f46524b2166c2072c898572ec1d0276f7384e8ba0b8",
       "path" : "Stock Portfolio/Headlines Refresh.md"
     },
     {
-      "bytes" : 3008,
-      "contentHash" : "sha256:14b6ef3139f6c6c4bd537e3f20c73ca149c27323af61af4a7733a0aec70c5561",
+      "bytes" : 3000,
+      "contentHash" : "sha256:6ddc0a021ff6b4f591b9953ceba775ae4ffdfea83c0b1bff8cbcaba380efe1d9",
       "path" : "Stock Portfolio/Holdings.md"
     },
     {
-      "bytes" : 20218,
-      "contentHash" : "sha256:f4a7127d7d1eefc2eddfae7a0cdafab99297dacfb163a4f464b90d5d3b402ec3",
+      "bytes" : 20195,
+      "contentHash" : "sha256:e56d9a66e41ae3819119b397453ac615eed1dd2a59ee49732b8332047631b7c4",
       "path" : "Stock Portfolio/Portfolio Dashboard.md"
     },
     {
       "bytes" : 10922,
-      "contentHash" : "sha256:78a63ea18256de7462eb95c94d45a276d60b8608e8eda3d1c92902875eea2e4b",
+      "contentHash" : "sha256:dabe22a975e8834f5f808c2b2c5ff3609d3f5a6ba031ae3a6b6bc2b80b49cf2c",
       "path" : "Stock Portfolio/Portfolio Refresh.md"
     },
     {
-      "bytes" : 1907,
-      "contentHash" : "sha256:e18f5360f03868b42abdee2e10ec9ef0385eaae6f48057f9d56fb20bb058856a",
+      "bytes" : 1891,
+      "contentHash" : "sha256:ce0c677491d9a0a6dea93b65a44a1f406c8ef6286d77957c329156fdd9fb7f89",
       "path" : "Support Playbook — Escalations.md"
     },
     {
-      "bytes" : 12689,
-      "contentHash" : "sha256:4640cb3c2bf18557b97c57d8b5695ee57bbffeb29d9196d00d9ea8411c2e65bc",
+      "bytes" : 12666,
+      "contentHash" : "sha256:ad0b4d814c4b236f68c54d98b08f42e9213539e2c9424874ca08458fde8678a3",
       "path" : "Tax Advisor/Tax Advisor.md"
     },
     {
-      "bytes" : 3728,
-      "contentHash" : "sha256:eaff5160c66cdf0dd29754e564eaa27ea270adabf2bbfdd50c002616c5171149",
+      "bytes" : 3722,
+      "contentHash" : "sha256:c1d5812648e4f28ded550edd0962c81400e87beda49ff0296ffc7860e12254a6",
       "path" : "Tax Advisor/Tax Profile.md"
     },
     {
       "bytes" : 13604,
-      "contentHash" : "sha256:08cd6eb7da0614b2a40e5fd2576355ee28ac02326a8efd9a766744eb2bfc4600",
+      "contentHash" : "sha256:4c3354ab18fd3c3a86a53141284a9f48bb230dfe11fd4257bd173ddf093602bf",
       "path" : "Tax Advisor/Tax Refresh.md"
     },
     {
       "bytes" : 1718,
-      "contentHash" : "sha256:00838655fc3b59d244c0a5acb9a3b3cfeac9ec5ce3e593d036ccbaa7816e1ce8",
+      "contentHash" : "sha256:23f4f831c97fbb85e8e510893b131fd53f5bdf459bb9d6f22bb6a04d6a6c9e21",
       "path" : "Tax Advisor/inputs/W-2 — Example Employer.md"
     },
     {
       "bytes" : 1339,
-      "contentHash" : "sha256:4198b833cde7f4c1d1915948de3554c1a04247e500a2ea1e2efeda3e32c06a4a",
+      "contentHash" : "sha256:0acaa1b787c2438ce1589fbff3b608c067c50c8ecf35377c0b8a13f1722569ab",
       "path" : "Team Status/Plan.md"
     },
     {
-      "bytes" : 6880,
-      "contentHash" : "sha256:09c1794ef3fca8b6c098a1972ca43ae802a57d1259bf465d90bdf589711ba4d8",
+      "bytes" : 6862,
+      "contentHash" : "sha256:e04f0c670e0ab946172a4a5a1daafb647c78cc5e081ac5f9a932a9ee25ba20b3",
       "path" : "Team Status/Team Status.md"
     },
     {
       "bytes" : 975,
-      "contentHash" : "sha256:f2d3e8026afebb80efd0fb7a8da094ed5eac2b7642cfedbc63d0e880252c4e9f",
+      "contentHash" : "sha256:f149205a591f9ebf9c7b4ff4803a2463aa0b55815d2bd3f7d3900f5ef7a9fec3",
       "path" : "Team Status/updates/Dana Okafor.md"
     },
     {
       "bytes" : 1119,
-      "contentHash" : "sha256:a1ce8b47462ba61646bcb14d3299255137563b50f81e1f9690cee83ce2195f6b",
+      "contentHash" : "sha256:4422b5200767870f2539eefb02c7183c3ae644250e7a34f69a0ba3db6e11143d",
       "path" : "Team Status/updates/Marcus Chen.md"
     },
     {
       "bytes" : 1013,
-      "contentHash" : "sha256:c6554cf7c6ad106d476df63d0d7bd9bf10f21a275d3ba5c6582df304b5b2952e",
+      "contentHash" : "sha256:405813cc598a7ff43857dc789132afa938bb4857f98bc34cbe46bf49186457cc",
       "path" : "Team Status/updates/Priya Raman.md"
     },
     {
       "bytes" : 1092,
-      "contentHash" : "sha256:fcb6f43c4eebf303d17ea1d9bf0c6003107f1c5d1767ae9fa8950a3406bf1b47",
+      "contentHash" : "sha256:e234f3133c4e73e1899318d3ecf0e7f920b6b1c4f5f429c689327a725500e759",
       "path" : "Team Status/updates/Sam Whitaker.md"
     },
     {
       "bytes" : 2765,
-      "contentHash" : "sha256:9c92091cf939e9088e903b5e31c717bb49d17b95ffcb7c14d89a2bc6d38afc4b",
+      "contentHash" : "sha256:db7f6200b803cb506efe075459d84c53f7d3e0ff696023440c83c417952ee6c8",
       "path" : "Trip Planner — Portugal, October.md"
     },
     {
@@ -419,16 +419,16 @@
       "path" : "Visualization Gallery.md"
     },
     {
-      "bytes" : 1692,
-      "contentHash" : "sha256:a0bde02181d64a855ea2677106822ec37c92089125f5b4ef3a841d8a587523b1",
+      "bytes" : 1674,
+      "contentHash" : "sha256:1665e358b202aca9f84e95a3ebf5ed72b8144ee9aac74207f33a01c8113a0e51",
       "path" : "Welcome.md"
     },
     {
       "bytes" : 6973,
-      "contentHash" : "sha256:0c662d2a19dc0171076a1f8aae9e99d0429d9dabe18d53cd9b8fc8ea5be2950b",
+      "contentHash" : "sha256:e55ba2445d57e2749ac147a2984abb075033f0d2282376314fa1876055dd3fb1",
       "path" : "Working With Flow.md"
     }
   ],
-  "generated" : "2026-09-07",
+  "generated" : "2026-09-08",
   "manifestVersion" : 2
 }

@@ -32,11 +32,7 @@ actions:
 ---
 # Tax Profile
 
-The one file you edit. The front matter is your situation for the year: who
-is filing, who depends on you, the income that does not arrive on a W-2, the
-deductions you could itemize, and the actions you are tracking.
-[[Tax Advisor]] reads it each night for the actions table, and the refresh script
-reads it, with the W-2 forms in `inputs/`, to estimate the federal return.
+The one file you edit. The front matter is your situation for the year: who is filing, who depends on you, the income that does not arrive on a W-2, the deductions you could itemize, and the actions you are tracking. [[Tax Advisor]] reads it each night for the actions table, and the refresh script reads it, with the W-2 forms in `inputs/`, to estimate the federal return.
 
 ## What each field means
 
@@ -59,13 +55,8 @@ reads it, with the W-2 forms in `inputs/`, to estimate the federal return.
 
 ## Make it yours
 
-- **Add a W-2.** Copy `inputs/W-2 — Example Employer.md`, name it for the
-  employer, and type the box values from the form. Each file is one W-2.
-  The night lists them in the morning; the refresh adds them up.
-- **Change the year.** Set `tax_year: 2026` to estimate next year from this
-  year's numbers.
+- **Add a W-2.** Copy `inputs/W-2 — Example Employer.md`, name it for the employer, and type the box values from the form. Each file is one W-2. The night lists them in the morning; the refresh adds them up.
+- **Change the year.** Set `tax_year: 2026` to estimate next year from this year's numbers.
 - **Track a task.** Add an `actions` line with the next `id`.
 
-An estimate, not advice. It uses the figures the IRS has published and the
-simplifications listed at the end of [[Tax Advisor]]. Your preparer or your
-software decides the return.
+An estimate, not advice. It uses the figures the IRS has published and the simplifications listed at the end of [[Tax Advisor]]. Your preparer or your software decides the return.

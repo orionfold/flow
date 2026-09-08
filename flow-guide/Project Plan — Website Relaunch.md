@@ -5,12 +5,9 @@ tags: [project, planning, delivery]
 
 # Website Relaunch — Project Plan
 
-**Owner:** Priya Raman · **Sponsor:** Marketing · **Target:** 14 November 2026
-**Status:** on track, one dependency at risk
+**Owner:** Priya Raman · **Sponsor:** Marketing · **Target:** 14 November 2026 **Status:** on track, one dependency at risk
 
-The current site was built for a company that sold one product to one buyer. We
-now sell three, to two buyers, and the navigation has been patched around that
-four times. This is a rebuild of the structure, not a redesign of the pixels.
+The current site was built for a company that sold one product to one buyer. We now sell three, to two buyers, and the navigation has been patched around that four times. This is a rebuild of the structure, not a redesign of the pixels.
 
 ![Planning, before it becomes a schedule](assets/planning-desk.jpeg)
 
@@ -70,14 +67,9 @@ encodings:
 
 ## The risk worth naming
 
-**CMS selection blocks the build and has slipped twice.** Two candidates remain;
-the decision needs a call on whether marketing edits templates or only content.
-If it slips past 6 October, the build compresses and migration overlaps launch
-— which is how redirects get rushed and organic traffic gets lost.
+**CMS selection blocks the build and has slipped twice.** Two candidates remain; the decision needs a call on whether marketing edits templates or only content. If it slips past 6 October, the build compresses and migration overlaps launch — which is how redirects get rushed and organic traffic gets lost.
 
-**Mitigation:** decide by 3 October using the criteria already agreed, or take
-the default (the simpler CMS, less template freedom) and move on. A default is
-better than a slip here.
+**Mitigation:** decide by 3 October using the criteria already agreed, or take the default (the simpler CMS, less template freedom) and move on. A default is better than a slip here.
 
 ## Open questions
 
@@ -87,6 +79,4 @@ better than a slip here.
 
 ## Related
 
-[[Content Strategy — Q4]] depends on this shipping — half the planned pieces
-need the new template. [[Meeting Notes — Weekly Staff]] carries the running
-status.
+[[Content Strategy — Q4]] depends on this shipping — half the planned pieces need the new template. [[Meeting Notes — Weekly Staff]] carries the running status.

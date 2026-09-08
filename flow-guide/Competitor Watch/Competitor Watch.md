@@ -10,11 +10,7 @@ jobs:
 ---
 # Competitor Watch
 
-The market's published prices and the feature matrix your team argues about,
-kept current by the night. The pricing pages listed above are fetched each
-night and compared with the night before: a price that moves reaches you the
-next morning as the exact text that changed, and nothing else on those pages
-is kept. The tables and the chart are drawn from [[Competitors]].
+The market's published prices and the feature matrix your team argues about, kept current by the night. The pricing pages listed above are fetched each night and compared with the night before: a price that moves reaches you the next morning as the exact text that changed, and nothing else on those pages is kept. The tables and the chart are drawn from [[Competitors]].
 
 ## Entry price per seat
 
@@ -37,7 +33,7 @@ encodings:
 ## Who charges what
 
 <!-- data: Competitors.md#competitors -->
-| name | product | entry_tier | price_per_seat | billing | note |
+| Name | Product | Entry tier | Price per seat | Billing | Note |
 | --- | --- | --- | ---: | --- | --- |
 | Asana | Asana | Starter | 10.99 | annual | Free tier up to 10 seats |
 | ClickUp | ClickUp | Unlimited | 7 | annual | Free Forever tier with storage limits |
@@ -58,8 +54,7 @@ encodings:
 
 ## Captures
 
-Everything you keep about a change: a dated note, a screenshot, a PDF of the
-page. The night lists the folder.
+Everything you keep about a change: a dated note, a screenshot, a PDF of the page. The night lists the folder.
 
 ```flow-folder captures
 | File | Size | Modified | Digest |
@@ -69,23 +64,15 @@ page. The night lists the folder.
 
 ## What you will see in the morning
 
-- **A price moved.** A watched pricing page changed; the Briefing shows the
-  text that changed. Edit `price_per_seat` in [[Competitors]] and the chart
-  is current the next morning.
-- **The page could not be reached.** The Briefing says so by name, once;
-  nothing is guessed.
-- **You changed the matrix.** A new row or a flipped cell shows in the
-  morning with its diff.
+- **A price moved.** A watched pricing page changed; the Briefing shows the text that changed. Edit `price_per_seat` in [[Competitors]] and the chart is current the next morning.
+- **The page could not be reached.** The Briefing says so by name, once; nothing is guessed.
+- **You changed the matrix.** A new row or a flipped cell shows in the morning with its diff.
 
 ## Make it yours
 
-1. Edit the front matter of [[Competitors]]: your market, your competitors,
-   the rows your team compares on.
-2. Put each competitor's pricing page, and any changelog or status page you
-   care about, in `watch` at the top of this page. Public `https` pages only;
-   each fetch leaves a receipt.
-3. Turn the Night Shift on: the moon in the title bar, or Settings ▸ Night
-   Shift.
+1. Edit the front matter of [[Competitors]]: your market, your competitors, the rows your team compares on.
+2. Put each competitor's pricing page, and any changelog or status page you care about, in `watch` at the top of this page. Public `https` pages only; each fetch leaves a receipt.
+3. Turn the Night Shift on: the moon in the title bar, or Settings ▸ Night Shift.
 
 ## How this page is built
 
@@ -97,8 +84,7 @@ page. The night lists the folder.
 | Captures | `flow-folder` inventory | `captures/` | the night alone |
 | Pricing pages | `watch` in the `jobs:` block | four public pages | the night alone |
 
-A watched page is digested as its text, not its markup, so a rotated
-tracking token is not a change and a new price is.
+A watched page is digested as its text, not its markup, so a rotated tracking token is not a change and a new price is.
 
 ## Overnight notes
 <!-- night: notes -->

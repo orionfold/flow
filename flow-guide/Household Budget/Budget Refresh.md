@@ -113,10 +113,7 @@ emit:
 ---
 # How this budget refreshes itself
 
-This is the definition [[Household Budget]] runs each night. It is **data, not
-code** — every line is something you can read and change, and Flow runs it
-itself rather than running a program. It can read the files in this folder and
-nothing else, and it can only work things out and write the capture.
+This is the definition [[Household Budget]] runs each night. It is **data, not code** — every line is something you can read and change, and Flow runs it itself rather than running a program. It can read the files in this folder and nothing else, and it can only work things out and write the capture.
 
 ## The four blocks
 
@@ -129,36 +126,20 @@ nothing else, and it can only work things out and write the capture.
 
 ## `derive:` — the work done once
 
-`lines` is every statement line with two columns added: the `category` its
-description matches, and the `month` its date falls in. Everything else is
-built from that, so the categorisation happens once rather than in each table.
+`lines` is every statement line with two columns added: the `category` its description matches, and the `month` its date falls in. Everything else is built from that, so the categorisation happens once rather than in each table.
 
-`rules` reads the list you keep in [[Budget Profile]]. It is tried in order and
-the **first match wins**, so a more specific line goes above a more general
-one. The match ignores capitals and looks anywhere in the description.
+`rules` reads the list you keep in [[Budget Profile]]. It is tried in order and the **first match wins**, so a more specific line goes above a more general one. The match ignores capitals and looks anywhere in the description.
 
 ## `let:` — the single values
 
-`latest` is the newest month any statement mentions, which is what every table
-below is filtered to. `savingsRate` shows the shape of a calculation: the
-`? :` guards against dividing by zero, so a month with no income shows 0
-rather than nothing.
+`latest` is the newest month any statement mentions, which is what every table below is filtered to. `savingsRate` shows the shape of a calculation: the `? :` guards against dividing by zero, so a month with no income shows 0 rather than nothing.
 
 ## Two things worth knowing
 
-**Month names are English.** `monthName(latest)` turns `2026-08` into
-`August 2026` from a fixed list, not from your Mac's language settings — so
-the same statements produce the same capture on any machine, which is what
-lets Flow tell a real change from a re-run.
+**Month names are English.** `monthName(latest)` turns `2026-08` into `August 2026` from a fixed list, not from your Mac's language settings — so the same statements produce the same capture on any machine, which is what lets Flow tell a real change from a re-run.
 
-**Merchant names are trimmed, not pattern-matched.** `trimTrailing` drops a
-trailing store number and a trailing two-letter state code, so
-`STARBUCKS #1123 SF` and `STARBUCKS #4471 CA` count as one merchant. Those two
-things are all it removes: there is no pattern language here, because a pattern
-is code you would have to read as a program instead of as a sentence.
+**Merchant names are trimmed, not pattern-matched.** `trimTrailing` drops a trailing store number and a trailing two-letter state code, so `STARBUCKS #1123 SF` and `STARBUCKS #4471 CA` count as one merchant. Those two things are all it removes: there is no pattern language here, because a pattern is code you would have to read as a program instead of as a sentence.
 
 ## Making it yours
 
-Edit [[Budget Profile]] rather than this file for anything ordinary — your
-categories, your budgets, your matching rules. Come back here to add a table,
-change what a summary row measures, or read from somewhere else.
+Edit [[Budget Profile]] rather than this file for anything ordinary — your categories, your budgets, your matching rules. Come back here to add a table, change what a summary row measures, or read from somewhere else.

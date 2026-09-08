@@ -5,10 +5,7 @@ captured: 2026-09-02
 ---
 # Pricing pages, first read
 
-What each public pricing page said on the day the watch began. One file per
-capture, dated, so a later change has something to be compared with beyond
-the night's diff. Screenshots and PDFs go in this folder too.
-[[Competitor Watch]] lists whatever lands here.
+What each public pricing page said on the day the watch began. One file per capture, dated, so a later change has something to be compared with beyond the night's diff. Screenshots and PDFs go in this folder too. [[Competitor Watch]] lists whatever lands here.
 
 | Company | Page | What it said |
 | --- | --- | --- |
@@ -17,5 +14,4 @@ the night's diff. Screenshots and PDFs go in this folder too.
 | Linear | linear.app/pricing | Free with a 250-issue limit; Basic and Business per user, yearly and monthly; Enterprise on request |
 | monday.com | monday.com/pricing | Free for two seats; Basic, Standard, Pro per seat with seat minimums; Enterprise on request |
 
-Read from the public pages; the numbers in [[Competitors]] are from the same
-read.
+Read from the public pages; the numbers in [[Competitors]] are from the same read.

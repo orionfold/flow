@@ -5,8 +5,7 @@ tags: [personal, travel, planning]
 
 # Portugal — 8 to 18 October
 
-Two of us, ten days, driving. The plan is deliberately loose after Porto: the
-first half is booked, the second half is a shortlist.
+Two of us, ten days, driving. The plan is deliberately loose after Porto: the first half is booked, the second half is a shortlist.
 
 ![Planning the route](assets/planning-desk.jpeg)
 
@@ -33,8 +32,7 @@ graph LR
 | 17–18 Oct | Douro | Quinta guesthouse | €210 |
 | | | **Accommodation** | **€1,460** |
 
-Flights €640 return. Car €280 for eight days, picked up at Lisbon airport on the
-11th, not the 8th — Lisbon is worse with a car than without one.
+Flights €640 return. Car €280 for eight days, picked up at Lisbon airport on the 11th, not the 8th — Lisbon is worse with a car than without one.
 
 ## Budget
 
@@ -66,8 +64,7 @@ About €3,500 all in, which is €350 a day for two. Tight but not uncomfortabl
 
 ## Coimbra — 2 nights
 
-The university library needs a timed ticket and they are limited. Book the
-moment the date is fixed.
+The university library needs a timed ticket and they are limited. Book the moment the date is fixed.
 
 ## Porto — 3 nights
 

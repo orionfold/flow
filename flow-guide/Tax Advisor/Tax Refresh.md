@@ -168,14 +168,9 @@ emit:
 ---
 # How this estimate is worked out
 
-This is the definition [[Tax Advisor]] runs each night. It is **data, not
-code** — every line is something you can read and change, and Flow works the
-estimate out itself rather than running a program. It reads three things and
-nothing else: [[Tax Profile]], the W-2 forms in `inputs/`, and the figures in
-`data/tax-figures.json`. Nothing is fetched and nothing leaves your Mac.
+This is the definition [[Tax Advisor]] runs each night. It is **data, not code** — every line is something you can read and change, and Flow works the estimate out itself rather than running a program. It reads three things and nothing else: [[Tax Profile]], the W-2 forms in `inputs/`, and the figures in `data/tax-figures.json`. Nothing is fetched and nothing leaves your Mac.
 
-**It is an estimate, not advice.** What it does not compute is listed in
-`data/tax-figures.json` under `notComputed`, and on [[Tax Advisor]] itself.
+**It is an estimate, not advice.** What it does not compute is listed in `data/tax-figures.json` under `notComputed`, and on [[Tax Advisor]] itself.
 
 ## The four blocks
 
@@ -188,40 +183,22 @@ nothing else: [[Tax Profile]], the W-2 forms in `inputs/`, and the figures in
 
 ## `sources:` — the brackets, read as a table
 
-`data/tax-figures.json` holds the brackets two levels deep: by year, then by
-filing status. `flatten:` reads **every** bracket as a row and names those two
-levels `year` and `status`, so choosing yours becomes an ordinary filter rather
-than a path Flow has to build from your profile. The file stays something you
-can open and read.
+`data/tax-figures.json` holds the brackets two levels deep: by year, then by filing status. `flatten:` reads **every** bracket as a row and names those two levels `year` and `status`, so choosing yours becomes an ordinary filter rather than a path Flow has to build from your profile. The file stays something you can open and read.
 
-Each bracket is a pair — where it ends and its rate — and `of: [upper, rate]`
-names them. The top bracket has no end at all, and the definition reads it as
-`coalesce(upper, taxable)`: the bracket that goes all the way up.
+Each bracket is a pair — where it ends and its rate — and `of: [upper, rate]` names them. The top bracket has no end at all, and the definition reads it as `coalesce(upper, taxable)`: the bracket that goes all the way up.
 
 ## `derive:` — the bracket walk
 
-Tax is worked out band by band. Each bracket's lower edge is the one above it,
-which is what `frame: [-1, -1]` says: look at exactly the row before this one.
-The first bracket has no row before it, so `coalesce(lower, 0)` starts it at
-zero — which is also the right answer.
+Tax is worked out band by band. Each bracket's lower edge is the one above it, which is what `frame: [-1, -1]` says: look at exactly the row before this one. The first bracket has no row before it, so `coalesce(lower, 0)` starts it at zero — which is also the right answer.
 
-`figures` is folded from columns into rows, so a figure is chosen by matching
-its year the same way a bracket is. Two years live in that file and only one is
-yours.
+`figures` is folded from columns into rows, so a figure is chosen by matching its year the same way a bracket is. Two years live in that file and only one is yours.
 
 ## `let:` — the estimate, in order
 
-Read top to bottom and it is the return: wages and other income, the
-adjustments that come off, the deduction — the larger of standard and itemized
-— the senior deduction and its phase-out, taxable income, the tax by bracket,
-the credits and their phase-out, and what you have already paid.
+Read top to bottom and it is the return: wages and other income, the adjustments that come off, the deduction — the larger of standard and itemized — the senior deduction and its phase-out, taxable income, the tax by bracket, the credits and their phase-out, and what you have already paid.
 
-Each phase-out is written as a `? :` so you can see the threshold and the
-taper, rather than a rule you have to trust.
+Each phase-out is written as a `? :` so you can see the threshold and the taper, rather than a rule you have to trust.
 
 ## Making it yours
 
-Edit [[Tax Profile]] rather than this file for anything ordinary — your filing
-status, your dependents, the income and deductions that are yours. Update
-`data/tax-figures.json` when a new year's figures are published. Come back here
-to add a table or change what a summary row measures.
+Edit [[Tax Profile]] rather than this file for anything ordinary — your filing status, your dependents, the income and deductions that are yours. Update `data/tax-figures.json` when a new year's figures are published. Come back here to add a table or change what a summary row measures.

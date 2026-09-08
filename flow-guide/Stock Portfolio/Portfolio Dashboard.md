@@ -18,19 +18,9 @@ jobs:
 ---
 # Portfolio Dashboard
 
-Ten widely held stocks, priced at the last close, with the indicators that
-move them and the headlines that explain the day. This is a living document:
-the `jobs:` block at the top is what the Night Shift does to it while you
-sleep, and every chart and table below is bound to a file in this folder, so
-the page redraws from data rather than being retyped. Change the portfolio in
-[[Holdings]]; the rest follows.
+Ten widely held stocks, priced at the last close, with the indicators that move them and the headlines that explain the day. This is a living document: the `jobs:` block at the top is what the Night Shift does to it while you sleep, and every chart and table below is bound to a file in this folder, so the page redraws from data rather than being retyped. Change the portfolio in [[Holdings]]; the rest follows.
 
-Prices come from [[Portfolio Refresh]] and the headlines from
-[[Headlines Refresh]] — two definitions Flow reads and runs itself before it
-redraws the page. They are **data, not code**: every line is something you can
-read and change, and no program runs. The Night Shift works out today's
-figures from them, redraws the page, watches this folder and the sources listed
-above, and leaves a receipt for each thing it did.
+Prices come from [[Portfolio Refresh]] and the headlines from [[Headlines Refresh]] — two definitions Flow reads and runs itself before it redraws the page. They are **data, not code**: every line is something you can read and change, and no program runs. The Night Shift works out today's figures from them, redraws the page, watches this folder and the sources listed above, and leaves a receipt for each thing it did.
 
 ## At a glance
 
@@ -98,8 +88,7 @@ encodings:
 
 ## One month against the benchmark
 
-Both lines start at 100 on the first session of the window, so the gap is
-relative performance, not price.
+Both lines start at 100 on the first session of the window, so the gap is relative performance, not price.
 
 ```chart data: data/portfolio-*.json#indexed
 chartType: Line Chart
@@ -223,8 +212,7 @@ encodings:
 
 ## Macro
 
-The indicators in `macros` in [[Holdings]]: level at the last close, and the
-day's and month's move.
+The indicators in `macros` in [[Holdings]]: level at the last close, and the day's and month's move.
 
 <!-- data: data/portfolio-*.json#macro -->
 | Indicator | Symbol | Level | Day % | Month % |
@@ -316,8 +304,7 @@ encodings:
 
 ## Headlines
 
-Three per holding, from Yahoo Finance's per-symbol feed, newest capture.
-Headlines are the publisher's words, not Flow's.
+Three per holding, from Yahoo Finance's per-symbol feed, newest capture. Headlines are the publisher's words, not Flow's.
 
 <!-- data: data/news-*.json#headlines -->
 | Symbol | Headline | Source | Published |
@@ -355,8 +342,7 @@ Headlines are the publisher's words, not Flow's.
 
 ## What you declared
 
-Read straight from the front matter of [[Holdings]] each night. Edit a lot
-there and this table is current in the morning, with no refresh at all.
+Read straight from the front matter of [[Holdings]] each night. Edit a lot there and this table is current in the morning, with no refresh at all.
 
 <!-- data: Holdings.md#holdings -->
 | Symbol | Shares | Cost | Bought |
@@ -374,8 +360,7 @@ there and this table is current in the morning, with no refresh at all.
 
 ## Captures in this folder
 
-The Night Shift keeps this inventory of `data/` current: every refresh adds a
-dated capture, and the morning names the new file.
+The Night Shift keeps this inventory of `data/` current: every refresh adds a dated capture, and the morning names the new file.
 
 ```flow-folder data
 | File | Size | Modified | Digest |
@@ -386,31 +371,20 @@ dated capture, and the morning names the new file.
 
 ## What you will see in the morning
 
-- **Holdings changed.** You added a stock to [[Holdings]] in the evening; the
-  *What you declared* table shows it, and the Morning Briefing shows the
-  exact diff of the file.
-- **A new capture landed.** The refresh ran at 01:30; every chart and table
-  above redrew from it, the inventory grew by two files, and the Briefing
-  carries the redrawn KPI card as its snapshot.
-- **The Fed said something.** The press-release page changed overnight; the
-  Briefing shows what text changed. Only the pages you list are fetched, and
-  each fetch has a receipt.
-- **Nothing moved.** An honest empty morning: the run is in Receipts, the
-  page is untouched.
+- **Holdings changed.** You added a stock to [[Holdings]] in the evening; the *What you declared* table shows it, and the Morning Briefing shows the exact diff of the file.
+- **A new capture landed.** The refresh ran at 01:30; every chart and table above redrew from it, the inventory grew by two files, and the Briefing carries the redrawn KPI card as its snapshot.
+- **The Fed said something.** The press-release page changed overnight; the Briefing shows what text changed. Only the pages you list are fetched, and each fetch has a receipt.
+- **Nothing moved.** An honest empty morning: the run is in Receipts, the page is untouched.
 
 ## Make it yours
 
 1. Edit the front matter of [[Holdings]]: your symbols, shares and costs.
-2. Use Run now (the moon in the title bar). Flow works out today's figures
-   from [[Portfolio Refresh]] and [[Headlines Refresh]], writes a capture into
-   `data/`, and redraws the page from what it wrote. Every run is in Receipts.
-3. Turn the Night Shift on: the moon in the title bar, or Settings ▸ Night
-   Shift. Every night the refresh runs first, then the page redraws.
+2. Use Run now (the moon in the title bar). Flow works out today's figures from [[Portfolio Refresh]] and [[Headlines Refresh]], writes a capture into `data/`, and redraws the page from what it wrote. Every run is in Receipts.
+3. Turn the Night Shift on: the moon in the title bar, or Settings ▸ Night Shift. Every night the refresh runs first, then the page redraws.
 
 ## How this page is built
 
-A case study in the constructs, so you can lift any of them into your own
-document.
+A case study in the constructs, so you can lift any of them into your own document.
 
 | Block | Construct | Bound to | Redrawn by |
 | --- | --- | --- | --- |
@@ -425,10 +399,7 @@ document.
 | What you declared | table | `Holdings.md#holdings` | the night alone |
 | Captures | `flow-folder` inventory | `data/` | the night alone |
 
-A binding is a path relative to this document. A `*` in the file name takes
-the newest capture by name, which is why the captures are dated. `#key` names
-the list inside the file. The night rewrites only the rows; the titles, the
-column alignment and the chart type are yours.
+A binding is a path relative to this document. A `*` in the file name takes the newest capture by name, which is why the captures are dated. `#key` names the list inside the file. The night rewrites only the rows; the titles, the column alignment and the chart type are yours.
 
 ## Overnight notes
 <!-- night: notes -->

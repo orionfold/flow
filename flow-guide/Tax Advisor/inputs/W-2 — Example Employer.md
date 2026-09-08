@@ -18,10 +18,7 @@ box17_state_withheld: 8730
 ---
 # W-2 — Example Employer
 
-One file per Form W-2. The front matter carries the boxes the estimate reads;
-the table below says which is which. Copy this file for each employer, name
-it for them, and type the values from the form. The example numbers are made
-up.
+One file per Form W-2. The front matter carries the boxes the estimate reads; the table below says which is which. Copy this file for each employer, name it for them, and type the values from the form. The example numbers are made up.
 
 | Front matter key | Box on the form | What it is |
 | --- | --- | --- |
@@ -36,5 +33,4 @@ up.
 | `box16_state_wages` | 16 | State wages. Kept for your record. |
 | `box17_state_withheld` | 17 | State income tax withheld. Kept for your record. |
 
-A 1099 does not go here. Put interest, dividends and gains in the front
-matter of [[Tax Profile]].
+A 1099 does not go here. Put interest, dividends and gains in the front matter of [[Tax Profile]].

@@ -214,10 +214,7 @@ emit:
 ---
 # How this portfolio refreshes itself
 
-This is the definition [[Portfolio Dashboard]] runs each night. It is **data,
-not code** — every line is something you can read and change, and Flow runs it
-itself rather than running a program. It reads [[Holdings]], fetches daily bars
-from the one address written below, and works out every table on the page.
+This is the definition [[Portfolio Dashboard]] runs each night. It is **data, not code** — every line is something you can read and change, and Flow runs it itself rather than running a program. It reads [[Holdings]], fetches daily bars from the one address written below, and works out every table on the page.
 
 ## The four blocks
 
@@ -230,43 +227,22 @@ from the one address written below, and works out every table on the page.
 
 ## `sources:` — one address, filled per holding
 
-The `prices` source is a **template**: the address is written once with
-`{symbol}` in it, and Flow fills it from the `symbol` column of your holdings.
-You wrote the endpoint down; a symbol you add to [[Holdings]] is fetched the
-next night without asking again. Every filled address is checked against the
-one you wrote, so a value in the file cannot send Flow somewhere else.
+The `prices` source is a **template**: the address is written once with `{symbol}` in it, and Flow fills it from the `symbol` column of your holdings. You wrote the endpoint down; a symbol you add to [[Holdings]] is fetched the next night without asking again. Every filled address is checked against the one you wrote, so a value in the file cannot send Flow somewhere else.
 
-`columns:` is there because a price API does not return rows. It returns a list
-of times and a list of closes that line up by position, and `columns:` says
-which list becomes which column. When one list is shorter than another — the
-session still open — the rows stop at the shorter one rather than inventing a
-price nothing quoted.
+`columns:` is there because a price API does not return rows. It returns a list of times and a list of closes that line up by position, and `columns:` says which list becomes which column. When one list is shorter than another — the session still open — the rows stop at the shorter one rather than inventing a price nothing quoted.
 
 ## `derive:` — the work done once
 
-`sessions` is every daily bar with its date worked out. `isoDate` turns the
-seconds a price API stamps a bar with into a day, in UTC, adding the exchange's
-own offset from the same payload — so the bar lands on the day that exchange
-traded it.
+`sessions` is every daily bar with its date worked out. `isoDate` turns the seconds a price API stamps a bar with into a day, in UTC, adding the exchange's own offset from the same payload — so the bar lands on the day that exchange traded it.
 
-`lastTwo` is each symbol's last two sessions. The `by: [symbol]` matters: without
-it the last two rows of the whole set are two rows of one holding, and nothing
-else gets priced. `quotes` then takes `first` and `last` of those two — the
-earlier close and the latest, **in the order they traded**, not the smaller and
-the larger, which would be backwards for every stock that fell.
+`lastTwo` is each symbol's last two sessions. The `by: [symbol]` matters: without it the last two rows of the whole set are two rows of one holding, and nothing else gets priced. `quotes` then takes `first` and `last` of those two — the earlier close and the latest, **in the order they traded**, not the smaller and the larger, which would be backwards for every stock that fell.
 
 ## Two things worth knowing
 
-**Dates are worked out in UTC, by arithmetic.** No calendar and no language
-settings enter this, so the same bars produce the same capture on any machine —
-which is what lets Flow tell a real change from a re-run.
+**Dates are worked out in UTC, by arithmetic.** No calendar and no language settings enter this, so the same bars produce the same capture on any machine — which is what lets Flow tell a real change from a re-run.
 
-**A holding whose price did not arrive still appears.** Its cells are empty
-rather than missing, so the table stays a table and the rest of the page is
-unaffected; nothing is silently dropped from your holdings.
+**A holding whose price did not arrive still appears.** Its cells are empty rather than missing, so the table stays a table and the rest of the page is unaffected; nothing is silently dropped from your holdings.
 
 ## Making it yours
 
-Edit [[Holdings]] rather than this file for anything ordinary — your positions,
-your cash, your benchmark, the indicators you follow. Come back here to add a
-table, change what a summary row measures, or read prices from somewhere else.
+Edit [[Holdings]] rather than this file for anything ordinary — your positions, your cash, your benchmark, the indicators you follow. Come back here to add a table, change what a summary row measures, or read prices from somewhere else.

@@ -51,12 +51,7 @@ rules:
 ---
 # Budget Profile
 
-The one file you edit. The front matter is the household's plan: the income
-you expect each month, the savings rate you are aiming for, a budget per
-category, and the rules that sort a bank statement's lines into those
-categories. [[Household Budget]] reads the budgets from here each night, and
-the refresh script uses the rules to categorize whatever statements you
-drop in `statements/`.
+The one file you edit. The front matter is the household's plan: the income you expect each month, the savings rate you are aiming for, a budget per category, and the rules that sort a bank statement's lines into those categories. [[Household Budget]] reads the budgets from here each night, and the refresh script uses the rules to categorize whatever statements you drop in `statements/`.
 
 ## What each field means
 
@@ -69,14 +64,8 @@ drop in `statements/`.
 
 ## Make it yours
 
-- **Add a category.** Add a `budgets` line; it is in the morning's table
-  with no refresh at all.
-- **Teach it a merchant.** The dashboard's *Uncategorized* table lists every
-  line no rule caught. Add a `rules` line for each and run the refresh.
-- **Use your own statements.** Export a month from your bank as CSV, with a
-  date, a description and an amount column, and put it in `statements/`.
-  Debit and credit columns are read too. The two example statements are made
-  up; delete them when yours are in.
+- **Add a category.** Add a `budgets` line; it is in the morning's table with no refresh at all.
+- **Teach it a merchant.** The dashboard's *Uncategorized* table lists every line no rule caught. Add a `rules` line for each and run the refresh.
+- **Use your own statements.** Export a month from your bank as CSV, with a date, a description and an amount column, and put it in `statements/`. Debit and credit columns are read too. The two example statements are made up; delete them when yours are in.
 
-Nothing in this folder is sent anywhere. The refresh reads the statements on
-this Mac and writes a summary beside them.
+Nothing in this folder is sent anywhere. The refresh reads the statements on this Mac and writes a summary beside them.

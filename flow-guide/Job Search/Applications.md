@@ -19,9 +19,7 @@ prep:
 ---
 # Applications
 
-The one file you edit. Every application is a line in the front matter, and
-[[Job Search]] redraws its tracker and its timeline from those lines every
-night. The `prep` list is the checklist that runs alongside.
+The one file you edit. Every application is a line in the front matter, and [[Job Search]] redraws its tracker and its timeline from those lines every night. The `prep` list is the checklist that runs alongside.
 
 ## What each field means
 
@@ -37,13 +35,8 @@ night. The `prep` list is the checklist that runs alongside.
 
 ## Make it yours
 
-- **Add an application.** Add a line in the same shape. It is in the tracker
-  and on the timeline the next morning.
-- **Move it forward.** Edit `stage`, `next_step` and `next_date` after every
-  call. The morning's Briefing shows the exact diff, so the week's movement is
-  a diff you can read.
-- **Close it.** Set the stage to `Rejected` or `Withdrawn`; keep the line.
-  The pattern across closed applications is worth having.
+- **Add an application.** Add a line in the same shape. It is in the tracker and on the timeline the next morning.
+- **Move it forward.** Edit `stage`, `next_step` and `next_date` after every call. The morning's Briefing shows the exact diff, so the week's movement is a diff you can read.
+- **Close it.** Set the stage to `Rejected` or `Withdrawn`; keep the line. The pattern across closed applications is worth having.
 
-The six applications above are examples with real companies and made-up
-dates and stages. Replace them with yours.
+The six applications above are examples with real companies and made-up dates and stages. Replace them with yours.

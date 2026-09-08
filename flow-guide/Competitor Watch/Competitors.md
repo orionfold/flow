@@ -18,11 +18,7 @@ features:
 ---
 # Competitors
 
-The one file you edit. Each `competitors` line is a company, the tier a new
-customer meets first, and the page where its price is published. Each
-`features` line is one row of the comparison matrix. [[Competitor Watch]]
-draws its table and chart from the first list and its matrix from the second,
-every night.
+The one file you edit. Each `competitors` line is a company, the tier a new customer meets first, and the page where its price is published. Each `features` line is one row of the comparison matrix. [[Competitor Watch]] draws its table and chart from the first list and its matrix from the second, every night.
 
 ## What each field means
 
@@ -36,14 +32,7 @@ every night.
 
 ## Make it yours
 
-- **Track a competitor.** Add a `competitors` line and a column in every
-  `features` line. Then add its pricing page to `watch` in
-  [[Competitor Watch]].
-- **Record a price change.** The night told you the page changed; read it,
-  edit `price_per_seat` here, and the chart is current the next morning.
-  Every capture of the page you want to keep goes in `captures/`.
+- **Track a competitor.** Add a `competitors` line and a column in every `features` line. Then add its pricing page to `watch` in [[Competitor Watch]].
+- **Record a price change.** The night told you the page changed; read it, edit `price_per_seat` here, and the chart is current the next morning. Every capture of the page you want to keep goes in `captures/`.
 
-The four companies are real; the prices were read from their public pricing
-pages on 2 September 2026 and will drift. The feature matrix is an example
-for a made-up product; replace the rows with the ones your market argues
-about.
+The four companies are real; the prices were read from their public pricing pages on 2 September 2026 and will drift. The feature matrix is an example for a made-up product; replace the rows with the ones your market argues about.

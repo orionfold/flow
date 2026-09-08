@@ -14,16 +14,9 @@ jobs:
 ---
 # Tax Advisor
 
-Your federal year on one page: what the return will roughly look like, what
-is still to do, the figures the estimate rests on, and the IRS pages that
-change them. It reads [[Tax Profile]] and the W-2 forms in `inputs/`, and
-the Night Shift watches the IRS pages listed above, so a new figure or a
-moved deadline reaches you the morning after it is published, as the exact
-text that changed.
+Your federal year on one page: what the return will roughly look like, what is still to do, the figures the estimate rests on, and the IRS pages that change them. It reads [[Tax Profile]] and the W-2 forms in `inputs/`, and the Night Shift watches the IRS pages listed above, so a new figure or a moved deadline reaches you the morning after it is published, as the exact text that changed.
 
-An estimate, not advice. The refresh applies the figures the IRS has
-published for the year, with the simplifications listed at the end. The
-return itself is your preparer's or your software's.
+An estimate, not advice. The refresh applies the figures the IRS has published for the year, with the simplifications listed at the end. The return itself is your preparer's or your software's.
 
 ## The return, roughly
 
@@ -84,8 +77,7 @@ encodings:
 
 ## Withheld against owed
 
-The bar is what has been withheld and paid; the marker is the estimated tax
-after credits. Past the marker is a refund; short of it, a balance due.
+The bar is what has been withheld and paid; the marker is the estimated tax after credits. Past the marker is a refund; short of it, a balance due.
 
 ```chart data: data/estimate-*.json#withholding
 chartType: Bullet Chart
@@ -124,18 +116,16 @@ encodings:
 
 ## Forms received
 
-One row per W-2 in `inputs/`, read from each file's front matter every night.
-Add a form in the evening and it is here in the morning, before any refresh.
+One row per W-2 in `inputs/`, read from each file's front matter every night. Add a form in the evening and it is here in the morning, before any refresh.
 
 <!-- data: inputs/*.md -->
-| employer | tax_year | box1_wages | box2_federal_withheld | box12_d_401k |
+| Employer | Tax year | Box1 wages | Box2 federal withheld | Box12 D 401k |
 | --- | ---: | ---: | ---: | ---: |
 | Example Employer Inc. | 2025 | 148600 | 21940 | 16400 |
 
 ## Actions
 
-Your tracker, read from [[Tax Profile]] each night. Change a status there;
-it is current here in the morning.
+Your tracker, read from [[Tax Profile]] each night. Change a status there; it is current here in the morning.
 
 <!-- data: Tax Profile.md#actions -->
 | id | action | due | status |
@@ -162,9 +152,7 @@ it is current here in the morning.
 
 ## The figures the estimate uses
 
-Verified against the IRS pages named in each row on 2 September 2026. When
-the IRS publishes new figures, edit `data/tax-figures.json`; the refresh uses
-it and this table redraws.
+Verified against the IRS pages named in each row on 2 September 2026. When the IRS publishes new figures, edit `data/tax-figures.json`; the refresh uses it and this table redraws.
 
 <!-- data: data/tax-figures.json#figures -->
 | Item | 2025 | 2026 | Source |
@@ -217,25 +205,16 @@ it and this table redraws.
 
 ## What you will see in the morning
 
-- **The IRS moved.** A watched page changed: a new deadline, a new figure, a
-  new release in the newsroom. The Briefing shows the text that changed, and
-  you decide whether `data/tax-figures.json` needs a new number.
-- **A form arrived.** You dropped a second W-2 in `inputs/`: the inventory
-  names it, *Forms received* has its row, and the next refresh adds it to
-  the estimate.
+- **The IRS moved.** A watched page changed: a new deadline, a new figure, a new release in the newsroom. The Briefing shows the text that changed, and you decide whether `data/tax-figures.json` needs a new number.
+- **A form arrived.** You dropped a second W-2 in `inputs/`: the inventory names it, *Forms received* has its row, and the next refresh adds it to the estimate.
 - **You ticked an action off.** The tracker above shows it done.
 
 ## Make it yours
 
 1. Fill in the front matter of [[Tax Profile]].
-2. Copy `inputs/W-2 — Example Employer.md` once per employer and type the
-   boxes. Delete the example when yours are in.
-3. Use Run now (the moon in the title bar). Flow works the estimate out from
-   [[Tax Refresh]] — the profile, your forms and the year's figures — writes it
-   into `data/` and redraws the page. Every night after that it does the same
-   before the page redraws, so a changed form is in the morning's page.
-4. Turn the Night Shift on: the moon in the title bar, or Settings ▸ Night
-   Shift.
+2. Copy `inputs/W-2 — Example Employer.md` once per employer and type the boxes. Delete the example when yours are in.
+3. Use Run now (the moon in the title bar). Flow works the estimate out from [[Tax Refresh]] — the profile, your forms and the year's figures — writes it into `data/` and redraws the page. Every night after that it does the same before the page redraws, so a changed form is in the morning's page.
+4. Turn the Night Shift on: the moon in the title bar, or Settings ▸ Night Shift.
 
 ## How this page is built
 

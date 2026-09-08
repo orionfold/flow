@@ -10,10 +10,7 @@ items:
 ---
 # Profile
 
-The one file you edit. Everything in the front matter above is read by
-[[Living Document]] each night: the scalars at the top can fill a key-value
-table, and `items` is a list the tables and charts draw from. Rename the
-keys to your domain; keep the shape.
+The one file you edit. Everything in the front matter above is read by [[Living Document]] each night: the scalars at the top can fill a key-value table, and `items` is a list the tables and charts draw from. Rename the keys to your domain; keep the shape.
 
 ## The shape the night reads
 
@@ -28,7 +25,5 @@ keys to your domain; keep the shape.
 ## Make it yours
 
 1. Replace `subject` and `owner`.
-2. Rename the keys in `items` to the columns your domain has, and put your
-   real rows in.
-3. In [[Living Document]], change the table headers and the chart's
-   `encodings` to the new key names. Headers match keys in any case.
+2. Rename the keys in `items` to the columns your domain has, and put your real rows in.
+3. In [[Living Document]], change the table headers and the chart's `encodings` to the new key names. Headers match keys in any case.

@@ -21,8 +21,7 @@ encodings:
   goal: {field: goal}
 ```
 
-Two of three ahead. Pipeline created missed, and it is the only one that matters
-to [[Sales Report — Q3]].
+Two of three ahead. Pipeline created missed, and it is the only one that matters to [[Sales Report — Q3]].
 
 ## Traffic and conversion
 
@@ -44,8 +43,7 @@ encodings:
   y: {field: sessions}
 ```
 
-The W29 dip was a search algorithm update. Recovery came from the docs rewrite,
-not from anything the marketing team planned — worth being honest about.
+The W29 dip was a search algorithm update. Recovery came from the docs rewrite, not from anything the marketing team planned — worth being honest about.
 
 ## Channel performance
 
@@ -58,8 +56,7 @@ not from anything the marketing team planned — worth being honest about.
 | Social | $4k | 21 | $190 | $110k | 27× |
 | **Total** | **$43k** | **412** | **$104** | **$1.9M** | **44×** |
 
-Paid search is the worst performer on both cost and ROI and takes the largest
-budget. That is the reallocation question for Q4.
+Paid search is the worst performer on both cost and ROI and takes the largest budget. That is the reallocation question for Q4.
 
 ## Content performance
 
@@ -82,6 +79,4 @@ encodings:
 
 ## What this suggests for Q4
 
-Move half the paid search budget to content, keep events flat, and treat
-documentation as a marketing surface rather than a support cost. The plan is in
-[[Content Strategy — Q4]].
+Move half the paid search budget to content, keep events flat, and treat documentation as a marketing surface rather than a support cost. The plan is in [[Content Strategy — Q4]].

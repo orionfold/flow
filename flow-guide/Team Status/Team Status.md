@@ -10,17 +10,11 @@ jobs:
 ---
 # Team Status
 
-The weekly roll-up, written by the night instead of by the manager. Each
-person keeps one file in `updates/` and rewrites its front matter when their
-week changes. Every night this page reads all of them into one table, redraws
-the confidence chart, and lists the quarter's milestones from [[Plan]]. The
-morning's Briefing shows who changed what, as a diff, so the Monday meeting
-starts from what is already known.
+The weekly roll-up, written by the night instead of by the manager. Each person keeps one file in `updates/` and rewrites its front matter when their week changes. Every night this page reads all of them into one table, redraws the confidence chart, and lists the quarter's milestones from [[Plan]]. The morning's Briefing shows who changed what, as a diff, so the Monday meeting starts from what is already known.
 
 ## The team this week
 
-One row per file in `updates/`, read from each file's front matter. A person
-who has not updated is visible by their `updated` date.
+One row per file in `updates/`, read from each file's front matter. A person who has not updated is visible by their `updated` date.
 
 <!-- data: updates/*.md -->
 | Name | Area | Status | Confidence | Updated | This week | Next week | Blocker |
@@ -83,23 +77,16 @@ encodings:
 
 ## What you will see in the morning
 
-- **Someone updated.** Their row changed, the confidence bar moved, and the
-  Briefing shows the exact diff of their file.
-- **Someone joined.** A new file in `updates/` is a new row and a new bar;
-  the inventory names the file.
-- **The plan moved.** A milestone's dates or state changed in [[Plan]]; the
-  timeline shows it and the Briefing shows the diff.
+- **Someone updated.** Their row changed, the confidence bar moved, and the Briefing shows the exact diff of their file.
+- **Someone joined.** A new file in `updates/` is a new row and a new bar; the inventory names the file.
+- **The plan moved.** A milestone's dates or state changed in [[Plan]]; the timeline shows it and the Briefing shows the diff.
 
 ## Make it yours
 
-1. Copy one of the files in `updates/` per person on the team, named for
-   them, and delete the four examples.
-2. Ask each person to rewrite their front matter once a week. The three
-   sentences are the update; the numbers are the roll-up.
+1. Copy one of the files in `updates/` per person on the team, named for them, and delete the four examples.
+2. Ask each person to rewrite their front matter once a week. The three sentences are the update; the numbers are the roll-up.
 3. Put the quarter in the front matter of [[Plan]].
-4. Turn the Night Shift on: the moon in the title bar, or Settings ▸ Night
-   Shift. A shared folder works the same way: everyone edits their own file,
-   one Mac runs the night.
+4. Turn the Night Shift on: the moon in the title bar, or Settings ▸ Night Shift. A shared folder works the same way: everyone edits their own file, one Mac runs the night.
 
 ## How this page is built
 
@@ -110,9 +97,7 @@ encodings:
 | The quarter | Gantt Chart | `Plan.md#milestones` | the night alone |
 | Updates on file | `flow-folder` inventory | `updates/` | the night alone |
 
-A glob without a `#key` reads one row per matching file, from that file's
-front matter. That is the whole mechanism: a folder of small documents, each
-owned by one person, rolled up by the night.
+A glob without a `#key` reads one row per matching file, from that file's front matter. That is the whole mechanism: a folder of small documents, each owned by one person, rolled up by the night.
 
 ## Overnight notes
 <!-- night: notes -->

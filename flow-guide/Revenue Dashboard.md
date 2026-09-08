@@ -5,8 +5,7 @@ tags: [dashboard, finance, metrics]
 
 # Revenue, dense
 
-Everything on this page is as of the 6 October close. It is meant to be
-scanned, not read.
+Everything on this page is as of the 6 October close. It is meant to be scanned, not read.
 
 ```chart
 chartType: KPI Card
@@ -70,9 +69,7 @@ encodings:
   color: {field: retained}
 ```
 
-The June cohort is the first to fall away, and June is when the pricing change
-landed. That is correlation, and it is in [[How We Decided]] as an open
-question rather than a conclusion.
+The June cohort is the first to fall away, and June is when the pricing change landed. That is correlation, and it is in [[How We Decided]] as an open question rather than a conclusion.
 
 ## The table the charts came from
 
@@ -85,12 +82,6 @@ question rather than a conclusion.
 
 ## What this page cannot do, honestly
 
-A real dashboard is a layout problem: panels sized against each other, a
-sidebar of filters, numbers that reflow into a grid. **Markdown has no layout**,
-so this page cannot be that, and pretending otherwise would be the wrong kind
-of demo.
+A real dashboard is a layout problem: panels sized against each other, a sidebar of filters, numbers that reflow into a grid. **Markdown has no layout**, so this page cannot be that, and pretending otherwise would be the wrong kind of demo.
 
-What it can be is dense, current, and made of real constructs — charts that
-render from data you can edit in place, tables that carry the underlying
-numbers, and a measure narrow enough to read. The craft goes *inside* the
-constructs rather than into inventing new ones.
+What it can be is dense, current, and made of real constructs — charts that render from data you can edit in place, tables that carry the underlying numbers, and a measure narrow enough to read. The craft goes *inside* the constructs rather than into inventing new ones.

@@ -12,9 +12,7 @@ blocker: ""
 ---
 # Dana Okafor
 
-One file per person, rewritten each week. The front matter is what rolls up
-into [[Team Status]] every night: name, area, a traffic-light status, a
-confidence number, and the three sentences.
+One file per person, rewritten each week. The front matter is what rolls up into [[Team Status]] every night: name, area, a traffic-light status, a confidence number, and the three sentences.
 
 | Field | Meaning |
 | --- | --- |

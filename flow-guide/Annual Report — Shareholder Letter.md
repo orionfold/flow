@@ -7,9 +7,7 @@ tags: [annual-report, shareholders, founder, finance]
 
 **Fiscal year 2026 · Meridian Software · Filed 14 November 2026**
 
-We finished the year at $19.2M in revenue, up 34%, profitable for the second
-half, and with more customers renewing than in any prior year. This letter is
-about what produced that, and about the two things we got wrong.
+We finished the year at $19.2M in revenue, up 34%, profitable for the second half, and with more customers renewing than in any prior year. This letter is about what produced that, and about the two things we got wrong.
 
 ![The boardroom after the November meeting](assets/boardroom-annual.jpeg)
 
@@ -100,8 +98,7 @@ encodings:
   y: {field: amount}
 ```
 
-Expansion contributed more than new business — $4.4M against $3.1M. That is the
-118% retention figure expressed in dollars.
+Expansion contributed more than new business — $4.4M against $3.1M. That is the 118% retention figure expressed in dollars.
 
 ## Revenue by geography
 
@@ -129,8 +126,7 @@ encodings:
   y: {field: growth}
 ```
 
-Europe grew fastest off a smaller base, entirely through referral and partner
-motion rather than a local sales team.
+Europe grew fastest off a smaller base, entirely through referral and partner motion rather than a local sales team.
 
 ## Customers and retention
 
@@ -144,10 +140,7 @@ motion rather than a local sales team.
 | Average contract value | $31k | $37k | **$43k** |
 | Customers over $100k | 9 | 17 | **31** |
 
-**Net revenue retention of 118% carried the year.** Note the tension in this
-table: logo retention *fell* while revenue retention rose sharply. We lost more
-customers than ever, and they were small ones; the accounts that stayed expanded.
-That is a good outcome this year and a fragile one to depend on.
+**Net revenue retention of 118% carried the year.** Note the tension in this table: logo retention *fell* while revenue retention rose sharply. We lost more customers than ever, and they were small ones; the accounts that stayed expanded. That is a good outcome this year and a fragile one to depend on.
 
 ```chart
 chartType: Line Chart
@@ -194,8 +187,7 @@ encodings:
   group: {field: year}
 ```
 
-Every line grew in absolute terms and fell as a share of revenue except G&A,
-which rose on audit, insurance and the first full year of a finance function.
+Every line grew in absolute terms and fell as a share of revenue except G&A, which rose on audit, insurance and the first full year of a finance function.
 
 ## Headcount
 
@@ -226,8 +218,7 @@ encodings:
   color: {field: function}
 ```
 
-Four hires against a plan of nine. Each addition was preceded by a written case
-that work was already overflowing its owner.
+Four hires against a plan of nine. Each addition was preceded by a written case that work was already overflowing its owner.
 
 ## Quarterly detail
 
@@ -254,38 +245,23 @@ encodings:
   y: {field: income}
 ```
 
-New customer additions fell every quarter. Revenue rose anyway, because
-expansion more than covered it — the same tension as the retention table, and
-the single most important thing in this document.
+New customer additions fell every quarter. Revenue rose anyway, because expansion more than covered it — the same tension as the retention table, and the single most important thing in this document.
 
 ## What worked
 
-**Existing customers expanded on their own.** When we asked why, in
-[[Customer Interviews]], nobody mentioned a salesperson. Expansion came from
-teams adding seats after their first full quarter.
+**Existing customers expanded on their own.** When we asked why, in [[Customer Interviews]], nobody mentioned a salesperson. Expansion came from teams adding seats after their first full quarter.
 
-**We stopped shipping features nobody asked for.** The roadmap moved to outcomes
-in January. Cycle time fell from eleven weeks to four, and the share of shipped
-work customers used within a month went from 40% to 71%.
+**We stopped shipping features nobody asked for.** The roadmap moved to outcomes in January. Cycle time fell from eleven weeks to four, and the share of shipped work customers used within a month went from 40% to 71%.
 
-**Costs behaved.** Gross margin improved three points while headcount grew, as
-routine work moved onto our own hardware. The detail is in
-[[Cost of This Quarter]].
+**Costs behaved.** Gross margin improved three points while headcount grew, as routine work moved onto our own hardware. The detail is in [[Cost of This Quarter]].
 
 ## What did not
 
-**Self-serve fell 35% and we were slow to see it.** Two competitors cut entry
-pricing in June; conversion fell through July and August before it was raised as
-a problem. The number was visible the whole time — a monitoring failure more
-than a pricing one. The competitive detail is in [[Market Landscape]].
+**Self-serve fell 35% and we were slow to see it.** Two competitors cut entry pricing in June; conversion fell through July and August before it was raised as a problem. The number was visible the whole time — a monitoring failure more than a pricing one. The competitive detail is in [[Market Landscape]].
 
-**We under-invested in what was working.** Referrals produced 43% of bookings
-with no owner and no budget, as [[Sales Report — Q3]] sets out.
-[[How We Decided]] records the decision to fund it, which should have been made
-a year earlier.
+**We under-invested in what was working.** Referrals produced 43% of bookings with no owner and no budget, as [[Sales Report — Q3]] sets out. [[How We Decided]] records the decision to fund it, which should have been made a year earlier.
 
-**New customer count declined every quarter.** Masked by expansion this year. It
-will not be maskable in FY2027.
+**New customer count declined every quarter.** Masked by expansion this year. It will not be maskable in FY2027.
 
 ## FY2027 commitments
 
@@ -299,9 +275,7 @@ will not be maskable in FY2027.
 
 ## A closing note
 
-We publish our misses in the same document as our wins, at the same level of
-detail. It is not modesty; a board that only hears about wins cannot help with
-anything else.
+We publish our misses in the same document as our wins, at the same level of detail. It is not modesty; a board that only hears about wins cannot help with anything else.
 
 Thank you for the year.
 
@@ -309,5 +283,4 @@ Thank you for the year.
 
 ---
 
-*Figures are audited except where noted. Segment and geography splits are
-management estimates using the same allocation basis as prior years.*
+*Figures are audited except where noted. Segment and geography splits are management estimates using the same allocation basis as prior years.*

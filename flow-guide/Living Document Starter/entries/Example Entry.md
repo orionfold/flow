@@ -9,10 +9,7 @@ note: "One file per thing; the night reads each file's front matter as one row."
 ---
 # Example Entry
 
-A folder of small documents, one per person, project, customer or paper, is
-the simplest living-document pattern there is. [[Living Document]] reads
-every file in `entries/` as one row, and the person who owns a row edits only
-their own file.
+A folder of small documents, one per person, project, customer or paper, is the simplest living-document pattern there is. [[Living Document]] reads every file in `entries/` as one row, and the person who owns a row edits only their own file.
 
 | Field | Meaning |
 | --- | --- |

@@ -7,21 +7,16 @@ tags: [personal, career, resume]
 
 Product and operations leader · Lisbon · priya@example.com · [portfolio](https://example.com)
 
-Fifteen years building and running product teams, mostly at the stage where the
-company has proven something works and has not yet worked out how to do it
-twice.
+Fifteen years building and running product teams, mostly at the stage where the company has proven something works and has not yet worked out how to do it twice.
 
 ## Experience
 
 ### VP Product · Meridian Software · 2022–present
 
-Joined at $4M ARR with three engineers and no product function; now $19M with a
-team of nineteen.
+Joined at $4M ARR with three engineers and no product function; now $19M with a team of nineteen.
 
-- Rebuilt the roadmap process around outcomes rather than features; shipped
-  cycle time fell from 11 weeks to 4
-- Led the pricing change that moved the company from seat-based to hybrid,
-  lifting net revenue retention from 104% to 118%
+- Rebuilt the roadmap process around outcomes rather than features; shipped cycle time fell from 11 weeks to 4
+- Led the pricing change that moved the company from seat-based to hybrid, lifting net revenue retention from 104% to 118%
 - Hired and still retain seven of eight product and design hires
 
 ### Head of Product · Aperture Analytics · 2018–2022
@@ -46,8 +41,7 @@ team of nineteen.
 
 ## How I work
 
-I write things down. Most of what I am useful for is turning a room's worth of
-half-agreement into a document someone can disagree with precisely.
+I write things down. Most of what I am useful for is turning a room's worth of half-agreement into a document someone can disagree with precisely.
 
 I prefer small teams with real constraints over large teams with real budgets.
 
@@ -59,5 +53,4 @@ I prefer small teams with real constraints over large teams with real budgets.
 
 ## References
 
-Available on request — and I will tell you who to talk to about my weaknesses,
-not only my strengths.
+Available on request — and I will tell you who to talk to about my weaknesses, not only my strengths.

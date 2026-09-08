@@ -10,16 +10,11 @@ jobs:
 ---
 # Job Search
 
-Every application, where it stands, and what happens next, on a timeline you
-can read at a glance. Nothing on this page needs a script: the tracker and
-the timeline are drawn from the front matter of [[Applications]] each night,
-the careers pages you list above are watched for changes, and the resume
-versions in `resumes/` are inventoried so the version you sent is on record.
+Every application, where it stands, and what happens next, on a timeline you can read at a glance. Nothing on this page needs a script: the tracker and the timeline are drawn from the front matter of [[Applications]] each night, the careers pages you list above are watched for changes, and the resume versions in `resumes/` are inventoried so the version you sent is on record.
 
 ## The pipeline
 
-Read from [[Applications]]. A bar that ends in the past is a follow-up you
-owe.
+Read from [[Applications]]. A bar that ends in the past is a follow-up you owe.
 
 ```chart data: Applications.md#applications
 chartType: Gantt Chart
@@ -66,8 +61,7 @@ encodings:
 
 ## Resume versions
 
-The Night Shift keeps this list current: one file per tailored version,
-named for the company it went to.
+The Night Shift keeps this list current: one file per tailored version, named for the company it went to.
 
 ```flow-folder resumes
 | File | Size | Modified | Digest |
@@ -77,22 +71,16 @@ named for the company it went to.
 
 ## What you will see in the morning
 
-- **A careers page changed.** One of the pages you watch gained or lost a
-  posting; the Briefing shows the text that changed. Add any company's
-  careers page to `watch` above, and it is watched from the next night.
-- **You moved an application.** You edited a stage after a call; the tracker
-  and the timeline show it, and the Briefing shows the diff.
+- **A careers page changed.** One of the pages you watch gained or lost a posting; the Briefing shows the text that changed. Add any company's careers page to `watch` above, and it is watched from the next night.
+- **You moved an application.** You edited a stage after a call; the tracker and the timeline show it, and the Briefing shows the diff.
 - **A tailored resume landed.** The inventory names the new file.
 
 ## Make it yours
 
-1. Edit the front matter of [[Applications]]: your applications and your
-   prep list.
-2. Put the careers pages you care about in `watch` at the top of this page.
-   Only public `https` pages; each nightly fetch leaves a receipt.
+1. Edit the front matter of [[Applications]]: your applications and your prep list.
+2. Put the careers pages you care about in `watch` at the top of this page. Only public `https` pages; each nightly fetch leaves a receipt.
 3. Keep tailored resumes in `resumes/`, one file per company.
-4. Turn the Night Shift on: the moon in the title bar, or Settings ▸ Night
-   Shift.
+4. Turn the Night Shift on: the moon in the title bar, or Settings ▸ Night Shift.
 
 ## How this page is built
 
@@ -103,10 +91,7 @@ named for the company it went to.
 | Resume versions | `flow-folder` inventory | `resumes/` | the night alone |
 | Careers pages | `watch` in the `jobs:` block | three public pages | the night alone |
 
-The same list draws the chart and the table: a Gantt reads `applied` and
-`next_date` as its two ends and `stage` as its colour, and the table's header
-names the columns it wants, in the order it wants them and in its own words —
-*Next step* over `next_step`.
+The same list draws the chart and the table: a Gantt reads `applied` and `next_date` as its two ends and `stage` as its colour, and the table's header names the columns it wants, in the order it wants them and in its own words — *Next step* over `next_step`.
 
 ## Overnight notes
 <!-- night: notes -->

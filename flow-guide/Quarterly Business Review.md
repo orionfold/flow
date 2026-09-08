@@ -5,10 +5,7 @@ tags: [qbr, finance, board]
 
 # Q3 2026 in one page
 
-Revenue grew 41% on the quarter, and almost all of it came from six enterprise
-deals that were in the pipeline before July. The self-serve motion, which was
-supposed to carry the year, did not move. That is the finding, and the rest of
-this document is the evidence for it.
+Revenue grew 41% on the quarter, and almost all of it came from six enterprise deals that were in the pipeline before July. The self-serve motion, which was supposed to carry the year, did not move. That is the finding, and the rest of this document is the evidence for it.
 
 ```chart
 chartType: Bar Chart
@@ -43,13 +40,9 @@ encodings:
 
 Two of these deserve more than a row.
 
-**Net retention at 112%** is the healthiest signal in the table. Existing
-customers expanded without being sold to, which is what [[Customer Interviews]]
-found when it asked why teams added seats: nobody mentioned a salesperson.
+**Net retention at 112%** is the healthiest signal in the table. Existing customers expanded without being sold to, which is what [[Customer Interviews]] found when it asked why teams added seats: nobody mentioned a salesperson.
 
-**Self-serve down 13%** is the one that should worry us. It is not churn —
-logo retention held at 94% — it is that new self-serve signups converted at
-less than half of Q2's rate. [[Market Landscape]] has the likely reason.
+**Self-serve down 13%** is the one that should worry us. It is not churn — logo retention held at 94% — it is that new self-serve signups converted at less than half of Q2's rate. [[Market Landscape]] has the likely reason.
 
 ## The shape of the pipeline
 
@@ -71,29 +64,18 @@ encodings:
   y: {field: days}
 ```
 
-Larger deals closing faster is unusual enough to be worth stating carefully.
-The plausible explanation is selection rather than skill: the six deals that
-closed were all referrals from existing customers, and a referred buyer arrives
-having already decided.[^referral]
+Larger deals closing faster is unusual enough to be worth stating carefully. The plausible explanation is selection rather than skill: the six deals that closed were all referrals from existing customers, and a referred buyer arrives having already decided.[^referral]
 
-[^referral]: Five of the six name an existing customer as their first contact
-with us. The sixth came from a conference talk. None came from paid acquisition.
+[^referral]: Five of the six name an existing customer as their first contact with us. The sixth came from a conference talk. None came from paid acquisition.
 
 ## What we are doing about it
 
-1. **Fund the referral motion deliberately.** It is producing our best deals by
-   accident. See [[How We Decided]] for the argument and the approval.
-2. **Stop spending on self-serve acquisition** until the conversion problem is
-   understood. This is a pause, not a retreat.
-3. **Hire one solutions engineer.** The enterprise deals are closing on demos
-   that the founders are personally running, and that does not scale past Q4.
+1. **Fund the referral motion deliberately.** It is producing our best deals by accident. See [[How We Decided]] for the argument and the approval.
+2. **Stop spending on self-serve acquisition** until the conversion problem is understood. This is a pause, not a retreat.
+3. **Hire one solutions engineer.** The enterprise deals are closing on demos that the founders are personally running, and that does not scale past Q4.
 
 ## What this cost
 
-Producing this review — the analysis, the drafting, the checking — cost
-$3.09 in model spend. [[Cost of This Quarter]] breaks it down, because a
-number nobody can check is not evidence.
+Producing this review — the analysis, the drafting, the checking — cost $3.09 in model spend. [[Cost of This Quarter]] breaks it down, because a number nobody can check is not evidence.
 
-> The thing we should not do is declare the self-serve experiment failed on one
-> quarter of data. It is one quarter, and it followed a pricing change we made
-> in June.
+> The thing we should not do is declare the self-serve experiment failed on one quarter of data. It is one quarter, and it followed a pricing change we made in June.

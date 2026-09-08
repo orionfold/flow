@@ -28,11 +28,7 @@ macros:
 ---
 # Holdings
 
-This is the one file you edit. The front matter above is the portfolio: every
-line in `holdings` is a position, every line in `macros` is an indicator the
-dashboard follows. [[Portfolio Dashboard]] reads this file each night and
-redraws its holdings table from it, and the refresh script reads it to know
-which prices to fetch.
+This is the one file you edit. The front matter above is the portfolio: every line in `holdings` is a position, every line in `macros` is an indicator the dashboard follows. [[Portfolio Dashboard]] reads this file each night and redraws its holdings table from it, and the refresh script reads it to know which prices to fetch.
 
 ## What each field means
 
@@ -49,14 +45,9 @@ which prices to fetch.
 
 ## Make it yours
 
-- **Add a stock.** Add a line under `holdings` in the same shape:
-  `- {symbol: COST, shares: 8, cost: 912.00, bought: 2026-08-30}`. The
-  next morning it is in the holdings table; the next refresh prices it.
+- **Add a stock.** Add a line under `holdings` in the same shape: `- {symbol: COST, shares: 8, cost: 912.00, bought: 2026-08-30}`. The next morning it is in the holdings table; the next refresh prices it.
 - **Remove a stock.** Delete its line. That is all.
-- **Change a lot.** Edit `shares` and `cost` in place. If you added to a
-  position, put the new average cost.
-- **Track a different indicator.** Replace a `macros` line. A currency pair
-  is `EURUSD=X`; a sector fund is its ticker, `XLK`.
+- **Change a lot.** Edit `shares` and `cost` in place. If you added to a position, put the new average cost.
+- **Track a different indicator.** Replace a `macros` line. A currency pair is `EURUSD=X`; a sector fund is its ticker, `XLK`.
 
-The example lots above are illustrative: real symbols at their real closing
-prices on 27 April 2026, not a recommendation. Replace them with what you own.
+The example lots above are illustrative: real symbols at their real closing prices on 27 April 2026, not a recommendation. Replace them with what you own.

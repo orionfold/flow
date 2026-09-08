@@ -13,16 +13,9 @@ jobs:
 ---
 # Household Budget
 
-Where the month's money went, against the plan in [[Budget Profile]]. Drop a
-bank statement in `statements/` and the page redraws — the moment Flow
-notices it, or overnight if Flow was closed: the totals, the categories
-against their budgets, the merchants that add up, and the lines no rule has
-caught yet. The Night Shift keeps the inventory of statements current, redraws
-from the newest summary, and shows you the exact diff when the profile
-changes.
+Where the month's money went, against the plan in [[Budget Profile]]. Drop a bank statement in `statements/` and the page redraws — the moment Flow notices it, or overnight if Flow was closed: the totals, the categories against their budgets, the merchants that add up, and the lines no rule has caught yet. The Night Shift keeps the inventory of statements current, redraws from the newest summary, and shows you the exact diff when the profile changes.
 
-Everything stays on this Mac. No statement is sent anywhere; the refresh reads
-the CSV files beside this page and writes a summary next to them.
+Everything stays on this Mac. No statement is sent anywhere; the refresh reads the CSV files beside this page and writes a summary next to them.
 
 ## The month at a glance
 
@@ -45,8 +38,7 @@ encodings:
 
 ## Categories against their budgets
 
-Every budgeted category, with what the month has spent against its limit. A
-category past its line is the one to look at first.
+Every budgeted category, with what the month has spent against its limit. A category past its line is the one to look at first.
 
 ```chart data: data/spending-*.json#byCategory
 chartType: Bullet Chart
@@ -170,8 +162,7 @@ The twelve merchants that took the most this month.
 
 ## Lines no rule caught
 
-Each of these needs a `rules` line in [[Budget Profile]]. Add it, run the
-refresh, and the line moves into its category.
+Each of these needs a `rules` line in [[Budget Profile]]. Add it, run the refresh, and the line moves into its category.
 
 <!-- data: data/spending-*.json#uncategorized -->
 | Date | Description | Amount |
@@ -182,8 +173,7 @@ refresh, and the line moves into its category.
 
 ## The plan
 
-Read from the front matter of [[Budget Profile]] each night: change a limit
-there and this table is current in the morning, with no refresh at all.
+Read from the front matter of [[Budget Profile]] each night: change a limit there and this table is current in the morning, with no refresh at all.
 
 <!-- data: Budget Profile.md#budgets -->
 | Category | Monthly |
@@ -202,8 +192,7 @@ there and this table is current in the morning, with no refresh at all.
 
 ## Statements in this folder
 
-The Night Shift keeps this inventory current, so a statement you dropped in
-the evening is named in the morning.
+The Night Shift keeps this inventory current, so a statement you dropped in the evening is named in the morning.
 
 ```flow-folder statements
 | File | Size | Modified | Digest |
@@ -214,27 +203,16 @@ the evening is named in the morning.
 
 ## What you will see in the morning
 
-- **A statement landed.** The inventory grew by one file and the Briefing
-  names it. If Flow was open when it landed, every chart above had already
-  redrawn and the Briefing says so; if not, the night redrew them.
-- **The plan changed.** You raised the groceries budget; the Briefing shows
-  the diff of the profile and *The plan* table carries the new number.
+- **A statement landed.** The inventory grew by one file and the Briefing names it. If Flow was open when it landed, every chart above had already redrawn and the Briefing says so; if not, the night redrew them.
+- **The plan changed.** You raised the groceries budget; the Briefing shows the diff of the profile and *The plan* table carries the new number.
 - **Nothing moved.** An honest empty morning, and the run is in Receipts.
 
 ## Make it yours
 
-1. Edit the front matter of [[Budget Profile]]: your income, your targets,
-   your categories and rules.
-2. Export a month from your bank as CSV into `statements/` and delete the two
-   example files.
-3. Use Run now (the moon in the title bar). Flow reads [[Budget Refresh]],
-   the gather definition for this folder: it takes every statement in
-   `statements/`, sorts the lines with the profile's rules and writes the
-   month's summary into `data/`, then redraws the page. Nothing runs, so
-   there is nothing to allow. Every night after that it reads the same
-   definition, so a statement you dropped in is in the morning's page.
-4. Turn the Night Shift on: the moon in the title bar, or Settings ▸ Night
-   Shift.
+1. Edit the front matter of [[Budget Profile]]: your income, your targets, your categories and rules.
+2. Export a month from your bank as CSV into `statements/` and delete the two example files.
+3. Use Run now (the moon in the title bar). Flow reads [[Budget Refresh]], the gather definition for this folder: it takes every statement in `statements/`, sorts the lines with the profile's rules and writes the month's summary into `data/`, then redraws the page. Nothing runs, so there is nothing to allow. Every night after that it reads the same definition, so a statement you dropped in is in the morning's page.
+4. Turn the Night Shift on: the moon in the title bar, or Settings ▸ Night Shift.
 
 ## How this page is built
 
