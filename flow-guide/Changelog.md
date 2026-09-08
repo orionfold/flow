@@ -9,6 +9,7 @@ Newest release first. Every release names what shipped, how it benefits you, and
 
 | Release | Build | Date | In a sentence |
 | --- | --- | --- | --- |
+| 1.6.3 | 2017 | 7 September 2026 | The point release after the first Night Shift week: documents from other tools open whole, the Reader and the Editor read the same page, and every Settings sentence says what is actually so |
 | 1.6.2 | 1994 | 6 September 2026 | Every number about tokens and money is one number, read from your documents' own receipts — the night's work counts where the day's does |
 | 1.6.1 | 1982 | 6 September 2026 | The first day with the Night Shift: pause and stop a run, a Briefing that reads true the morning after, and a lighter night |
 | 1.6 | 1899 | 5 September 2026 | The Night Shift: living documents that keep themselves current, and one Morning Briefing |
@@ -19,6 +20,52 @@ Newest release first. Every release names what shipped, how it benefits you, and
 | 1.5.2 | 1414 | 27 August 2026 | A pressable Update ready button |
 | 1.5.1 | 1404 | 27 August 2026 | The first Flow that arrived through Flow itself |
 | 1.5 | 1382 | 26 August 2026 | The launch |
+
+## Flow 1.6.3 · build 2017 · 7 September 2026
+
+The week after the Night Shift shipped, spent on what the operator met while using it for real. A document saved by Windows or a sync client opens whole; the Reader draws lists, code, tables and diagrams the way a person would lay them out and the Editor now shows the Guide as the same flowing paragraphs; the night says beforehand which model it will use and what it will cost, and counts its work one way everywhere; the definition editor and the jobs panel say plainly what is missing and what to press; and Settings stops saying things that were not so, from the rule that "decided" to the row that said updates were only checked on request.
+
+### A document from Windows or a sync client opens whole
+
+- **What shipped.** A file saved with Windows line endings, as Windows tools and some sync clients write them, used to open as body prose with no title, no tags and no standing jobs, and its tables never lit *Edit Table*. Flow now reads such a document exactly as it reads one saved on a Mac, and a page it redraws overnight keeps the line endings it had. Handing Flow a folder from the command line or by dropping it on Flow now shows the window with the folder open, where it used to show a menu bar and nothing else.
+- **How it benefits you.** The document a colleague sent from Windows, or one a sync client rewrote, is the same document in Flow: title, tags, jobs and tables all there. Nothing has to be re-saved first.
+- **How to use it.** Open it. A table in such a document opens in the table pane read-only, as before.
+
+### The Reader and the Editor read the same page
+
+- **What shipped.** A code span or a wikilink that wrapped at a line end no longer leaves an empty pill at the margin or its punctuation alone on the next line. The continuation of a long bullet, task or numbered item hangs under the first line's text, in the Reader and the Editor. A long line in a code block wraps instead of scrolling on its own row. In a table drawn from data, a column of dates reads *9 Sep 2026*, a column of one-word statuses reads *Green*, a header such as `price_per_seat` reads as written, and a column of prose keeps a readable width so a wide table scrolls rather than stacking one word per line. A Mermaid drawing wider than the column stops shrinking where its labels would become unreadable and scrolls; a Sankey's name and value read apart; a C4 diagram fills its card. And every Flow Guide document is written one line per paragraph, so the Editor shows the same flowing text the Reader does.
+- **How it benefits you.** A page reads the same in both modes, and a wide table or diagram stays legible instead of being squeezed. The Guide no longer looks ragged the moment you switch to the Editor.
+- **How to use it.** Nothing to set up. An existing Guide receives the reflowed documents through Settings ▸ General ▸ *Flow Guide Updates…*; a document already open shows the new text after you reopen it.
+
+### The night says what it will use, and counts its work one way
+
+- **What shipped.** The moon's popover and Settings ▸ Night Shift carry two more rows, *Model* and *Cost estimate*, derived from the same routing the night will use: the model and the provider it runs on, and *$0* while the night stays on this Mac. The strip's *Last shift* row and the Morning Briefing's lead count the same things in the same words, documents worked and changes made. A run over two folders reads *Folder 2 of 2 · 15 of 21 documents* above the roster, so the second folder's list no longer looks like the first one starting over. A redrawn page's *last-updated* stamp names the capture whose new rows changed it.
+- **How it benefits you.** You know before bed which model will work and whether it costs anything, and the morning's numbers agree wherever you read them.
+- **How to use it.** Hover the moon for the popover, or open Settings ▸ Night Shift. Nothing to set up.
+
+### The definition editor and the jobs panel say what is missing
+
+- **What shipped.** A row set or table downstream of a web page reads *waits for prices, read at night; press Fetch now to see its rows today* instead of a fault. With no part chosen the preview says *Pick a part to see its rows* rather than spinning. A newly added step stays in the editor until its fields are filled, so the definition on disk is always one the night can run, and a draft that forgot to say which rows to count is completed from the definition's one source, with the caption saying so. In the jobs panel a job's title line is in the primary ink, web-page notes sit as one footnote under the rows, a file the folder does not hold is marked *Not found in this folder* as you commit it, and a bare name like *Holdings* means *Holdings.md*, as a wikilink does. Review Changes holds about five rows and scrolls with the selected change in view, and Keep and Revert no longer hold the window while they write. The definition editor's three columns keep their widths and the pane scrolls sideways on a 14" display.
+- **How it benefits you.** A definition that is merely waiting for the night is not called broken, an unfinished step cannot reach the file, and a long list of changes no longer pushes the document out of view.
+- **How to use it.** Press *Fetch now* on a page that is waiting; pick a part to see its rows; fill a new step before leaving it.
+
+### Settings says what is actually so
+
+- **What shipped.** Smart Routing names the rule that actually decided: a rule with nothing to order by, such as *Fastest measured on this Mac* before any speed has been measured, no longer appears as the decider. Choosing a model yourself is two steps, provider then model; a provider that is switched off says so once, the same model name under two providers is two rows, the line beneath reads *Using qwen3.6-27b on Flow Runtime*, and Flow remembers which provider you picked. Settings ▸ General reads *Checked every 6 hours, and when you ask*, with when the last check completed beneath. Under Models, *What it costs* names the day Flow's price table was last read from the providers' pages, and a rail of three figures beside it shows what you have spent this session, last night and all time, read from your documents' receipts; an *Imported* confirmation reads in quiet ink and orange stays for a refusal; a model imported from a pinned Hugging Face snapshot is named for the model, not its commit hash. A Settings pane can no longer be squeezed narrower than its column; past that point the pane row scrolls. After you edit a document by hand, the receipts pill's *Stale* tooltip says the receipts predate your save and what brings them current.
+- **How it benefits you.** Every sentence on the Settings pages is one you can check against what Flow does, and the cost table carries its date so a rate that moved does not read like one that did not.
+- **How to use it.** Settings ▸ Smart Routing ▸ *Customize* for the two-step picker; Settings ▸ Models ▸ *What it costs* for the dated table and the spend rail.
+
+### What Flow is using, counted whole
+
+- **What shipped.** The title-bar readout's memory and CPU now include the helpers Flow launched for a benchmark and a model still loading; the GPU figure shows *100%* in full and says *no Flow model running* or *includes Flow's model* beside it, since macOS reports the whole Mac; a disk cell shows how full the drive holding your models is; and a model imported from Ollama is named by the name you gave it, not its file's digest.
+- **How it benefits you.** The number you glance at during a benchmark is the whole cost of the benchmark, and a GPU figure with no Flow model running is not mistaken for Flow's.
+- **How to use it.** Hover the readout in the title bar. Nothing to set up.
+
+### The small things
+
+- **What shipped.** The table editor sizes its columns to their content and shares the pane's spare width; the chart editor's encoding pickers wrap onto a second row; a document's first line starts below the floating toolbar, so a full-width table or photo is never covered at its corner. The Ideas pane has the same header as a Settings page, a document card names the document without `.md`, the approval sentence says *It stays on this Mac, uses this Mac's time and battery, and costs no money*, and a measurement run from Settings ▸ Benchmarks lands the measure card in Ideas Done saying where it was done. A highlighted chart coloured by another field fades the other rows instead of turning every series grey. A copy of Flow built from source no longer lights *Update ready* for the release it is newer than.
+- **How it benefits you.** Fewer moments where a control or a word is not where you expect it.
+- **How to use it.** Nothing to set up.
 
 ## Flow 1.6.2 · build 1994 · 6 September 2026
 

@@ -121,7 +121,7 @@
       "path" : "assets/strategy-wall.jpeg"
     }
   ],
-  "contentVersion" : "1.11.5",
+  "contentVersion" : "1.11.6",
   "documents" : [
     {
       "bytes" : 13048,
@@ -139,8 +139,8 @@
       "path" : "Board Update — Q4 Outlook.md"
     },
     {
-      "bytes" : 37515,
-      "contentHash" : "sha256:fee6de2448177368cd52c7cffbbfe2a7a9140f5db67fcc8ffbb7ac86600e6584",
+      "bytes" : 46489,
+      "contentHash" : "sha256:b75861531e8cefa29c20112d3fdcae63d01ccf88610bbbdb8a710d0a69b8bdd4",
       "path" : "Changelog.md"
     },
     {
