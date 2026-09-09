@@ -3,7 +3,9 @@ title: Tax Refresh
 tags: [tax, definition, night-shift]
 sources:
   profile: Tax Profile.md
-  forms: inputs/*.md
+  forms:
+    path: inputs/*.md
+    optional: true
   figureRows: data/tax-figures.json#figures
   bracketRows:
     path: data/tax-figures.json
@@ -35,7 +37,7 @@ derive:
     rows:
       - {metric: "{balance >= 0 ? 'Estimated refund' : 'Estimated balance due'}", value: "{abs(balance)}"}
       - {metric: Taxable income, value: "{round(taxable, 0)}", goal: "{round(agi, 0)}"}
-      - {metric: "Effective rate, %", value: "{agi > 0 ? round(liability / agi * 100, 1) : 0}", goal: "{round(marginalRate * 100, 0)}"}
+      - {metric: "Effective rate, %", value: "{agi > 0 ? round(liability / agi * 100, 1) : 0}", goal: "{round(coalesce(marginalRate, 0) * 100, 0)}"}
       - {metric: Federal tax after credits, value: "{round(liability, 0)}", goal: "{round(paid, 0)}"}
   bridgeRows:
     rows:

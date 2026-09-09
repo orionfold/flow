@@ -1,0 +1,67 @@
+{
+ "records": [
+  {
+   "catalogueID": "mlx-community/Qwen3.6-27B-4bit",
+   "helper": "mlx-serve",
+   "receiptSHA256": "2979d7433d8694ecd5675385650865ba2d609e1280cba0bc46c72849dc8bf0dd",
+   "contentDate": "2026-09-09",
+   "passed": true
+  },
+  {
+   "catalogueID": "mlx-community/gemma-3n-E4B-it-lm-4bit",
+   "helper": "mlx-serve",
+   "receiptSHA256": "8815f72203d3974657c0d92195ab4fe95cc75efb0916f57113bfd93d5624754e",
+   "contentDate": "2026-09-09",
+   "passed": false
+  },
+  {
+   "catalogueID": "mlx-community/granite-4.1-8b-4bit",
+   "helper": "mlx-serve",
+   "receiptSHA256": "d867f7ebe46e82e94f13932c8fbaf9367d3d37d990e3c52fd9e3b3031c523d28",
+   "contentDate": "2026-09-09",
+   "passed": false
+  },
+  {
+   "catalogueID": "mlx-community/gemma-4-26b-a4b-it-4bit",
+   "helper": "mlx-serve",
+   "receiptSHA256": "671647f590fa529b291e1a30483ec26338c3b44d7cd0e4d40176cdca6aac1f11",
+   "contentDate": "2026-09-09",
+   "passed": false
+  },
+  {
+   "catalogueID": "mlx-community/Qwen3.8-27B-4bit",
+   "helper": "mlx-serve",
+   "receiptSHA256": "906b677b661415aef6c2adbf06f0927a933da702075c2fc2bd0982a14d8bb430",
+   "contentDate": "2026-09-09",
+   "passed": true
+  },
+  {
+   "catalogueID": "mlx-community/gemma-4-26b-a4b-it-4bit",
+   "helper": "mlx-serve",
+   "receiptSHA256": "a7ddcbeac85f6ffaa5bf4e6488865eda915c2d3a318d46013858c4e76d153e6d",
+   "contentDate": "2026-09-09",
+   "passed": true
+  },
+  {
+   "catalogueID": "mlx-community/gemma-3n-E4B-it-lm-4bit",
+   "helper": "mlx-serve",
+   "receiptSHA256": "85f68b3571589ca18b005a8f33ff9b659c801bb674777a9461304cd42980854c",
+   "contentDate": "2026-09-09",
+   "passed": false
+  },
+  {
+   "catalogueID": "mlx-community/gemma-3-text-12b-it-4bit",
+   "helper": "mlx-serve",
+   "receiptSHA256": "5efaff4ae231d013e49724eb7e8125a1cb3fed862be0516dc674b0e7f501e68a",
+   "contentDate": "2026-09-09",
+   "passed": false
+  },
+  {
+   "catalogueID": "mlx-community/gemma-4-26b-a4b-it-4bit",
+   "helper": "mlx-serve",
+   "receiptSHA256": "221b2ca9772c528055b7f9abf5370c93e4efe8044903074a0085f8447dac1729",
+   "contentDate": "2026-09-09",
+   "passed": true
+  }
+ ]
+}

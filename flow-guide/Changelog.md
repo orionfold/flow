@@ -9,6 +9,7 @@ Newest release first. Every release names what shipped, how it benefits you, and
 
 | Release | Build | Date | In a sentence |
 | --- | --- | --- | --- |
+| 1.6.4 | 2096 | 9 September 2026 | Flow recommends a day model and a night model for your Mac and shows the evidence whole; a model that can see describes a picture; a local model that never stops writing is cut off; and the first change on a new document can be approved again |
 | 1.6.3 | 2017 | 7 September 2026 | The point release after the first Night Shift week: documents from other tools open whole, the Reader and the Editor read the same page, and every Settings sentence says what is actually so |
 | 1.6.2 | 1994 | 6 September 2026 | Every number about tokens and money is one number, read from your documents' own receipts — the night's work counts where the day's does |
 | 1.6.1 | 1982 | 6 September 2026 | The first day with the Night Shift: pause and stop a run, a Briefing that reads true the morning after, and a lighter night |
@@ -20,6 +21,52 @@ Newest release first. Every release names what shipped, how it benefits you, and
 | 1.5.2 | 1414 | 27 August 2026 | A pressable Update ready button |
 | 1.5.1 | 1404 | 27 August 2026 | The first Flow that arrived through Flow itself |
 | 1.5 | 1382 | 26 August 2026 | The launch |
+
+## Flow 1.6.4 · build 2096 · 9 September 2026
+
+Two days on the models Flow runs and what it says about them. The Guide now recommends a day model and a night model for your Mac and shows every measurement behind the pick; a model that can see describes a picture and proposes its alt text; a local model that forgot to stop is cut off instead of filling its whole memory; Ollama models fit rules that ask about context size; Related matches say why they are missing; and a run of small things met using Flow for real, from a footnote list that lost its second entry to the first AI change on a new document that could not be approved.
+
+### Flow recommends a day model and a night model, and shows how it knows
+
+- **What shipped.** *Models Flow Recommends* in the Guide is now a table by memory tier: each row states its download, its working set, its speed, whether it passed Flow's agency baseline, and whether the number was measured on Flow Runtime or projected from the model's own files. On first run Flow proposes both picks with one sentence each, names the leading candidate where no model has earned a pick yet, and says what the pick would be one tier down. Smart Routing ▸ Customize carries a *Night model* row beside the day pick, with the reason for each; the night model is never one that would leave this Mac. The page says when its list was researched, and a release whose list is more than thirty days old is refused before it is cut. Beside it, a new page, *Model Curation and Measurements*, carries everything the recommendation summarises: both accepted lists, every measurement cell of every signed cohort, and every agency-baseline run with its three tasks named and judged one by one, each beside the receipt it came from; task-specific small models have their own section, which reads *not yet measured* until one is. Importing a downloaded snapshot folder saved as *model name / revision* now lands under the model's name, with the revision kept as provenance.
+- **How it benefits you.** You can pick a model for your Mac from a table that says what each one costs in memory and time and whether it earned the pick, and read the measurement behind any number rather than take it on trust.
+- **How to use it.** Open *Models Flow Recommends* in the Guide; follow its link to *Model Curation and Measurements*. Settings ▸ Smart Routing ▸ *Customize* for the Night model row.
+
+### Put the cursor on a picture and ask Flow to describe it
+
+- **What shipped.** *Describe Picture* joins the Document Tools strip, the Agency menu and the image pane. A model that can see is sent the picture itself and proposes one sentence of alt text, which you review and approve like any other change; the receipt records which picture was sent. A model that cannot see says so before anything runs, and Settings ▸ Models reads *Reads pictures* on the Measured line once Flow has checked the model's own files.
+- **How it benefits you.** Alt text for a picture is one action away, and a model that would fail says so in two sentences instead of a failed run.
+- **How to use it.** Put the cursor on a picture and choose *Describe Picture* from the toolbar strip or the Agency menu.
+
+### A local model that never stops writing is cut off
+
+- **What shipped.** When a model failed to finish its answer it kept writing until its whole memory window was full, so a three-paragraph proofread once produced eight thousand tokens over three minutes. Every run on your own Mac now carries a size fitted to what it was asked to do, generous enough that a real answer never meets it, and a reply that does is declined rather than shown as a candidate. A model that returns exactly the draft between the markers, with no envelope around it, is now read as the proposal rather than declined as unreadable; anything with commentary around the markers is still declined, in words. Ollama models are now chosen by rules that ask about context size, since Flow reads the context length Ollama reports and uses the size it will actually run. And Settings ▸ Models ▸ Smart Routing ▸ Customize carries *Lookups per run*, from 1 to 50, for a long document whose run used to stop at twelve with *Nothing in the document was changed*.
+- **How it benefits you.** A run on your Mac ends when the answer does, a good draft is not thrown away for the shape of its wrapper, and a model that fits is no longer skipped.
+- **How to use it.** Nothing to set up for the cut-off or the wrapper. Settings ▸ Models ▸ Smart Routing ▸ *Customize* for Lookups per run.
+
+### Related matches say why they are missing
+
+- **What shipped.** The switch in Settings ▸ Documents explains what Related uses: Apple's on-device sentence model, never leaving this Mac, not available in every language. A search in a language it does not cover reads *Related matches aren't available in Hindi yet* instead of an empty row.
+- **How it benefits you.** An empty Related row is explained rather than mysterious.
+- **How to use it.** Settings ▸ Documents ▸ Related.
+
+### Search, saving and footnotes
+
+- **What shipped.** Search no longer returns text from build folders such as `node_modules`, `dist` and `build` inside a folder you have open; those folders still appear in the sidebar and their files still open. Saving a long document with no links in it is faster: a 233 KB note went from about 140 milliseconds to about 7, and notes with links are unaffected. Footnote definitions written one line after another are all recognised, including one whose text wraps onto an indented line, so a document whose footnotes are all present can be approved.
+- **How it benefits you.** Search results and the model's own lookups hold text you wrote, a long save no longer lags, and a footnoted document is not blocked at approval.
+- **How to use it.** Nothing to set up.
+
+### Living documents read their numbers right
+
+- **What shipped.** A tile comparing two negative numbers reads *-0.4 against -0.9*, with no bar and the colour of a month that is behind, instead of *144%* and a full green bar. A stat tile no longer shows a tooltip reading `true`. A Waterfall chart's axes name only the columns the document declares. A Tax Advisor with no W-2 yet is estimated from everything else rather than shown blank.
+- **How it benefits you.** The page you read in the morning says what the numbers say.
+- **How to use it.** Nothing to set up.
+
+### The first change on a new document can be approved again
+
+- **What shipped.** Since 1.6.3, Approve & Save on a document Flow had never receipted failed with *This file could not be written* and then *Document identity changed*; a run now records its receipt under the same identity as the proposal it produced. Review Changes shows the changed lines with three lines of context and a row saying how many unchanged lines sit between. A proofread's evidence counts the corrections it actually proposed. Receipts opens on the run you just made. When a save leaves receipt recovery pending, Flow runs that recovery in the background and re-enables controlled agency for the folder once it completes. Selecting a cell in a table pane makes that table the target of *Convert Table to Text*. Hosted models are told not to write LaTeX, so a formula lands in words or a code span. In a disclosed check row, *If it fails today* sits as a caption under the check's name.
+- **How it benefits you.** The first AI change on a new document goes through, and the review that follows shows what changed and counts it right.
+- **How to use it.** Nothing to set up.
 
 ## Flow 1.6.3 · build 2017 · 7 September 2026
 

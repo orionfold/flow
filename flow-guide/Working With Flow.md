@@ -84,6 +84,8 @@ func total(_ lines: [Line]) -> Decimal {
 
 Images live beside your documents in `assets/`, as ordinary files.
 
+Put the cursor on a picture and choose Agency ▸ Describe Picture, or the toolbar's Dp, and a model that can read pictures writes its alt text for your review: one sentence saying what the picture shows, read aloud by VoiceOver and shown when the file is missing. A model that can't read pictures says so before anything runs. The image pane offers the same button beside the alt field.
+
 ## Linking documents
 
 Wrap a document's name in double brackets to link to it. That is how [[Welcome]] indexes this one, and how every document in this folder points at [[Quarterly Business Review]]. Backlinks are shown at the foot of each document, so you can see what points at what.
@@ -99,6 +101,10 @@ Every document here opens with a YAML block carrying `title` and `tags`. It is o
 ## What Flow deliberately does not render
 
 Callout blocks, math, highlight spans, comment spans, embedded documents, and links that point at a heading inside another document. These are not supported in this build, so no document in this folder uses one. A Guide that showed you a broken construct on first launch would be worse than one that stayed quiet about it.
+
+## Search
+
+Search finds words across every open folder, and the sidebar's **Best** results add **Related matches** beside them. Today Related matches use Apple's on-device sentence model: they never leave this Mac, they match at the scale of a sentence rather than a page, and they are not available in every language. When they are not there, the results say why.
 
 ## What leaves your Mac
 

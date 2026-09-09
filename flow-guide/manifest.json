@@ -41,6 +41,11 @@
       "path" : "Tax Advisor/data/tax-figures.json"
     },
     {
+      "bytes" : 2096,
+      "contentHash" : "sha256:7dbaf46f3d220f8dceb4caba9acf88c74183924dd21a9f3cadb848ccb03a7a81",
+      "path" : "assets/agency-check-ledger.json"
+    },
+    {
       "bytes" : 177321,
       "contentHash" : "sha256:69c6e65485ceec0d5c0d9097af6bc66d7e68da47715e9264382db1a9c4d932f1",
       "path" : "assets/boardroom-annual.jpeg"
@@ -121,7 +126,7 @@
       "path" : "assets/strategy-wall.jpeg"
     }
   ],
-  "contentVersion" : "1.11.6",
+  "contentVersion" : "1.11.12",
   "documents" : [
     {
       "bytes" : 13048,
@@ -139,8 +144,8 @@
       "path" : "Board Update — Q4 Outlook.md"
     },
     {
-      "bytes" : 46489,
-      "contentHash" : "sha256:b75861531e8cefa29c20112d3fdcae63d01ccf88610bbbdb8a710d0a69b8bdd4",
+      "bytes" : 54328,
+      "contentHash" : "sha256:8d6acf061c78c6ab8319919c4a9936028abfe55778da9606000bb904f0549092",
       "path" : "Changelog.md"
     },
     {
@@ -274,8 +279,13 @@
       "path" : "Meeting Notes — Weekly Staff.md"
     },
     {
-      "bytes" : 5847,
-      "contentHash" : "sha256:3c5637e2b4e6ea56f1280feda0250b68a5ecbc2e44b0e2cd222cdb7cd2828aae",
+      "bytes" : 12571,
+      "contentHash" : "sha256:96c4b142714fdd4d268836a0a52b97a33e36c5d5472b38fd7549463be92aad9b",
+      "path" : "Model Curation and Measurements.md"
+    },
+    {
+      "bytes" : 20179,
+      "contentHash" : "sha256:0d01cb01005247f5ce50c2a0c8efdda574f14ac796ad6c4623fe54f637600473",
       "path" : "Models Flow Recommends.md"
     },
     {
@@ -369,8 +379,8 @@
       "path" : "Tax Advisor/Tax Profile.md"
     },
     {
-      "bytes" : 13604,
-      "contentHash" : "sha256:4c3354ab18fd3c3a86a53141284a9f48bb230dfe11fd4257bd173ddf093602bf",
+      "bytes" : 13646,
+      "contentHash" : "sha256:1150db254b5ba0cb9a340d2f2ad139d960dc2e3093202b44e8f8f15ab78edad6",
       "path" : "Tax Advisor/Tax Refresh.md"
     },
     {
@@ -424,11 +434,11 @@
       "path" : "Welcome.md"
     },
     {
-      "bytes" : 6973,
-      "contentHash" : "sha256:e55ba2445d57e2749ac147a2984abb075033f0d2282376314fa1876055dd3fb1",
+      "bytes" : 7728,
+      "contentHash" : "sha256:a4d3af9b3e8683133251366d4ad7873fed912ec836f2586be032b03185fd197a",
       "path" : "Working With Flow.md"
     }
   ],
-  "generated" : "2026-09-08",
+  "generated" : "2026-09-09",
   "manifestVersion" : 2
 }
