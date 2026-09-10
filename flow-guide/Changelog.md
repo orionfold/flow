@@ -9,6 +9,7 @@ Newest release first. Every release names what shipped, how it benefits you, and
 
 | Release | Build | Date | In a sentence |
 | --- | --- | --- | --- |
+| 1.6.5 | 2111 | 9 September 2026 | Flow names a day model for your Mac, earned the way the day works; Expand with Sources runs in one turn on this Mac; and a night pick no longer flips on one miss |
 | 1.6.4 | 2096 | 9 September 2026 | Flow recommends a day model and a night model for your Mac and shows the evidence whole; a model that can see describes a picture; a local model that never stops writing is cut off; and the first change on a new document can be approved again |
 | 1.6.3 | 2017 | 7 September 2026 | The point release after the first Night Shift week: documents from other tools open whole, the Reader and the Editor read the same page, and every Settings sentence says what is actually so |
 | 1.6.2 | 1994 | 6 September 2026 | Every number about tokens and money is one number, read from your documents' own receipts — the night's work counts where the day's does |
@@ -21,6 +22,28 @@ Newest release first. Every release names what shipped, how it benefits you, and
 | 1.5.2 | 1414 | 27 August 2026 | A pressable Update ready button |
 | 1.5.1 | 1404 | 27 August 2026 | The first Flow that arrived through Flow itself |
 | 1.5 | 1382 | 26 August 2026 | The launch |
+
+## Flow 1.6.5 · build 2111 · 9 September 2026
+
+The day models, measured the way the day works. *Models Flow Recommends* now names a day model on every tier from 16 GB up, earned on all eight of Flow's baseline documents under the shape the day actually uses; Expand with Sources on this Mac runs in one turn, with Flow's lookups first and one request to the model; the night picks were measured again on all eight documents and a pick already named is no longer displaced by one miss; and the evidence page says which shape each run used.
+
+### Flow names a day model, earned the way the day works
+
+- **What shipped.** A day model answers beside your work in seconds, so Flow now measures day candidates the way it will use them: Flow does the lookups first, the document, a search of your folders and any source it links, and hands the model one request whose reply is the draft. Under that shape Llama 3.1 8B, Gemma 3 4B and Mistral 7B v0.2 each compose all eight of Flow's baseline documents, and *Models Flow Recommends* names a day pick on every tier from 16 GB up: Llama 3.1 8B from 24 GB, Gemma 3 4B at 16 GB. The baseline itself grew from three documents to eight, so a pick is not a fit to three prompts.
+- **How it benefits you.** The day pick on your tier is a model that composed every one of Flow's baseline documents in the exact shape your own runs take, not a projection from a leaderboard.
+- **How to use it.** Open *Models Flow Recommends* in the Guide and read your tier's row; on first run Flow proposes the day pick with one sentence.
+
+### Expand with Sources on this Mac runs in one turn
+
+- **What shipped.** On the local route, Flow reads the document, searches your folders for what it is about and fetches any source it links before the model is called, then asks for the draft in one request. The run card still lists every lookup, the reply is still the draft between Flow's markers, and a reply that asks for lookups instead is declined rather than acted on. The Night Shift keeps its own shape, and hosted models are unchanged. The run's route receipt names the shape it used, *one-turn*, the same word the evidence page uses.
+- **How it benefits you.** An Expand on your own Mac finishes in one model call instead of a dozen, and the receipt says so in a word you can find on the evidence page.
+- **How to use it.** Put the cursor in a document and choose *Expand with Sources*; open Receipts to read the route's shape.
+
+### A night pick no longer flips on one miss, and the evidence page says which shape each run used
+
+- **What shipped.** The night picks were measured again on all eight baseline documents through Flow's own lookups. Qwen 3.8 27B composed eight of eight; Gemma 4 26B A4B composed seven of eight and keeps the night pick on every Mac from 32 GB up, its row saying exactly that. A model already named is displaced only when a challenger passes every document and the incumbent misses more than one; a model is judged on the largest set it was measured on; and the set is now fixed at eight. *Model Curation and Measurements* carries an *Envelope* column beside every agency-baseline run, *two-phase* for the loop and *one-turn* for the day's shape, shows all eight tasks, and keeps a run judged on the earlier three on the tasks it ran.
+- **How it benefits you.** The night model Flow proposes stays the one that earned it, and every number on the evidence page says under which shape it was measured.
+- **How to use it.** Open *Models Flow Recommends* for the picks and follow its link to *Model Curation and Measurements* for the runs.
 
 ## Flow 1.6.4 · build 2096 · 9 September 2026
 

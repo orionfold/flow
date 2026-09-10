@@ -41,8 +41,8 @@
       "path" : "Tax Advisor/data/tax-figures.json"
     },
     {
-      "bytes" : 2096,
-      "contentHash" : "sha256:7dbaf46f3d220f8dceb4caba9acf88c74183924dd21a9f3cadb848ccb03a7a81",
+      "bytes" : 4627,
+      "contentHash" : "sha256:097b75da3a2998e33531086ed89a667c768ce524c0a414f1183c78a140b8778f",
       "path" : "assets/agency-check-ledger.json"
     },
     {
@@ -126,7 +126,7 @@
       "path" : "assets/strategy-wall.jpeg"
     }
   ],
-  "contentVersion" : "1.11.12",
+  "contentVersion" : "1.11.19",
   "documents" : [
     {
       "bytes" : 13048,
@@ -144,8 +144,8 @@
       "path" : "Board Update — Q4 Outlook.md"
     },
     {
-      "bytes" : 54328,
-      "contentHash" : "sha256:8d6acf061c78c6ab8319919c4a9936028abfe55778da9606000bb904f0549092",
+      "bytes" : 58116,
+      "contentHash" : "sha256:a5fd9531fc7593a5c3f25c815e666864c66db5e0c065213b85b7c79ea34ca291",
       "path" : "Changelog.md"
     },
     {
@@ -279,13 +279,13 @@
       "path" : "Meeting Notes — Weekly Staff.md"
     },
     {
-      "bytes" : 12571,
-      "contentHash" : "sha256:96c4b142714fdd4d268836a0a52b97a33e36c5d5472b38fd7549463be92aad9b",
+      "bytes" : 20350,
+      "contentHash" : "sha256:2c35ab4dc21a7c2931620493cb7a2e431bd6c8a7b0c7c248f7df325dd094a447",
       "path" : "Model Curation and Measurements.md"
     },
     {
-      "bytes" : 20179,
-      "contentHash" : "sha256:0d01cb01005247f5ce50c2a0c8efdda574f14ac796ad6c4623fe54f637600473",
+      "bytes" : 22415,
+      "contentHash" : "sha256:37209ef4409fdfa68406dbf7946c4b79eaff89bbdd69b3d814e5091ced768ef3",
       "path" : "Models Flow Recommends.md"
     },
     {
@@ -439,6 +439,6 @@
       "path" : "Working With Flow.md"
     }
   ],
-  "generated" : "2026-09-09",
+  "generated" : "2026-09-10",
   "manifestVersion" : 2
 }
