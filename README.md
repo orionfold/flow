@@ -76,4 +76,4 @@ paste it.
 [Tech Specs](https://orionfold.com/flow/specifications/) ·
 [Enterprise](https://orionfold.com/flow/enterprise/)
 
-Current release: Flow 1.6.5 (2111).
+Current release: Flow 1.6.6 (2149).

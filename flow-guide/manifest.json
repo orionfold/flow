@@ -41,8 +41,8 @@
       "path" : "Tax Advisor/data/tax-figures.json"
     },
     {
-      "bytes" : 4627,
-      "contentHash" : "sha256:097b75da3a2998e33531086ed89a667c768ce524c0a414f1183c78a140b8778f",
+      "bytes" : 7484,
+      "contentHash" : "sha256:4720c05887a050df245d9d0b5b22cbbb6c9c0a9c29cd13524d8c59c0ba9f175e",
       "path" : "assets/agency-check-ledger.json"
     },
     {
@@ -51,13 +51,13 @@
       "path" : "assets/boardroom-annual.jpeg"
     },
     {
-      "bytes" : 105554,
-      "contentHash" : "sha256:248dbdc034ca91fc5cb668cdc4db6439354aae43b93a60d0be949b5a805c825d",
+      "bytes" : 133885,
+      "contentHash" : "sha256:22c8d7f42bd9ecd76ce79f19056a48b88ac58546884679dd95a7a398ca726755",
       "path" : "assets/curated-model-benchmarks.json"
     },
     {
-      "bytes" : 11638,
-      "contentHash" : "sha256:e6d91ed265033e6f02160a259017d07eaf1d5fb2ccbe04d3c93891981b562d8d",
+      "bytes" : 15310,
+      "contentHash" : "sha256:f9cf415eb9fd791ac98a28f46b4722452db5591fd30ce8754719d95fd08cb535",
       "path" : "assets/curated-model-profiles.json"
     },
     {
@@ -126,7 +126,7 @@
       "path" : "assets/strategy-wall.jpeg"
     }
   ],
-  "contentVersion" : "1.11.19",
+  "contentVersion" : "1.11.24",
   "documents" : [
     {
       "bytes" : 13048,
@@ -144,8 +144,8 @@
       "path" : "Board Update — Q4 Outlook.md"
     },
     {
-      "bytes" : 58116,
-      "contentHash" : "sha256:a5fd9531fc7593a5c3f25c815e666864c66db5e0c065213b85b7c79ea34ca291",
+      "bytes" : 63075,
+      "contentHash" : "sha256:9aff64f103150025e33d01457125a5f847c43f5e2296614c0b5e61edae3b2e06",
       "path" : "Changelog.md"
     },
     {
@@ -179,8 +179,8 @@
       "path" : "Cost of This Quarter.md"
     },
     {
-      "bytes" : 6522,
-      "contentHash" : "sha256:d085f7b7a178c235e9284813ef60bc4c56af970a8134e8b3cda5134780905078",
+      "bytes" : 10131,
+      "contentHash" : "sha256:c95776ce18d437d6fab549c9e159f301d6275e18360e0c134fdf7adaa55e4a33",
       "path" : "Curated Model Comparisons.md"
     },
     {
@@ -205,7 +205,7 @@
     },
     {
       "bytes" : 3693,
-      "contentHash" : "sha256:7b6491256c911675356a5fd6e93fe5f707ad66664a0873125bfa4c0b4e5919da",
+      "contentHash" : "sha256:670d2a08502342d2643107d9a1a27e66c053e9af300c1584f9318ab6563eb0f2",
       "path" : "Household Budget/Budget Profile.md"
     },
     {
@@ -269,8 +269,8 @@
       "path" : "Market Landscape.md"
     },
     {
-      "bytes" : 2555,
-      "contentHash" : "sha256:b633fd976e8d896e381a2331f83d9b4c25016c27f279bce5d05853faddf8dc1c",
+      "bytes" : 2696,
+      "contentHash" : "sha256:69d5e985a8dee751802e3846e817b95de87b33ea680965499b824d1e9faf3a97",
       "path" : "Marketing Dashboard — Q3.md"
     },
     {
@@ -279,13 +279,13 @@
       "path" : "Meeting Notes — Weekly Staff.md"
     },
     {
-      "bytes" : 20350,
-      "contentHash" : "sha256:2c35ab4dc21a7c2931620493cb7a2e431bd6c8a7b0c7c248f7df325dd094a447",
+      "bytes" : 27642,
+      "contentHash" : "sha256:38ed929b2f4cf7bce1a1f6ec7cda970257538d65751b25b59bd758b45cb9ead8",
       "path" : "Model Curation and Measurements.md"
     },
     {
-      "bytes" : 22415,
-      "contentHash" : "sha256:37209ef4409fdfa68406dbf7946c4b79eaff89bbdd69b3d814e5091ced768ef3",
+      "bytes" : 28307,
+      "contentHash" : "sha256:9a9fe2e1cc067e0a3815593e56d6589c97a6fa1421fd1a89c0152c46b99cd9c7",
       "path" : "Models Flow Recommends.md"
     },
     {
@@ -334,8 +334,8 @@
       "path" : "Revenue Dashboard.md"
     },
     {
-      "bytes" : 3283,
-      "contentHash" : "sha256:12521bc5e1e382d29d89165c4dc68f917d065923b19f039ab9f3daa43373498b",
+      "bytes" : 3608,
+      "contentHash" : "sha256:fd6d61a17b028ee162bd3ab4f35c3a052125e6d94ccd6fb91635e4100d92bf41",
       "path" : "Runtime Evaluation — Local Models.md"
     },
     {
@@ -349,8 +349,8 @@
       "path" : "Stock Portfolio/Headlines Refresh.md"
     },
     {
-      "bytes" : 3000,
-      "contentHash" : "sha256:6ddc0a021ff6b4f591b9953ceba775ae4ffdfea83c0b1bff8cbcaba380efe1d9",
+      "bytes" : 3003,
+      "contentHash" : "sha256:b26eb4446c24ca3acf55490b5ef3fad33d8121aa9879766a9d62c28500bff978",
       "path" : "Stock Portfolio/Holdings.md"
     },
     {
@@ -374,8 +374,8 @@
       "path" : "Tax Advisor/Tax Advisor.md"
     },
     {
-      "bytes" : 3722,
-      "contentHash" : "sha256:c1d5812648e4f28ded550edd0962c81400e87beda49ff0296ffc7860e12254a6",
+      "bytes" : 3719,
+      "contentHash" : "sha256:25f46b2e10c2b4f5039a099be76c21a50e2de3110fd54339cb5395d12bb4c2eb",
       "path" : "Tax Advisor/Tax Profile.md"
     },
     {
@@ -429,8 +429,8 @@
       "path" : "Visualization Gallery.md"
     },
     {
-      "bytes" : 1674,
-      "contentHash" : "sha256:1665e358b202aca9f84e95a3ebf5ed72b8144ee9aac74207f33a01c8113a0e51",
+      "bytes" : 1906,
+      "contentHash" : "sha256:6d9da5739021e4c2220a91f4c767564033b52fe37586a07e799fa734f32df33e",
       "path" : "Welcome.md"
     },
     {
@@ -439,6 +439,6 @@
       "path" : "Working With Flow.md"
     }
   ],
-  "generated" : "2026-09-10",
+  "generated" : "2026-09-12",
   "manifestVersion" : 2
 }

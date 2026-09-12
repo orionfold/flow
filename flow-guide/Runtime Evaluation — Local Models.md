@@ -5,7 +5,9 @@ tags: [evaluation, models, technical]
 
 # Runtime Evaluation — Local Models
 
-**Owner:** platform · **Date:** October 14, 2026 · **Status:** decided
+> **Fictional example.** This document shows how a team can record an evaluation and its decision. The people, dates and results are invented; they are not Flow benchmark results. For measured model evidence, see [[Model Curation and Measurements]].
+
+**Example owner:** platform · **Example date:** October 14, 2026 · **Status:** decided
 
 We spent three weeks answering one question: can we do our document work on models that run on our own machines, without asking every writer to install and babysit a separate piece of infrastructure? The answer is yes, and this note records what we measured and what we decided.
 
@@ -21,27 +23,26 @@ The security review in August turned on a single sentence in the questionnaire: 
 
 | Route | Where it runs | Setup a writer does | Cost per run |
 |:------|:--------------|:--------------------|-------------:|
-| Built-in runtime | This Mac | None — it ships with the app | $0.00 |
+| Built-in runtime | This Mac | Choose and download a compatible model | $0.00 |
 | Ollama, served in place | This Mac | Install Ollama, pull models | $0.00 |
 | LM Studio, served in place | This Mac | Install LM Studio, pull models | $0.00 |
-| Hosted, prepaid | Provider | Sign in to an existing plan | Covered |
-| Hosted, postpaid | Provider | Paste an API key | Per token |
+| Hosted API | Provider | Add a provider API key | Provider token charges |
 
-The three local routes were indistinguishable in output quality on our own documents. They differ entirely in what we have to ask a writer to do before they can work, which is why the built-in runtime won.
+In this example, the team used the same model and document set across the three local routes, and judged all three adequate for its tasks. Setup effort decided the choice. A real evaluation should retain the exact model versions, hardware, prompts and scored outputs before drawing that conclusion.
 
 ## The finding that decided it
 
-**Setup cost, not model quality, is what stops adoption.** We watched six people onboard. The two who were handed a runtime to install both stalled — one on a download that looked like a hang, one on a model that accepted an add and then failed every request afterward. The four who used the built-in runtime were working in under a minute.
+**The example team chose the route with the least setup work.** We watched six people onboard. The two who were handed a runtime to install both stalled — one on a download that looked like a hang, one on a model that accepted an add and then failed every request afterward. The four using the built-in runtime began work after their model downloads completed.
 
 The second finding was about trust rather than speed: people wanted to know which model answered, and they wanted it attached to the change rather than sitting in a log somewhere. A run that could not say what produced it got treated as suspect regardless of whether the output was good.
 
 ## What we standardized on
 
-- **Built-in runtime as the default** for everyone, with the disk allowance set to 20 GB. Nobody installs anything.
+- **Built-in runtime as the default** for everyone, with the disk allowance set to 20 GB. Writers download a compatible model through Flow; no separate runtime app is required.
 - **Serve in place** for the two engineers who already keep models in Ollama. Their gigabytes are not downloaded a second time and removing a model from our list never touches their files.
-- **Hosted stays permitted but off by default.** Turning it on is a deliberate act, and the domain switch makes that visible.
+- **Hosted stays permitted but off by default.** Turning it on is a deliberate act, and each run records its route.
 
 ## Open items
 
-- The vision-capable models we want for the diagram review are partly landed — the Qwen-VL and Gemma vision lines load, and one model family we asked about does not exist upstream yet. Revisit in November.
+- Evaluate diagram review separately, using the actual images and a supported vision route. A text-only comparison does not establish image capability.
 - We have not yet measured what happens to throughput when two people on the same machine run at once. Nobody does this today; it will matter when the shared review box arrives.

@@ -51,7 +51,7 @@ rules:
 ---
 # Budget Profile
 
-The one file you edit. The front matter is the household's plan: the income you expect each month, the savings rate you are aiming for, a budget per category, and the rules that sort a bank statement's lines into those categories. [[Household Budget]] reads the budgets from here each night, and the refresh script uses the rules to categorize whatever statements you drop in `statements/`.
+The one file you edit. The front matter is the household's plan: the income you expect each month, the savings rate you are aiming for, a budget per category, and the rules that sort a bank statement's lines into those categories. [[Household Budget]] reads the budgets from here each night, and [[Budget Refresh]] uses the rules to categorize whatever statements you drop in `statements/`.
 
 ## What each field means
 

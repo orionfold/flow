@@ -9,6 +9,7 @@ Newest release first. Every release names what shipped, how it benefits you, and
 
 | Release | Build | Date | In a sentence |
 | --- | --- | --- | --- |
+| 1.6.6 | 2149 | 12 September 2026 | Better local model choices, reasoning controls, clearer definition drafting, and a Night Shift ready from your first saved job |
 | 1.6.5 | 2111 | 9 September 2026 | Flow names a day model for your Mac, earned the way the day works; Expand with Sources runs in one turn on this Mac; and a night pick no longer flips on one miss |
 | 1.6.4 | 2096 | 9 September 2026 | Flow recommends a day model and a night model for your Mac and shows the evidence whole; a model that can see describes a picture; a local model that never stops writing is cut off; and the first change on a new document can be approved again |
 | 1.6.3 | 2017 | 7 September 2026 | The point release after the first Night Shift week: documents from other tools open whole, the Reader and the Editor read the same page, and every Settings sentence says what is actually so |
@@ -22,6 +23,52 @@ Newest release first. Every release names what shipped, how it benefits you, and
 | 1.5.2 | 1414 | 27 August 2026 | A pressable Update ready button |
 | 1.5.1 | 1404 | 27 August 2026 | The first Flow that arrived through Flow itself |
 | 1.5 | 1382 | 26 August 2026 | The launch |
+
+## Flow 1.6.6 · build 2149 · 12 September 2026
+
+Better local model choices for writing beside your work, a reasoning choice for each task, and a clearer path from a definition prompt to an applied draft. Night Shift is ready from your first saved job.
+
+### A more capable local model for everyday writing
+
+- **What shipped.** Flow now recommends Gemma 4 E4B IT 4-bit for Day work on Macs with 24 GB or more memory. Ideas, Settings and automatic routing use the same choice. Gemma 3 4B remains the Day choice at 16 GB; Gemma 4 26B A4B remains the Night choice from 32 GB.
+- **How it benefits you.** The recommendation reflects how models handle Flow writing tasks, including keeping source qualifications intact. The Guide distinguishes measurements on a 36 GB Mac from projected fit on other memory tiers.
+- **How to use it.** Open *Models Flow Recommends* in the Guide, then **Settings ▸ Models** to download or import your Day model. Smart Routing uses the recommendation when that model is ready; your explicit model choices remain yours.
+
+### Choose reasoning for the task
+
+- **What shipped.** Document actions and saved Overnight notes offer **Recommended**, **On** and **Off** for supported models. History distinguishes your request from confirmed execution, and model thoughts stay out of the document.
+- **How it benefits you.** You can request additional reasoning for a demanding task or a direct answer for routine work, with the model's supported behavior made visible.
+- **How to use it.** Open the reasoning control beside a document action. Its choice applies to that action; a saved Overnight notes job keeps the choice you save with it. Leave **Recommended** selected to use Flow's default.
+
+### Draft definitions and see where they go
+
+- **What shipped.** Local models follow the requested definition structure, preserving step order and modifiers such as descending sorts and aggregate names. **Draft** selects its result immediately. **Use This Draft** names its destination and clears the prompt.
+- **How it benefits you.** You can inspect the proposed steps, apply them and see what changed without wondering whether an empty pane or a repeated prompt means the action failed.
+- **How to use it.** Open a document's definition editor, describe the change and press **Draft**. Review the selected proposal, choose **Use This Draft**, then save the definition when you are ready.
+
+### Edit definitions beside a reference document
+
+- **What shipped.** Definition parts now live in the app sidebar, while the editor stays in the left pane. Held edits survive tab and panel switches; closing the editor returns to your previous sidebar.
+- **How it benefits you.** Keep a reference document readable on the right while you work on a definition, with its parts and owning document clearly identified.
+- **How to use it.** Open a definition and select its parts in the sidebar. Open a reference on the right when you want to compare it with your work.
+
+### Keep qualifications in the sources you use
+
+- **What shipped.** **Expand with Sources** passes complete sentences or paragraphs from search results to the model, keeping qualifications and negation intact when they fit the available space.
+- **How it benefits you.** The model receives evidence with its meaning preserved, helping you review a draft against what the source actually says.
+- **How to use it.** Choose **Expand with Sources**, then review the proposal and its sources before applying the change.
+
+### Start Night Shift without restarting Flow
+
+- **What shipped.** The first job you save after Welcome appears and runs immediately. Saved changes keep valid History after relaunch. Settings names both Day and Night models, and automatic Night routing uses the current recommendation even when your editable Guide is older.
+- **How it benefits you.** Set up a job and try it in the same session; return later to a readable record of its changes. If a Night model stops answering, the Morning Briefing explains it in plain language.
+- **How to use it.** Save an Overnight notes job, open **Settings ▸ Night Shift**, and choose **Run now**. Review the work and its History when it finishes.
+
+### Keep your folders and models understandable
+
+- **What shipped.** Imported models have readable names, and the recommended list distinguishes MLX folders from GGUF files. Opening a folder inside an existing Git checkout no longer creates a nested History repository there.
+- **How it benefits you.** It is easier to recognise the model Flow is using, while folders whose history you already manage stay under that arrangement.
+- **How to use it.** Manage local models in **Settings ▸ Models**. Open your usual folders as before; Flow explains when an outer folder's history prevents its own from starting.
 
 ## Flow 1.6.5 · build 2111 · 9 September 2026
 

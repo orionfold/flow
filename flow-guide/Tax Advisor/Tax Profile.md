@@ -32,7 +32,7 @@ actions:
 ---
 # Tax Profile
 
-The one file you edit. The front matter is your situation for the year: who is filing, who depends on you, the income that does not arrive on a W-2, the deductions you could itemize, and the actions you are tracking. [[Tax Advisor]] reads it each night for the actions table, and the refresh script reads it, with the W-2 forms in `inputs/`, to estimate the federal return.
+The one file you edit. The front matter is your situation for the year: who is filing, who depends on you, the income that does not arrive on a W-2, the deductions you could itemize, and the actions you are tracking. [[Tax Advisor]] reads it each night for the actions table, and [[Tax Refresh]] reads it, with the W-2 forms in `inputs/`, to estimate the federal return.
 
 ## What each field means
 

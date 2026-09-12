@@ -139,6 +139,80 @@
    "contentDate": "2026-09-10",
    "passed": true,
    "envelope": "two-phase"
+  },
+  {
+   "catalogueID": "Orionfold/Advisor-GGUF",
+   "helper": "llama-server",
+   "receiptSHA256": "a28d336d440a973e88b0222b94f3be800d961a7559e180098f70161218dea419",
+   "contentDate": "2026-09-10",
+   "passed": false,
+   "envelope": "one-turn",
+   "revision": "2bafff721a2b2e3ec31ffb108eb2b92566314354",
+   "retired": "measured with the model's thinking on, a launch Flow no longer performs since C2909 (--reasoning off, 2026-09-09 20:56); kept for the evidence page, earns nothing"
+  },
+  {
+   "catalogueID": "Orionfold/Advisor-GGUF",
+   "helper": "llama-server",
+   "receiptSHA256": "0ee6bac57c8a04b5cb425d7041ad16fcb33db799698089dac8abd906f5755088",
+   "contentDate": "2026-09-10",
+   "passed": true,
+   "envelope": "one-turn",
+   "revision": "2bafff721a2b2e3ec31ffb108eb2b92566314354",
+   "retired": "measured with the model's thinking on, a launch Flow no longer performs since C2909 (--reasoning off, 2026-09-09 20:56); kept for the evidence page, earns nothing"
+  },
+  {
+   "catalogueID": "Orionfold/Advisor-GGUF",
+   "helper": "llama-server",
+   "receiptSHA256": "56f06a9dc9a468cf11238aed47cfb07230708463b9458dcd32853494ff293e2b",
+   "contentDate": "2026-09-10",
+   "passed": false,
+   "envelope": "one-turn",
+   "revision": "2bafff721a2b2e3ec31ffb108eb2b92566314354"
+  },
+  {
+   "catalogueID": "Orionfold/Advisor-GGUF",
+   "helper": "llama-server",
+   "receiptSHA256": "b5ca21abe3e7f6ef7623ed1526d28b5d5f788b1f0242678100d723796aa60013",
+   "contentDate": "2026-09-10",
+   "passed": false,
+   "envelope": "one-turn",
+   "revision": "2bafff721a2b2e3ec31ffb108eb2b92566314354"
+  },
+  {
+   "catalogueID": "mlx-community/gemma-4-e4b-it-4bit",
+   "helper": "mlx-serve",
+   "receiptSHA256": "c961f3b15ffc2b207214ae6a66abb3c24f351eeb763d6ab45e3064c91e845dcc",
+   "contentDate": "2026-09-12",
+   "passed": true,
+   "revision": "475b9088d29754a3379866cf5aeb6b41acd313c2",
+   "envelope": "one-turn"
+  },
+  {
+   "catalogueID": "mlx-community/Llama-3.1-8B-Instruct-4bit",
+   "helper": "mlx-serve",
+   "receiptSHA256": "fe41fe60933d85efb8f5787f748fcbf479d01c4bd1db3d1cbaff5ef34a356cda",
+   "contentDate": "2026-09-12",
+   "passed": true,
+   "revision": "90215b22ec18e72f623dde2ea7af4097025160e2",
+   "envelope": "one-turn"
+  },
+  {
+   "catalogueID": "mlx-community/gemma-4-e4b-it-4bit",
+   "helper": "mlx-serve",
+   "receiptSHA256": "59f9936d42a775e5ba2120dc466cdf1264203032218d7176f57797e3e8f88822",
+   "contentDate": "2026-09-12",
+   "passed": false,
+   "revision": "475b9088d29754a3379866cf5aeb6b41acd313c2",
+   "envelope": "two-phase"
+  },
+  {
+   "catalogueID": "mlx-community/gemma-4-26b-a4b-it-4bit",
+   "helper": "mlx-serve",
+   "receiptSHA256": "f18ef0653f69b37fc9fe1ba27566c1b97eff8604c29d16828de3fb2fab93cfc7",
+   "contentDate": "2026-09-12",
+   "passed": true,
+   "revision": "0d77464eeb233a2da68ebf9d7dc4edaac7db956d",
+   "envelope": "two-phase"
   }
  ]
 }

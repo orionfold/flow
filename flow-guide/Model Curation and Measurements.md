@@ -1,7 +1,7 @@
 ---
 title: Model Curation and Measurements
 tags: [flow, models, agency, evidence]
-researched: 2026-09-09
+researched: 2026-09-12
 curator: Orionfold
 ---
 
@@ -9,9 +9,11 @@ curator: Orionfold
 
 This is the evidence behind [[Models Flow Recommends]], shown whole. That page keeps one outcome per model; this one keeps every list row, every measurement cell and every agency-check run with its three probes named and judged, each number beside the receipt it came from. Both pages are generated from the same files on the same date, so they cannot disagree.
 
-Everything measured here was run on a 36 GB MacBook Pro with an Apple M3 Max (Mac15,10), through Flow Runtime, with the receipts signed by Orionfold. The numbers are that Mac's, not yours. The evidence was last assembled on 9 September 2026.
+Everything measured here was run on a 36 GB MacBook Pro with an Apple M3 Max (Mac15,10), through Flow Runtime, with the receipts signed by Orionfold. The numbers are that Mac's, not yours. The evidence was last assembled on 12 September 2026.
 
 ## How a model gets onto a list
+
+The list's Format column describes this build's engine capability. Both owned engines now support native constraints for structured requests. The measured runs below retain their recorded dialect and envelope; earlier prompt-only results are not evidence for the new native path. A run that requested no structure remains unconstrained.
 
 Flow keeps two lists, one per class. A model is admitted by quality rank first, then by whether it can fit the class's share of memory and its download ceiling, then by whether Flow Runtime can load its files at all. Nothing on a list is a recommendation yet: a row becomes a pick only after it is measured and passes the agency baseline below.
 
@@ -19,39 +21,41 @@ Flow keeps two lists, one per class. A model is admitted by quality rank first, 
 
 Quality ranks are from LMArena lmarena-ai/leaderboard-dataset text_style_control/latest, published 2026-09-02. To fit this class on the measured Mac a model's working set may take a third of memory, 12 GB here, its download may be at most 8.6 GB, and one model is loaded at a time. Flow Runtime's loaders were read from ml-explore/mlx-swift-lm at d7dc03d8, inspected 2026-09-08.
 
-| # | Model | Download | Quality rank | Working set (projected) | Flow Runtime |
-| ---: | --- | ---: | ---: | ---: | --- |
-| 1 | Gemma 3 12B IT (language-model-only export) 4-bit | 7.2 GB | #217 (gemma-3-12b-it) | 12.9 GB (10.6 GB with a sliding cache) | loads and runs |
-| 2 | Gemma 3n E4B IT (language-model-only export) 4-bit | 3.9 GB | #249 (gemma-3n-e4b-it) | 7.0 GB (6.5 GB with a sliding cache) | loads and runs |
-| 3 | Granite 4.1 8B 4-bit | 5.2 GB | #264 (granite-4.1-8b) | 9.1 GB | loads and runs |
-| 4 | Gemma 3 4B IT (language-model-only export) 4-bit | 2.6 GB | #267 (gemma-3-4b-it) | 6.2 GB (5.4 GB with a sliding cache) | loads and runs |
-| 5 | Gemma 2 9B IT 4-bit | 5.2 GB | #296 (gemma-2-9b-it) | 10.5 GB (9.4 GB with a sliding cache) | not yet run |
-| 6 | Phi-4 4-bit | 8.3 GB | #303 (phi-4) | 12.4 GB | not yet run |
-| 7 | Llama 3.1 8B Instruct 4-bit | 4.5 GB | #326 (llama-3.1-8b-instruct) | 8.1 GB | loads and runs |
-| 8 | Gemma 2 2B IT 4-bit | 1.5 GB | #330 (gemma-2-2b-it) | 4.9 GB (4.5 GB with a sliding cache) | not yet run |
-| 9 | Llama 3.2 3B Instruct 4-bit | 1.8 GB | #352 (llama-3.2-3b-instruct) | 5.3 GB | not yet run |
-| 10 | Mistral 7B Instruct v0.2 4-bit | 4.3 GB | #361 (mistral-7b-instruct-v0.2) | 7.8 GB | loads and runs |
+| # | Model | Format | Download | Quality rank | Working set (projected) | Flow Runtime |
+| ---: | --- | --- | ---: | ---: | ---: | --- |
+| 1 | Gemma 3 12B IT (language-model-only export) 4-bit | MLX, grammar dialect | 7.2 GB | #217 (gemma-3-12b-it) | 12.9 GB (10.6 GB with a sliding cache) | loads and runs |
+| 2 | Gemma 3n E4B IT (language-model-only export) 4-bit | MLX, grammar dialect | 3.9 GB | #249 (gemma-3n-e4b-it) | 7.0 GB (6.5 GB with a sliding cache) | loads and runs |
+| 3 | Granite 4.1 8B 4-bit | MLX, grammar dialect | 5.2 GB | #264 (granite-4.1-8b) | 9.1 GB | loads and runs |
+| 4 | Gemma 3 4B IT (language-model-only export) 4-bit | MLX, grammar dialect | 2.6 GB | #267 (gemma-3-4b-it) | 6.2 GB (5.4 GB with a sliding cache) | loads and runs |
+| 5 | Gemma 2 9B IT 4-bit | MLX, grammar dialect | 5.2 GB | #296 (gemma-2-9b-it) | 10.5 GB (9.4 GB with a sliding cache) | not yet run |
+| 6 | Phi-4 4-bit | MLX, grammar dialect | 8.3 GB | #303 (phi-4) | 12.4 GB | not yet run |
+| 7 | Llama 3.1 8B Instruct 4-bit | MLX, grammar dialect | 4.5 GB | #326 (llama-3.1-8b-instruct) | 8.1 GB | loads and runs |
+| 8 | Gemma 2 2B IT 4-bit | MLX, grammar dialect | 1.5 GB | #330 (gemma-2-2b-it) | 4.9 GB (4.5 GB with a sliding cache) | not yet run |
+| 9 | Llama 3.2 3B Instruct 4-bit | MLX, grammar dialect | 1.8 GB | #352 (llama-3.2-3b-instruct) | 5.3 GB | not yet run |
+| 10 | Mistral 7B Instruct v0.2 4-bit | MLX, grammar dialect | 4.3 GB | #361 (mistral-7b-instruct-v0.2) | 7.8 GB | loads and runs |
+| 11 | Advisor 4B Q4_K_M | GGUF, grammar dialect (`model-Q4_K_M.gguf`) | 2.8 GB | no Arena row; admitted as small domain-specific: held-out 28 of 28; curveball v0.2 18 of 21 with 9 of 9 refusals and no fabricated private state (the card's own numbers, not measured here) | 5.5 GB | loads and runs |
+| 12 | Gemma 4 E4B IT 4-bit | MLX, grammar dialect | 5.2 GB | no Arena row; Flow job comparison e4b-over-llama-day-20260912, qualification 44fb48a10865220d360e41040747d0dfda243edf94a26b6cd0aff0df143461d1 | 8.4 GB | loads and runs |
 
 ### The night list (accepted 8 September 2026)
 
 Quality ranks are from LMArena lmarena-ai/leaderboard-dataset text_style_control/latest, published 2026-09-02. To fit this class on the measured Mac a model's working set may take three fifths of memory, 21 GB here, its download may be at most 25.8 GB, and one model is loaded at a time. Flow Runtime's loaders were read from ml-explore/mlx-swift-lm at d7dc03d8, inspected 2026-09-08.
 
-| # | Model | Download | Quality rank | Working set (projected) | Flow Runtime |
-| ---: | --- | ---: | ---: | ---: | --- |
-| 1 | Gemma 4 31B IT 4-bit | 18.4 GB | #65 (gemma-4-31b) | 29.0 GB (23.1 GB with a sliding cache) | not yet run |
-| 2 | Gemma 4 26B A4B IT 4-bit | 15.4 GB | #85 (gemma-4-26b-a4b) | 19.9 GB (18.4 GB with a sliding cache) | loads and runs |
-| 3 | Qwen 3.8 27B 4-bit | 16.1 GB | #88 (qwen3.8-27b) | 20.7 GB | loads and runs |
-| 4 | Muse Glimmer 30B 4-bit | 19.4 GB | #101 (muse-glimmer) | 22.4 GB (22.1 GB with a sliding cache) | not yet run |
-| 5 | Qwen 3.5 27B 4-bit | 16.1 GB | #137 (qwen3.5-27b) | 20.7 GB | not yet run |
-| 6 | Qwen 3.5 35B A3B 4-bit | 20.4 GB | #152 (qwen3.5-35b-a3b) | 23.6 GB | not yet run |
-| 7 | Qwen 3 30B A3B Instruct 2507 4-bit | 17.2 GB | #170 (qwen3-30b-a3b-instruct-2507) | 20.5 GB | not yet run |
-| 8 | GLM 4.7 Flash 4-bit | 16.9 GB | #183 (glm-4.7-flash) | 22.5 GB | not yet run |
-| 9 | Gemma 3 27B IT 4-bit | 16.9 GB | #185 (gemma-3-27b-it) | 23.5 GB (20.5 GB with a sliding cache) | not yet run |
-| 10 | Mistral Small 3.2 24B Instruct 2506 4-bit | 13.3 GB | #193 (mistral-small-2506) | 17.1 GB | not yet run |
+| # | Model | Format | Download | Quality rank | Working set (projected) | Flow Runtime |
+| ---: | --- | --- | ---: | ---: | ---: | --- |
+| 1 | Gemma 4 31B IT 4-bit | MLX, grammar dialect | 18.4 GB | #65 (gemma-4-31b) | 29.0 GB (23.1 GB with a sliding cache) | not yet run |
+| 2 | Gemma 4 26B A4B IT 4-bit | MLX, grammar dialect | 15.4 GB | #85 (gemma-4-26b-a4b) | 19.9 GB (18.4 GB with a sliding cache) | loads and runs |
+| 3 | Qwen 3.8 27B 4-bit | MLX, grammar dialect | 16.1 GB | #88 (qwen3.8-27b) | 20.7 GB | loads and runs |
+| 4 | Muse Glimmer 30B 4-bit | MLX, grammar dialect | 19.4 GB | #101 (muse-glimmer) | 22.4 GB (22.1 GB with a sliding cache) | not yet run |
+| 5 | Qwen 3.5 27B 4-bit | MLX, grammar dialect | 16.1 GB | #137 (qwen3.5-27b) | 20.7 GB | not yet run |
+| 6 | Qwen 3.5 35B A3B 4-bit | MLX, grammar dialect | 20.4 GB | #152 (qwen3.5-35b-a3b) | 23.6 GB | not yet run |
+| 7 | Qwen 3 30B A3B Instruct 2507 4-bit | MLX, grammar dialect | 17.2 GB | #170 (qwen3-30b-a3b-instruct-2507) | 20.5 GB | not yet run |
+| 8 | GLM 4.7 Flash 4-bit | MLX, grammar dialect | 16.9 GB | #183 (glm-4.7-flash) | 22.5 GB | not yet run |
+| 9 | Gemma 3 27B IT 4-bit | MLX, grammar dialect | 16.9 GB | #185 (gemma-3-27b-it) | 23.5 GB (20.5 GB with a sliding cache) | not yet run |
+| 10 | Mistral Small 3.2 24B Instruct 2506 4-bit | MLX, grammar dialect | 13.3 GB | #193 (mistral-small-2506) | 17.1 GB | not yet run |
 
 ## What was measured, cell by cell
 
-A cohort loads one model at a time and runs the same two requests against it: **cold**, the first request after the model loads, and **warm**, the same request again with the model already resident. First word is the time to the first token; generation is the tokens a second after it; peak memory is the most the helper held during the request. Each cohort is one signed receipt, and its digest is on the heading. 30 cells in all.
+A cohort loads one model at a time and runs the same two requests against it: **cold**, the first request after the model loads, and **warm**, the same request again with the model already resident. First word is the time to the first token; generation is the tokens a second after it; peak memory is the most the helper held during the request. Each cohort is one signed receipt, and its digest is on the heading. 39 cells in all.
 
 ### Cohort m3-max-36gb-0205t1-mlx-20260909-r2
 
@@ -104,6 +108,22 @@ A cohort loads one model at a time and runs the same two requests against it: **
 | 8 | Llama 3.1 8B Instruct 4-bit | 2.8 s | 55 tok/s | 6.2 GB | 2.8 s | 55 tok/s | 6.5 GB |
 | 9 | Mistral 7B Instruct v0.2 4-bit | 2.8 s | 57 tok/s | 6.2 GB | 2.8 s | 57 tok/s | 6.4 GB |
 
+### Cohort m3-max-36gb-e4b-controls-mlx-20260912-r2
+
+3 cells per model, 100 seconds between cells, an 8192-token window, mlx-serve 0.2 on macOS 26.6, measured 12 September 2026. Signed receipt `c8413aaf1c3c480fbbd533f29a84027be7533687d2527a07ce577115a9911f97`.
+
+| Cell | Model | Cold: first word | Cold: generation | Cold: peak memory | Warm: first word | Warm: generation | Warm: peak memory |
+| ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 1 | Gemma 4 26B A4B IT 4-bit | 3.4 s | 74 tok/s | 17.8 GB | 1.9 s | 75 tok/s | 18.1 GB |
+| 2 | Gemma 4 E4B IT 4-bit | 1.1 s | 72 tok/s | 6.3 GB | 1.1 s | 72 tok/s | 6.6 GB |
+| 3 | Llama 3.1 8B Instruct 4-bit | 2.9 s | 54 tok/s | 6.2 GB | 2.8 s | 55 tok/s | 6.5 GB |
+| 4 | Gemma 4 26B A4B IT 4-bit | 3.3 s | 75 tok/s | 17.8 GB | 1.9 s | 75 tok/s | 18.1 GB |
+| 5 | Gemma 4 E4B IT 4-bit | 1.1 s | 72 tok/s | 6.3 GB | 1.1 s | 72 tok/s | 6.6 GB |
+| 6 | Llama 3.1 8B Instruct 4-bit | 2.9 s | 55 tok/s | 6.2 GB | 2.9 s | 55 tok/s | 6.5 GB |
+| 7 | Gemma 4 26B A4B IT 4-bit | 3.1 s | 73 tok/s | 17.8 GB | 1.9 s | 74 tok/s | 18.1 GB |
+| 8 | Gemma 4 E4B IT 4-bit | 1.1 s | 71 tok/s | 6.3 GB | 1.1 s | 71 tok/s | 6.6 GB |
+| 9 | Llama 3.1 8B Instruct 4-bit | 2.8 s | 54 tok/s | 6.2 GB | 2.8 s | 54 tok/s | 6.5 GB |
+
 ## The agency baseline, probe by probe
 
 The baseline is 8 fixed documents in a small vault, each expanded from sources through Flow's own loop with its read and search tools, with the draft returned the way Flow asks for it. A model passes only when every probe comes back **composed**. A probe is **declined** when the model answered without a draft, and **unreadable** when the reply was not in the form Flow asks for; the receipt's own words for the cause are kept beside the verdict. Turns are round trips through the loop; calls are the lookups the model asked for on the way. The envelope names the shape the model was handed: **two-phase** is the loop, where the model asks for its lookups and answers when it has enough; **one-turn** is the day's shape, where Flow does the lookups first and hands the model one request whose reply is the draft. The probe set in force is `flow-agency-v2.probes-2`; it grew from three probes to eight on 9 September 2026, the day a row first composed all three in one turn, and a one-turn run judged on the earlier set is shown on the probes it ran and earns no day pick, because a day pick needs the whole set in force; the night's picks were judged through the loop on the first three.
@@ -117,29 +137,37 @@ The baseline is 8 fixed documents in a small vault, each expanded from sources t
 - **Travel plan**: a two-day plan with nothing beside it to find, so the draft has to grow it without inventing a fact.
 - **Quarter review**: a longer review under three headings with its figures in a document beside it, so the draft has to keep the headings and place the figures.
 
-| Run | Model | Helper | Envelope | Table note | First run | Expand topic | Site actions | Orchard in Spanish | Tool readme | Travel plan | Quarter review | Result | Receipt |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 9 September 2026, 05:31 UTC | Qwen 3.6 27B 4-bit | mlx-serve `5c2d4d44` | two-phase | Composed in 54.2 s (3 turns, 4 calls) | Composed in 57.3 s (3 turns, 3 calls) | Composed in 34.1 s (3 turns, 2 calls) | not run | not run | not run | not run | not run | **Passes** (3 of 3) | `2979d7433d86` |
-| 9 September 2026, 07:13 UTC | Gemma 3n E4B IT (language-model-only export) 4-bit | mlx-serve `5c2d4d44` | two-phase | Unreadable in 9.4 s: the reply asked for lookups and answered at the same time | Unreadable in 7.3 s: the reply was not in the form Flow asks for | Unreadable in 5.5 s: the reply asked for lookups and answered at the same time | not run | not run | not run | not run | not run | Does not pass (0 of 3) | `8815f72203d3` |
-| 9 September 2026, 07:14 UTC | Granite 4.1 8B 4-bit | mlx-serve `5c2d4d44` | two-phase | Composed in 11.3 s (2 turns, 2 calls) | Declined in 19.6 s: no draft came back between the markers | Declined in 7.8 s: no draft came back between the markers | not run | not run | not run | not run | not run | Does not pass (1 of 3) | `d867f7ebe46e` |
-| 9 September 2026, 07:14 UTC | Gemma 4 26B A4B IT 4-bit | mlx-serve `5c2d4d44` | two-phase | Unreadable in 8.6 s: the reply was not in the form Flow asks for | Unreadable in 7.1 s: the reply was not in the form Flow asks for | Unreadable in 3.7 s: the reply was not in the form Flow asks for | not run | not run | not run | not run | not run | Does not pass (0 of 3) | `671647f590fa` |
-| 9 September 2026, 07:15 UTC | Qwen 3.8 27B 4-bit | mlx-serve `5c2d4d44` | two-phase | Composed in 40.1 s (3 turns, 2 calls) | Composed in 45.4 s (3 turns, 3 calls) | Composed in 30.1 s (3 turns, 3 calls) | not run | not run | not run | not run | not run | **Passes** (3 of 3) | `906b677b6614` |
-| 9 September 2026, 08:46 UTC | Gemma 4 26B A4B IT 4-bit | mlx-serve `5c2d4d44` | two-phase | Composed in 10.8 s (2 turns, 1 call) | Composed in 7.1 s (2 turns, 1 call) | Composed in 3.5 s (2 turns, 1 call) | not run | not run | not run | not run | not run | **Passes** (3 of 3) | `a7ddcbeac85f` |
-| 9 September 2026, 08:46 UTC | Gemma 3n E4B IT (language-model-only export) 4-bit | mlx-serve `5c2d4d44` | two-phase | Declined in 8.9 s: no draft came back between the markers | Unreadable in 7.4 s: the reply was not in the form Flow asks for | Declined in 5.5 s: no draft came back between the markers | not run | not run | not run | not run | not run | Does not pass (0 of 3) | `85f68b357158` |
-| 9 September 2026, 09:02 UTC | Gemma 3 12B IT (language-model-only export) 4-bit | mlx-serve `5c2d4d44` | two-phase | Unreadable in 5.1 s: the reply was not in the form Flow asks for | Composed in 14.1 s (2 turns, 2 calls) | Composed in 11.6 s (2 turns, 3 calls) | not run | not run | not run | not run | not run | Does not pass (2 of 3) | `5efaff4ae231` |
-| 9 September 2026, 17:16 UTC | Gemma 4 26B A4B IT 4-bit | mlx-serve `8e28b673` | two-phase | Composed in 24.6 s (2 turns, 1 call) | Composed in 19.7 s (2 turns, 1 call) | Composed in 7.2 s (2 turns, 1 call) | not run | not run | not run | not run | not run | **Passes** (3 of 3) | `221b2ca9772c` |
-| 9 September 2026, 20:11 UTC | Gemma 3 4B IT (language-model-only export) 4-bit | mlx-serve `8e28b673` | two-phase | Unreadable in 21.6 s: the reply asked for lookups and answered at the same time | Declined in 12.0 s: no draft came back between the markers | Unreadable in 8.7 s: the reply asked for lookups and answered at the same time | not run | not run | not run | not run | not run | Does not pass (0 of 3) | `10117317e769` |
-| 9 September 2026, 20:12 UTC | Llama 3.1 8B Instruct 4-bit | mlx-serve `8e28b673` | two-phase | Unreadable in 7.9 s: the reply was empty | Unreadable in 3.3 s: the reply was empty | Composed in 3.4 s (2 turns, 1 call) | not run | not run | not run | not run | not run | Does not pass (1 of 3) | `3155ab553a4c` |
-| 9 September 2026, 20:13 UTC | Mistral 7B Instruct v0.2 4-bit | mlx-serve `8e28b673` | two-phase | Unreadable in 4.1 s: the reply was not in the form Flow asks for | Unreadable in 2.5 s: the reply was not in the form Flow asks for | Unreadable in 2.5 s: the reply asked for lookups and answered at the same time | not run | not run | not run | not run | not run | Does not pass (0 of 3) | `bb74079a0d45` |
-| 9 September 2026, 22:55 UTC | Llama 3.1 8B Instruct 4-bit | mlx-serve `8e28b673` | one-turn | Composed in 7.5 s (1 turn, 5 calls) | Composed in 7.7 s (1 turn, 5 calls) | Composed in 7.7 s (1 turn, 5 calls) | not run | not run | not run | not run | not run | **Passes** (3 of 3) | `d6ac271ef5a2` |
-| 9 September 2026, 23:01 UTC | Llama 3.1 8B Instruct 4-bit | mlx-serve `8e28b673` | one-turn | Composed in 8.8 s (1 turn, 5 calls) | Composed in 7.7 s (1 turn, 5 calls) | Composed in 6.3 s (1 turn, 5 calls) | Composed in 7.8 s (1 turn, 5 calls) | Composed in 5.9 s (1 turn, 5 calls) | Composed in 5.2 s (1 turn, 5 calls) | Composed in 7.5 s (1 turn, 5 calls) | Composed in 6.9 s (1 turn, 5 calls) | **Passes** (8 of 8) | `c5d8607655e5` |
-| 9 September 2026, 23:02 UTC | Gemma 3 4B IT (language-model-only export) 4-bit | mlx-serve `8e28b673` | one-turn | Composed in 8.7 s (1 turn, 5 calls) | Composed in 10.8 s (1 turn, 5 calls) | Composed in 13.7 s (1 turn, 5 calls) | Composed in 12.4 s (1 turn, 5 calls) | Composed in 20.6 s (1 turn, 5 calls) | Composed in 13.2 s (1 turn, 5 calls) | Composed in 9.4 s (1 turn, 5 calls) | Composed in 14.7 s (1 turn, 5 calls) | **Passes** (8 of 8) | `bf7a5f5f4c4a` |
-| 9 September 2026, 23:04 UTC | Mistral 7B Instruct v0.2 4-bit | mlx-serve `8e28b673` | one-turn | Composed in 14.3 s (1 turn, 5 calls) | Composed in 7.4 s (1 turn, 5 calls) | Composed in 8.7 s (1 turn, 5 calls) | Composed in 10.9 s (1 turn, 5 calls) | Composed in 8.7 s (1 turn, 5 calls) | Composed in 10.4 s (1 turn, 5 calls) | Composed in 8.2 s (1 turn, 5 calls) | Composed in 12.8 s (1 turn, 5 calls) | **Passes** (8 of 8) | `0d171b9570f9` |
-| 9 September 2026, 23:06 UTC | Gemma 3 12B IT (language-model-only export) 4-bit | mlx-serve `8e28b673` | one-turn | Declined in 34.5 s: no draft came back between the markers | Declined in 28.5 s: no draft came back between the markers | Composed in 21.6 s (1 turn, 5 calls) | Declined in 18.1 s: no draft came back between the markers | Declined in 13.6 s: no draft came back between the markers | Declined in 28.3 s: no draft came back between the markers | Declined in 17.9 s: no draft came back between the markers | Declined in 35.5 s: no draft came back between the markers | Does not pass (1 of 8) | `9110cefebc76` |
-| 10 September 2026, 00:25 UTC | Gemma 4 26B A4B IT 4-bit | mlx-serve `8e28b673` | two-phase | Composed in 7.8 s (2 turns, 1 call) | Composed in 7.0 s (2 turns, 1 call) | Composed in 3.5 s (2 turns, 1 call) | Composed in 3.3 s (1 turn, 0 calls) | Composed in 6.0 s (2 turns, 1 call) | Composed in 5.0 s (2 turns, 1 call) | Declined in 6.4 s: no draft came back between the markers | Composed in 4.5 s (2 turns, 1 call) | Does not pass (7 of 8) | `c050f1294cf5` |
-| 10 September 2026, 00:26 UTC | Qwen 3.8 27B 4-bit | mlx-serve `8e28b673` | two-phase | Composed in 37.6 s (3 turns, 2 calls) | Composed in 44.8 s (3 turns, 3 calls) | Composed in 27.0 s (3 turns, 3 calls) | Composed in 52.3 s (3 turns, 5 calls) | Composed in 50.2 s (3 turns, 3 calls) | Composed in 48.6 s (3 turns, 3 calls) | Composed in 76.3 s (3 turns, 2 calls) | Composed in 55.4 s (3 turns, 4 calls) | **Passes** (8 of 8) | `4948eb1e035e` |
+| Run | Model | Helper | Dialect | Envelope | Table note | First run | Expand topic | Site actions | Orchard in Spanish | Tool readme | Travel plan | Quarter review | Result | Receipt |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 9 September 2026, 05:31 UTC | Qwen 3.6 27B 4-bit | mlx-serve `5c2d4d44` | prompt | two-phase | Composed in 54.2 s (3 turns, 4 calls) | Composed in 57.3 s (3 turns, 3 calls) | Composed in 34.1 s (3 turns, 2 calls) | not run | not run | not run | not run | not run | **Passes** (3 of 3) | `2979d7433d86` |
+| 9 September 2026, 07:13 UTC | Gemma 3n E4B IT (language-model-only export) 4-bit | mlx-serve `5c2d4d44` | prompt | two-phase | Unreadable in 9.4 s: the reply asked for lookups and answered at the same time | Unreadable in 7.3 s: the reply was not in the form Flow asks for | Unreadable in 5.5 s: the reply asked for lookups and answered at the same time | not run | not run | not run | not run | not run | Does not pass (0 of 3) | `8815f72203d3` |
+| 9 September 2026, 07:14 UTC | Granite 4.1 8B 4-bit | mlx-serve `5c2d4d44` | prompt | two-phase | Composed in 11.3 s (2 turns, 2 calls) | Declined in 19.6 s: no draft came back between the markers | Declined in 7.8 s: no draft came back between the markers | not run | not run | not run | not run | not run | Does not pass (1 of 3) | `d867f7ebe46e` |
+| 9 September 2026, 07:14 UTC | Gemma 4 26B A4B IT 4-bit | mlx-serve `5c2d4d44` | prompt | two-phase | Unreadable in 8.6 s: the reply was not in the form Flow asks for | Unreadable in 7.1 s: the reply was not in the form Flow asks for | Unreadable in 3.7 s: the reply was not in the form Flow asks for | not run | not run | not run | not run | not run | Does not pass (0 of 3) | `671647f590fa` |
+| 9 September 2026, 07:15 UTC | Qwen 3.8 27B 4-bit | mlx-serve `5c2d4d44` | prompt | two-phase | Composed in 40.1 s (3 turns, 2 calls) | Composed in 45.4 s (3 turns, 3 calls) | Composed in 30.1 s (3 turns, 3 calls) | not run | not run | not run | not run | not run | **Passes** (3 of 3) | `906b677b6614` |
+| 9 September 2026, 08:46 UTC | Gemma 4 26B A4B IT 4-bit | mlx-serve `5c2d4d44` | prompt | two-phase | Composed in 10.8 s (2 turns, 1 call) | Composed in 7.1 s (2 turns, 1 call) | Composed in 3.5 s (2 turns, 1 call) | not run | not run | not run | not run | not run | **Passes** (3 of 3) | `a7ddcbeac85f` |
+| 9 September 2026, 08:46 UTC | Gemma 3n E4B IT (language-model-only export) 4-bit | mlx-serve `5c2d4d44` | prompt | two-phase | Declined in 8.9 s: no draft came back between the markers | Unreadable in 7.4 s: the reply was not in the form Flow asks for | Declined in 5.5 s: no draft came back between the markers | not run | not run | not run | not run | not run | Does not pass (0 of 3) | `85f68b357158` |
+| 9 September 2026, 09:02 UTC | Gemma 3 12B IT (language-model-only export) 4-bit | mlx-serve `5c2d4d44` | prompt | two-phase | Unreadable in 5.1 s: the reply was not in the form Flow asks for | Composed in 14.1 s (2 turns, 2 calls) | Composed in 11.6 s (2 turns, 3 calls) | not run | not run | not run | not run | not run | Does not pass (2 of 3) | `5efaff4ae231` |
+| 9 September 2026, 17:16 UTC | Gemma 4 26B A4B IT 4-bit | mlx-serve `8e28b673` | prompt | two-phase | Composed in 24.6 s (2 turns, 1 call) | Composed in 19.7 s (2 turns, 1 call) | Composed in 7.2 s (2 turns, 1 call) | not run | not run | not run | not run | not run | **Passes** (3 of 3) | `221b2ca9772c` |
+| 9 September 2026, 20:11 UTC | Gemma 3 4B IT (language-model-only export) 4-bit | mlx-serve `8e28b673` | prompt | two-phase | Unreadable in 21.6 s: the reply asked for lookups and answered at the same time | Declined in 12.0 s: no draft came back between the markers | Unreadable in 8.7 s: the reply asked for lookups and answered at the same time | not run | not run | not run | not run | not run | Does not pass (0 of 3) | `10117317e769` |
+| 9 September 2026, 20:12 UTC | Llama 3.1 8B Instruct 4-bit | mlx-serve `8e28b673` | prompt | two-phase | Unreadable in 7.9 s: the reply was empty | Unreadable in 3.3 s: the reply was empty | Composed in 3.4 s (2 turns, 1 call) | not run | not run | not run | not run | not run | Does not pass (1 of 3) | `3155ab553a4c` |
+| 9 September 2026, 20:13 UTC | Mistral 7B Instruct v0.2 4-bit | mlx-serve `8e28b673` | prompt | two-phase | Unreadable in 4.1 s: the reply was not in the form Flow asks for | Unreadable in 2.5 s: the reply was not in the form Flow asks for | Unreadable in 2.5 s: the reply asked for lookups and answered at the same time | not run | not run | not run | not run | not run | Does not pass (0 of 3) | `bb74079a0d45` |
+| 9 September 2026, 22:55 UTC | Llama 3.1 8B Instruct 4-bit | mlx-serve `8e28b673` | prompt | one-turn | Composed in 7.5 s (1 turn, 5 calls) | Composed in 7.7 s (1 turn, 5 calls) | Composed in 7.7 s (1 turn, 5 calls) | not run | not run | not run | not run | not run | **Passes** (3 of 3) | `d6ac271ef5a2` |
+| 9 September 2026, 23:01 UTC | Llama 3.1 8B Instruct 4-bit | mlx-serve `8e28b673` | prompt | one-turn | Composed in 8.8 s (1 turn, 5 calls) | Composed in 7.7 s (1 turn, 5 calls) | Composed in 6.3 s (1 turn, 5 calls) | Composed in 7.8 s (1 turn, 5 calls) | Composed in 5.9 s (1 turn, 5 calls) | Composed in 5.2 s (1 turn, 5 calls) | Composed in 7.5 s (1 turn, 5 calls) | Composed in 6.9 s (1 turn, 5 calls) | **Passes** (8 of 8) | `c5d8607655e5` |
+| 9 September 2026, 23:02 UTC | Gemma 3 4B IT (language-model-only export) 4-bit | mlx-serve `8e28b673` | prompt | one-turn | Composed in 8.7 s (1 turn, 5 calls) | Composed in 10.8 s (1 turn, 5 calls) | Composed in 13.7 s (1 turn, 5 calls) | Composed in 12.4 s (1 turn, 5 calls) | Composed in 20.6 s (1 turn, 5 calls) | Composed in 13.2 s (1 turn, 5 calls) | Composed in 9.4 s (1 turn, 5 calls) | Composed in 14.7 s (1 turn, 5 calls) | **Passes** (8 of 8) | `bf7a5f5f4c4a` |
+| 9 September 2026, 23:04 UTC | Mistral 7B Instruct v0.2 4-bit | mlx-serve `8e28b673` | prompt | one-turn | Composed in 14.3 s (1 turn, 5 calls) | Composed in 7.4 s (1 turn, 5 calls) | Composed in 8.7 s (1 turn, 5 calls) | Composed in 10.9 s (1 turn, 5 calls) | Composed in 8.7 s (1 turn, 5 calls) | Composed in 10.4 s (1 turn, 5 calls) | Composed in 8.2 s (1 turn, 5 calls) | Composed in 12.8 s (1 turn, 5 calls) | **Passes** (8 of 8) | `0d171b9570f9` |
+| 9 September 2026, 23:06 UTC | Gemma 3 12B IT (language-model-only export) 4-bit | mlx-serve `8e28b673` | prompt | one-turn | Declined in 34.5 s: no draft came back between the markers | Declined in 28.5 s: no draft came back between the markers | Composed in 21.6 s (1 turn, 5 calls) | Declined in 18.1 s: no draft came back between the markers | Declined in 13.6 s: no draft came back between the markers | Declined in 28.3 s: no draft came back between the markers | Declined in 17.9 s: no draft came back between the markers | Declined in 35.5 s: no draft came back between the markers | Does not pass (1 of 8) | `9110cefebc76` |
+| 10 September 2026, 00:25 UTC | Gemma 4 26B A4B IT 4-bit | mlx-serve `8e28b673` | prompt | two-phase | Composed in 7.8 s (2 turns, 1 call) | Composed in 7.0 s (2 turns, 1 call) | Composed in 3.5 s (2 turns, 1 call) | Composed in 3.3 s (1 turn, 0 calls) | Composed in 6.0 s (2 turns, 1 call) | Composed in 5.0 s (2 turns, 1 call) | Declined in 6.4 s: no draft came back between the markers | Composed in 4.5 s (2 turns, 1 call) | Does not pass (7 of 8) | `c050f1294cf5` |
+| 10 September 2026, 00:26 UTC | Qwen 3.8 27B 4-bit | mlx-serve `8e28b673` | prompt | two-phase | Composed in 37.6 s (3 turns, 2 calls) | Composed in 44.8 s (3 turns, 3 calls) | Composed in 27.0 s (3 turns, 3 calls) | Composed in 52.3 s (3 turns, 5 calls) | Composed in 50.2 s (3 turns, 3 calls) | Composed in 48.6 s (3 turns, 3 calls) | Composed in 76.3 s (3 turns, 2 calls) | Composed in 55.4 s (3 turns, 4 calls) | **Passes** (8 of 8) | `4948eb1e035e` |
+| 10 September 2026, 03:34 UTC | Advisor 4B Q4_K_M | llama-server `976d935f` | grammar | one-turn | Composed in 12.7 s (1 turn, 5 calls) | Composed in 12.7 s (1 turn, 5 calls) | Declined in 16.1 s: no draft came back between the markers | Composed in 14.0 s (1 turn, 5 calls) | Unreadable in 6.1 s: the reply was empty | Composed in 9.2 s (1 turn, 5 calls) | Composed in 17.9 s (1 turn, 5 calls) | Declined in 18.6 s: no draft came back between the markers | Does not pass (5 of 8); retired: measured with the model's thinking on, a launch Flow no longer performs since C2909 (--reasoning off, 2026-09-09 20:56); kept for the evidence page, earns nothing | `a28d336d440a` |
+| 10 September 2026, 03:37 UTC | Advisor 4B Q4_K_M | llama-server `976d935f` | grammar | one-turn | Composed in 12.6 s (1 turn, 5 calls) | Composed in 12.7 s (1 turn, 5 calls) | Composed in 17.5 s (1 turn, 5 calls) | Composed in 14.0 s (1 turn, 5 calls) | Composed in 10.4 s (1 turn, 5 calls) | Composed in 16.2 s (1 turn, 5 calls) | Composed in 17.7 s (1 turn, 5 calls) | Composed in 15.9 s (1 turn, 5 calls) | **Passes** (8 of 8); retired: measured with the model's thinking on, a launch Flow no longer performs since C2909 (--reasoning off, 2026-09-09 20:56); kept for the evidence page, earns nothing | `0ee6bac57c8a` |
+| 10 September 2026, 03:58 UTC | Advisor 4B Q4_K_M | llama-server `976d935f` | grammar | one-turn | Composed in 5.1 s (1 turn, 5 calls) | Unreadable in 34.0 s: the reply was empty | Composed in 8.6 s (1 turn, 5 calls) | Composed in 5.0 s (1 turn, 5 calls) | Composed in 3.0 s (1 turn, 5 calls) | Composed in 6.0 s (1 turn, 5 calls) | Composed in 3.1 s (1 turn, 5 calls) | Declined in 7.6 s: no draft came back between the markers | Does not pass (6 of 8) | `56f06a9dc9a4` |
+| 10 September 2026, 04:00 UTC | Advisor 4B Q4_K_M | llama-server `976d935f` | grammar | one-turn | Composed in 5.1 s (1 turn, 5 calls) | Unreadable in 34.0 s: the reply was empty | Composed in 9.5 s (1 turn, 5 calls) | Composed in 4.9 s (1 turn, 5 calls) | Composed in 3.0 s (1 turn, 5 calls) | Composed in 6.1 s (1 turn, 5 calls) | Composed in 3.2 s (1 turn, 5 calls) | Declined in 7.9 s: no draft came back between the markers | Does not pass (6 of 8) | `b5ca21abe3e7` |
+| 12 September 2026, 07:24 UTC | Gemma 4 E4B IT 4-bit | mlx-serve `fe419159` | grammar | one-turn | Composed in 7.0 s (1 turn, 5 calls) | Composed in 3.3 s (1 turn, 5 calls) | Composed in 2.6 s (1 turn, 5 calls) | Composed in 3.4 s (1 turn, 5 calls) | Composed in 3.3 s (1 turn, 5 calls) | Composed in 3.3 s (1 turn, 5 calls) | Composed in 1.7 s (1 turn, 5 calls) | Composed in 3.9 s (1 turn, 5 calls) | **Passes** (8 of 8) | `c961f3b15ffc` |
+| 12 September 2026, 07:25 UTC | Llama 3.1 8B Instruct 4-bit | mlx-serve `fe419159` | grammar | one-turn | Composed in 8.9 s (1 turn, 5 calls) | Composed in 7.9 s (1 turn, 5 calls) | Composed in 9.0 s (1 turn, 5 calls) | Composed in 8.4 s (1 turn, 5 calls) | Composed in 6.6 s (1 turn, 5 calls) | Composed in 5.6 s (1 turn, 5 calls) | Composed in 7.7 s (1 turn, 5 calls) | Composed in 6.6 s (1 turn, 5 calls) | **Passes** (8 of 8) | `fe41fe60933d` |
+| 12 September 2026, 07:26 UTC | Gemma 4 E4B IT 4-bit | mlx-serve `fe419159` | grammar | two-phase | Declined in 5.7 s: no draft came back between the markers | Declined in 4.7 s: no draft came back between the markers | Composed in 3.8 s (2 turns, 1 call) | Declined in 3.2 s: no draft came back between the markers | Declined in 3.1 s: no draft came back between the markers | Declined in 3.7 s: no draft came back between the markers | Composed in 5.0 s (2 turns, 1 call) | Composed in 5.1 s (2 turns, 1 call) | Does not pass (3 of 8) | `59f9936d42a7` |
+| 12 September 2026, 07:27 UTC | Gemma 4 26B A4B IT 4-bit | mlx-serve `fe419159` | grammar | two-phase | Composed in 11.9 s (2 turns, 1 call) | Composed in 10.9 s (2 turns, 1 call) | Composed in 5.8 s (2 turns, 1 call) | Composed in 9.7 s (2 turns, 5 calls) | Composed in 5.1 s (2 turns, 2 calls) | Composed in 7.6 s (2 turns, 2 calls) | Composed in 8.8 s (2 turns, 1 call) | Composed in 10.4 s (2 turns, 4 calls) | **Passes** (8 of 8) | `f18ef0653f69` |
 
-A model appears more than once when it was run more than once; every run is kept, in the order it happened, and the best run is what [[Models Flow Recommends]] reports.
+A model appears more than once when it was run more than once; every run is kept, in the order it happened, and the best run that still counts is what [[Models Flow Recommends]] reports. A run marked *retired* was measured under a launch Flow no longer performs; it stays here with its probes and earns nothing. The dialect is the shape the helper held the model to: *grammar* constrains what the model can write to the shape Flow asked for, *prompt* asks for the shape in words and Flow checks the reply.
 
 ## Task-specific small models
 

@@ -20,8 +20,10 @@ Flow works with ordinary Markdown, and this folder, the Flow Guide, is yours to 
 ## Your routes
 
 - **View** on an Ideas card opens the Settings page that owns it, on the right, without closing this document.
-- **Settings ▸ Models** is where you decide which models and providers Flow may use, and what each one costs.
+- **Settings ▸ Models** is where you decide which models and providers Flow may use, see the recommended Day and Night choices for this Mac, and review what each one costs.
 - **Settings ▸ General** is where your plan, this Guide, updates and what leaves your Mac live.
+
+For a document action, the reasoning control offers **Recommended**, **On** and **Off** when supported. Start with Recommended and review the draft before applying it.
 
 ## Keep working
 

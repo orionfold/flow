@@ -28,7 +28,7 @@ macros:
 ---
 # Holdings
 
-This is the one file you edit. The front matter above is the portfolio: every line in `holdings` is a position, every line in `macros` is an indicator the dashboard follows. [[Portfolio Dashboard]] reads this file each night and redraws its holdings table from it, and the refresh script reads it to know which prices to fetch.
+This is the one file you edit. The front matter above is the portfolio: every line in `holdings` is a position, every line in `macros` is an indicator the dashboard follows. [[Portfolio Dashboard]] reads this file each night and redraws its holdings table from it, and [[Portfolio Refresh]] reads it to know which prices to fetch.
 
 ## What each field means
 

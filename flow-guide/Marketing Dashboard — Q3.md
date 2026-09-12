@@ -5,14 +5,14 @@ tags: [marketing, dashboard, metrics]
 
 # Marketing dashboard — Q3 2026
 
-As of 30 September. Everything here is measured, not modelled.
+**Fictional example, as of 30 September 2026.** These sample figures show how to combine charts, tables and a decision in one document.
 
 ```chart
 chartType: KPI Card
 title: The quarter at a glance
 data:
   - {metric: MQLs, value: 412, goal: 380}
-  - {metric: Cost per MQL, value: 84, goal: 100}
+  - {metric: Cost per MQL, value: 104, goal: 100}
   - {metric: Pipeline created, value: 1900, goal: 2100}
 semantic_types: {metric: Category, value: Quantity, goal: Quantity}
 encodings:
@@ -21,7 +21,7 @@ encodings:
   goal: {field: goal}
 ```
 
-Two of three ahead. Pipeline created missed, and it is the only one that matters to [[Sales Report — Q3]].
+MQL volume beat the goal; cost per MQL and pipeline created missed. The pipeline gap carries through to [[Sales Report — Q3]].
 
 ## Traffic and conversion
 
@@ -47,7 +47,7 @@ The W29 dip was a search algorithm update. Recovery came from the docs rewrite, 
 
 ## Channel performance
 
-| Channel | Spend | MQLs | Cost per MQL | Pipeline | ROI |
+| Channel | Spend | MQLs | Cost per MQL | Pipeline | Pipeline / spend |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | Organic | $0 | 168 | $0 | $780k | — |
 | Content | $12k | 94 | $128 | $410k | 34× |
@@ -56,7 +56,7 @@ The W29 dip was a search algorithm update. Recovery came from the docs rewrite, 
 | Social | $4k | 21 | $190 | $110k | 27× |
 | **Total** | **$43k** | **412** | **$104** | **$1.9M** | **44×** |
 
-Paid search is the worst performer on both cost and ROI and takes the largest budget. That is the reallocation question for Q4.
+Paid search has the lowest pipeline per dollar spent and takes the largest budget. Events has the highest cost per MQL. That is the reallocation question for Q4.
 
 ## Content performance
 
