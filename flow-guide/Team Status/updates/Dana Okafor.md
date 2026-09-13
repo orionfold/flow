@@ -1,18 +1,22 @@
 ---
 title: Dana Okafor
 tags: [status, update]
-name: Dana Okafor
-area: Billing
-status: green
-confidence: 90
-updated: 2026-09-01
-this_week: "Annual plan pricing live in the checkout; the receipt email now carries the seat count."
-next_week: "Dunning sequence: the three emails and the in-app banner."
-blocker: ""
 ---
 # Dana Okafor
 
-One file per person, rewritten each week. The front matter is what rolls up into [[Team Status]] every night: name, area, a traffic-light status, a confidence number, and the three sentences.
+**Illustrative business record.**
+
+## Record
+
+| name | area | status | confidence | updated | this_week | next_week | blocker |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Dana Okafor | Billing | green | 90 | 2026-09-01 | Annual plan pricing live in the checkout; the receipt email now carries the seat count. | Dunning sequence: the three emails and the in-app banner. |  |
+
+## About these inputs
+
+Choose **View ▸ Edit Table** to edit this record, then save the document. Keep one record in this table; copy the whole document when adding another person or form.
+
+One file per person, rewritten each week. The Record table is what rolls up into [[Team Status]] every night: name, area, a traffic-light status, a confidence number, and the three sentences.
 
 | Field | Meaning |
 | --- | --- |

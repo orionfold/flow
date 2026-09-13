@@ -1,20 +1,26 @@
 ---
 title: Example Entry
-tags: [starter, entry]
-name: Example Entry
-group: A
-score: 72
-updated: 2026-09-02
-note: "One file per thing; the night reads each file's front matter as one row."
+tags: [starter, illustrative, source]
 ---
-# Example Entry
+# Participant availability
 
-A folder of small documents, one per person, project, customer or paper, is the simplest living-document pattern there is. [[Living Document]] reads every file in `entries/` as one row, and the person who owns a row edits only their own file.
+**Illustrative business record.**
 
-| Field | Meaning |
+## Record
+
+| name | group | updated | note |
+| --- | --- | --- | --- |
+| Participant availability | A | 2026-09-02 | Prototype-review participants are not confirmed. |
+
+## About these inputs
+
+Choose **View ▸ Edit Table** to edit this record, then save the document. Keep one record in this table; copy the whole document when adding another entry.
+
+Fictional source note, 2 September 2026. Alex has a prototype ready for discussion, but the plan does not yet name confirmed participants. Ask who can attend before deciding that the review will happen on the scheduled date.
+
+No attendance or completion metric has been collected. [[Living Document]] uses the plan for amounts and this note only for context.
+
+| Known | Still to confirm |
 | --- | --- |
-| `name` | The row's label |
-| `group` | Anything you sort or colour by |
-| `score` | Any number worth charting |
-| `updated` | When this file was last rewritten |
-| `note` | One sentence; quote it |
+| Prototype ready for discussion | Participant names and availability |
+| Review appears in the plan | Whether the scheduled date is agreed |

@@ -74,19 +74,19 @@
   ],
   "headroom": [
     {
-      "Account": "401(k) deferrals (box 12 D)",
+      "Account": "Taxpayer 401(k) contributions",
       "Contributed": 16400,
       "Limit": 23500,
       "Headroom": 7100
     },
     {
-      "Account": "HSA (payroll plus your own)",
+      "Account": "Taxpayer HSA contributions",
       "Contributed": 8550,
       "Limit": 8550,
       "Headroom": 0
     },
     {
-      "Account": "Traditional IRA (deductible)",
+      "Account": "Taxpayer IRA contributions (not deduction eligibility)",
       "Contributed": 0,
       "Limit": 7000,
       "Headroom": 7000
@@ -122,6 +122,20 @@
       "Route": "Itemized total",
       "Amount": 39600,
       "Chosen": "yes"
+    }
+  ],
+  "inputCoverage": [
+    {
+      "Item": "Tax year",
+      "Value": 2025
+    },
+    {
+      "Item": "Matching W-2 forms",
+      "Value": 1
+    },
+    {
+      "Item": "Basis",
+      "Value": "Entered income and matching-year forms; completeness is not verified"
     }
   ]
 }

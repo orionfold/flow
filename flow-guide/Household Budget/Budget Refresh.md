@@ -2,9 +2,9 @@
 title: Budget Refresh
 tags: [budget, definition, night-shift]
 sources:
-  profile: Budget Profile.md
-  budgets: Budget Profile.md#budgets
-  rules: Budget Profile.md#rules
+  profile: Budget Profile.md#table:Settings
+  budgets: Budget Profile.md#table:Budgets
+  rules: Budget Profile.md#table:Rules
   statements: statements/*.csv
 derive:
   lines:
@@ -61,7 +61,7 @@ let:
   totalBudget: {sum: monthly, of: budgets}
   incomeExpected: {max: value, of: profile, where: "key == 'income_monthly'"}
   savingsTarget: {max: value, of: profile, where: "key == 'savings_target_pct'"}
-  savingsRate: "incomeReceived > 0 ? round((incomeReceived - spentThisMonth) / incomeReceived * 100, 1) : 0"
+  savingsRate: "incomeReceived > 0 ? round((incomeReceived - spentThisMonth) / incomeReceived * 100, 1) : number('')"
 emit:
   month: "{latest}"
   statements: "{statementCount}"
@@ -78,6 +78,16 @@ emit:
       - {concat: observedCategories, unlessPresent: category}
       - {lookup: category, from: spentByCategory, on: category, fields: [spent]}
       - {calculate: "round(coalesce(spent, 0), 0)", as: spent}
+  categoryComparison:
+    from: budgets
+    steps:
+      - {calculate: "monthly", as: budget}
+      - {concat: observedCategories, unlessPresent: category}
+      - {lookup: category, from: spentByCategory, on: category, fields: [spent]}
+      - {calculate: "round(coalesce(spent, 0), 0)", as: spent}
+      - {fold: [spent, budget], key: series, value: amount}
+      - {calculate: "series == 'spent' ? 'Spent' : 'Budget'", as: series}
+      - {columns: [category, series, amount]}
   byMonth:
     from: spending
     steps:
@@ -99,7 +109,9 @@ emit:
     from: thisMonth
     steps:
       - {trimTrailing: description, as: Merchant, drop: [digits, statecode]}
-      - {aggregate: Merchant, sum: spent, as: Spent}
+      - {aggregate: [Merchant, category], sum: spent, count: spent, as: [Spent, Count]}
+      - {calculate: "category", as: Category}
+      - {columns: [Merchant, Category, Count, Spent]}
       - {calculate: "round(Spent, 0)", as: Spent}
       - {sort: Spent, descending: true}
       - {sample: 12}
@@ -132,7 +144,7 @@ This is the definition [[Household Budget]] runs each night. It is **data, not c
 
 ## `let:` — the single values
 
-`latest` is the newest month any statement mentions, which is what every table below is filtered to. `savingsRate` shows the shape of a calculation: the `? :` guards against dividing by zero, so a month with no income shows 0 rather than nothing.
+`latest` is the newest month any statement mentions, which selects the current-month tables; the monthly comparison retains every supplied month. `savingsRate` shows the shape of a calculation: the `? :` guards against dividing by zero, so a month with no positive recorded income has no savings-rate number. Missing income is not evidence of a 0% rate.
 
 ## Two things worth knowing
 

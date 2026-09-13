@@ -5,102 +5,32 @@ jobs:
   - kind: gather
     definition: Starter Refresh.md
   - kind: keep-sources-fresh
-    watch: [Profile.md, entries, https://orionfold.com/flow/]
+    watch: [Profile.md, entries]
   - kind: reconcile-against-folder
     folder: entries
   - kind: overnight-notes
 ---
 # Living Document
 
-Copy this folder, rename it for your domain, and edit three things: the front matter of [[Profile]], the files in `entries/`, and the headers and titles below. Every construct the Night Shift can keep current is wired here exactly once, with a note on where it reads from. Delete the ones you do not need.
+**Keep a small project review ready without rebuilding the same report.** This starter turns one plan and one source note into a useful weekly pulse.
 
-The `jobs:` block above is what makes this a living document. `watch` names the files, folders and public pages the night compares with the night before; `folder` names the folder the night inventories; `refresh-from-data` redraws every block bound to a file. Nothing else creates a job.
+> Fictional onboarding study · as of 2 September 2026 · effort in planned minutes. Group A is Discovery; group B is Delivery.
 
-## A key-value table from the profile's scalars
+**Supplied snapshot · 2 September 2026:** the plan allocates 400 of 500 available minutes across three items, with two still open. The pulse below follows your current inputs; review this authored summary after changing them. **Next action:** confirm who will attend the prototype review before adding more work. Planned effort is not time spent, and a completed inventory is not evidence that an interview happened.
 
-Bound to `Profile.md` with no `#key`: every scalar at the top of the front matter, one row each.
+[[Profile]] owns the items and capacity target. [[Starter Refresh]] computes the count and total. The note in `entries/` supplies context for Search and optional local-model Overnight notes.
 
-<!-- data: Profile.md -->
-| | |
-| --- | --- |
-| title | Profile |
-| subject | The thing this document keeps current |
-| owner | Your name |
-
-## A table from a list
-
-Bound to `Profile.md#items`. The header names the columns to draw, in the order you want them, matched to the keys in any case.
-
-<!-- data: Profile.md#items -->
-| Name | Group | Amount | Start | Due | Status |
-| --- | --- | ---: | --- | --- | --- |
-| First item | A | 120 | 2026-09-01 | 2026-09-15 | open |
-| Second item | A | 80 | 2026-09-08 | 2026-09-22 | in progress |
-| Third item | B | 200 | 2026-08-18 | 2026-09-01 | done |
-
-## A chart from the same list
-
-The same binding on a chart opener. The night rewrites only the `data:` rows; the chart type, title and encodings are yours. Change `x`, `y` and `color` to your key names.
-
-```chart data: Profile.md#items
-chartType: Bar Chart
-title: Amount by item
-subtitle: From Profile.md
-source: Profile.md, front matter
-data:
-  - {name: "First item", group: "A", amount: 120, start: "2026-09-01", due: "2026-09-15", status: "open"}
-  - {name: "Second item", group: "A", amount: 80, start: "2026-09-08", due: "2026-09-22", status: "in progress"}
-  - {name: "Third item", group: "B", amount: 200, start: "2026-08-18", due: "2026-09-01", status: "done"}
-semantic_types: {name: Category, amount: Amount, group: Category}
-encodings:
-  y: {field: name}
-  x: {field: amount}
-  color: {field: group}
-```
-
-## A timeline from dates in the list
-
-A Gantt reads two date keys, `start` and `due`, as its ends and any key as its colour.
-
-```chart data: Profile.md#items
-chartType: Gantt Chart
-title: Items by due date
-subtitle: From Profile.md
-source: Profile.md, front matter
-data:
-  - {name: "First item", group: "A", amount: 120, start: "2026-09-01", due: "2026-09-15", status: "open"}
-  - {name: "Second item", group: "A", amount: 80, start: "2026-09-08", due: "2026-09-22", status: "in progress"}
-  - {name: "Third item", group: "B", amount: 200, start: "2026-08-18", due: "2026-09-01", status: "done"}
-semantic_types: {name: Name, start: Date, due: Date, status: Category}
-encodings:
-  y: {field: name}
-  x: {field: start}
-  x2: {field: due}
-  color: {field: status}
-```
-
-## One row per file in a folder
-
-Bound to `entries/*.md` with no `#key`: one row per file, from that file's front matter. This is the pattern for anything owned by many people.
-
-<!-- data: entries/*.md -->
-| name | group | score | updated | note |
-| --- | --- | ---: | --- | --- |
-| Example Entry | A | 72 | 2026-09-02 | One file per thing; the night reads each file's front matter as one row. |
-
-## A chart from a data capture
-
-Bound to `data/capture-*.json#summary`: the star takes the newest file by name, the key takes the list inside it. [[Starter Refresh]] writes the file: it is a gather definition, a document naming where each figure comes from and how it is shaped. Flow reads it before it redraws. Edit it to describe what your own document needs.
+## The pulse
 
 ```chart data: data/capture-*.json#summary
 chartType: KPI Card
-title: The numbers at a glance
-subtitle: From the newest capture
+title: Open work and planned capacity
+subtitle: Fictional project; target belongs to Profile
 source: data/capture-*.json
 data:
   - {metric: "Items", value: 3}
   - {metric: "Open items", value: 2}
-  - {metric: "Total amount", value: 400, goal: 500}
+  - {metric: "Planned minutes", value: 400, goal: 500}
 semantic_types: {metric: Category, value: Quantity, goal: Quantity}
 encodings:
   metric: {field: metric}
@@ -108,59 +38,57 @@ encodings:
   goal: {field: goal}
 ```
 
-```chart data: data/capture-*.json#byGroup
-chartType: Donut Chart
-title: Amount by group
-subtitle: From the newest capture
-source: data/capture-*.json
+## Work that earns its place in the plan
+
+<!-- data: Profile.md#table:Items -->
+| Name | Group | Amount | Start | Due | Status |
+| --- | --- | ---: | --- | --- | --- |
+| Peer interviews | A | 120 | 2026-09-01 | 2026-09-15 | open |
+| Prototype review | A | 80 | 2026-09-08 | 2026-09-22 | in progress |
+| Source inventory | B | 200 | 2026-08-18 | 2026-09-01 | done |
+
+```chart data: Profile.md#table:Items
+chartType: Bar Chart
+title: Planned effort by work item
+subtitle: Minutes; A is Discovery, B is Delivery
+source: Profile.md, Items table
 data:
-  - {group: "A", amount: 200}
-  - {group: "B", amount: 200}
-semantic_types: {group: Category, amount: Amount}
+  - {name: "Peer interviews", group: "A", amount: 120, start: "2026-09-01", due: "2026-09-15", status: "open"}
+  - {name: "Prototype review", group: "A", amount: 80, start: "2026-09-08", due: "2026-09-22", status: "in progress"}
+  - {name: "Source inventory", group: "B", amount: 200, start: "2026-08-18", due: "2026-09-01", status: "done"}
+semantic_types: {name: Category, amount: Amount, group: Category}
 encodings:
-  size: {field: amount}
-  color: {field: group}
+  y: {field: name}
+  x: {field: amount}
+  color: {field: group, scheme: purples}
 ```
 
-## The folder's inventory
 
-The `reconcile-against-folder` job keeps this fence current: name, size, modified date and a short digest, one row per file.
+## Context on file
+
+[[Example Entry]] records the unresolved participant question. Keep notes, source documents and essential images inside this folder when adapting the starter. A source note can explain a number; it does not make that number measured.
+
+## Source inventory
 
 ```flow-folder entries
 | File | Size | Modified | Digest |
 | --- | ---: | --- | --- |
-| Example Entry.md | 687 | 2026-09-03T05:11:19Z | 8742c9f9cb40 |
+| Example Entry.md | 755 |  |  |
 ```
 
-## What you will see in the morning
-
-- **You edited the profile.** The tables and charts bound to it are current, and the Briefing shows the exact diff of the file.
-- **A file landed in `entries/`.** The inventory names it and the one-row-per-file table has its row.
-- **A watched page changed.** The Briefing shows the text that changed.
-- **The refresh wrote a capture.** The blocks bound to `data/` redrew from it.
-- **Nothing moved.** An honest empty morning, and the run is in Receipts.
+Bundled file list; the inventory job fills timestamps and digests in your working copy.
 
 ## Make it yours
 
-1. Duplicate this folder in Finder and name it for the thing it keeps current. Inside the Guide or anywhere you Add Folder; paths are relative to this document, so the folder moves as one piece.
-2. Edit [[Profile]]: your keys, your rows. Quote any value with a comma.
-3. Rename the headers and the chart `encodings` above to your keys, retitle the charts, delete the blocks you do not need.
-4. Put the pages you want watched in `watch`; public `https` only, each fetch has a receipt. Remove the example page.
-5. If you need fetched or computed data, edit [[Starter Refresh]] to name your source and the shape you want back; the `gather` job above reads it before every redraw. Nothing runs, so there is nothing to allow. If you do not need it, delete the `gather` job, [[Starter Refresh]] and `data/`, and the two capture-bound charts above.
-6. Turn the Night Shift on: the moon in the title bar, or Settings ▸ Night Shift. The first shift runs while you watch.
+1. Copy the whole **Living Document Starter** folder, name it for your project and add it in Flow. The local profile, definition, entries and saved capture travel together.
+2. Open [[Profile]] and choose **View ▸ Edit Table**. In **Items**, change Peer interviews from 120 to 150 minutes, then save. After a completed run, the planned total should become 430 while the 500-minute capacity and three-item count remain unchanged.
+3. Replace the fictional owner, rows and [[Example Entry]]. Use the **Settings** table's **Open in the table editor** control to change `planned_minutes` when your capacity changes; there is no second hard-coded target in the definition.
+4. Open [[Starter Refresh]], then choose **File ▸ Edit Definition…**. Return to this Living Document and use **File ▸ Night Shift Jobs…** to inspect its saved work. Use the Table and Chart editors to adapt labels and dimensions; the underlying keys remain visible in the source.
+5. Choose **Settings ▸ Night Shift ▸ Run now**; scheduling can stay off for this practice run. Check its capture, result and refreshed values. The deterministic Gather is local; optional Overnight notes need a configured local model. No public reads or external writes are required.
 
-## How this page is built
+## What a run changes
 
-| Block | Construct | Bound to | Redrawn by |
-| --- | --- | --- | --- |
-| Key-value table | table under a `data:` comment | `Profile.md` | the night alone |
-| Table from a list, bar chart, timeline | table and charts | `Profile.md#items` | the night alone |
-| One row per file | table over a glob | `entries/*.md` | the night alone |
-| KPI card, donut | charts | `data/capture-*.json#summary`, `#byGroup` | refresh, then the night |
-| Inventory | `flow-folder` fence | `entries/` | the night alone |
-| Watched page | `watch` in the `jobs:` block | one public page | the night alone |
-
-The rules in one breath: a binding is a path relative to this document; a `*` takes the newest file by name; `#key` names the list inside a JSON file or a Markdown file's front matter; a glob with no key reads one row per file; the night rewrites rows only and never the text around them.
+Gather writes the summary; bound views refresh from its capture and the profile. The source-watch and inventory jobs report the files you named. The document text around those bound views remains authored text. Review it when your conclusion changes; automatic refresh does not make a stale conclusion true.
 
 ## Overnight notes
 <!-- night: notes -->

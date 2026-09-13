@@ -1,0 +1,71 @@
+{
+  "review": [
+    {
+      "product": "Beacon Scheduling",
+      "as_of": "2026-09-12",
+      "scope": "Fictional resolved-case sample"
+    }
+  ],
+  "byTopic": [
+    {
+      "topic": "Access",
+      "tickets": 4
+    },
+    {
+      "topic": "Calendar sync",
+      "tickets": 3
+    },
+    {
+      "topic": "Notifications",
+      "tickets": 3
+    },
+    {
+      "topic": "Time zones",
+      "tickets": 2
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Access",
+      "tickets": 4,
+      "article": "Support Article — Account Access",
+      "status": "Current"
+    },
+    {
+      "topic": "Calendar sync",
+      "tickets": 3,
+      "article": "Support Article — Calendar Connection",
+      "status": "Current"
+    },
+    {
+      "topic": "Notifications",
+      "tickets": 3,
+      "article": "Support Article — Notification Choices",
+      "status": "Current"
+    },
+    {
+      "topic": "Time zones",
+      "tickets": 2,
+      "article": "Support Proposal — Time Zone Clarity",
+      "status": "Draft"
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "topic": "Time zones",
+      "tickets": 2,
+      "article": "Support Proposal — Time Zone Clarity",
+      "status": "Draft"
+    }
+  ],
+  "summary": [
+    {
+      "metric": "Resolved sample cases",
+      "value": 12
+    },
+    {
+      "metric": "Topics represented",
+      "value": 4
+    }
+  ]
+}

@@ -1,19 +1,39 @@
 ---
 title: Resume — Base Version
-tags: [job-search, resume]
-version: base
-updated: 2026-08-10
+tags: [job-search, resume, illustrative]
+version: fictional-base
+updated: 2026-09-02
 ---
-# Resume — Base Version
+# Alex Morgan — Product Designer
 
-The version every tailored resume starts from. Keep one file per tailored version in this folder, named for the company: [[Job Search]] lists the folder every morning, so the version you sent is on record beside the application it went with.
+> Entirely fictional demonstration resume. Replace every identity, employer and experience statement with your own supported facts before using it.
 
-| Section | What the base carries |
+Product designer focused on making complex operational tools easier to use. Experience spans research, interaction design and collaboration with engineering.
+
+## Experience
+
+**Orchard Maps — Product Designer · 2022–2026**
+
+- Led workflow interviews with operations teams and translated findings into task-based prototypes.
+- Designed the review-and-correct flow for imported records, making unresolved fields visible before a user approved a change.
+- Worked with engineering to document component states, keyboard behavior and error recovery.
+
+**Northbank Studio — Designer · 2019–2022**
+
+- Turned customer-support themes into prioritized usability questions.
+- Prototyped an appointment-booking flow and documented the decisions behind its navigation.
+
+## Selected work to substantiate
+
+| Case study | Evidence still needed |
 | --- | --- |
-| Summary | Three lines: the role, the years, the one thing you are known for |
-| Experience | Four roles, most recent first, three bullets each with a number in every bullet |
-| Selected work | Two case studies with links; the tailored versions swap these |
-| Skills | The tools and the methods, one line each |
-| Education | Degree, school, year |
+| Record review workflow | Authorized screenshots, research notes and the candidate's specific role |
+| Appointment booking | Before/after task evidence and permitted outcome metrics |
 
-A tailored version changes the summary's first line and the two case studies, and nothing else. That rule keeps the versions honest with each other.
+## Skills
+
+Interview planning · information architecture · interaction design · prototyping · accessibility review · design systems.
+
+## Tailoring without changing the facts
+
+Use the captured posting and this base as sources for a reviewed draft. Change emphasis and choose relevant work; do not invent numerical impact or credentials. Save the approved version locally and record its exact filename under the application before marking it as sent. [[Job Search]] can inventory that file; it cannot establish a submission by itself.

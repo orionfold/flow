@@ -1,0 +1,80 @@
+{
+  "stays": [
+    {
+      "place": "Lisbon",
+      "arrival": "2026-10-08",
+      "departure": "2026-10-11",
+      "nights": 3,
+      "budget_eur": 420,
+      "status": "Planned"
+    },
+    {
+      "place": "Óbidos",
+      "arrival": "2026-10-11",
+      "departure": "2026-10-12",
+      "nights": 1,
+      "budget_eur": 160,
+      "status": "Planned"
+    },
+    {
+      "place": "Coimbra",
+      "arrival": "2026-10-12",
+      "departure": "2026-10-14",
+      "nights": 2,
+      "budget_eur": 190,
+      "status": "Planned"
+    },
+    {
+      "place": "Porto",
+      "arrival": "2026-10-14",
+      "departure": "2026-10-17",
+      "nights": 3,
+      "budget_eur": 480,
+      "status": "Planned"
+    },
+    {
+      "place": "Douro Valley",
+      "arrival": "2026-10-17",
+      "departure": "2026-10-18",
+      "nights": 1,
+      "budget_eur": 210,
+      "status": "Shortlist"
+    }
+  ],
+  "summary": [
+    {
+      "metric": "Nights",
+      "value": 10
+    },
+    {
+      "metric": "Accommodation, EUR",
+      "value": 1460
+    },
+    {
+      "metric": "Total budget, EUR",
+      "value": 3500
+    }
+  ],
+  "budget": [
+    {
+      "category": "Accommodation",
+      "amount": 1460
+    },
+    {
+      "category": "Flights",
+      "amount": 640
+    },
+    {
+      "category": "Food",
+      "amount": 700
+    },
+    {
+      "category": "Transport",
+      "amount": 400
+    },
+    {
+      "category": "Activities and contingency",
+      "amount": 300
+    }
+  ]
+}

@@ -88,6 +88,128 @@
       "budget": 0
     }
   ],
+  "categoryComparison": [
+    {
+      "category": "Housing",
+      "series": "Spent",
+      "amount": 2950
+    },
+    {
+      "category": "Housing",
+      "series": "Budget",
+      "amount": 2950
+    },
+    {
+      "category": "Groceries",
+      "series": "Spent",
+      "amount": 446
+    },
+    {
+      "category": "Groceries",
+      "series": "Budget",
+      "amount": 900
+    },
+    {
+      "category": "Dining",
+      "series": "Spent",
+      "amount": 198
+    },
+    {
+      "category": "Dining",
+      "series": "Budget",
+      "amount": 450
+    },
+    {
+      "category": "Transport",
+      "series": "Spent",
+      "amount": 196
+    },
+    {
+      "category": "Transport",
+      "series": "Budget",
+      "amount": 420
+    },
+    {
+      "category": "Utilities",
+      "series": "Spent",
+      "amount": 334
+    },
+    {
+      "category": "Utilities",
+      "series": "Budget",
+      "amount": 320
+    },
+    {
+      "category": "Health",
+      "series": "Spent",
+      "amount": 294
+    },
+    {
+      "category": "Health",
+      "series": "Budget",
+      "amount": 350
+    },
+    {
+      "category": "Subscriptions",
+      "series": "Spent",
+      "amount": 40
+    },
+    {
+      "category": "Subscriptions",
+      "series": "Budget",
+      "amount": 120
+    },
+    {
+      "category": "Shopping",
+      "series": "Spent",
+      "amount": 336
+    },
+    {
+      "category": "Shopping",
+      "series": "Budget",
+      "amount": 400
+    },
+    {
+      "category": "Kids",
+      "series": "Spent",
+      "amount": 1350
+    },
+    {
+      "category": "Kids",
+      "series": "Budget",
+      "amount": 1400
+    },
+    {
+      "category": "Travel",
+      "series": "Spent",
+      "amount": 0
+    },
+    {
+      "category": "Travel",
+      "series": "Budget",
+      "amount": 300
+    },
+    {
+      "category": "Giving",
+      "series": "Spent",
+      "amount": 100
+    },
+    {
+      "category": "Giving",
+      "series": "Budget",
+      "amount": 200
+    },
+    {
+      "category": "Uncategorized",
+      "series": "Spent",
+      "amount": 409
+    },
+    {
+      "category": "Uncategorized",
+      "series": "Budget",
+      "amount": 0
+    }
+  ],
   "byMonth": [
     {
       "month": "2026-07",

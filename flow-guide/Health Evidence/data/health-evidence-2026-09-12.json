@@ -1,0 +1,90 @@
+{
+  "review": [
+    {
+      "team": "Maple Grove clinic operations",
+      "as_of": "2026-09-12",
+      "unit": "One fictional weekly appointment cohort"
+    }
+  ],
+  "weekly": [
+    {
+      "week": "2026-08-03",
+      "scheduled": 120,
+      "completed": 102,
+      "missed": 12,
+      "cancelled": 6,
+      "missed_pct": 10,
+      "series": "Missed appointments"
+    },
+    {
+      "week": "2026-08-10",
+      "scheduled": 125,
+      "completed": 109,
+      "missed": 10,
+      "cancelled": 6,
+      "missed_pct": 8,
+      "series": "Missed appointments"
+    },
+    {
+      "week": "2026-08-17",
+      "scheduled": 118,
+      "completed": 104,
+      "missed": 8,
+      "cancelled": 6,
+      "missed_pct": 6.8,
+      "series": "Missed appointments"
+    },
+    {
+      "week": "2026-08-24",
+      "scheduled": 128,
+      "completed": 112,
+      "missed": 9,
+      "cancelled": 7,
+      "missed_pct": 7,
+      "series": "Missed appointments"
+    },
+    {
+      "week": "2026-08-31",
+      "scheduled": 130,
+      "completed": 116,
+      "missed": 8,
+      "cancelled": 6,
+      "missed_pct": 6.2,
+      "series": "Missed appointments"
+    },
+    {
+      "week": "2026-09-07",
+      "scheduled": 132,
+      "completed": 119,
+      "missed": 7,
+      "cancelled": 6,
+      "missed_pct": 5.3,
+      "series": "Missed appointments"
+    }
+  ],
+  "summary": [
+    {
+      "metric": "Scheduled appointments",
+      "value": 753
+    },
+    {
+      "metric": "Missed appointments",
+      "value": 54
+    },
+    {
+      "metric": "Missed share of all scheduled appointments, %",
+      "value": 7.2
+    }
+  ],
+  "reviewThreshold": [
+    {
+      "metric": "Review threshold, %",
+      "value": 6
+    },
+    {
+      "metric": "Weeks above the threshold",
+      "value": 5
+    }
+  ],
+  "dataChecks": []
+}

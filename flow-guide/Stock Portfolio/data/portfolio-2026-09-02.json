@@ -892,5 +892,23 @@
       "step": "Market value",
       "change": 93261
     }
+  ],
+  "coverage": [
+    {
+      "Item": "Declared holdings",
+      "Value": 10
+    },
+    {
+      "Item": "Holdings with a positive quote",
+      "Value": 10
+    },
+    {
+      "Item": "Missing quotes",
+      "Value": 0
+    },
+    {
+      "Item": "Total basis",
+      "Value": "All declared holdings priced; latest daily bars"
+    }
   ]
 }

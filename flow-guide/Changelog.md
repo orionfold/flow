@@ -7,8 +7,11 @@ tags: [flow, start-here, whats-new]
 
 Newest release first. Every release names what shipped, how it benefits you, and how to use it. Your Flow's version is in the title bar and in Settings ▸ General. This document travels with the Guide: **Settings ▸ General ▸ Flow Guide Updates…** fetches the newest copy, so a Flow one release behind can still read what the next one brought.
 
+For current model choices and measurements, open [[Model Arena]]. Older release entries retain the page names used when they shipped.
+
 | Release | Build | Date | In a sentence |
 | --- | --- | --- | --- |
+| 1.6.7 | 2162 | 13 September 2026 | Workspaces to make your own, single-document jobs, current definition previews and clearer recovery |
 | 1.6.6 | 2149 | 12 September 2026 | Better local model choices, reasoning controls, clearer definition drafting, and a Night Shift ready from your first saved job |
 | 1.6.5 | 2111 | 9 September 2026 | Flow names a day model for your Mac, earned the way the day works; Expand with Sources runs in one turn on this Mac; and a night pick no longer flips on one miss |
 | 1.6.4 | 2096 | 9 September 2026 | Flow recommends a day model and a night model for your Mac and shows the evidence whole; a model that can see describes a picture; a local model that never stops writing is cut off; and the first change on a new document can be approved again |
@@ -24,6 +27,58 @@ Newest release first. Every release names what shipped, how it benefits you, and
 | 1.5.1 | 1404 | 27 August 2026 | The first Flow that arrived through Flow itself |
 | 1.5 | 1382 | 26 August 2026 | The launch |
 
+## Flow 1.6.7 · build 2162 · 13 September 2026
+
+Make the Guide your own, refresh a single living document when you need it, and keep a clear record of what changed.
+
+### Refresh the document you are working on
+
+- **What shipped.** **Run Document Jobs Now** is available from a document's sidebar menu, the Agency menu, its permanent moon icon, and the Night Shift titlebar popup. The document icon remains visible when its tools are collapsed.
+- **How it benefits you.** Refresh one report without starting every open folder's jobs. Changes remain reviewable in History. Documents bound to the same refreshed data can still update through source watching.
+- **How to use it.** Save your document, open its moon menu and choose **Run Document Jobs Now**. Review the Morning Briefing and History when it finishes. The titlebar popup also retains **Run now** for all open folders.
+
+### Start from a workspace that fits your work
+
+- **What shipped.** The redesigned Guide brings related examples together into 21 workspaces, including business reviews, sales accounts, insurance renewals and health evidence. Each combines linked documents, its own visual style and a short exercise. Model Arena brings model recommendations and measurements together.
+- **How it benefits you.** Begin with a useful example and adapt its inputs, sources and decisions to your own needs.
+- **How to use it.** Open [[Workspace Library]], choose an example, copy its entire folder in Finder and add the copy to Flow. Follow **Make it yours** in its main document.
+
+### Edit inputs as tables and see the result
+
+- **What shipped.** The Guide's business records and settings are editable in Table editor. Bound reports, charts and summaries can refresh from those saved inputs.
+- **How it benefits you.** Work with rows and cells while the report's saved jobs and definitions handle the calculations.
+- **How to use it.** In [[Business Review]], open [[Quarterly Close]] in **View ▸ Edit Table**, change a record and save. Return to the report, run its jobs and compare the result with the example's expected change.
+
+### Find a chart that answers your question
+
+- **What shipped.** Charts Gallery organizes 34 chart forms and 20 diagrams into linked categories, with editable examples and a living report that shows one input change across several views.
+- **How it benefits you.** Compare ways to show trends, distributions, relationships and plans before choosing a visual for your own document.
+- **How to use it.** Open [[Charts Gallery]], follow a category, and copy an example into your own workspace. Try the gallery's living example to see its data-driven views refresh.
+
+### Keep definitions accurate as inputs change
+
+- **What shipped.** Open definition previews refresh when their saved source tables change, preserving your selected step and unfinished edits. Definitions also flag missing sort columns and conflicting output names before they can hide a result.
+- **How it benefits you.** Inspect current calculations and correct a problem while the last good report remains available.
+- **How to use it.** Save a source-table change and return to its definition preview. If Flow names a missing column or duplicate output, correct it before refreshing the report. Changes saved in another app appear when you return to Flow or refresh your folders.
+
+### Keep History available in the folders you already use
+
+- **What shipped.** Document jobs can save reversible changes inside Git-managed folders while preserving the surrounding repository. Flow detects known save blockers before model work and explains unfinished jobs.
+- **How it benefits you.** Keep your documents in an existing project and retain a clear path to review or restore changes. A blocked save tells you what needs attention.
+- **How to use it.** Open your folder as usual and run a document's saved jobs. Use History to inspect changes; if the Briefing reports a blocker, restore access or reopen the folder as instructed, then rerun.
+
+### Recover from unfinished jobs and model limits
+
+- **What shipped.** Script jobs finish reliably after their scripts exit, and overdue scripts stop with an explanation. **Expand with Sources** preserves complete lookup explanations and explains when a passage exceeds the model's available room.
+- **How it benefits you.** Understand why work stopped and choose a useful next action without losing your document or its last good result.
+- **How to use it.** Check the Morning Briefing or Receipts for unfinished script work. For a model limit, shorten the passage or choose a model with more room before trying again.
+
+### Understand setup, usage and folder actions
+
+- **What shipped.** Welcome and General distinguish supported local models from cloud-provider keys and explain what is saved. Usage totals load faster in folders with long histories. **Close Folder** replaces the former Remove Folder label.
+- **How it benefits you.** See what Flow can use, check your usage sooner, and close a folder knowing its files stay on disk.
+- **How to use it.** Review model and key discovery in **Settings ▸ General**, open the usage popup for totals, and right-click a folder to close it.
+
 ## Flow 1.6.6 · build 2149 · 12 September 2026
 
 Better local model choices for writing beside your work, a reasoning choice for each task, and a clearer path from a definition prompt to an applied draft. Night Shift is ready from your first saved job.
@@ -32,7 +87,7 @@ Better local model choices for writing beside your work, a reasoning choice for 
 
 - **What shipped.** Flow now recommends Gemma 4 E4B IT 4-bit for Day work on Macs with 24 GB or more memory. Ideas, Settings and automatic routing use the same choice. Gemma 3 4B remains the Day choice at 16 GB; Gemma 4 26B A4B remains the Night choice from 32 GB.
 - **How it benefits you.** The recommendation reflects how models handle Flow writing tasks, including keeping source qualifications intact. The Guide distinguishes measurements on a 36 GB Mac from projected fit on other memory tiers.
-- **How to use it.** Open *Models Flow Recommends* in the Guide, then **Settings ▸ Models** to download or import your Day model. Smart Routing uses the recommendation when that model is ready; your explicit model choices remain yours.
+- **How to use it.** Open [[Model Arena]] in the Guide and follow its model recommendations, then use **Settings ▸ Models** to download or import your Day model. Smart Routing uses the recommendation when that model is ready; your explicit model choices remain yours.
 
 ### Choose reasoning for the task
 
@@ -350,9 +405,9 @@ This release is about knowing what Flow does with your network, and being able t
 
 ### The Flow Guide lists every time Flow reaches out
 
-- **What shipped.** [[Working With Flow]] gained a section, *What leaves your Mac*, with a row for each connection Flow can make: when it happens, where it goes, what is sent, and the switch that turns it off. It also says what Flow never does. No usage statistics. No crash reports. No analytics or advertising code. No hidden number that identifies your copy. No online check to keep working.
+- **What shipped.** [[Using Flow]] gained a section, *What leaves your Mac*, with a row for each connection Flow can make: when it happens, where it goes, what is sent, and the switch that turns it off. It also says what Flow never does. No usage statistics. No crash reports. No analytics or advertising code. No hidden number that identifies your copy. No online check to keep working.
 - **How it benefits you.** "Does my text leave my Mac?" now has a printed answer you can read, check against Settings, and show to anyone who asks, instead of a promise.
-- **How to use it.** Open [[Working With Flow]] and scroll to *What leaves your Mac*. Every row names its switch; most of them are in Settings ▸ Models: one switch for this Mac, and for a cloud provider the key itself.
+- **How to use it.** Open [[Using Flow]] and scroll to *What leaves your Mac*. Every row names its switch; most of them are in Settings ▸ Models: one switch for this Mac, and for a cloud provider the key itself.
 
 ### Copy Diagnostics
 
@@ -457,7 +512,7 @@ Flow is a native Mac app for professional documents with AI agency built in. It 
 
 - **What shipped.** 34 chart types and 20 diagram types drawn in place, offline, from readable text that stays in your file. A chart editor with the chart chosen by type, a Chart gallery that opens any chart in its own tab, pictures rendered in place with an image editor for the alt text, and **Visualize**, which asks Flow to turn a table, list or paragraph into a chart you review before it lands.
 - **How it benefits you.** The picture lives in the Markdown. Any other editor still reads the same file.
-- **How to use it.** Format ▸ Insert Chart or Diagram…, or the toolbar's Insert Chart. [[Visualization Gallery]] shows every kind Flow draws. Select a table and press Visualize (⇧⌘V).
+- **How to use it.** Format ▸ Insert Chart or Diagram…, or the toolbar's Insert Chart. [[Charts Gallery]] shows every kind Flow draws. Select a table and press Visualize (⇧⌘V).
 
 ### Choose where every model may run
 

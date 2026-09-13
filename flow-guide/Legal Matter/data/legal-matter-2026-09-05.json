@@ -1,0 +1,51 @@
+{
+  "review": [
+    {
+      "matter": "Harbor Supply / Elm Studio",
+      "as_of": "2026-09-05",
+      "record_type": "Fictional commercial delivery file"
+    }
+  ],
+  "chronology": [
+    {
+      "date": "2026-08-10",
+      "event": "Purchase order lists 60 cartons",
+      "basis": "Order record",
+      "exhibit": "LM-01"
+    },
+    {
+      "date": "2026-08-27",
+      "event": "Dispatch sheet lists 60 cartons loaded",
+      "basis": "Dispatch record",
+      "exhibit": "LM-02"
+    },
+    {
+      "date": "2026-08-28",
+      "event": "Receiving note records 55 cartons counted",
+      "basis": "Receiving record",
+      "exhibit": "LM-03"
+    },
+    {
+      "date": "2026-08-29",
+      "event": "Invoice bills 60 cartons at USD 120 each",
+      "basis": "Invoice record",
+      "exhibit": "LM-04"
+    },
+    {
+      "date": "2026-09-02",
+      "event": "Buyer asks for a five-carton reconciliation",
+      "basis": "Correspondence",
+      "exhibit": "LM-05"
+    }
+  ],
+  "counts": [
+    {
+      "metric": "Events in the packet",
+      "value": 5
+    },
+    {
+      "metric": "Source records supplied",
+      "value": 5
+    }
+  ]
+}

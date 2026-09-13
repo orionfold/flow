@@ -1,0 +1,64 @@
+{
+  "active": [
+    {
+      "id": "A2",
+      "company": "Apple",
+      "resume_version": "not recorded",
+      "role": "Product Designer",
+      "stage": "Phone screen",
+      "applied": "2026-08-19",
+      "next_step": "Hiring manager call",
+      "next_date": "2026-09-04",
+      "contact": "Referral from A. Lee",
+      "notes": "Ask about the team's design-system ownership"
+    },
+    {
+      "id": "A5",
+      "company": "Linear",
+      "resume_version": "not recorded",
+      "role": "Product Designer",
+      "stage": "Take-home",
+      "applied": "2026-08-22",
+      "next_step": "Submit take-home",
+      "next_date": "2026-09-05",
+      "contact": "Recruiter via email",
+      "notes": "Three-day exercise; scope it to one flow"
+    },
+    {
+      "id": "A6",
+      "company": "Notion",
+      "resume_version": "not recorded",
+      "role": "Senior Product Designer",
+      "stage": "Offer",
+      "applied": "2026-07-21",
+      "next_step": "Decide",
+      "next_date": "2026-09-08",
+      "contact": "Hiring manager",
+      "notes": "Offer in hand; compare against the Stripe loop"
+    },
+    {
+      "id": "A1",
+      "company": "Stripe",
+      "resume_version": "not recorded",
+      "role": "Senior Product Designer",
+      "stage": "Onsite",
+      "applied": "2026-08-11",
+      "next_step": "Onsite loop",
+      "next_date": "2026-09-09",
+      "contact": "Recruiter via email",
+      "notes": "Portfolio review went well; loop is four sessions"
+    },
+    {
+      "id": "A3",
+      "company": "Anthropic",
+      "resume_version": "not recorded",
+      "role": "Product Designer",
+      "stage": "Applied",
+      "applied": "2026-08-28",
+      "next_step": "Wait for response",
+      "next_date": "2026-09-11",
+      "contact": "",
+      "notes": "Applied through the careers page"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "records": [
+    {
+      "activity": "Research",
+      "hours": 8
+    },
+    {
+      "activity": "Writing",
+      "hours": 6
+    },
+    {
+      "activity": "Review",
+      "hours": 4
+    },
+    {
+      "activity": "Planning",
+      "hours": 2
+    }
+  ],
+  "summary": [
+    {
+      "metric": "Planned hours",
+      "value": 20
+    },
+    {
+      "metric": "Activities",
+      "value": 4
+    }
+  ]
+}

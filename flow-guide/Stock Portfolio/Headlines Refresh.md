@@ -2,7 +2,7 @@
 title: Headlines Refresh
 tags: [portfolio, definition, night-shift]
 sources:
-  holdings: Holdings.md#holdings
+  holdings: Holdings.md#table:Holdings
   feeds:
     template: https://feeds.finance.yahoo.com/rss/2.0/headline?s={symbol}
     over: holdings
@@ -20,7 +20,8 @@ emit:
       - {calculate: "title", as: Headline}
       - {calculate: "host(link)", as: Source}
       - {calculate: "isoDay(published)", as: Published}
-      - {columns: [Symbol, Headline, Source, Published]}
+      - {calculate: "link", as: URL}
+      - {columns: [Symbol, Headline, Source, Published, URL]}
 ---
 # How the headlines refresh themselves
 
@@ -43,4 +44,4 @@ The feed address is a **template**, filled from the `symbol` column of your hold
 
 ## Headlines are the publisher's words
 
-Nothing here summarises, rewrites or judges a headline. The table shows what the publisher wrote, with the site it came from, and links back to it. If a feed says nothing on a given night, that holding simply has no rows — an empty answer is an honest one.
+Nothing here summarises, rewrites or judges a headline. The table shows what the publisher wrote, with the site it came from, and preserves its article URL in the capture. Older bundled rows without an original URL are explicitly incomplete; a publisher hostname is not an article citation. If a feed says nothing on a given night, that holding simply has no rows — an empty answer is an honest one.

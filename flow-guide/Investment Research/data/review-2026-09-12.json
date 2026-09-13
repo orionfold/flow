@@ -1,0 +1,55 @@
+{
+  "open": [
+    {
+      "id": "D1",
+      "question": "Can sales work without the CEO?",
+      "status": "Open",
+      "owner": "Partner",
+      "evidence": "CEO closed 16 of 19 sample plants"
+    },
+    {
+      "id": "D2",
+      "question": "Do installed units meet reliability targets?",
+      "status": "Open",
+      "owner": "Technical advisor",
+      "evidence": "Service logs not supplied"
+    },
+    {
+      "id": "D3",
+      "question": "How much revenue is recurring software?",
+      "status": "Open",
+      "owner": "Analyst",
+      "evidence": "Revenue bridge not supplied"
+    }
+  ],
+  "all": [
+    {
+      "id": "D1",
+      "question": "Can sales work without the CEO?",
+      "status": "Open",
+      "owner": "Partner",
+      "evidence": "CEO closed 16 of 19 sample plants"
+    },
+    {
+      "id": "D2",
+      "question": "Do installed units meet reliability targets?",
+      "status": "Open",
+      "owner": "Technical advisor",
+      "evidence": "Service logs not supplied"
+    },
+    {
+      "id": "D3",
+      "question": "How much revenue is recurring software?",
+      "status": "Open",
+      "owner": "Analyst",
+      "evidence": "Revenue bridge not supplied"
+    },
+    {
+      "id": "D4",
+      "question": "Does the customer list reconcile?",
+      "status": "Checked",
+      "owner": "Analyst",
+      "evidence": "19 rows in fictional management summary"
+    }
+  ]
+}

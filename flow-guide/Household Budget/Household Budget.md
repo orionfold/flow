@@ -13,16 +13,22 @@ jobs:
 ---
 # Household Budget
 
-Where the month's money went, against the plan in [[Budget Profile]]. Drop a bank statement in `statements/` and the page redraws — the moment Flow notices it, or overnight if Flow was closed: the totals, the categories against their budgets, the merchants that add up, and the lines no rule has caught yet. The Night Shift keeps the inventory of statements current, redraws from the newest summary, and shows you the exact diff when the profile changes.
+**Close the month by resolving unexplained spending, then decide whether next month's plan needs changing.**
 
-Everything stays on this Mac. No statement is sent anywhere; the refresh reads the CSV files beside this page and writes a summary next to them.
+> Illustrative household · August 2026 review · USD · two fictional statements, 79 rows. The saved output is dated; it is not a connection to your bank.
+
+In the supplied snapshot, the sample is below its $7,810 spending plan, but $408.75 in three uncategorized transactions still needs explanation. The recorded cash-flow surplus is 32.1% of income; only $1,500 is identified as a transfer to savings. Those are different facts.
+
+**Next action:** identify the Venmo and Zelle recipients before assigning a category. A merchant rule is your classification, not proof of what a transaction purchased. Review refunds, transfers and duplicate/overlapping statements before interpreting the totals. No automatic reconciliation is claimed.
+
+[[Budget Profile]] owns the plan and matching rules; the two local CSVs own the transactions. [[Budget Refresh]] computes the amounts when its Gather job runs. Bound views redraw from the resulting capture. Optional Overnight notes use the configured local model to describe the available tables; they do not validate your bank records.
 
 ## The month at a glance
 
 ```chart data: data/spending-*.json#summary
 chartType: KPI Card
 title: This month against the plan
-subtitle: Dollars, except the savings rate
+subtitle: USD; savings rate is recorded cash-flow surplus / income
 source: data/spending-*.json, newest capture
 data:
   - {metric: "Spent in August 2026", value: 6652, goal: 7810}
@@ -38,31 +44,43 @@ encodings:
 
 ## Categories against their budgets
 
-Every budgeted category, with what the month has spent against its limit. A category past its line is the one to look at first.
+Two bars compare recorded spending with each category's monthly budget. Colors distinguish the two series. Spending above budget calls for review; Uncategorized has no assigned budget.
 
-```chart data: data/spending-*.json#byCategory
-chartType: Bullet Chart
-title: Spent against budget, by category
-subtitle: This month, $
+```chart data: data/spending-*.json#categoryComparison
+chartType: Grouped Bar Chart
+title: Spending and budget by category
+subtitle: Latest statement month, USD
 source: data/spending-*.json, newest capture
 data:
-  - {category: "Housing", spent: 2950, budget: 2950}
-  - {category: "Groceries", spent: 446, budget: 900}
-  - {category: "Dining", spent: 198, budget: 450}
-  - {category: "Transport", spent: 196, budget: 420}
-  - {category: "Utilities", spent: 334, budget: 320}
-  - {category: "Health", spent: 294, budget: 350}
-  - {category: "Subscriptions", spent: 40, budget: 120}
-  - {category: "Shopping", spent: 336, budget: 400}
-  - {category: "Kids", spent: 1350, budget: 1400}
-  - {category: "Travel", spent: 0, budget: 300}
-  - {category: "Giving", spent: 100, budget: 200}
-  - {category: "Uncategorized", spent: 409, budget: 0}
-semantic_types: {category: Category, spent: Amount, budget: Amount}
+  - {category: "Housing", series: "Spent", amount: 2950}
+  - {category: "Housing", series: "Budget", amount: 2950}
+  - {category: "Groceries", series: "Spent", amount: 446}
+  - {category: "Groceries", series: "Budget", amount: 900}
+  - {category: "Dining", series: "Spent", amount: 198}
+  - {category: "Dining", series: "Budget", amount: 450}
+  - {category: "Transport", series: "Spent", amount: 196}
+  - {category: "Transport", series: "Budget", amount: 420}
+  - {category: "Utilities", series: "Spent", amount: 334}
+  - {category: "Utilities", series: "Budget", amount: 320}
+  - {category: "Health", series: "Spent", amount: 294}
+  - {category: "Health", series: "Budget", amount: 350}
+  - {category: "Subscriptions", series: "Spent", amount: 40}
+  - {category: "Subscriptions", series: "Budget", amount: 120}
+  - {category: "Shopping", series: "Spent", amount: 336}
+  - {category: "Shopping", series: "Budget", amount: 400}
+  - {category: "Kids", series: "Spent", amount: 1350}
+  - {category: "Kids", series: "Budget", amount: 1400}
+  - {category: "Travel", series: "Spent", amount: 0}
+  - {category: "Travel", series: "Budget", amount: 300}
+  - {category: "Giving", series: "Spent", amount: 100}
+  - {category: "Giving", series: "Budget", amount: 200}
+  - {category: "Uncategorized", series: "Spent", amount: 409}
+  - {category: "Uncategorized", series: "Budget", amount: 0}
+semantic_types: {category: Category, series: Category, amount: Amount}
 encodings:
   y: {field: category}
-  x: {field: spent}
-  goal: {field: budget}
+  x: {field: amount}
+  group: {field: series, scheme: tableau10}
 ```
 
 ## The last months, stacked
@@ -70,7 +88,7 @@ encodings:
 ```chart data: data/spending-*.json#byMonth
 chartType: Stacked Bar Chart
 title: Spending by month and category
-subtitle: Up to six months, $
+subtitle: All supplied months, USD
 source: data/spending-*.json, newest capture
 data:
   - {month: "2026-07", category: "Dining", spent: 201}
@@ -100,7 +118,7 @@ semantic_types: {month: Category, category: Category, spent: Amount}
 encodings:
   x: {field: month}
   y: {field: spent}
-  color: {field: category}
+  color: {field: category, scheme: oranges}
 ```
 
 ## How the month accumulated
@@ -162,7 +180,7 @@ The twelve merchants that took the most this month.
 
 ## Lines no rule caught
 
-Each of these needs a `rules` line in [[Budget Profile]]. Add it, run the refresh, and the line moves into its category.
+Identify these transactions first. Then add the appropriate rule in [[Budget Profile]] and run the refresh. Transfers and refunds require review before classifying them as spending.
 
 <!-- data: data/spending-*.json#uncategorized -->
 | Date | Description | Amount |
@@ -173,9 +191,9 @@ Each of these needs a `rules` line in [[Budget Profile]]. Add it, run the refres
 
 ## The plan
 
-Read from the front matter of [[Budget Profile]] each night: change a limit there and this table is current in the morning, with no refresh at all.
+This view reads the **Budgets** table in [[Budget Profile]]. Edit and save the input table; the next completed refresh updates this view.
 
-<!-- data: Budget Profile.md#budgets -->
+<!-- data: Budget Profile.md#table:Budgets -->
 | Category | Monthly |
 | --- | ---: |
 | Housing | 2950 |
@@ -192,39 +210,42 @@ Read from the front matter of [[Budget Profile]] each night: change a limit ther
 
 ## Statements in this folder
 
-The Night Shift keeps this inventory current, so a statement you dropped in the evening is named in the morning.
+The Night Shift keeps this inventory current, when its inventory job runs.
 
 ```flow-folder statements
 | File | Size | Modified | Digest |
 | --- | ---: | --- | --- |
-| 2026-07 Checking — Example.csv | 1594 | 2026-09-03T04:39:33Z | afa99801b7dd |
-| 2026-08 Checking — Example.csv | 1561 | 2026-09-03T04:39:33Z | 60b9e2f2e0ab |
+| 2026-07 Checking — Example.csv | 1594 |  |  |
+| 2026-08 Checking — Example.csv | 1561 |  |  |
 ```
 
-## What you will see in the morning
+Bundled file list; the inventory job fills timestamps and digests in your working copy.
 
-- **A statement landed.** The inventory grew by one file and the Briefing names it. If Flow was open when it landed, every chart above had already redrawn and the Briefing says so; if not, the night redrew them.
-- **The plan changed.** You raised the groceries budget; the Briefing shows the diff of the profile and *The plan* table carries the new number.
-- **Nothing moved.** An honest empty morning, and the run is in Receipts.
+## What changes on a run
+
+The opening assessment remains authored text; review its amounts after changing inputs.
+
+Gather reads the supplied statements, writes a new spending capture and refreshes the bound views. The inventory and source-watch jobs record changes to the files you named. Unchanged inputs may produce no new document change. Review the run result and dated capture before calling a page current; saving a CSV is not evidence that a refresh has completed.
 
 ## Make it yours
 
-1. Edit the front matter of [[Budget Profile]]: your income, your targets, your categories and rules.
-2. Export a month from your bank as CSV into `statements/` and delete the two example files.
-3. Use Run now (the moon in the title bar). Flow reads [[Budget Refresh]], the gather definition for this folder: it takes every statement in `statements/`, sorts the lines with the profile's rules and writes the month's summary into `data/`, then redraws the page. Nothing runs, so there is nothing to allow. Every night after that it reads the same definition, so a statement you dropped in is in the morning's page.
-4. Turn the Night Shift on: the moon in the title bar, or Settings ▸ Night Shift.
+1. Copy the entire **Household Budget** folder to your own location and add that folder in Flow. Keep its profile, definition, statements and data together.
+2. Open [[Budget Profile]] and choose **View ▸ Edit Table**. In **Budgets**, change the Groceries monthly limit from 900 to 950, then save. Open [[Budget Refresh]] in the Definition editor only if you want to inspect the calculation. After a run, the category target should be 950 and total budget 7,860; actual spending should be unchanged.
+3. Replace both fictional CSVs with non-overlapping exports using exactly `Date,Description,Amount`, ISO dates and signed amounts. Map debit/credit exports first. Confirm account/period coverage yourself.
+4. Choose **File ▸ Night Shift Jobs…** on this document to review its saved jobs, then use **Settings ▸ Night Shift ▸ Run now**. Scheduling can stay off for a manual run. These Gather inputs are local. Inspect the capture and run result; subsequent scheduled work depends on Night Shift being enabled and available.
+5. Set your expected income, targets and rules. When there is no positive recorded income, the savings rate is unavailable. Positive refunds are outside this simple outflow calculation; reconcile them before treating it as a complete expense ledger.
 
 ## How this page is built
 
 | Block | Construct | Bound to | Redrawn by |
 | --- | --- | --- | --- |
 | At a glance | KPI Card | `data/spending-*.json#summary` | refresh, then the night |
-| Categories | Bullet Chart | `#byCategory` | refresh, then the night |
+| Categories | Grouped Bar Chart | `#categoryComparison` | refresh, then the night |
 | Last months | Stacked Bar Chart | `#byMonth` | refresh, then the night |
 | Accumulated | Sparkline | `#cumulative` | refresh, then the night |
 | Where it went | table | `#topMerchants` | refresh, then the night |
 | Uncaught lines | table | `#uncategorized` | refresh, then the night |
-| The plan | table | `Budget Profile.md#budgets` | the night alone |
+| The plan | table | `Budget Profile.md#table:Budgets` | the night alone |
 | Statements | `flow-folder` inventory | `statements/` | the night alone |
 
 ## Overnight notes

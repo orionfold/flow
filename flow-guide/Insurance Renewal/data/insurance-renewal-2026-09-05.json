@@ -1,0 +1,75 @@
+{
+  "review": [
+    {
+      "as_of": "2026-09-05",
+      "business": "Alder Design Studio",
+      "period": "2026 renewal",
+      "basis": "Fictional teaching packet"
+    }
+  ],
+  "comparison": [
+    {
+      "policy": "Business owners",
+      "current_amount": 3500,
+      "offer": 3710,
+      "change": 210,
+      "change_pct": 6,
+      "renewal": "2026-10-01",
+      "source_id": "IR-01"
+    },
+    {
+      "policy": "Professional liability",
+      "current_amount": 4200,
+      "offer": 4480,
+      "change": 280,
+      "change_pct": 6.7,
+      "renewal": "2026-10-15",
+      "source_id": "IR-02"
+    },
+    {
+      "policy": "Cyber",
+      "current_amount": 1800,
+      "offer": "Pending",
+      "change": "Pending",
+      "change_pct": "Pending",
+      "renewal": "2026-11-01",
+      "source_id": "IR-03"
+    }
+  ],
+  "timeline": [
+    {
+      "task": "Business owners review",
+      "start": "2026-09-08",
+      "due": "2026-09-22",
+      "stage": "Review packet"
+    },
+    {
+      "task": "Professional liability review",
+      "start": "2026-09-15",
+      "due": "2026-10-01",
+      "stage": "Review packet"
+    },
+    {
+      "task": "Cyber information request",
+      "start": "2026-09-22",
+      "due": "2026-10-08",
+      "stage": "Gather information"
+    }
+  ],
+  "outstanding": [
+    {
+      "id": "IR-B",
+      "item": "Professional liability full quote forms",
+      "owner": "Nina Park",
+      "status": "requested",
+      "source_id": "IR-02"
+    },
+    {
+      "id": "IR-C",
+      "item": "Cyber renewal quotation",
+      "owner": "Jon Bell",
+      "status": "requested",
+      "source_id": "IR-03"
+    }
+  ]
+}

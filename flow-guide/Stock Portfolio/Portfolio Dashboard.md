@@ -18,13 +18,31 @@ jobs:
 ---
 # Portfolio Dashboard
 
-Ten widely held stocks, priced at the last close, with the indicators that move them and the headlines that explain the day. This is a living document: the `jobs:` block at the top is what the Night Shift does to it while you sleep, and every chart and table below is bound to a file in this folder, so the page redraws from data rather than being retyped. Change the portfolio in [[Holdings]]; the rest follows.
+**Review what needs attention in the holdings you already chose.** Start with quote coverage and concentration, then read the underlying source before making a decision.
 
-Prices come from [[Portfolio Refresh]] and the headlines from [[Headlines Refresh]] — two definitions Flow reads and runs itself before it redraws the page. They are **data, not code**: every line is something you can read and change, and no program runs. The Night Shift works out today's figures from them, redraws the page, watches this folder and the sources listed above, and leaves a receipt for each thing it did.
+> Illustrative lots · retained market-data snapshot dated 2 September 2026 · USD. The saved page is available offline; its prices and headlines are not current. This sample allocation is not a recommendation.
+
+**Next action:** confirm your actual shares and cost basis in [[Holdings]], then check that every position has a quote from the intended session. The example assumes positive long positions quoted in USD. It does not reconcile brokerage statements or convert currencies.
+
+[[Portfolio Refresh]] reads the declared Yahoo Finance endpoints when you run its Gather job; [[Headlines Refresh]] reads Yahoo RSS. Successful captures refresh the bound views. A failed fetch leaves the previous dated capture in place. Optional Overnight notes may describe the tables; they cannot explain a price move as a fact merely because a headline appeared nearby.
+
+## Coverage before totals
+
+<!-- data: data/portfolio-*.json#coverage -->
+| Item | Value |
+| --- | --- |
+| Declared holdings | 10 |
+| Holdings with a positive quote | 10 |
+| Missing quotes | 0 |
+| Total basis | All declared holdings priced; latest daily bars |
+
+An empty quote response preserves the holding with blank market cells and withholds incomplete totals, weights and allocation. An unavailable request refuses the refresh. In both cases, inspect the run result and dated data before relying on the page.
 
 ## At a glance
 
-Value against what the positions cost; the month against the S&P 500.
+Value against what the positions cost; the 22-session change against the S&P 500. **One month** here means 22 available daily bars, not a calendar month. Fewer observations leave that change blank; daily changes need two bars.
+
+Portfolio value and its comparison basis include cash. Gain on cost and holding weights measure the securities only.
 
 ```chart data: data/portfolio-*.json#summary
 chartType: KPI Card
@@ -83,17 +101,17 @@ data:
 semantic_types: {symbol: Category, value: Amount}
 encodings:
   size: {field: value}
-  color: {field: symbol}
+  color: {field: symbol, scheme: tableau10}
 ```
 
-## One month against the benchmark
+## Current holdings: 22-session price comparison
 
-Both lines start at 100 on the first session of the window, so the gap is relative performance, not price.
+Each available line starts at 100 over its displayed sessions. Fewer than 22 observations can still appear here, while its one-month KPI remains blank. The Portfolio line applies **today's share counts to historical daily closes**: a fixed-basket price comparison, not your realized investment return. It excludes transactions, cash and dividends; compare dates and coverage before comparing lines.
 
 ```chart data: data/portfolio-*.json#indexed
 chartType: Line Chart
 title: Portfolio and benchmark, indexed to 100
-subtitle: Last 22 sessions, daily closes
+subtitle: Up to 22 available sessions, daily closes
 source: data/portfolio-*.json, newest capture
 highlight: Portfolio
 data:
@@ -212,7 +230,7 @@ encodings:
 
 ## Macro
 
-The indicators in `macros` in [[Holdings]]: level at the last close, and the day's and month's move.
+The indicators in `macros` in [[Holdings]]: level in the latest supplied daily bar, and the day's and month's move.
 
 <!-- data: data/portfolio-*.json#macro -->
 | Indicator | Symbol | Level | Day % | Month % |
@@ -302,49 +320,51 @@ encodings:
   y: {field: yield}
 ```
 
-## Headlines
+## Headlines to inspect
 
 Three per holding, from Yahoo Finance's per-symbol feed, newest capture. Headlines are the publisher's words, not Flow's.
 
+The older saved sample did not retain original article URLs: empty URL cells mean missing evidence. A new feed capture preserves the actual links. A ticker feed can contain loosely related stories and duplicates; relevance is not verified.
+
 <!-- data: data/news-*.json#headlines -->
-| Symbol | Headline | Source | Published |
-| --- | --- | --- | --- |
-| AAPL | Warren Buffett’s biggest bet has a dividend secret | thestreet.com | 2026-09-02 |
-| AAPL | Apple's new CEO faces his first big test | thestreet.com | 2026-09-02 |
-| AAPL | Apple May Need a Foldable iPhone to Avoid a Revenue Slowdown Next Year | finance.yahoo.com | 2026-09-02 |
-| MSFT | Steve Ballmer banned, Clippers fined $30M over Kawhi Leonard scandal | finance.yahoo.com | 2026-09-02 |
-| MSFT | Bank of America resets Microsoft stock price target for 2026 | thestreet.com | 2026-09-02 |
-| MSFT | US Stock Futures Rangebound After S&P 500, Dow Snap Three-Day Losing Streak As Oil Steadies — MSFT, DELL, UBER, ASTS, AVGO In Focus | stocktwits.com | 2026-09-02 |
-| NVDA | Does Caterpillar’s AI Robotics Push with FieldAI and NVIDIA Reshape the Bull Case for CAT? | finance.yahoo.com | 2026-09-02 |
-| NVDA | Billionaire Dan Loeb Exited Nvidia and Broadcom. Is He Calling the Top in AI Chips? | finance.yahoo.com | 2026-09-02 |
-| NVDA | Bridgewater Cut Nvidia 18% and More Than Doubled Vistra. Is It Rotating From Chips to Power? | finance.yahoo.com | 2026-09-02 |
-| AMZN | Better High-Growth Stock for 2026: Amazon.com vs. Uber Technologies | fool.com | 2026-09-02 |
-| AMZN | Zoox vs. Waymo: Are Amazon and Alphabet Ready to Win the Robotaxi Race? | finance.yahoo.com | 2026-09-02 |
-| AMZN | Stanley Druckenmiller Increased Amazon More Than 10-Fold and Opened an AMD Position. What’s the Common Bet? | finance.yahoo.com | 2026-09-02 |
-| GOOGL | Sundar Pichai's Alphabet Has Grown Google Cloud Revenue 82% Year Over Year. Here's Why That Growth Rate Justifies the Company's Capex Bet. | fool.com | 2026-09-02 |
-| GOOGL | MGNI Stock Heads For Another Green Week: Analyst Says Google AdTech Ruling Opens Door To Bigger Opportunity | stocktwits.com | 2026-09-02 |
-| GOOGL | Here's Why Eos Energy Stock Soared Today | fool.com | 2026-09-02 |
-| META | META Stock Jumps To Best Day In Nearly A Month — Meta Platforms Unveils Most Powerful AI Model To Compete With AI Rivals | stocktwits.com | 2026-09-02 |
-| META | Edwards Lifesciences to Present at the Deutsche Bank Healthcare Summit | finance.yahoo.com | 2026-09-02 |
-| META | US judge rejects bid to break up Google's ad business | finance.yahoo.com | 2026-09-02 |
-| TSLA | Tesla's Cybercab to take center stage at Austin event | finance.yahoo.com | 2026-09-02 |
-| TSLA | Tesla uses data transparency to get what it wants | thestreet.com | 2026-09-02 |
-| TSLA | Dow Jones Futures: Snowflake, Broadcom, HPE Are Big Earnings Movers; Tesla Cybercab Event Due | finance.yahoo.com | 2026-09-02 |
-| BRK-B | Berkshire Is Making a Big Bet on Google. This Is Why, According to CEO Greg Abel | investopedia.com | 2026-09-02 |
-| BRK-B | MicroStrategy Reserve Capital Beats All S&P 500 Financials But Berkshire, MSTR Still Slips | beincrypto.com | 2026-09-02 |
-| BRK-B | What Is Berkshire Hathaway (BRK.A) Signaling About AI Under Greg Abel? | finance.yahoo.com | 2026-09-02 |
-| AVGO | Broadcom stock wavers as chipmaker's strong results 'not enough to keep investors happy' | finance.yahoo.com | 2026-09-02 |
-| AVGO | Billionaire Dan Loeb Exited Nvidia and Broadcom. Is He Calling the Top in AI Chips? | finance.yahoo.com | 2026-09-02 |
-| AVGO | Dow Jones Futures: Snowflake, Broadcom, HPE Are Big Earnings Movers; Tesla Cybercab Event Due | finance.yahoo.com | 2026-09-02 |
-| JPM | JPMorgan executive reveals what AI projects must prove to win funding | thestreet.com | 2026-09-02 |
-| JPM | JPMorgan scales back Jane Street financing amid growing bond market rivalry - FT | finance.yahoo.com | 2026-09-02 |
-| JPM | J.P. Morgan Asset Management Announces Rebrand of Campbell Global to J.P. Morgan Natural Capital | finance.yahoo.com | 2026-09-02 |
+| Symbol | Headline | Source | Published | URL |
+| --- | --- | --- | --- | --- |
+| AAPL | Warren Buffett’s biggest bet has a dividend secret | thestreet.com | 2026-09-02 |  |
+| AAPL | Apple's new CEO faces his first big test | thestreet.com | 2026-09-02 |  |
+| AAPL | Apple May Need a Foldable iPhone to Avoid a Revenue Slowdown Next Year | finance.yahoo.com | 2026-09-02 |  |
+| MSFT | Steve Ballmer banned, Clippers fined $30M over Kawhi Leonard scandal | finance.yahoo.com | 2026-09-02 |  |
+| MSFT | Bank of America resets Microsoft stock price target for 2026 | thestreet.com | 2026-09-02 |  |
+| MSFT | US Stock Futures Rangebound After S&P 500, Dow Snap Three-Day Losing Streak As Oil Steadies — MSFT, DELL, UBER, ASTS, AVGO In Focus | stocktwits.com | 2026-09-02 |  |
+| NVDA | Does Caterpillar’s AI Robotics Push with FieldAI and NVIDIA Reshape the Bull Case for CAT? | finance.yahoo.com | 2026-09-02 |  |
+| NVDA | Billionaire Dan Loeb Exited Nvidia and Broadcom. Is He Calling the Top in AI Chips? | finance.yahoo.com | 2026-09-02 |  |
+| NVDA | Bridgewater Cut Nvidia 18% and More Than Doubled Vistra. Is It Rotating From Chips to Power? | finance.yahoo.com | 2026-09-02 |  |
+| AMZN | Better High-Growth Stock for 2026: Amazon.com vs. Uber Technologies | fool.com | 2026-09-02 |  |
+| AMZN | Zoox vs. Waymo: Are Amazon and Alphabet Ready to Win the Robotaxi Race? | finance.yahoo.com | 2026-09-02 |  |
+| AMZN | Stanley Druckenmiller Increased Amazon More Than 10-Fold and Opened an AMD Position. What’s the Common Bet? | finance.yahoo.com | 2026-09-02 |  |
+| GOOGL | Sundar Pichai's Alphabet Has Grown Google Cloud Revenue 82% Year Over Year. Here's Why That Growth Rate Justifies the Company's Capex Bet. | fool.com | 2026-09-02 |  |
+| GOOGL | MGNI Stock Heads For Another Green Week: Analyst Says Google AdTech Ruling Opens Door To Bigger Opportunity | stocktwits.com | 2026-09-02 |  |
+| GOOGL | Here's Why Eos Energy Stock Soared Today | fool.com | 2026-09-02 |  |
+| META | META Stock Jumps To Best Day In Nearly A Month — Meta Platforms Unveils Most Powerful AI Model To Compete With AI Rivals | stocktwits.com | 2026-09-02 |  |
+| META | Edwards Lifesciences to Present at the Deutsche Bank Healthcare Summit | finance.yahoo.com | 2026-09-02 |  |
+| META | US judge rejects bid to break up Google's ad business | finance.yahoo.com | 2026-09-02 |  |
+| TSLA | Tesla's Cybercab to take center stage at Austin event | finance.yahoo.com | 2026-09-02 |  |
+| TSLA | Tesla uses data transparency to get what it wants | thestreet.com | 2026-09-02 |  |
+| TSLA | Dow Jones Futures: Snowflake, Broadcom, HPE Are Big Earnings Movers; Tesla Cybercab Event Due | finance.yahoo.com | 2026-09-02 |  |
+| BRK-B | Berkshire Is Making a Big Bet on Google. This Is Why, According to CEO Greg Abel | investopedia.com | 2026-09-02 |  |
+| BRK-B | MicroStrategy Reserve Capital Beats All S&P 500 Financials But Berkshire, MSTR Still Slips | beincrypto.com | 2026-09-02 |  |
+| BRK-B | What Is Berkshire Hathaway (BRK.A) Signaling About AI Under Greg Abel? | finance.yahoo.com | 2026-09-02 |  |
+| AVGO | Broadcom stock wavers as chipmaker's strong results 'not enough to keep investors happy' | finance.yahoo.com | 2026-09-02 |  |
+| AVGO | Billionaire Dan Loeb Exited Nvidia and Broadcom. Is He Calling the Top in AI Chips? | finance.yahoo.com | 2026-09-02 |  |
+| AVGO | Dow Jones Futures: Snowflake, Broadcom, HPE Are Big Earnings Movers; Tesla Cybercab Event Due | finance.yahoo.com | 2026-09-02 |  |
+| JPM | JPMorgan executive reveals what AI projects must prove to win funding | thestreet.com | 2026-09-02 |  |
+| JPM | JPMorgan scales back Jane Street financing amid growing bond market rivalry - FT | finance.yahoo.com | 2026-09-02 |  |
+| JPM | J.P. Morgan Asset Management Announces Rebrand of Campbell Global to J.P. Morgan Natural Capital | finance.yahoo.com | 2026-09-02 |  |
 
 ## What you declared
 
-Read straight from the front matter of [[Holdings]] each night. Edit a lot there and this table is current in the morning, with no refresh at all.
+This view reads the **Holdings** input table in [[Holdings]]. Edit and save a lot there; the next completed refresh updates this view.
 
-<!-- data: Holdings.md#holdings -->
+<!-- data: Holdings.md#table:Holdings -->
 | Symbol | Shares | Cost | Bought |
 | --- | ---: | ---: | --- |
 | AAPL | 40 | 267.61 | 2026-04-27 |
@@ -365,22 +385,23 @@ The Night Shift keeps this inventory of `data/` current: every refresh adds a da
 ```flow-folder data
 | File | Size | Modified | Digest |
 | --- | ---: | --- | --- |
-| news-2026-09-02.json | 6305 | 2026-09-03T04:35:44Z | 929b480d7785 |
-| portfolio-2026-09-02.json | 15308 | 2026-09-03T18:12:36Z | b58346fc7d14 |
+| news-2026-09-02.json | 6940 |  |  |
+| portfolio-2026-09-02.json | 15642 |  |  |
 ```
 
-## What you will see in the morning
+Bundled file list; the inventory job fills timestamps and digests in your working copy.
 
-- **Holdings changed.** You added a stock to [[Holdings]] in the evening; the *What you declared* table shows it, and the Morning Briefing shows the exact diff of the file.
-- **A new capture landed.** The refresh ran at 01:30; every chart and table above redrew from it, the inventory grew by two files, and the Briefing carries the redrawn KPI card as its snapshot.
-- **The Fed said something.** The press-release page changed overnight; the Briefing shows what text changed. Only the pages you list are fetched, and each fetch has a receipt.
-- **Nothing moved.** An honest empty morning: the run is in Receipts, the page is untouched.
+## What changes on a run
+
+The price and headline jobs write separate dated captures. Bound charts and tables use the newest matching capture by filename; check that date and the run result. Holdings edits affect the next successful Gather. Network availability, upstream response shape and enabled Night Shift determine whether scheduled work completes. No fixed 01:30 completion time is promised.
 
 ## Make it yours
 
-1. Edit the front matter of [[Holdings]]: your symbols, shares and costs.
-2. Use Run now (the moon in the title bar). Flow works out today's figures from [[Portfolio Refresh]] and [[Headlines Refresh]], writes a capture into `data/`, and redraws the page from what it wrote. Every run is in Receipts.
-3. Turn the Night Shift on: the moon in the title bar, or Settings ▸ Night Shift. Every night the refresh runs first, then the page redraws.
+1. Copy the whole **Stock Portfolio** folder and add the copy in Flow. Its inputs, saved captures and definitions travel together; the saved example is readable offline.
+2. In [[Holdings]], use the **Settings** table's **Open in the table editor** control. Change the `cash` value from 12,500 to 13,000 and save, then open [[Portfolio Refresh]] and choose **File ▸ Edit Definition…**. Return to this Portfolio Dashboard to inspect its jobs with **File ▸ Night Shift Jobs…**. With the same quote inputs, total value and cash allocation increase by 500; gains on stocks do not change. A live run may also change market prices.
+3. Replace all example lots with your own USD holdings and average costs. Verify the source session, units and coverage. Use separate account records if your data needs transactions, currencies or dividend accounting beyond this example.
+4. Before **Run now**, review **File ▸ Night Shift Jobs…**. To stay offline, remove the **Portfolio Refresh** and **Headlines Refresh** Gather jobs and the Fed web watch; keep the saved captures. For live public reads, retain the two Yahoo Gather jobs after inspecting their definitions. Remove the Fed watch if it is not useful to your review.
+5. Choose **Settings ▸ Night Shift ▸ Run now**; scheduling can stay off for this first check. Inspect both capture dates, the coverage rows and the run result before reading the totals as current. The Jobs editor controls scheduled work; the Definition editor shows how the sources become tables.
 
 ## How this page is built
 
@@ -396,7 +417,7 @@ A case study in the constructs, so you can lift any of them into your own docume
 | Gain bridge | Waterfall Chart | `#bridge` | refresh, then the night |
 | Macro | table and a Sparkline | `#macro`, `#tenYear` | refresh, then the night |
 | Headlines | table | `data/news-*.json#headlines` | refresh, then the night |
-| What you declared | table | `Holdings.md#holdings` | the night alone |
+| What you declared | table | `Holdings.md#table:Holdings` | the night alone |
 | Captures | `flow-folder` inventory | `data/` | the night alone |
 
 A binding is a path relative to this document. A `*` in the file name takes the newest capture by name, which is why the captures are dated. `#key` names the list inside the file. The night rewrites only the rows; the titles, the column alignment and the chart type are yours.

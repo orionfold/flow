@@ -2,9 +2,9 @@
 title: Tax Refresh
 tags: [tax, definition, night-shift]
 sources:
-  profile: Tax Profile.md
+  profile: Tax Profile.md#table:Settings
   forms:
-    path: inputs/*.md
+    path: inputs/*.md#tables:Record
     optional: true
   figureRows: data/tax-figures.json#figures
   bracketRows:
@@ -19,7 +19,11 @@ derive:
   w2:
     from: forms
     steps:
-      - {filter: "form == 'W-2'"}
+      - {filter: "form == 'W-2' && tax_year == taxYear"}
+  taxpayerForms:
+    from: w2
+    steps:
+      - {filter: "employee == 'Taxpayer'"}
   figures:
     from: figureRows
     steps:
@@ -66,8 +70,8 @@ let:
   formCount: {count: form, of: w2}
   wages: {sum: box1_wages, of: w2}
   withheld: {sum: box2_federal_withheld, of: w2}
-  deferrals: {sum: box12_d_401k, of: w2}
-  payrollHSA: {sum: box12_w_hsa_employer, of: w2}
+  deferrals: {sum: box12_d_401k, of: taxpayerForms}
+  payrollHSA: {sum: box12_w_hsa_employer, of: taxpayerForms}
   interestIncome: {max: value, of: profile, where: "key == 'interest_income'"}
   dividendIncome: {max: value, of: profile, where: "key == 'dividend_income'"}
   capitalGains: {max: value, of: profile, where: "key == 'capital_gains'"}
@@ -78,12 +82,13 @@ let:
   hsaCoverage: {max: value, of: profile, where: "key == 'hsa_coverage'"}
   studentLoanPaid: {max: value, of: profile, where: "key == 'student_loan_interest'"}
   studentLoanCap: {max: amount, of: figures, where: "Item == 'Student loan interest deduction, maximum' && year == taxYear"}
-  studentLoan: "min(coalesce(studentLoanPaid, 0), studentLoanCap)"
+  studentLoanAllowed: {max: value, of: profile, where: "key == 'student_loan_deductible'"}
+  studentLoan: "filingStatus == 'married_separately' ? 0 : max(0, min(coalesce(studentLoanAllowed, 0), min(coalesce(studentLoanPaid, 0), studentLoanCap)))"
   hsaSelfLimit: {max: amount, of: figures, where: "Item == 'HSA contribution limit, self-only coverage' && year == taxYear"}
   hsaFamilyLimit: {max: amount, of: figures, where: "Item == 'HSA contribution limit, family coverage' && year == taxYear"}
   hsaCatchUp: {max: amount, of: figures, where: "Item == 'HSA catch-up, age 55 and over' && year == taxYear"}
   hsaBase: "hsaCoverage == 'family' ? hsaFamilyLimit : hsaCoverage == 'self' ? hsaSelfLimit : 0"
-  hsaLimit: "hsaBase > 0 && (age >= 55 || (joint && spouseAge >= 55)) ? hsaBase + hsaCatchUp : hsaBase"
+  hsaLimit: "hsaBase > 0 && age >= 55 ? hsaBase + hsaCatchUp : hsaBase"
   hsaDeductible: "max(0, min(coalesce(hsaContributions, 0), hsaLimit - payrollHSA))"
   adjustments: "coalesce(iraDeductible, 0) + hsaDeductible + studentLoan"
   agi: "wages + otherIncome - adjustments"
@@ -91,10 +96,12 @@ let:
   seniors: "(age >= 65 ? 1 : 0) + (joint && spouseAge >= 65 ? 1 : 0)"
   additionalUnmarried: {max: amount, of: figures, where: "Item == 'Additional standard deduction, 65 or blind, unmarried' && year == taxYear"}
   additionalMarried: {max: amount, of: figures, where: "Item == 'Additional standard deduction, 65 or blind, married (each)' && year == taxYear"}
-  standard: "standardBase + seniors * (unmarried ? additionalUnmarried : additionalMarried)"
+  spouseItemizes: {max: value, of: profile, where: "key == 'spouse_itemizes'"}
+  standard: "filingStatus == 'married_separately' && coalesce(spouseItemizes, false) ? 0 : standardBase + seniors * (unmarried ? additionalUnmarried : additionalMarried)"
   saltCapBase: {max: amount, of: figures, where: "Item == 'State and local tax deduction cap' && year == taxYear"}
-  saltPhaseStart: "taxYear == 2025 ? 500000 : 505000"
-  saltCap: "agi > saltPhaseStart ? max(10000, saltCapBase - 0.30 * (agi - saltPhaseStart)) : saltCapBase"
+  saltSeparateFactor: "filingStatus == 'married_separately' ? 0.5 : 1"
+  saltPhaseStart: "(taxYear == 2025 ? 500000 : 505000) * saltSeparateFactor"
+  saltCap: "max(10000 * saltSeparateFactor, saltCapBase * saltSeparateFactor - 0.30 * max(0, agi - saltPhaseStart))"
   medicalExpenses: {max: value, of: profile, where: "key == 'medical_expenses'"}
   medical: "max(0, coalesce(medicalExpenses, 0) - 0.075 * agi)"
   mortgageInterest: {max: value, of: profile, where: "key == 'mortgage_interest'"}
@@ -108,8 +115,8 @@ let:
   seniorPhaseJoint: {max: amount, of: figures, where: "Item == 'Senior deduction phase-out begins, MAGI, joint' && year == taxYear"}
   seniorPhaseSingle: {max: amount, of: figures, where: "Item == 'Senior deduction phase-out begins, MAGI, single' && year == taxYear"}
   seniorPhase: "joint ? seniorPhaseJoint : seniorPhaseSingle"
-  seniorGross: "seniors * seniorBase"
-  seniorDeduction: "seniorGross > 0 && agi > seniorPhase ? max(0, seniorGross - 0.06 * (agi - seniorPhase)) : seniorGross"
+  seniorEach: "max(0, seniorBase - 0.06 * max(0, agi - seniorPhase))"
+  seniorDeduction: "filingStatus == 'married_separately' ? 0 : seniors * seniorEach"
   taxable: "max(0, agi - deduction - seniorDeduction)"
   tax: {sum: bracketTax, of: brackets}
   marginalRate: {last: rate, of: brackets}
@@ -134,11 +141,16 @@ let:
   iraBase: {max: amount, of: figures, where: "Item == 'IRA contribution limit' && year == taxYear"}
   iraCatchUp: {max: amount, of: figures, where: "Item == 'IRA catch-up, age 50 and over' && year == taxYear"}
   iraLimit: "age >= 50 ? iraBase + iraCatchUp : iraBase"
+  iraContributions: {max: value, of: profile, where: "key == 'ira_contributions'"}
   bracketsSourceText: {max: source, of: bracketSources, where: "year == taxYear && key == 'source'"}
 emit:
   taxYear: "{taxYear}"
   filingStatus: "{filingStatus}"
   forms: "{formCount}"
+  inputCoverage:
+    - {Item: Tax year, Value: "{taxYear}"}
+    - {Item: Matching W-2 forms, Value: "{formCount}"}
+    - {Item: Basis, Value: "{formCount > 0 ? 'Entered income and matching-year forms; completeness is not verified' : 'Entered income only; no matching-year W-2 received'}"}
   bracketsSource: "{bracketsSourceText}"
   summary:
     from: summaryRows
@@ -157,9 +169,9 @@ emit:
   withholding:
     - {metric: Federal withheld and paid, actual: "{round(paid, 0)}", goal: "{round(liability, 0)}"}
   headroom:
-    - {Account: "401(k) deferrals (box 12 D)", Contributed: "{round(deferrals, 0)}", Limit: "{deferralLimit}", Headroom: "{round(max(0, deferralLimit - deferrals), 0)}"}
-    - {Account: HSA (payroll plus your own), Contributed: "{round(payrollHSA + coalesce(hsaContributions, 0), 0)}", Limit: "{hsaLimit}", Headroom: "{round(max(0, hsaLimit - payrollHSA - coalesce(hsaContributions, 0)), 0)}"}
-    - {Account: Traditional IRA (deductible), Contributed: "{round(coalesce(iraDeductible, 0), 0)}", Limit: "{iraLimit}", Headroom: "{round(max(0, iraLimit - coalesce(iraDeductible, 0)), 0)}"}
+    - {Account: "Taxpayer 401(k) contributions", Contributed: "{round(deferrals, 0)}", Limit: "{deferralLimit}", Headroom: "{round(max(0, deferralLimit - deferrals), 0)}"}
+    - {Account: Taxpayer HSA contributions, Contributed: "{round(payrollHSA + coalesce(hsaContributions, 0), 0)}", Limit: "{hsaLimit}", Headroom: "{round(max(0, hsaLimit - payrollHSA - coalesce(hsaContributions, 0)), 0)}"}
+    - {Account: "Taxpayer IRA contributions (not deduction eligibility)", Contributed: "{round(coalesce(iraContributions, 0), 0)}", Limit: "{iraLimit}", Headroom: "{round(max(0, iraLimit - coalesce(iraContributions, 0)), 0)}"}
   deductionChoice:
     - {Route: Standard deduction, Amount: "{round(standard, 0)}", Chosen: "{usesItemized ? '' : 'yes'}"}
     - {Route: "Itemized: mortgage interest", Amount: "{round(coalesce(mortgageInterest, 0), 0)}", Chosen: "{''}"}
@@ -197,9 +209,9 @@ Tax is worked out band by band. Each bracket's lower edge is the one above it, w
 
 ## `let:` — the estimate, in order
 
-Read top to bottom and it is the return: wages and other income, the adjustments that come off, the deduction — the larger of standard and itemized — the senior deduction and its phase-out, taxable income, the tax by bracket, the credits and their phase-out, and what you have already paid.
+Read top to bottom and it is the return: wages and other income, the adjustments that come off, the deduction — the applicable standard or itemized deduction — the senior deduction and its phase-out, taxable income, the tax by bracket, the credits and their phase-out, and what you have already paid.
 
-Each phase-out is written as a `? :` so you can see the threshold and the taper, rather than a rule you have to trust.
+The senior and SALT tapers are explicit in the definition. IRA and student-loan deductions are reviewed inputs; this worksheet does not determine their MAGI eligibility. [[Tax Estimate Basis]] names these limits.
 
 ## Making it yours
 

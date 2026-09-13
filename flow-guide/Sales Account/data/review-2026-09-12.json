@@ -1,0 +1,62 @@
+{
+  "requirements": [
+    {
+      "id": "R1",
+      "requirement": "Weekly trading summary",
+      "priority": "Must",
+      "status": "Confirmed",
+      "owner": "Mara",
+      "evidence": "Discovery 01"
+    },
+    {
+      "id": "R2",
+      "requirement": "Vendor brief comparison",
+      "priority": "Must",
+      "status": "Confirmed",
+      "owner": "Elliot",
+      "evidence": "Discovery 01"
+    },
+    {
+      "id": "R3",
+      "requirement": "Export for counsel",
+      "priority": "Must",
+      "status": "Open",
+      "owner": "Nina",
+      "evidence": "Discovery 02"
+    },
+    {
+      "id": "R4",
+      "requirement": "Windows reviewers",
+      "priority": "Must",
+      "status": "Open",
+      "owner": "Mara",
+      "evidence": "Discovery 02"
+    },
+    {
+      "id": "R5",
+      "requirement": "Campaign template library",
+      "priority": "Later",
+      "status": "Deferred",
+      "owner": "Elliot",
+      "evidence": "Discovery 02"
+    }
+  ],
+  "questions": [
+    {
+      "id": "R3",
+      "requirement": "Export for counsel",
+      "priority": "Must",
+      "status": "Open",
+      "owner": "Nina",
+      "evidence": "Discovery 02"
+    },
+    {
+      "id": "R4",
+      "requirement": "Windows reviewers",
+      "priority": "Must",
+      "status": "Open",
+      "owner": "Mara",
+      "evidence": "Discovery 02"
+    }
+  ]
+}

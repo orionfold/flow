@@ -1,0 +1,103 @@
+{
+  "review": [
+    {
+      "business": "Linden Workshop",
+      "as_of": "2026-09-12",
+      "currency": "USD",
+      "spend_period": "March–August 2026"
+    }
+  ],
+  "quoteDots": [
+    {
+      "supplier": "Grove Packaging",
+      "basis": "Offered fee",
+      "annual": 12600
+    },
+    {
+      "supplier": "Grove Packaging",
+      "basis": "Current fee",
+      "annual": 12000
+    },
+    {
+      "supplier": "Lane Freight",
+      "basis": "Offered fee",
+      "annual": 17280
+    },
+    {
+      "supplier": "Lane Freight",
+      "basis": "Current fee",
+      "annual": 18000
+    },
+    {
+      "supplier": "Paper Harbor",
+      "basis": "Offered fee",
+      "annual": 16200
+    },
+    {
+      "supplier": "Paper Harbor",
+      "basis": "Current fee",
+      "annual": 18000
+    }
+  ],
+  "comparison": [
+    {
+      "supplier": "Paper Harbor",
+      "current": 18000,
+      "offered": 16200,
+      "change": -1800,
+      "change_pct": -10,
+      "renewal": "2026-10-01",
+      "source_id": "SR-01"
+    },
+    {
+      "supplier": "Grove Packaging",
+      "current": 12000,
+      "offered": 12600,
+      "change": 600,
+      "change_pct": 5,
+      "renewal": "2026-11-01",
+      "source_id": "SR-02"
+    },
+    {
+      "supplier": "Lane Freight",
+      "current": 18000,
+      "offered": 17280,
+      "change": -720,
+      "change_pct": -4,
+      "renewal": "2026-12-01",
+      "source_id": "SR-03"
+    }
+  ],
+  "spend": [
+    {
+      "supplier": "Lane Freight",
+      "spent": 11700
+    },
+    {
+      "supplier": "Paper Harbor",
+      "spent": 8100
+    },
+    {
+      "supplier": "Grove Packaging",
+      "spent": 5500
+    }
+  ],
+  "summary": [
+    {
+      "metric": "Current annual fixed fees",
+      "value": 48000
+    },
+    {
+      "metric": "Offered annual fixed fees",
+      "value": 46080
+    },
+    {
+      "metric": "Change in fixed fees",
+      "value": -1920
+    },
+    {
+      "metric": "Six-month variable purchases",
+      "value": 25300
+    }
+  ]
+}

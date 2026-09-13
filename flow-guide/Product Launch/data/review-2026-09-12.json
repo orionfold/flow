@@ -1,0 +1,41 @@
+{
+  "milestones": [
+    {
+      "phase": "Audit",
+      "start": "2026-09-01",
+      "end": "2026-09-15",
+      "status": "Done",
+      "owner": "Priya"
+    },
+    {
+      "phase": "Structure",
+      "start": "2026-09-15",
+      "end": "2026-10-06",
+      "status": "In progress",
+      "owner": "Dan"
+    },
+    {
+      "phase": "Build",
+      "start": "2026-10-06",
+      "end": "2026-11-10",
+      "status": "Blocked",
+      "owner": "Mei"
+    },
+    {
+      "phase": "Migration",
+      "start": "2026-10-27",
+      "end": "2026-11-14",
+      "status": "Planned",
+      "owner": "Dan"
+    }
+  ],
+  "blocked": [
+    {
+      "phase": "Build",
+      "start": "2026-10-06",
+      "end": "2026-11-10",
+      "status": "Blocked",
+      "owner": "Mei"
+    }
+  ]
+}

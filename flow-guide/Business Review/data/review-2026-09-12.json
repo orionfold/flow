@@ -1,0 +1,50 @@
+{
+  "quarters": [
+    {
+      "series": "Revenue",
+      "quarter": "Q1",
+      "revenue_m": 3.9,
+      "gross_margin_pct": 79,
+      "customers": 404,
+      "operating_income_m": -0.4
+    },
+    {
+      "series": "Revenue",
+      "quarter": "Q2",
+      "revenue_m": 4.4,
+      "gross_margin_pct": 80,
+      "customers": 419,
+      "operating_income_m": -0.2
+    },
+    {
+      "series": "Revenue",
+      "quarter": "Q3",
+      "revenue_m": 5.2,
+      "gross_margin_pct": 82,
+      "customers": 433,
+      "operating_income_m": 0.3
+    },
+    {
+      "series": "Revenue",
+      "quarter": "Q4",
+      "revenue_m": 5.7,
+      "gross_margin_pct": 83,
+      "customers": 447,
+      "operating_income_m": 0.7
+    }
+  ],
+  "summary": [
+    {
+      "metric": "Revenue, $M",
+      "value": 19.2
+    },
+    {
+      "metric": "Operating income, $M",
+      "value": 0.4
+    },
+    {
+      "metric": "Gross margin, %",
+      "value": 81.2
+    }
+  ]
+}

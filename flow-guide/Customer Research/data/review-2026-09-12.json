@@ -1,0 +1,88 @@
+{
+  "needs": [
+    {
+      "need": "Approval record",
+      "mentions": 5
+    },
+    {
+      "need": "Faster review",
+      "mentions": 2
+    },
+    {
+      "need": "Local access",
+      "mentions": 1
+    },
+    {
+      "need": "Portable files",
+      "mentions": 3
+    }
+  ],
+  "interviews": [
+    {
+      "id": "I01",
+      "segment": "Enterprise",
+      "need": "Approval record",
+      "mentions": 1
+    },
+    {
+      "id": "I02",
+      "segment": "Enterprise",
+      "need": "Approval record",
+      "mentions": 1
+    },
+    {
+      "id": "I03",
+      "segment": "Enterprise",
+      "need": "Approval record",
+      "mentions": 1
+    },
+    {
+      "id": "I04",
+      "segment": "Enterprise",
+      "need": "Approval record",
+      "mentions": 1
+    },
+    {
+      "id": "I05",
+      "segment": "Enterprise",
+      "need": "Approval record",
+      "mentions": 1
+    },
+    {
+      "id": "I06",
+      "segment": "Enterprise",
+      "need": "Local access",
+      "mentions": 1
+    },
+    {
+      "id": "I07",
+      "segment": "Self-serve",
+      "need": "Portable files",
+      "mentions": 1
+    },
+    {
+      "id": "I08",
+      "segment": "Self-serve",
+      "need": "Portable files",
+      "mentions": 1
+    },
+    {
+      "id": "I09",
+      "segment": "Self-serve",
+      "need": "Portable files",
+      "mentions": 1
+    },
+    {
+      "id": "I10",
+      "segment": "Self-serve",
+      "need": "Faster review",
+      "mentions": 1
+    },
+    {
+      "id": "I11",
+      "segment": "Self-serve",
+      "need": "Faster review",
+      "mentions": 1
+    }
+  ]
+}

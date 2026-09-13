@@ -1,18 +1,22 @@
 ---
 title: Priya Raman
 tags: [status, update]
-name: Priya Raman
-area: Onboarding
-status: green
-confidence: 85
-updated: 2026-08-31
-this_week: "Shipped the first-run walkthrough to the beta group; two of the three flows measured under a minute."
-next_week: "Fold the survey feedback into the second flow and cut the copy by a third."
-blocker: ""
 ---
 # Priya Raman
 
-One file per person, rewritten each week. The front matter is what rolls up into [[Team Status]] every night: name, area, a traffic-light status, a confidence number, and the three sentences.
+**Illustrative business record.**
+
+## Record
+
+| name | area | status | confidence | updated | this_week | next_week | blocker |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Priya Raman | Onboarding | green | 85 | 2026-08-31 | Shipped the first-run walkthrough to the beta group; two of the three flows measured under a minute. | Fold the survey feedback into the second flow and cut the copy by a third. |  |
+
+## About these inputs
+
+Choose **View ▸ Edit Table** to edit this record, then save the document. Keep one record in this table; copy the whole document when adding another person or form.
+
+One file per person, rewritten each week. The Record table is what rolls up into [[Team Status]] every night: name, area, a traffic-light status, a confidence number, and the three sentences.
 
 | Field | Meaning |
 | --- | --- |

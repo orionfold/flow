@@ -1,62 +1,477 @@
 {
-  "about": "Federal figures the estimate uses, one row per item and tax year. Verified against the IRS pages named in each row on 2026-09-02. When the IRS publishes new figures, edit this file; the estimator reads it and the dashboard's reference table redraws.",
+  "about": "Dated federal reference snapshot, 2 September 2026. Scope and the primary sources for repaired rules are in Tax Estimate Basis.md. A source-watch change does not update these values.",
   "figures": [
-    {"Item": "Standard deduction, single", "2025": 15750, "2026": 16100, "Source": "IR-2025-103; Rev. Proc. 2025-32 §2.15"},
-    {"Item": "Standard deduction, married filing jointly", "2025": 31500, "2026": 32200, "Source": "IR-2025-103; Rev. Proc. 2025-32 §2.15"},
-    {"Item": "Standard deduction, married filing separately", "2025": 15750, "2026": 16100, "Source": "Rev. Proc. 2025-32 §2.15"},
-    {"Item": "Standard deduction, head of household", "2025": 23625, "2026": 24150, "Source": "IR-2025-103; Rev. Proc. 2025-32 §2.15"},
-    {"Item": "Additional standard deduction, 65 or blind, married (each)", "2025": 1600, "2026": 1650, "Source": "Rev. Proc. 2024-40; Rev. Proc. 2025-32 §2.15"},
-    {"Item": "Additional standard deduction, 65 or blind, unmarried", "2025": 2000, "2026": 2050, "Source": "Rev. Proc. 2024-40; Rev. Proc. 2025-32 §2.15"},
-    {"Item": "Senior deduction, 65 or older (each), 2025–2028", "2025": 6000, "2026": 6000, "Source": "irs.gov/newsroom/working-families-tax-cuts-tax-deductions-for-working-americans-and-seniors"},
-    {"Item": "Senior deduction phase-out begins, MAGI, single", "2025": 75000, "2026": 75000, "Source": "irs.gov/newsroom/working-families-tax-cuts-tax-deductions-for-working-americans-and-seniors"},
-    {"Item": "Senior deduction phase-out begins, MAGI, joint", "2025": 150000, "2026": 150000, "Source": "irs.gov/newsroom/working-families-tax-cuts-tax-deductions-for-working-americans-and-seniors"},
-    {"Item": "Child tax credit, per qualifying child under 17", "2025": 2200, "2026": 2200, "Source": "irs.gov/credits-deductions/individuals/child-tax-credit"},
-    {"Item": "Credit for other dependents, each", "2025": 500, "2026": 500, "Source": "irs.gov/credits-deductions/individuals/child-tax-credit"},
-    {"Item": "Child tax credit phase-out begins, single and head of household", "2025": 200000, "2026": 200000, "Source": "irs.gov/credits-deductions/individuals/child-tax-credit"},
-    {"Item": "Child tax credit phase-out begins, joint", "2025": 400000, "2026": 400000, "Source": "irs.gov/credits-deductions/individuals/child-tax-credit"},
-    {"Item": "State and local tax deduction cap", "2025": 40000, "2026": 40400, "Source": "Pub. L. 119-21 §70120 (the cap rises 1% a year through 2029; phases down above $500,000 MAGI, $505,000 in 2026, to a $10,000 floor)"},
-    {"Item": "401(k), 403(b), most 457 elective deferral limit", "2025": 23500, "2026": 24500, "Source": "irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500"},
-    {"Item": "401(k) catch-up, age 50 and over", "2025": 7500, "2026": 8000, "Source": "irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500"},
-    {"Item": "401(k) catch-up, ages 60 to 63", "2025": 11250, "2026": 11250, "Source": "irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500"},
-    {"Item": "IRA contribution limit", "2025": 7000, "2026": 7500, "Source": "irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500"},
-    {"Item": "IRA catch-up, age 50 and over", "2025": 1000, "2026": 1100, "Source": "irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500"},
-    {"Item": "HSA contribution limit, self-only coverage", "2025": 4300, "2026": 4400, "Source": "Rev. Proc. 2024-25; Rev. Proc. 2025-19"},
-    {"Item": "HSA contribution limit, family coverage", "2025": 8550, "2026": 8750, "Source": "Rev. Proc. 2024-25; Rev. Proc. 2025-19"},
-    {"Item": "HSA catch-up, age 55 and over", "2025": 1000, "2026": 1000, "Source": "26 U.S.C. §223(b)(3)"},
-    {"Item": "Student loan interest deduction, maximum", "2025": 2500, "2026": 2500, "Source": "26 U.S.C. §221"},
-    {"Item": "Annual gift exclusion", "2025": 19000, "2026": 19000, "Source": "IR-2025-103"},
-    {"Item": "Estate basic exclusion", "2025": 13990000, "2026": 15000000, "Source": "IR-2025-103"}
+    {
+      "Item": "Standard deduction, single",
+      "2025": 15750,
+      "2026": 16100,
+      "Source": "IR-2025-103; Rev. Proc. 2025-32 §2.15"
+    },
+    {
+      "Item": "Standard deduction, married filing jointly",
+      "2025": 31500,
+      "2026": 32200,
+      "Source": "IR-2025-103; Rev. Proc. 2025-32 §2.15"
+    },
+    {
+      "Item": "Standard deduction, married filing separately",
+      "2025": 15750,
+      "2026": 16100,
+      "Source": "Rev. Proc. 2025-32 §2.15"
+    },
+    {
+      "Item": "Standard deduction, head of household",
+      "2025": 23625,
+      "2026": 24150,
+      "Source": "IR-2025-103; Rev. Proc. 2025-32 §2.15"
+    },
+    {
+      "Item": "Additional standard deduction, 65 or blind, married (each)",
+      "2025": 1600,
+      "2026": 1650,
+      "Source": "Rev. Proc. 2024-40; Rev. Proc. 2025-32 §2.15"
+    },
+    {
+      "Item": "Additional standard deduction, 65 or blind, unmarried",
+      "2025": 2000,
+      "2026": 2050,
+      "Source": "Rev. Proc. 2024-40; Rev. Proc. 2025-32 §2.15"
+    },
+    {
+      "Item": "Senior deduction, 65 or older (each), 2025–2028",
+      "2025": 6000,
+      "2026": 6000,
+      "Source": "irs.gov/newsroom/working-families-tax-cuts-tax-deductions-for-working-americans-and-seniors"
+    },
+    {
+      "Item": "Senior deduction phase-out begins, MAGI, single",
+      "2025": 75000,
+      "2026": 75000,
+      "Source": "irs.gov/newsroom/working-families-tax-cuts-tax-deductions-for-working-americans-and-seniors"
+    },
+    {
+      "Item": "Senior deduction phase-out begins, MAGI, joint",
+      "2025": 150000,
+      "2026": 150000,
+      "Source": "irs.gov/newsroom/working-families-tax-cuts-tax-deductions-for-working-americans-and-seniors"
+    },
+    {
+      "Item": "Child tax credit, per qualifying child under 17",
+      "2025": 2200,
+      "2026": 2200,
+      "Source": "irs.gov/credits-deductions/individuals/child-tax-credit"
+    },
+    {
+      "Item": "Credit for other dependents, each",
+      "2025": 500,
+      "2026": 500,
+      "Source": "irs.gov/credits-deductions/individuals/child-tax-credit"
+    },
+    {
+      "Item": "Child tax credit phase-out begins, single and head of household",
+      "2025": 200000,
+      "2026": 200000,
+      "Source": "irs.gov/credits-deductions/individuals/child-tax-credit"
+    },
+    {
+      "Item": "Child tax credit phase-out begins, joint",
+      "2025": 400000,
+      "2026": 400000,
+      "Source": "irs.gov/credits-deductions/individuals/child-tax-credit"
+    },
+    {
+      "Item": "State and local tax deduction cap",
+      "2025": 40000,
+      "2026": 40400,
+      "Source": "Pub. L. 119-21 §70120 (the cap rises 1% a year through 2029; phases down above $500,000 MAGI, $505,000 in 2026, to a $10,000 floor)"
+    },
+    {
+      "Item": "401(k), 403(b), most 457 elective deferral limit",
+      "2025": 23500,
+      "2026": 24500,
+      "Source": "irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500"
+    },
+    {
+      "Item": "401(k) catch-up, age 50 and over",
+      "2025": 7500,
+      "2026": 8000,
+      "Source": "irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500"
+    },
+    {
+      "Item": "401(k) catch-up, ages 60 to 63",
+      "2025": 11250,
+      "2026": 11250,
+      "Source": "irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500"
+    },
+    {
+      "Item": "IRA contribution limit",
+      "2025": 7000,
+      "2026": 7500,
+      "Source": "irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500"
+    },
+    {
+      "Item": "IRA catch-up, age 50 and over",
+      "2025": 1000,
+      "2026": 1100,
+      "Source": "irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500"
+    },
+    {
+      "Item": "HSA contribution limit, self-only coverage",
+      "2025": 4300,
+      "2026": 4400,
+      "Source": "Rev. Proc. 2024-25; Rev. Proc. 2025-19"
+    },
+    {
+      "Item": "HSA contribution limit, family coverage",
+      "2025": 8550,
+      "2026": 8750,
+      "Source": "Rev. Proc. 2024-25; Rev. Proc. 2025-19"
+    },
+    {
+      "Item": "HSA catch-up, age 55 and over",
+      "2025": 1000,
+      "2026": 1000,
+      "Source": "26 U.S.C. §223(b)(3)"
+    },
+    {
+      "Item": "Student loan interest deduction, maximum",
+      "2025": 2500,
+      "2026": 2500,
+      "Source": "26 U.S.C. §221"
+    },
+    {
+      "Item": "Annual gift exclusion",
+      "2025": 19000,
+      "2026": 19000,
+      "Source": "IR-2025-103"
+    },
+    {
+      "Item": "Estate basic exclusion",
+      "2025": 13990000,
+      "2026": 15000000,
+      "Source": "IR-2025-103"
+    }
   ],
   "notComputed": [
-    {"Item": "No tax on tips, deduction up to $25,000 (2025–2028)", "Why": "Needs the qualified-tip amount from the W-2; enter it as a note for now.", "Source": "irs.gov/newsroom/working-families-tax-cuts-tax-deductions-for-working-americans-and-seniors"},
-    {"Item": "No tax on overtime, deduction up to $12,500 ($25,000 joint), 2025–2028", "Why": "Needs the qualified-overtime amount from the W-2.", "Source": "irs.gov/newsroom/working-families-tax-cuts-tax-deductions-for-working-americans-and-seniors"},
-    {"Item": "Car loan interest deduction up to $10,000 (2025–2028)", "Why": "Needs the loan's interest statement and the vehicle's assembly location.", "Source": "irs.gov/newsroom/working-families-tax-cuts-tax-deductions-for-working-americans-and-seniors"},
-    {"Item": "Long-term capital gains and qualified dividends at 0/15/20%", "Why": "The estimate taxes all income at ordinary rates, which overstates the tax when gains are long-term. A conservative simplification.", "Source": "26 U.S.C. §1(h)"},
-    {"Item": "State income tax", "Why": "Federal only. The profile's state is kept for your own record.", "Source": ""},
-    {"Item": "Alternative minimum tax, net investment income tax, self-employment tax", "Why": "Outside this estimate.", "Source": ""}
+    {
+      "Item": "2026 charitable-contribution floor and contribution limits",
+      "Why": "Not calculated. Enter charitable only as an already-reviewed allowable itemized deduction after applicable limits, including the 0.5% of AGI floor for 2026; recheck when AGI changes.",
+      "Source": "https://www.irs.gov/publications/p505"
+    },
+    {
+      "Item": "2026 overall limitation on itemized deductions",
+      "Why": "Not calculated. A 2026 estimate subject to this high-income limitation remains incomplete and requires a separate calculation.",
+      "Source": "https://www.irs.gov/publications/p505"
+    },
+    {
+      "Item": "2026 deduction for eligible cash gifts by non-itemizers",
+      "Why": "Not calculated. The charitable input is used only in the itemized route; eligible standard-deduction filers need a separate calculation.",
+      "Source": "https://www.irs.gov/taxtopics/tc506"
+    },
+    {
+      "Item": "No tax on tips, deduction up to $25,000 (2025–2028)",
+      "Why": "Needs the qualified-tip amount from the W-2; enter it as a note for now.",
+      "Source": "irs.gov/newsroom/working-families-tax-cuts-tax-deductions-for-working-americans-and-seniors"
+    },
+    {
+      "Item": "No tax on overtime, deduction up to $12,500 ($25,000 joint), 2025–2028",
+      "Why": "Needs the qualified-overtime amount from the W-2.",
+      "Source": "irs.gov/newsroom/working-families-tax-cuts-tax-deductions-for-working-americans-and-seniors"
+    },
+    {
+      "Item": "Car loan interest deduction up to $10,000 (2025–2028)",
+      "Why": "Needs the loan's interest statement and the vehicle's assembly location.",
+      "Source": "irs.gov/newsroom/working-families-tax-cuts-tax-deductions-for-working-americans-and-seniors"
+    },
+    {
+      "Item": "Long-term capital gains and qualified dividends at 0/15/20%",
+      "Why": "Qualified dividends and long-term gains are treated as ordinary income; preferential rates are not computed. This is not an upper bound on total tax.",
+      "Source": "26 U.S.C. §1(h)"
+    },
+    {
+      "Item": "State income tax",
+      "Why": "Federal only. The profile's state is kept for your own record.",
+      "Source": ""
+    },
+    {
+      "Item": "Alternative minimum tax, net investment income tax, self-employment tax",
+      "Why": "Outside this estimate.",
+      "Source": ""
+    }
   ],
   "brackets": {
     "2025": {
-      "single": [[11925, 0.10], [48475, 0.12], [103350, 0.22], [197300, 0.24], [250525, 0.32], [626350, 0.35], [null, 0.37]],
-      "married_jointly": [[23850, 0.10], [96950, 0.12], [206700, 0.22], [394600, 0.24], [501050, 0.32], [751600, 0.35], [null, 0.37]],
-      "married_separately": [[11925, 0.10], [48475, 0.12], [103350, 0.22], [197300, 0.24], [250525, 0.32], [375800, 0.35], [null, 0.37]],
-      "head_of_household": [[17000, 0.10], [64850, 0.12], [103350, 0.22], [197300, 0.24], [250500, 0.32], [626350, 0.35], [null, 0.37]],
+      "single": [
+        [
+          11925,
+          0.1
+        ],
+        [
+          48475,
+          0.12
+        ],
+        [
+          103350,
+          0.22
+        ],
+        [
+          197300,
+          0.24
+        ],
+        [
+          250525,
+          0.32
+        ],
+        [
+          626350,
+          0.35
+        ],
+        [
+          null,
+          0.37
+        ]
+      ],
+      "married_jointly": [
+        [
+          23850,
+          0.1
+        ],
+        [
+          96950,
+          0.12
+        ],
+        [
+          206700,
+          0.22
+        ],
+        [
+          394600,
+          0.24
+        ],
+        [
+          501050,
+          0.32
+        ],
+        [
+          751600,
+          0.35
+        ],
+        [
+          null,
+          0.37
+        ]
+      ],
+      "married_separately": [
+        [
+          11925,
+          0.1
+        ],
+        [
+          48475,
+          0.12
+        ],
+        [
+          103350,
+          0.22
+        ],
+        [
+          197300,
+          0.24
+        ],
+        [
+          250525,
+          0.32
+        ],
+        [
+          375800,
+          0.35
+        ],
+        [
+          null,
+          0.37
+        ]
+      ],
+      "head_of_household": [
+        [
+          17000,
+          0.1
+        ],
+        [
+          64850,
+          0.12
+        ],
+        [
+          103350,
+          0.22
+        ],
+        [
+          197300,
+          0.24
+        ],
+        [
+          250500,
+          0.32
+        ],
+        [
+          626350,
+          0.35
+        ],
+        [
+          null,
+          0.37
+        ]
+      ],
       "source": "Rev. Proc. 2024-40 §3.01, verified 2026-09-02"
     },
     "2026": {
-      "single": [[12400, 0.10], [50400, 0.12], [105700, 0.22], [201775, 0.24], [256225, 0.32], [640600, 0.35], [null, 0.37]],
-      "married_jointly": [[24800, 0.10], [100800, 0.12], [211400, 0.22], [403550, 0.24], [512450, 0.32], [768700, 0.35], [null, 0.37]],
-      "married_separately": [[12400, 0.10], [50400, 0.12], [105700, 0.22], [201775, 0.24], [256225, 0.32], [384350, 0.35], [null, 0.37]],
-      "head_of_household": [[17700, 0.10], [67450, 0.12], [105700, 0.22], [201750, 0.24], [256200, 0.32], [640600, 0.35], [null, 0.37]],
+      "single": [
+        [
+          12400,
+          0.1
+        ],
+        [
+          50400,
+          0.12
+        ],
+        [
+          105700,
+          0.22
+        ],
+        [
+          201775,
+          0.24
+        ],
+        [
+          256225,
+          0.32
+        ],
+        [
+          640600,
+          0.35
+        ],
+        [
+          null,
+          0.37
+        ]
+      ],
+      "married_jointly": [
+        [
+          24800,
+          0.1
+        ],
+        [
+          100800,
+          0.12
+        ],
+        [
+          211400,
+          0.22
+        ],
+        [
+          403550,
+          0.24
+        ],
+        [
+          512450,
+          0.32
+        ],
+        [
+          768700,
+          0.35
+        ],
+        [
+          null,
+          0.37
+        ]
+      ],
+      "married_separately": [
+        [
+          12400,
+          0.1
+        ],
+        [
+          50400,
+          0.12
+        ],
+        [
+          105700,
+          0.22
+        ],
+        [
+          201775,
+          0.24
+        ],
+        [
+          256225,
+          0.32
+        ],
+        [
+          384350,
+          0.35
+        ],
+        [
+          null,
+          0.37
+        ]
+      ],
+      "head_of_household": [
+        [
+          17700,
+          0.1
+        ],
+        [
+          67450,
+          0.12
+        ],
+        [
+          105700,
+          0.22
+        ],
+        [
+          201750,
+          0.24
+        ],
+        [
+          256200,
+          0.32
+        ],
+        [
+          640600,
+          0.35
+        ],
+        [
+          null,
+          0.37
+        ]
+      ],
       "source": "Rev. Proc. 2025-32 §3.01, verified 2026-09-02"
     }
   },
   "deadlines": [
-    {"What": "2025 return due (or extension request)", "When": "2026-04-15", "Source": "irs.gov/filing/individuals/when-to-file"},
-    {"What": "2025 return due with extension", "When": "2026-10-15", "Source": "irs.gov/filing/individuals/when-to-file"},
-    {"What": "2026 estimated tax, third payment", "When": "2026-09-15", "Source": "Form 1040-ES"},
-    {"What": "2026 estimated tax, fourth payment", "When": "2027-01-15", "Source": "Form 1040-ES"},
-    {"What": "W-2 and 1099 forms due to you", "When": "2027-02-01", "Source": "irs.gov (January 31 falls on a Sunday in 2027)"},
-    {"What": "2026 return due", "When": "2027-04-15", "Source": "irs.gov/filing/individuals/when-to-file"}
+    {
+      "What": "2025 return due (or extension request)",
+      "When": "2026-04-15",
+      "Source": "irs.gov/filing/individuals/when-to-file"
+    },
+    {
+      "What": "2025 return due with extension",
+      "When": "2026-10-15",
+      "Source": "irs.gov/filing/individuals/when-to-file"
+    },
+    {
+      "What": "2026 estimated tax, third payment",
+      "When": "2026-09-15",
+      "Source": "Form 1040-ES"
+    },
+    {
+      "What": "2026 estimated tax, fourth payment",
+      "When": "2027-01-15",
+      "Source": "Form 1040-ES"
+    },
+    {
+      "What": "2026 return due",
+      "When": "2027-04-15",
+      "Source": "irs.gov/filing/individuals/when-to-file"
+    }
   ]
 }

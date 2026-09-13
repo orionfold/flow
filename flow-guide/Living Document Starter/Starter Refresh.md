@@ -2,16 +2,18 @@
 title: Starter Refresh
 tags: [starter, definition, night-shift]
 sources:
-  items: Profile.md#items
+  profile: Profile.md#table:Settings
+  items: Profile.md#table:Items
 let:
   count: {count: items, of: items}
   open: {count: items, of: items, where: "status != 'done'"}
   total: {sum: amount, of: items}
+  target: {max: value, of: profile, where: "key == 'planned_minutes'"}
 emit:
   summary:
     - {metric: Items, value: "{count}"}
     - {metric: Open items, value: "{open}"}
-    - {metric: Total amount, value: "{round(total, 0)}", goal: 500}
+    - {metric: Planned minutes, value: "{round(total, 0)}", goal: "{target}"}
   byGroup:
     from: items
     steps:
@@ -27,9 +29,9 @@ Three parts, in the order the night reads them.
 
 ## `sources:` — what to read
 
-One name per source. `items` reads the `items` list out of [[Profile]]'s front matter, which is what `Profile.md#items` means: the file, then the key inside it.
+One name per source. `items` reads the **Items** table in [[Profile]], selected by `Profile.md#table:Items`. `profile` reads its **Settings** key/value table. The table heading and column names identify the inputs; edit cell values in the Table editor.
 
-A source can also be a file pattern (`statements/*.csv` reads every matching file as one set of rows), a folder of notes (`inputs/*.md` reads each one's front matter), or a web address you write down.
+A source can also be a file pattern (`statements/*.csv` reads every matching file as one set of rows), named tables across a folder (`inputs/*.md#tables:Record` reads every matching Record table), or a web address you write down.
 
 ## `let:` — what to work out
 
@@ -43,7 +45,7 @@ One named table per block your document draws. The name is the `#key` the block 
 
 A table is written one of two ways:
 
-- **A list of rows**, like `summary`, when you are laying out values you worked out above. Anything in `{braces}` is worked out; anything else is written as you typed it, which is how `goal: 500` gets there.
+- **A list of rows**, like `summary`, when you are laying out values you worked out above. Anything in `{braces}` is worked out; anything else is written as you typed it, while the target is read from Profile.
 - **A pipeline**, like `byGroup`, when you are reshaping rows you gathered. It says which source to draw `from` and then the `steps` to run over it, in order: group and total, round, sort.
 
 ## The steps a pipeline can take
@@ -67,6 +69,6 @@ Each one is a line under `steps:`, and they run in the order you write them.
 
 ## Making it yours
 
-Change `Profile.md#items` to whatever you keep your own data in, rename the values under `let:`, and rename the tables under `emit:` to match the `#key` your blocks bind to. The night does the rest.
+For routine changes, edit **Items** or **Settings** in [[Profile]] with the Table editor. To change which files or columns feed the calculation, open this document in the Definition editor and inspect its preview. Source is the advanced view of the same saved configuration.
 
 You need not edit the lines above by hand. The *Definition* line under this document's title ends in *Edit definition…*, and File ▸ *Edit Definition…* opens the same editor: each source, value, row set and table as a form, every step named by what it does, and beside them the rows each step produces from your files today. A change is written the moment the whole definition reads; one that does not read yet is held, with the reason shown, until it does.
