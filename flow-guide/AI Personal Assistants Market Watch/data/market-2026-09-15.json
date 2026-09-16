@@ -1,0 +1,536 @@
+{
+  "capturedAt": "2026-09-15",
+  "source": "Assistant Market Inputs.md, Assistant Market Inputs.md, Assistant Market Inputs.md",
+  "summary": [
+    {
+      "metric": "Finding records",
+      "value": 20
+    },
+    {
+      "metric": "Retained source cards represented",
+      "value": 11
+    },
+    {
+      "metric": "Products represented",
+      "value": 8
+    },
+    {
+      "metric": "Human-reviewed findings",
+      "value": 0
+    },
+    {
+      "metric": "Exercised findings",
+      "value": 0
+    }
+  ],
+  "coverage": [
+    {
+      "product": "Alexa+",
+      "findings": 2
+    },
+    {
+      "product": "ChatGPT Work",
+      "findings": 4
+    },
+    {
+      "product": "Claude Cowork",
+      "findings": 2
+    },
+    {
+      "product": "Gemini",
+      "findings": 4
+    },
+    {
+      "product": "Microsoft Copilot Tasks",
+      "findings": 2
+    },
+    {
+      "product": "Perplexity Comet",
+      "findings": 2
+    },
+    {
+      "product": "Raycast",
+      "findings": 2
+    },
+    {
+      "product": "Siri AI",
+      "findings": 2
+    }
+  ],
+  "themes": [
+    {
+      "theme": "context",
+      "findings": 2
+    },
+    {
+      "theme": "delegation",
+      "findings": 1
+    },
+    {
+      "theme": "distribution",
+      "findings": 1
+    },
+    {
+      "theme": "execution",
+      "findings": 2
+    },
+    {
+      "theme": "freshness",
+      "findings": 1
+    },
+    {
+      "theme": "packaging",
+      "findings": 2
+    },
+    {
+      "theme": "permissions",
+      "findings": 1
+    },
+    {
+      "theme": "privacy",
+      "findings": 2
+    },
+    {
+      "theme": "reach",
+      "findings": 2
+    },
+    {
+      "theme": "recurrence",
+      "findings": 4
+    },
+    {
+      "theme": "review",
+      "findings": 2
+    }
+  ],
+  "comparableCosts": [
+    {
+      "product": "Raycast",
+      "plan": "Pro",
+      "minimum_monthly_usd": 10,
+      "twelve_month_scenario_usd": 120,
+      "credits": 500,
+      "checked_at": "2026-09-15",
+      "source_url": "https://www.raycast.com/blog/changing-how-raycast-ai-is-priced"
+    },
+    {
+      "product": "Raycast",
+      "plan": "Pro+",
+      "minimum_monthly_usd": 20,
+      "twelve_month_scenario_usd": 240,
+      "credits": 3000,
+      "checked_at": "2026-09-15",
+      "source_url": "https://www.raycast.com/blog/changing-how-raycast-ai-is-priced"
+    },
+    {
+      "product": "Raycast",
+      "plan": "Max",
+      "minimum_monthly_usd": 50,
+      "twelve_month_scenario_usd": 600,
+      "credits": 7500,
+      "checked_at": "2026-09-15",
+      "source_url": "https://www.raycast.com/blog/changing-how-raycast-ai-is-priced"
+    }
+  ],
+  "evidence": [
+    {
+      "finding_id": "F15",
+      "source_id": "S09",
+      "product": "Alexa+",
+      "theme": "distribution",
+      "finding": "Voice-device, app and browser reach with Prime inclusion.",
+      "claim_class": "published",
+      "surface": "official announcement",
+      "human_review": "pending",
+      "execution": "not_tested",
+      "availability": "US",
+      "capture_path": "sources/current/S09-alexa-packaging.md",
+      "source_url": "https://www.aboutamazon.com/news/devices/alexa-plus-available-free-prime-members-us",
+      "checked_at": "2026-09-15",
+      "event_at": "2026-09-01 update",
+      "source_health": "public read"
+    },
+    {
+      "finding_id": "F16",
+      "source_id": "S09",
+      "product": "Alexa+",
+      "theme": "packaging",
+      "finding": "Free limited chat differs from full membership/subscription access.",
+      "claim_class": "published",
+      "surface": "official announcement",
+      "human_review": "pending",
+      "execution": "not_tested",
+      "availability": "US",
+      "capture_path": "sources/current/S09-alexa-packaging.md",
+      "source_url": "https://www.aboutamazon.com/news/devices/alexa-plus-available-free-prime-members-us",
+      "checked_at": "2026-09-15",
+      "event_at": "2026-09-01 update",
+      "source_health": "public read"
+    },
+    {
+      "finding_id": "F01",
+      "source_id": "S01",
+      "product": "ChatGPT Work",
+      "theme": "delegation",
+      "finding": "Multi-step work and deliverables share project context.",
+      "claim_class": "published",
+      "surface": "public help",
+      "human_review": "pending",
+      "execution": "not_tested",
+      "availability": "eligible rollout",
+      "capture_path": "sources/current/S01-chatgpt-work.md",
+      "source_url": "https://help.openai.com/en/articles/20001275/",
+      "checked_at": "2026-09-15",
+      "event_at": "not displayed",
+      "source_health": "public read"
+    },
+    {
+      "finding_id": "F02",
+      "source_id": "S01",
+      "product": "ChatGPT Work",
+      "theme": "recurrence",
+      "finding": "Scheduled and supported event-triggered work are documented.",
+      "claim_class": "published",
+      "surface": "public help",
+      "human_review": "pending",
+      "execution": "not_tested",
+      "availability": "plan and surface dependent",
+      "capture_path": "sources/current/S01-chatgpt-work.md",
+      "source_url": "https://help.openai.com/en/articles/20001275/",
+      "checked_at": "2026-09-15",
+      "event_at": "not displayed",
+      "source_health": "public read"
+    },
+    {
+      "finding_id": "F03",
+      "source_id": "S02",
+      "product": "ChatGPT Work",
+      "theme": "execution",
+      "finding": "Remote browser can continue with the personal device closed.",
+      "claim_class": "published",
+      "surface": "public help",
+      "human_review": "pending",
+      "execution": "not_tested",
+      "availability": "supported websites",
+      "capture_path": "sources/current/S02-chatgpt-browser.md",
+      "source_url": "https://help.openai.com/en/articles/20001280-using-cloud-browser-in-chatgpt",
+      "checked_at": "2026-09-15",
+      "event_at": "not displayed",
+      "source_health": "public read"
+    },
+    {
+      "finding_id": "F04",
+      "source_id": "S02",
+      "product": "ChatGPT Work",
+      "theme": "permissions",
+      "finding": "Separate browser sign-in and pause/takeover boundaries.",
+      "claim_class": "published",
+      "surface": "public help",
+      "human_review": "pending",
+      "execution": "not_tested",
+      "availability": "scoped access",
+      "capture_path": "sources/current/S02-chatgpt-browser.md",
+      "source_url": "https://help.openai.com/en/articles/20001280-using-cloud-browser-in-chatgpt",
+      "checked_at": "2026-09-15",
+      "event_at": "not displayed",
+      "source_health": "public read"
+    },
+    {
+      "finding_id": "F09",
+      "source_id": "S05",
+      "product": "Claude Cowork",
+      "theme": "execution",
+      "finding": "Cloud sessions coexist with desktop-dependent local-resource access.",
+      "claim_class": "published",
+      "surface": "public help",
+      "human_review": "pending",
+      "execution": "not_tested",
+      "availability": "cloud beta",
+      "capture_path": "sources/current/S05-claude-cowork.md",
+      "source_url": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork",
+      "checked_at": "2026-09-15",
+      "event_at": "not displayed",
+      "source_health": "public read"
+    },
+    {
+      "finding_id": "F10",
+      "source_id": "S05",
+      "product": "Claude Cowork",
+      "theme": "context",
+      "finding": "Project files, instructions and memory persist.",
+      "claim_class": "published",
+      "surface": "public help",
+      "human_review": "pending",
+      "execution": "not_tested",
+      "availability": "plan dependent",
+      "capture_path": "sources/current/S05-claude-cowork.md",
+      "source_url": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork",
+      "checked_at": "2026-09-15",
+      "event_at": "not displayed",
+      "source_health": "public read"
+    },
+    {
+      "finding_id": "F05",
+      "source_id": "S03",
+      "product": "Gemini",
+      "theme": "recurrence",
+      "finding": "Up to ten actions; delivery may contain earlier prepared content.",
+      "claim_class": "published",
+      "surface": "public help",
+      "human_review": "pending",
+      "execution": "not_tested",
+      "availability": "gradual rollout",
+      "capture_path": "sources/current/S03-gemini-schedules.md",
+      "source_url": "https://support.google.com/gemini/answer/16316416?hl=en",
+      "checked_at": "2026-09-15",
+      "event_at": "not displayed",
+      "source_health": "public read"
+    },
+    {
+      "finding_id": "F06",
+      "source_id": "S03",
+      "product": "Gemini",
+      "theme": "freshness",
+      "finding": "Scheduled responses have plan-dependent preparation lead times.",
+      "claim_class": "published",
+      "surface": "public help",
+      "human_review": "pending",
+      "execution": "not_tested",
+      "availability": "not live data",
+      "capture_path": "sources/current/S03-gemini-schedules.md",
+      "source_url": "https://support.google.com/gemini/answer/16316416?hl=en",
+      "checked_at": "2026-09-15",
+      "event_at": "not displayed",
+      "source_health": "public read"
+    },
+    {
+      "finding_id": "F07",
+      "source_id": "S04",
+      "product": "Gemini",
+      "theme": "context",
+      "finding": "Connected Google data supports personalization.",
+      "claim_class": "published",
+      "surface": "public help and privacy explanation",
+      "human_review": "pending",
+      "execution": "not_tested",
+      "availability": "eligible accounts/apps",
+      "capture_path": "sources/current/S04-gemini-context.md",
+      "source_url": "https://support.google.com/gemini/answer/16836988?hl=en",
+      "checked_at": "2026-09-15",
+      "event_at": "not displayed",
+      "source_health": "public read"
+    },
+    {
+      "finding_id": "F08",
+      "source_id": "S04",
+      "product": "Gemini",
+      "theme": "privacy",
+      "finding": "Activity, app connection and deletion have distinct effects.",
+      "claim_class": "published",
+      "surface": "public help and privacy explanation",
+      "human_review": "pending",
+      "execution": "not_tested",
+      "availability": "setting dependent",
+      "capture_path": "sources/current/S04-gemini-context.md",
+      "source_url": "https://support.google.com/gemini/answer/16836988?hl=en",
+      "checked_at": "2026-09-15",
+      "event_at": "not displayed",
+      "source_health": "public read"
+    },
+    {
+      "finding_id": "F11",
+      "source_id": "S06",
+      "product": "Microsoft Copilot Tasks",
+      "theme": "review",
+      "finding": "Progress, interruption and sensitive-action approvals are documented.",
+      "claim_class": "published",
+      "surface": "public help",
+      "human_review": "pending",
+      "execution": "not_tested",
+      "availability": "preview",
+      "capture_path": "sources/current/S06-copilot-tasks.md",
+      "source_url": "https://support.microsoft.com/en-us/microsoft-copilot/using-copilot-tasks",
+      "checked_at": "2026-09-15",
+      "event_at": "not displayed",
+      "source_health": "public read"
+    },
+    {
+      "finding_id": "F12",
+      "source_id": "S06",
+      "product": "Microsoft Copilot Tasks",
+      "theme": "recurrence",
+      "finding": "One-time and scheduled work share Tasks management.",
+      "claim_class": "published",
+      "surface": "public help",
+      "human_review": "pending",
+      "execution": "not_tested",
+      "availability": "preview",
+      "capture_path": "sources/current/S06-copilot-tasks.md",
+      "source_url": "https://support.microsoft.com/en-us/microsoft-copilot/using-copilot-tasks",
+      "checked_at": "2026-09-15",
+      "event_at": "not displayed",
+      "source_health": "public read"
+    },
+    {
+      "finding_id": "F13",
+      "source_id": "S07",
+      "product": "Perplexity Comet",
+      "theme": "reach",
+      "finding": "Assistant combines browser context and connected email/calendar.",
+      "claim_class": "published",
+      "surface": "public help",
+      "human_review": "pending",
+      "execution": "not_tested",
+      "availability": "authorized access",
+      "capture_path": "sources/current/S07-comet-use.md",
+      "source_url": "https://www.perplexity.ai/help-center/comet/en/articles/11732243-advice-and-use-cases",
+      "checked_at": "2026-09-15",
+      "event_at": "2026-03-04",
+      "source_health": "public read"
+    },
+    {
+      "finding_id": "F14",
+      "source_id": "S08",
+      "product": "Perplexity Comet",
+      "theme": "privacy",
+      "finding": "Request-specific context can leave the device; retention controls apply.",
+      "claim_class": "published",
+      "surface": "public help and privacy explanation",
+      "human_review": "pending",
+      "execution": "not_tested",
+      "availability": "setting dependent",
+      "capture_path": "sources/current/S08-comet-privacy.md",
+      "source_url": "https://www.perplexity.ai/help-center/comet/en/articles/12867415-comet-assistant-privacy-data-use",
+      "checked_at": "2026-09-15",
+      "event_at": "not displayed in current page",
+      "source_health": "public read"
+    },
+    {
+      "finding_id": "F19",
+      "source_id": "S11",
+      "product": "Raycast",
+      "theme": "recurrence",
+      "finding": "Device-local schedules coalesce missed occurrences into one run.",
+      "claim_class": "published",
+      "surface": "public help",
+      "human_review": "pending",
+      "execution": "not_tested",
+      "availability": "awake app; Pro",
+      "capture_path": "sources/current/S11-raycast-automations.md",
+      "source_url": "https://manual.raycast.com/ai/automations",
+      "checked_at": "2026-09-15",
+      "event_at": "not displayed",
+      "source_health": "public read"
+    },
+    {
+      "finding_id": "F20",
+      "source_id": "S11",
+      "product": "Raycast",
+      "theme": "review",
+      "finding": "A run may need tool approval or an answer before proceeding.",
+      "claim_class": "published",
+      "surface": "public help",
+      "human_review": "pending",
+      "execution": "not_tested",
+      "availability": "route dependent",
+      "capture_path": "sources/current/S11-raycast-automations.md",
+      "source_url": "https://manual.raycast.com/ai/automations",
+      "checked_at": "2026-09-15",
+      "event_at": "not displayed",
+      "source_health": "public read"
+    },
+    {
+      "finding_id": "F17",
+      "source_id": "S10",
+      "product": "Siri AI",
+      "theme": "reach",
+      "finding": "Systemwide context and actions begin English beta rollout.",
+      "claim_class": "published",
+      "surface": "official release update",
+      "human_review": "pending",
+      "execution": "not_tested",
+      "availability": "region/device restricted",
+      "capture_path": "sources/current/S10-siri-rollout.md",
+      "source_url": "https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here/",
+      "checked_at": "2026-09-15",
+      "event_at": "2026-09-14",
+      "source_health": "public read"
+    },
+    {
+      "finding_id": "F18",
+      "source_id": "S10",
+      "product": "Siri AI",
+      "theme": "packaging",
+      "finding": "Some server-backed features have variable daily limits.",
+      "claim_class": "published",
+      "surface": "official release update",
+      "human_review": "pending",
+      "execution": "not_tested",
+      "availability": "expanded paid access planned",
+      "capture_path": "sources/current/S10-siri-rollout.md",
+      "source_url": "https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here/",
+      "checked_at": "2026-09-15",
+      "event_at": "2026-09-14",
+      "source_health": "public read"
+    }
+  ],
+  "signals": [
+    {
+      "signal_id": "E03",
+      "event_at": "2026-09-01",
+      "first_seen": "2026-09-15",
+      "source_id": "S09",
+      "product": "Alexa+",
+      "signal_type": "offer clarification",
+      "review_state": "pending",
+      "status": "newly retained"
+    },
+    {
+      "signal_id": "E01",
+      "event_at": "2026-09-10",
+      "first_seen": "2026-09-15",
+      "source_id": "S12",
+      "product": "Raycast",
+      "signal_type": "pricing and packaging",
+      "review_state": "pending",
+      "status": "newly retained"
+    },
+    {
+      "signal_id": "E02",
+      "event_at": "2026-09-14",
+      "first_seen": "2026-09-15",
+      "source_id": "S10",
+      "product": "Siri AI",
+      "signal_type": "rollout and distribution",
+      "review_state": "pending",
+      "status": "newly retained"
+    }
+  ],
+  "authoredPreview": {
+    "status": "not a product run",
+    "includedFindingIds": [
+      "F01",
+      "F02",
+      "F03",
+      "F04",
+      "F05",
+      "F06",
+      "F07",
+      "F08",
+      "F09",
+      "F10",
+      "F11",
+      "F12",
+      "F13",
+      "F14",
+      "F15",
+      "F16",
+      "F17",
+      "F18",
+      "F19",
+      "F20"
+    ],
+    "savedInputFindingCount": 22,
+    "instruction": "Run saved Jobs to include every saved finding."
+  }
+}

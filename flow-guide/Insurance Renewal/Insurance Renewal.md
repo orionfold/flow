@@ -1,5 +1,7 @@
 ---
 title: Insurance Renewal
+category: personal-money
+summary: "Renewal packet, quotation changes and the questions for your broker."
 tags: [insurance, operations, living-workspace, fictional-example]
 jobs:
   - kind: gather

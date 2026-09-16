@@ -1,0 +1,51 @@
+{
+  "capturedAt": "2026-09-14",
+  "source": "Market Inputs.md, Market Inputs.md",
+  "summary": [
+    {"metric": "Finding records", "value": 12},
+    {"metric": "Distinct captures", "value": 12},
+    {"metric": "Human-reviewed findings", "value": 0}
+  ],
+  "coverage": [
+    {"product": "Bolt", "findings": 1},
+    {"product": "Glaze", "findings": 1},
+    {"product": "Lovable", "findings": 2},
+    {"product": "Notion", "findings": 2},
+    {"product": "Raycast", "findings": 3},
+    {"product": "Replit", "findings": 1},
+    {"product": "Summation", "findings": 1},
+    {"product": "Underdog", "findings": 1}
+  ],
+  "themes": [
+    {"theme": "architecture", "findings": 1},
+    {"theme": "checks", "findings": 1},
+    {"theme": "execution", "findings": 1},
+    {"theme": "method", "findings": 1},
+    {"theme": "packaging", "findings": 1},
+    {"theme": "permissions", "findings": 1},
+    {"theme": "privacy", "findings": 1},
+    {"theme": "reliability", "findings": 1},
+    {"theme": "retention", "findings": 1},
+    {"theme": "review", "findings": 2},
+    {"theme": "substitution", "findings": 1}
+  ],
+  "comparableCosts": [
+    {"product": "Raycast", "plan": "Pro", "minimum_monthly_usd": 10, "twelve_month_scenario_usd": 120, "credits": 500, "checked_at": "2026-09-14", "source_url": "https://www.raycast.com/blog/changing-how-raycast-ai-is-priced"},
+    {"product": "Raycast", "plan": "Pro+", "minimum_monthly_usd": 20, "twelve_month_scenario_usd": 240, "credits": 3000, "checked_at": "2026-09-14", "source_url": "https://www.raycast.com/blog/changing-how-raycast-ai-is-priced"},
+    {"product": "Raycast", "plan": "Max", "minimum_monthly_usd": 50, "twelve_month_scenario_usd": 600, "credits": 7500, "checked_at": "2026-09-14", "source_url": "https://www.raycast.com/blog/changing-how-raycast-ai-is-priced"}
+  ],
+  "evidence": [
+    {"source_id": "S10", "product": "Bolt", "theme": "architecture", "finding": "The public repository describes browser development with WebContainers and shows an MIT license.", "claim_class": "published", "surface": "public source repository", "human_review": "pending", "capture_path": "sources/current/S10-bolt.md", "source_url": "https://github.com/stackblitz/bolt.new", "checked_at": "2026-09-14", "event_at": "not established", "source_health": "public read"},
+    {"source_id": "S09", "product": "Glaze", "theme": "substitution", "finding": "The launch describes creating desktop apps from requests, refining them visually, and sharing through a public store or privately with teams.", "claim_class": "published", "surface": "official launch", "human_review": "pending", "capture_path": "sources/current/S09-glaze.md", "source_url": "https://www.raycast.com/blog/meet-glaze", "checked_at": "2026-09-14", "event_at": "2026-07-01", "source_health": "public read"},
+    {"source_id": "S07", "product": "Lovable", "theme": "review", "finding": "Drafts separate edits, preview and conversation but share live project data; accepting a draft does not publish it. Credit breakdowns separate build work and generated media.", "claim_class": "published", "surface": "official release log", "human_review": "pending", "capture_path": "sources/current/S07-lovable.md", "source_url": "https://docs.lovable.dev/changelog", "checked_at": "2026-09-14", "event_at": "2026-09-09; 2026-09-10", "source_health": "public read"},
+    {"source_id": "S08", "product": "Lovable", "theme": "checks", "finding": "Current documentation describes Basic and Deep scans and explicitly limits security guarantees. Basic checks run before publish; deeper scans have additional triggers.", "claim_class": "published", "surface": "live public documentation", "human_review": "pending", "capture_path": "sources/current/S08-lovable.md", "source_url": "https://docs.lovable.dev/features/security", "checked_at": "2026-09-14", "event_at": "not displayed", "source_health": "cache conflict resolved by live read"},
+    {"source_id": "S05", "product": "Notion", "theme": "review", "finding": "August 28 announces individually approved agent suggestions. September 9 adds separate model controls for Notion Agent and Custom Agents on Business/Enterprise.", "claim_class": "published", "surface": "official release log", "human_review": "pending", "capture_path": "sources/current/S05-notion.md", "source_url": "https://www.notion.com/releases", "checked_at": "2026-09-14", "event_at": "2026-08-28; 2026-09-09", "source_health": "public read"},
+    {"source_id": "S06", "product": "Notion", "theme": "permissions", "finding": "Custom Agents use explicit resource grants. Shared-agent answers can expose information beyond a caller's direct access. Duplicates drop inaccessible resources and require connection reauthentication.", "claim_class": "published", "surface": "public documentation", "human_review": "pending", "capture_path": "sources/current/S06-notion.md", "source_url": "https://www.notion.com/help/custom-agents-sharing-and-permissions", "checked_at": "2026-09-14", "event_at": "not displayed", "source_health": "public read"},
+    {"source_id": "S03", "product": "Raycast", "theme": "packaging", "finding": "Monthly USD tiers are Pro $10/500 credits, Pro+ $20/3000 and Max $50/7500. The release adds Automations and Projects with memory/files.", "claim_class": "published", "surface": "official announcement", "human_review": "pending", "capture_path": "sources/current/S03-raycast.md", "source_url": "https://www.raycast.com/blog/changing-how-raycast-ai-is-priced", "checked_at": "2026-09-14", "event_at": "2026-09-10", "source_health": "public read"},
+    {"source_id": "S04", "product": "Raycast", "theme": "execution", "finding": "Scheduled prompts deliver into AI Chats. The app must run on an awake device; missed occurrences fold into one catch-up run. Approval can pause work. Definitions stay device-local, up to 20.", "claim_class": "published", "surface": "public documentation", "human_review": "pending", "capture_path": "sources/current/S04-raycast.md", "source_url": "https://manual.raycast.com/ai/automations", "checked_at": "2026-09-14", "event_at": "not displayed", "source_health": "public read"},
+    {"source_id": "S12", "product": "Raycast", "theme": "retention", "finding": "Developer notes mention source-link and failed-attachment fixes. A historical reviewer describes moving summarized weekly notes into Apple Notes.", "claim_class": "published", "surface": "developer listing and customer anecdote", "human_review": "pending", "capture_path": "sources/current/S12-raycast.md", "source_url": "https://apps.apple.com/us/app/raycast-ai-notes-and-more/id6503428327", "checked_at": "2026-09-14", "event_at": "version 1.3.7: relative 4d ago; review: 2025-07-24", "source_health": "public read"},
+    {"source_id": "S11", "product": "Replit", "theme": "reliability", "finding": "The history records increased Agent errors resolved at 1:33 p.m. PDT after 24 minutes; current status was separately operational at retrieval.", "claim_class": "published", "surface": "official operational record", "human_review": "pending", "capture_path": "sources/current/S11-replit.md", "source_url": "https://status.replit.com/history?date=2026-09-14", "checked_at": "2026-09-14", "event_at": "2026-09-10", "source_health": "public read"},
+    {"source_id": "S01", "product": "Summation", "theme": "method", "finding": "Schedule, Playbook and Delivery are distinct nodes. Run playbook is the documented work node; Run now saves changes and executes delivery.", "claim_class": "published", "surface": "public documentation", "human_review": "pending", "capture_path": "sources/current/S01-summation.md", "source_url": "https://docs.summation.com/features/workflows", "checked_at": "2026-09-14", "event_at": "not displayed", "source_health": "public read"},
+    {"source_id": "S02", "product": "Underdog", "theme": "privacy", "finding": "The live page describes inspectable/editable Mac memory and local inference, while separately acknowledging mail sync and approved external actions.", "claim_class": "published", "surface": "live browser marketing", "human_review": "pending", "capture_path": "sources/current/S02-underdog.md", "source_url": "https://underdog.ai/", "checked_at": "2026-09-14", "event_at": "not displayed", "source_health": "cache conflict resolved by live read"}
+  ]
+}

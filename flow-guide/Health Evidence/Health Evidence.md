@@ -1,5 +1,7 @@
 ---
 title: Health Evidence
+category: business-teams
+summary: "Aggregate service counts and an operational evidence review."
 tags: [health, research, operations, living-workspace, fictional-example]
 jobs:
   - kind: gather

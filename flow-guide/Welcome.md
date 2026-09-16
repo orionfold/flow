@@ -4,35 +4,32 @@ tags: ["flow", "start-here"]
 ---
 # Welcome
 
-## Make a document you want to come back to
+Flow keeps your documents, their sources and the work you ask of them together. This page is the Guide's front door: three steps for your first session, then a short map for every session after.
 
-Keep your sources, decisions and useful visuals together. Flow works with ordinary Markdown files; the folders in this Guide are complete examples you can copy and adapt.
+## Your first session
 
-| Start with your work | Open |
+1. **[Open Ideas](x-flow://app/ideas)** — Flow is looking for local models and keys already on this Mac and shows what it found there. Choose which to use, or decide later in **Settings ▸ Models**. Nothing is copied until you say so.
+2. **[Start with useful work](x-flow://app/start-with-useful-work)** — choose a Living Document, then choose where to **Create my copy**. Flow copies its supporting files and opens your document with its Jobs beside it.
+3. **[Add a folder](x-flow://app/add-folder)** — bring an existing folder of Markdown files in. Flow reads it where it is; nothing moves.
+
+| Your next question | Explore |
 | --- | --- |
-| Keep a brief current | [[Competitor Watch]] or [[Team Status]] |
-| Make sense of your numbers | [[Household Budget]] or [[Business Review]] |
-| Choose a local model | [[Model Arena]] |
-| Prepare for a conversation | [[Account Brief]] or [[Research Brief]] |
-| Plan something personal | [[Job Search]] or [[Portugal Itinerary]] |
-| Find the right visual | [[Charts Gallery]] |
+| What should I know about one company? | [[NVIDIA Company Research]] |
+| How is the AI assistant market changing? | [[AI Personal Assistants Market Watch]] |
+| Where is my money going? | [[Household Budget]] |
 
-## Copy a folder. Change one thing. See the result.
+## When you come back
 
-Choose a workspace from [[Workspace Library]], copy its entire folder in Finder, and add the copy to Flow. Each main document has a **Make it yours** section with its first editable input and an expected change. Sample organizations, people and figures are labelled; Model Arena’s published measurements are identified separately.
+The context row above the document names what you are working on. **Start with useful work** is always there when you want another Living Document; a numbered step appears once a document has Jobs.
 
-Change business records in **Table editor**. Use **Jobs** on the living report to inspect its recurring work, and the linked **Definition** to inspect its calculations. The examples guide you through a small table edit and show what should change; you do not need to edit YAML.
+The **Workbench** opens beside the document: its Jobs under **Edit**, what a run did under **Run**, how its pieces connect under **Relations**; **Ideas**, **Search** and **Settings** live there too. **Ask** explains the Jobs and offers suggested edits that apply without a model; drag the grip on the Workbench divider to size it. Hide it to read; reveal it from the context row. **Ask** or **⌘K** explains the Jobs and finds commands.
 
-You can read, write, search and use charts without a model. When you want help summarising or improving a document, **Ideas** helps you find a useful next step. **Settings ▸ Models** shows the available routes and recommendations for this Mac. Local models run on your hardware; cloud providers use a key and charge for usage.
+Your copy runs only when you ask. Reading an example or creating a copy does not run a Job or enable repeat timing. You can read, write, search and use charts without a model.
 
-For document actions, the reasoning control offers **Recommended**, **On** and **Off** when supported. Start with Recommended, then inspect the proposed result before applying it.
+## Review, then return to your work
 
-## Let the routine work repeat
+Choose **Review** when results arrive. The document stays in front of you; the Workbench holds each change, its evidence and your decision. Inspect highlighted changes, open citations in **Sources**, and decide what to **Keep** or **Revert**. Proposed AI edits wait for your approval.
 
-A living document can read its named sources, recompute its tables and redraw its charts. **Night Shift** can keep that work current and show the changes for review. Optional Overnight notes use a configured local model. The saved Jobs and Definition editors show what the document reads and how it updates.
-
-To refresh just the document you are working on, save it and choose **Agency ▸ Run Document Jobs Now**, or use its moon menu. The icon stays visible when the document tools are collapsed. The Night Shift popup also offers **Run now** for all open folders. Documents sharing refreshed data can still update through source watching.
-
-[[Using Flow]] is the concise reference. [[Charts Gallery]] shows the visual vocabulary. [[Night Shift Handbook]] explains refresh and review. [[Changelog]] tells you what shipped and how it helps your work.
+[[Using Flow]] explains the tools. [[Workspace Library]] offers every Living Document; [[Charts Gallery]] shows what your documents can display. [[Changelog]] tells you what shipped.
 
 This Guide is your copy. Flow Guide Updates offers changes for you to choose; updating Flow does not silently replace your edited documents.

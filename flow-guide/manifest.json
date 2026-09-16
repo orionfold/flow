@@ -1,6 +1,11 @@
 {
   "assets" : [
     {
+      "bytes" : 16876,
+      "contentHash" : "sha256:9009b486986fde19fea7f023055f1c435a039981eb2a87db7e413f6a91b1027b",
+      "path" : "AI Personal Assistants Market Watch/data/market-2026-09-15.json"
+    },
+    {
       "bytes" : 177321,
       "contentHash" : "sha256:69c6e65485ceec0d5c0d9097af6bc66d7e68da47715e9264382db1a9c4d932f1",
       "path" : "Business Review/assets/boardroom-annual.jpeg"
@@ -19,6 +24,16 @@
       "bytes" : 402,
       "contentHash" : "sha256:7c1232ff536c81ad6fb92cad59c448cbff50549770cc33e34cfa923c89d9f33c",
       "path" : "Charts Gallery/data/gallery-2026-09-12.json"
+    },
+    {
+      "bytes" : 230249,
+      "contentHash" : "sha256:4527907142cbb665a453794ae59390eeb3a30a07f9dfcc78ee7a4dbdaa10f3d5",
+      "path" : "Competitor Watch/assets/research-desk.jpeg"
+    },
+    {
+      "bytes" : 8310,
+      "contentHash" : "sha256:fe8cebafee1b444cbd9fed20ddfb315b5bbe4a3eb6f0d3217d80043147a0c6b1",
+      "path" : "Competitor Watch/data/market-2026-09-14.json"
     },
     {
       "bytes" : 306418,
@@ -136,6 +151,11 @@
       "path" : "Model Arena/data/arena.json"
     },
     {
+      "bytes" : 498,
+      "contentHash" : "sha256:a391134b6d6bc87d69e1e5321de230b38963ba26e69b8d757a0d6d8a32ea98e2",
+      "path" : "NVIDIA Company Research/action-recipes.yaml"
+    },
+    {
       "bytes" : 185244,
       "contentHash" : "sha256:cef384cbffbc77665e09ae568a36657f90025bf951c013ec6e23b0043d345e35",
       "path" : "Product Launch/assets/planning-desk.jpeg"
@@ -211,8 +231,128 @@
       "path" : "Travel Planner/data/review-2026-09-12.json"
     }
   ],
-  "contentVersion" : "1.12.1",
+  "contentVersion" : "1.13.0",
   "documents" : [
+    {
+      "bytes" : 18846,
+      "contentHash" : "sha256:6f672bd4aa76bedb38935d5c02f02deaf74bc55cfbbb55d1d4d1108931b49d83",
+      "path" : "AI Personal Assistants Market Watch/AI Personal Assistants Market Watch.md"
+    },
+    {
+      "bytes" : 1250,
+      "contentHash" : "sha256:75d3863f37eb838e1b8a9fa402b489aa53499796252671bb4daab1924f3d009e",
+      "path" : "AI Personal Assistants Market Watch/Assistant Comparison Narrative.md"
+    },
+    {
+      "bytes" : 14297,
+      "contentHash" : "sha256:dfff4aa2213e64c3f687223a300f913071978f202beb6ccc2e28880b79fff14c",
+      "path" : "AI Personal Assistants Market Watch/Assistant Market Inputs.md"
+    },
+    {
+      "bytes" : 3035,
+      "contentHash" : "sha256:430d2b039ad4bdc7960d67f6cdda2f6be3f83ce29942fbc023093dcbfb7f535b",
+      "path" : "AI Personal Assistants Market Watch/Assistant Market Refresh.md"
+    },
+    {
+      "bytes" : 3826,
+      "contentHash" : "sha256:6facd8bb95afcd44b690c961eb45235890377363c821b3194f42f63b87ff9d41",
+      "path" : "AI Personal Assistants Market Watch/Assistant Research Playbook.md"
+    },
+    {
+      "bytes" : 1186,
+      "contentHash" : "sha256:5d20af99976fdb7f2f77c3b80f5898550bd338693b0682d650f5ac192073384c",
+      "path" : "AI Personal Assistants Market Watch/Editorial Draft.md"
+    },
+    {
+      "bytes" : 1457,
+      "contentHash" : "sha256:64ca01e9941211dd3fee9dc5aaf69a38b480ca8fe91b52842606c78c78798a87",
+      "path" : "AI Personal Assistants Market Watch/Field Notes.md"
+    },
+    {
+      "bytes" : 2853,
+      "contentHash" : "sha256:acd52dfe063cd5c9e732821becca5155a275d6c59f9562799d7e2f60acb452af",
+      "path" : "AI Personal Assistants Market Watch/Market Brief.md"
+    },
+    {
+      "bytes" : 1511,
+      "contentHash" : "sha256:c29c7f8154161a3072af91c3a0a8afd82ae0cdf769cf6b1545b7b4b363efea9e",
+      "path" : "AI Personal Assistants Market Watch/Regional Brief.md"
+    },
+    {
+      "bytes" : 3376,
+      "contentHash" : "sha256:9fc5f5f8f747d433473741c17c6bc9cdb8489b40cfe12629f70e064fb88aff4e",
+      "path" : "AI Personal Assistants Market Watch/Research Decisions.md"
+    },
+    {
+      "bytes" : 2920,
+      "contentHash" : "sha256:af64817c0a66f2a78934a4de262c0a54b5cad264d82aced99f17021be2a25561",
+      "path" : "AI Personal Assistants Market Watch/Research Mandate.md"
+    },
+    {
+      "bytes" : 1305,
+      "contentHash" : "sha256:790835e17281eea8362dcb04e3059ca3a32453896d77c54ab8bafcbc64b7dac9",
+      "path" : "AI Personal Assistants Market Watch/Research Method.md"
+    },
+    {
+      "bytes" : 1363,
+      "contentHash" : "sha256:168ec0271dc786424f53a72e8ff07ec14f1a9578071b7e957eb2021587498c22",
+      "path" : "AI Personal Assistants Market Watch/sources/current/S01-chatgpt-work.md"
+    },
+    {
+      "bytes" : 1357,
+      "contentHash" : "sha256:12259746206f60a8a65472772cebf84f2c324dd0d34e9b2bdc4c01606d2a47d6",
+      "path" : "AI Personal Assistants Market Watch/sources/current/S02-chatgpt-browser.md"
+    },
+    {
+      "bytes" : 1324,
+      "contentHash" : "sha256:729914733f81667c7324f1d1233ac6b5411b0f2f536415e1657472d3b4cc2814",
+      "path" : "AI Personal Assistants Market Watch/sources/current/S03-gemini-schedules.md"
+    },
+    {
+      "bytes" : 1526,
+      "contentHash" : "sha256:b089d521e3c661611f2a6a43b2153046db42d72146405f0eb6c71de3d33dff51",
+      "path" : "AI Personal Assistants Market Watch/sources/current/S04-gemini-context.md"
+    },
+    {
+      "bytes" : 1466,
+      "contentHash" : "sha256:c5bfef4d97c6b9cee8b512f2b3766ef3ab15dd7911125dc2aab6965465005ddf",
+      "path" : "AI Personal Assistants Market Watch/sources/current/S05-claude-cowork.md"
+    },
+    {
+      "bytes" : 1372,
+      "contentHash" : "sha256:fac38b070021e8119a482b04712cd8aae4410ac8bf01a038047de162bce209c1",
+      "path" : "AI Personal Assistants Market Watch/sources/current/S06-copilot-tasks.md"
+    },
+    {
+      "bytes" : 1292,
+      "contentHash" : "sha256:45e45f05e266b39adc753e382cd6307c697a58ff8a82a0655aed0eb3a78e3010",
+      "path" : "AI Personal Assistants Market Watch/sources/current/S07-comet-use.md"
+    },
+    {
+      "bytes" : 1502,
+      "contentHash" : "sha256:c250c91d9e0e884d212a945eb2a1c48057d651c304c4b63d06ce9f71cd29db35",
+      "path" : "AI Personal Assistants Market Watch/sources/current/S08-comet-privacy.md"
+    },
+    {
+      "bytes" : 1402,
+      "contentHash" : "sha256:0200eb1bee7f83ffb768e7bbc5eb1bef20eb385a1158cfd45c7af1ad5500789e",
+      "path" : "AI Personal Assistants Market Watch/sources/current/S09-alexa-packaging.md"
+    },
+    {
+      "bytes" : 1516,
+      "contentHash" : "sha256:f34b3ec27691db90113c86ab5c4160e03a1315c24f9c1c8201baa4e4dd330c77",
+      "path" : "AI Personal Assistants Market Watch/sources/current/S10-siri-rollout.md"
+    },
+    {
+      "bytes" : 1269,
+      "contentHash" : "sha256:0b8b206035c7ffd725db9accdb957b39d1d3e882722443cbbf4bd06b081241c3",
+      "path" : "AI Personal Assistants Market Watch/sources/current/S11-raycast-automations.md"
+    },
+    {
+      "bytes" : 1395,
+      "contentHash" : "sha256:af7e8a164708fb1e1c1347d531f71800a3a3d968fe7859414577bb15b67d83db",
+      "path" : "AI Personal Assistants Market Watch/sources/current/S12-raycast-pricing.md"
+    },
     {
       "bytes" : 2492,
       "contentHash" : "sha256:37ec0f36d324ae6b4cf44d455ff7968fc643f6279484b1139372630da83153b3",
@@ -229,8 +369,8 @@
       "path" : "Business Review/Business Review Refresh.md"
     },
     {
-      "bytes" : 3434,
-      "contentHash" : "sha256:544ede3d3a3db70c83305e8fad050eccc68d6002ff6ca4c5f531dc74dbf549f1",
+      "bytes" : 3547,
+      "contentHash" : "sha256:225e6af0010f8824ada2fa6c8a74633d51bd6cd9a16a5bf881daa9dbfdcab197",
       "path" : "Business Review/Business Review.md"
     },
     {
@@ -269,13 +409,13 @@
       "path" : "Business Review/Team Working Agreement.md"
     },
     {
-      "bytes" : 68549,
-      "contentHash" : "sha256:53376cf607859a606319e44fa08c716dd641ffcd5dde3d5ebf3247fba39c8e20",
+      "bytes" : 74736,
+      "contentHash" : "sha256:da674572f2cb7724abf6999fab351dd84251535720204bec9f2b3c56102df4ea",
       "path" : "Changelog.md"
     },
     {
-      "bytes" : 3488,
-      "contentHash" : "sha256:0c4807af95768edf32e6fb5dcc6a6326f92d2bfb524f969ee0aa2ba96eb572a6",
+      "bytes" : 3595,
+      "contentHash" : "sha256:caa1c67870679a1d0ee5c87ecd1631e5988057f38fd94eb0c3c1585885166fbe",
       "path" : "Charts Gallery/Charts Gallery.md"
     },
     {
@@ -339,19 +479,134 @@
       "path" : "Charts Gallery/Gallery Refresh.md"
     },
     {
-      "bytes" : 6453,
-      "contentHash" : "sha256:833238309d41c5a500ab8192e065ab6571ea4e475e6437ee2deb7f63cfc8675a",
+      "bytes" : 979,
+      "contentHash" : "sha256:183c1f33f642f796bda4b14b7c678ddb33249cad079f719e55672daa0c51178c",
+      "path" : "Competitor Watch/Comparison Narrative.md"
+    },
+    {
+      "bytes" : 10762,
+      "contentHash" : "sha256:0e9bb8a89c367448fc06c71d9e22ebddabb025c36978bc912fd5ad1d89ce0716",
       "path" : "Competitor Watch/Competitor Watch.md"
     },
     {
-      "bytes" : 3424,
-      "contentHash" : "sha256:2ade70453d8681074fa7048418bbe0aee717affc4d60725aa9630a012cb0aa08",
+      "bytes" : 891,
+      "contentHash" : "sha256:021529ef47c78bd4c5a847f6a3ff2319ddfdcef54391b463728fb100c53707dd",
       "path" : "Competitor Watch/Competitors.md"
     },
     {
-      "bytes" : 1065,
-      "contentHash" : "sha256:00bcf719351e15419cf8e30065e55a10224601bd903c4fdb666db274db531738",
-      "path" : "Competitor Watch/captures/2026-09-02 — Pricing pages, first read.md"
+      "bytes" : 2532,
+      "contentHash" : "sha256:86a8812c253511231e2ca44b0b2706366895f1f78cfb88fac0bc5828990ca001",
+      "path" : "Competitor Watch/Founder Briefing.md"
+    },
+    {
+      "bytes" : 1490,
+      "contentHash" : "sha256:2eec6d5a4d1783c70f82561d5d905afb454a5d043be8f59979628622d6d1865c",
+      "path" : "Competitor Watch/Founder Decisions.md"
+    },
+    {
+      "bytes" : 1364,
+      "contentHash" : "sha256:f106bb34ebbad01f67b6ff92865a4db8e41741715ff4a651318595db1f969be0",
+      "path" : "Competitor Watch/Founder Profile.md"
+    },
+    {
+      "bytes" : 1110,
+      "contentHash" : "sha256:d1edefe23d64eed744e8b5d1f85c3a681a83b7462e8ab868cf28c63bb4421d79",
+      "path" : "Competitor Watch/Launch Copy.md"
+    },
+    {
+      "bytes" : 1153,
+      "contentHash" : "sha256:2803febc2462149ad6e732ce01aaaca35976daa7be8f0993ac2469d2da1f7b32",
+      "path" : "Competitor Watch/Launch Notes.md"
+    },
+    {
+      "bytes" : 1084,
+      "contentHash" : "sha256:c1b9a0ac6faf1305d4342e32a1707d901dd949680f25c75425e650f3c095e91c",
+      "path" : "Competitor Watch/Localized Update.md"
+    },
+    {
+      "bytes" : 7517,
+      "contentHash" : "sha256:c44647112e249665a090dbe9447142cc4936ca272d5a1329473755544f3e82b6",
+      "path" : "Competitor Watch/Market Inputs.md"
+    },
+    {
+      "bytes" : 2180,
+      "contentHash" : "sha256:c8ae6352e45aef96fe4a36d20c1f43b3a42156355891a90db1defbdfa9eda687",
+      "path" : "Competitor Watch/Market Refresh.md"
+    },
+    {
+      "bytes" : 614,
+      "contentHash" : "sha256:513c31ce35df93910a59135f7352b1d7b8b03691143bd6d0ab1320166a1c7d25",
+      "path" : "Competitor Watch/Research Image.md"
+    },
+    {
+      "bytes" : 1043,
+      "contentHash" : "sha256:4620869040b252bf72cd6b83a9b12e6203401ad06ac2a8f9c2a2822014034f6f",
+      "path" : "Competitor Watch/Research Map.md"
+    },
+    {
+      "bytes" : 2129,
+      "contentHash" : "sha256:7803a4cb95373612754f0fd947d90fb268ac8e8720f26e758d34d89d83f4b62a",
+      "path" : "Competitor Watch/Research Playbook.md"
+    },
+    {
+      "bytes" : 997,
+      "contentHash" : "sha256:6c19bd85ad67d41792de89a8fbe50300f602c173e4d6e33a82de2cd59670b6f7",
+      "path" : "Competitor Watch/sources/current/S01-summation.md"
+    },
+    {
+      "bytes" : 1037,
+      "contentHash" : "sha256:c1fb71a82b4aa9cfb309769777302e6e471e9e0ed73e9fd33d5c99b0fa64eeb1",
+      "path" : "Competitor Watch/sources/current/S02-underdog.md"
+    },
+    {
+      "bytes" : 1058,
+      "contentHash" : "sha256:8ae05a80976ff82ed05c607bac08d1dd2fbcd4ed7aab70d8a579fabbeb0b8f23",
+      "path" : "Competitor Watch/sources/current/S03-raycast.md"
+    },
+    {
+      "bytes" : 1059,
+      "contentHash" : "sha256:43aea0aff6fc58c31c2561287f6973d4ea09b59bb740e2b6cddbf9bda9f8c0e4",
+      "path" : "Competitor Watch/sources/current/S04-raycast.md"
+    },
+    {
+      "bytes" : 1075,
+      "contentHash" : "sha256:371fcf5898104149999bd72196565816856be877e29088c0e98751f9be8b90d4",
+      "path" : "Competitor Watch/sources/current/S05-notion.md"
+    },
+    {
+      "bytes" : 1075,
+      "contentHash" : "sha256:002fc99cf710190aaeae5bb951cb42b6d60c60c24f1191a9d912ea728d0b83cb",
+      "path" : "Competitor Watch/sources/current/S06-notion.md"
+    },
+    {
+      "bytes" : 1044,
+      "contentHash" : "sha256:b5e9f759b352f2a7aca9fc047761a6366f4b4d55311ad8c71fd0941ca9487f86",
+      "path" : "Competitor Watch/sources/current/S07-lovable.md"
+    },
+    {
+      "bytes" : 1124,
+      "contentHash" : "sha256:ec761ddc9c66cddec190ded833f1cd0d49c354009bfd6aa1a30974b6aa8f2667",
+      "path" : "Competitor Watch/sources/current/S08-lovable.md"
+    },
+    {
+      "bytes" : 980,
+      "contentHash" : "sha256:fe50287fa8b0e624157b73c1cce37a00578fd8cc599cbeb047fdb0681fb5b417",
+      "path" : "Competitor Watch/sources/current/S09-glaze.md"
+    },
+    {
+      "bytes" : 1045,
+      "contentHash" : "sha256:9729fb732caf508041226c0d81ddcb8fa322f09e225ac343d8da631788b3431d",
+      "path" : "Competitor Watch/sources/current/S10-bolt.md"
+    },
+    {
+      "bytes" : 1005,
+      "contentHash" : "sha256:3701c877fdc64bed6f63239c5b039a18ce308cc2672fc87b9434506167315905",
+      "path" : "Competitor Watch/sources/current/S11-replit.md"
+    },
+    {
+      "bytes" : 1155,
+      "contentHash" : "sha256:f28d937e4dd8179d5fc2652474a3ec1af22ad5f22272a4052fbb477b7e5e45b2",
+      "path" : "Competitor Watch/sources/current/S12-raycast.md"
     },
     {
       "bytes" : 1550,
@@ -369,8 +624,8 @@
       "path" : "Customer Research/Market Hypotheses.md"
     },
     {
-      "bytes" : 3134,
-      "contentHash" : "sha256:2a62eb682be27235815f1af716103c957f5506f6e6403b556a752297bc7c7955",
+      "bytes" : 3243,
+      "contentHash" : "sha256:6e54adde9c692fb4bd20afb7dc942ec9f946a497a12ef9e31cf437eec2c86ad9",
       "path" : "Customer Research/Research Brief.md"
     },
     {
@@ -389,8 +644,8 @@
       "path" : "Flow Handbook/Night Shift Handbook.md"
     },
     {
-      "bytes" : 7797,
-      "contentHash" : "sha256:3cf003408b1a6cded5644c594afc952161886c82b2cb067ea24e16b45c6bd411",
+      "bytes" : 7892,
+      "contentHash" : "sha256:867011167731933f4e734fca0316bc9b2d0d10fdad650143aad06abe55d05f28",
       "path" : "Flow Handbook/Using Flow.md"
     },
     {
@@ -414,8 +669,8 @@
       "path" : "Health Evidence/Health Evidence Sources.md"
     },
     {
-      "bytes" : 5867,
-      "contentHash" : "sha256:8c651a7f35f0de0039f25d6cff3dfa9dbb25d9cac2cc620b5318e88062fb4915",
+      "bytes" : 5964,
+      "contentHash" : "sha256:d3e6b8392f3fd753ba5d3346bb716e5682de8a139fc17fc831cc93a800182a9a",
       "path" : "Health Evidence/Health Evidence.md"
     },
     {
@@ -449,8 +704,8 @@
       "path" : "Household Budget/Budget Refresh.md"
     },
     {
-      "bytes" : 11586,
-      "contentHash" : "sha256:3a31d1b10922d9765fba80c93507f46694118a98b7d1639ba4c2b5689b252a64",
+      "bytes" : 11712,
+      "contentHash" : "sha256:dbdaca6d38dd569f760b1a0dd7e22dde19dc09e7bd8fee0edea2b6f2462185f6",
       "path" : "Household Budget/Household Budget.md"
     },
     {
@@ -469,8 +724,8 @@
       "path" : "Insurance Renewal/Insurance Renewal Sources.md"
     },
     {
-      "bytes" : 5088,
-      "contentHash" : "sha256:9319c7dc4b524cdac541caee27796cbe21b2e3f8bfd32b1da103e1454ca0d1fd",
+      "bytes" : 5193,
+      "contentHash" : "sha256:01c7ffaa9a63dedfc2a8b7f8e21ec299562c756a58350ddf4770dfe326f1012e",
       "path" : "Insurance Renewal/Insurance Renewal.md"
     },
     {
@@ -494,8 +749,8 @@
       "path" : "Insurance Renewal/sources/Insurance Packet — 2026-09-12.md"
     },
     {
-      "bytes" : 2705,
-      "contentHash" : "sha256:f7a13b03396d8c22521e73165f86d9fdb44435713f617dd5eae9d5907a1fe735",
+      "bytes" : 2820,
+      "contentHash" : "sha256:bbfe267b46887513755fa5987d53bd2333986583362d2c382b2f78cf759645bf",
       "path" : "Investment Research/Diligence Brief.md"
     },
     {
@@ -524,8 +779,8 @@
       "path" : "Job Search/Job Search Refresh.md"
     },
     {
-      "bytes" : 6912,
-      "contentHash" : "sha256:979d8f9a30df24bea6df89117df22dc3cf0db98364c7a4f12ba695d13c538cf7",
+      "bytes" : 7005,
+      "contentHash" : "sha256:bae5791210d8adcd377fa7da4e768d3b4a55757d5b55fc6fa331193a0a54b779",
       "path" : "Job Search/Job Search.md"
     },
     {
@@ -554,8 +809,8 @@
       "path" : "Legal Matter/Legal Matter Sources.md"
     },
     {
-      "bytes" : 5408,
-      "contentHash" : "sha256:cc13d6994a5e309fdf8d66b5fc586a6258fdf1cd42488bc1dc902590231b7426",
+      "bytes" : 5513,
+      "contentHash" : "sha256:517e96510a957e48382cf888fbeed3d0ebf42114eb78ccade221bfd8826a5c26",
       "path" : "Legal Matter/Legal Matter.md"
     },
     {
@@ -599,8 +854,8 @@
       "path" : "Legal Matter/sources/Legal Exhibit LM-06 — Receipt.md"
     },
     {
-      "bytes" : 4864,
-      "contentHash" : "sha256:55e04c663bc8f3878e9ff4f107ba3aa62a09302d69ed28a0a89d108727723bfb",
+      "bytes" : 4961,
+      "contentHash" : "sha256:aac8a4843fbb2d247eddab0f175a5f4ac591ad579a55fa5fdd169dc516336d2d",
       "path" : "Living Document Starter/Living Document.md"
     },
     {
@@ -619,8 +874,8 @@
       "path" : "Living Document Starter/entries/Example Entry.md"
     },
     {
-      "bytes" : 3149,
-      "contentHash" : "sha256:51741facb789e6f13093d80cae740566a94be7907eb67bc6ab8258c35f385462",
+      "bytes" : 3259,
+      "contentHash" : "sha256:1b705a5e0e6836908859e6bb28621f549b76536a5174e53eea4262308dc59e50",
       "path" : "Marketing Campaign/Campaign Desk.md"
     },
     {
@@ -659,8 +914,8 @@
       "path" : "Model Arena/Local Runtime Evaluation.md"
     },
     {
-      "bytes" : 10339,
-      "contentHash" : "sha256:70fa728e785f10c1fb9bc8fd706daf7fe3ec432703ec0be231850c17dd979e71",
+      "bytes" : 10436,
+      "contentHash" : "sha256:4d5d79209f758a39f562f141f8d839ae204af3383c61f7afcf4e27a1bebd6427",
       "path" : "Model Arena/Model Arena.md"
     },
     {
@@ -679,6 +934,26 @@
       "path" : "Model Arena/Model Recommendations.md"
     },
     {
+      "bytes" : 3100,
+      "contentHash" : "sha256:21e30fba11cb6448a76574ade2b161872d1617ce265aaa81fa4e5184e14360f3",
+      "path" : "NVIDIA Company Research/NVIDIA Company Research.md"
+    },
+    {
+      "bytes" : 842,
+      "contentHash" : "sha256:86a9ef20409398340cae86f9f920163ffa345deb45f39bd61393a2c750f2a213",
+      "path" : "NVIDIA Company Research/sources/S1-quarterly-filing.md"
+    },
+    {
+      "bytes" : 1457,
+      "contentHash" : "sha256:ce17c1c87f30b58db806c87b41eb36346d18230d1fff87d37a8bdd9fc7fb3443",
+      "path" : "NVIDIA Company Research/sources/S2-inference-platform.md"
+    },
+    {
+      "bytes" : 1210,
+      "contentHash" : "sha256:2a8a033319441faaf4fe153a84f695fe04c7003c301ddfb6ad20a76cd392b169",
+      "path" : "NVIDIA Company Research/sources/S3-open-model-ecosystem.md"
+    },
+    {
       "bytes" : 2319,
       "contentHash" : "sha256:957faa49a3be25540e17158bdf4eefdd351131d8a1f0b530a8bceed612acd8ee",
       "path" : "Product Launch/Launch Brief.md"
@@ -694,8 +969,8 @@
       "path" : "Product Launch/Launch Plan.md"
     },
     {
-      "bytes" : 3102,
-      "contentHash" : "sha256:5f04a2033329929a14c19ced29f3ecf3f47c65868d10bfdd1753dc23cff477d4",
+      "bytes" : 3196,
+      "contentHash" : "sha256:a3d177178265ae4b40870234b141d50e2e113db2e05e1e5f9fa64af3d658f41b",
       "path" : "Product Launch/Launch Readiness.md"
     },
     {
@@ -709,8 +984,8 @@
       "path" : "Product Launch/Staff Meeting.md"
     },
     {
-      "bytes" : 2828,
-      "contentHash" : "sha256:4e03b64418eb8984cecbe0bc94bb8db919ec13cba16724f7a9d1cf70275fdb75",
+      "bytes" : 2943,
+      "contentHash" : "sha256:6458091dd35ac102cb3eeb134bc83bab005a898308e90a12e653f6d9705ba48f",
       "path" : "Sales Account/Account Brief.md"
     },
     {
@@ -749,8 +1024,8 @@
       "path" : "Stock Portfolio/Holdings.md"
     },
     {
-      "bytes" : 22706,
-      "contentHash" : "sha256:cafd7dd4c5019ad199ed593e03733fd6da860af34f3f028b9b8696ec0c5d0d04",
+      "bytes" : 22832,
+      "contentHash" : "sha256:06a7a3574a88fe15f137432603123c53d74e7e10a2c9d1b4371c7b362eafbf54",
       "path" : "Stock Portfolio/Portfolio Dashboard.md"
     },
     {
@@ -774,8 +1049,8 @@
       "path" : "Supplier Review/Supplier Review Sources.md"
     },
     {
-      "bytes" : 5045,
-      "contentHash" : "sha256:793c5bd1b29e982cb6193bb1fa0e2708ee6cf04a037d444f2e0c7464dbc85f1d",
+      "bytes" : 5145,
+      "contentHash" : "sha256:3a347b9005d1be8a1b20a02e0d74e5ce5f48106f01769d17be26fe9fb220e03b",
       "path" : "Supplier Review/Supplier Review.md"
     },
     {
@@ -819,8 +1094,8 @@
       "path" : "Support Knowledge/Support Knowledge Sources.md"
     },
     {
-      "bytes" : 5302,
-      "contentHash" : "sha256:a8b0887194a0d17f65e8317627083478323a4734337b06faf5da7381ec3cc65c",
+      "bytes" : 5395,
+      "contentHash" : "sha256:bb43845616a2202b558d0e5d3745290bb71222a93c3128b9d5185e3df617ff72",
       "path" : "Support Knowledge/Support Knowledge.md"
     },
     {
@@ -864,8 +1139,8 @@
       "path" : "Support Knowledge/sources/Support Proposal — Time Zone Clarity.md"
     },
     {
-      "bytes" : 9197,
-      "contentHash" : "sha256:9d9eedca5cce7d26c3cdef040cc3af4c0224532611d9f2e370a51d0414bfe79f",
+      "bytes" : 9302,
+      "contentHash" : "sha256:bc00f63158462a1b32b307852af79bc704f01368eaafbc3072fc71541e0c2079",
       "path" : "Tax Advisor/Tax Advisor.md"
     },
     {
@@ -909,8 +1184,8 @@
       "path" : "Team Status/Team Review Decisions.md"
     },
     {
-      "bytes" : 8626,
-      "contentHash" : "sha256:d70e1367da9fa5dee767b9bdf73abd6b308864b93a133e404d66a3681a88fb9a",
+      "bytes" : 8735,
+      "contentHash" : "sha256:205f758e7a5abfc74aed58fa1e9fdfd7a9f812000092327f3e06feb25bcb51a4",
       "path" : "Team Status/Team Status.md"
     },
     {
@@ -934,8 +1209,8 @@
       "path" : "Team Status/updates/Sam Whitaker.md"
     },
     {
-      "bytes" : 3959,
-      "contentHash" : "sha256:8bc13489ec74ca0228098e6372ba9be74ab2671584488faaecaf49ee8a41b15b",
+      "bytes" : 4049,
+      "contentHash" : "sha256:4631e435392f69719b4aa7ad43f04f15df293bf942fdab61c455aaa2f972ceb2",
       "path" : "Travel Planner/Portugal Itinerary.md"
     },
     {
@@ -949,11 +1224,205 @@
       "path" : "Travel Planner/Travel Refresh.md"
     },
     {
-      "bytes" : 2907,
-      "contentHash" : "sha256:55c0cb7c231da16df90ed0256bcd2c2e0e9702881cc1f0b6f625fe31b14ecfb8",
+      "bytes" : 2628,
+      "contentHash" : "sha256:7423d4838710037f369f270933b0bf39c1cdcf42743ec6ecef98fe7cb9935bff",
       "path" : "Welcome.md"
     }
   ],
-  "generated" : "2026-09-13",
-  "manifestVersion" : 2
+  "generated" : "2026-09-16",
+  "manifestVersion" : 2,
+  "workspaces" : [
+    {
+      "category" : "research-markets",
+      "entry" : "AI Personal Assistants Market Watch/AI Personal Assistants Market Watch.md",
+      "featured" : true,
+      "name" : "AI Personal Assistants Market Watch",
+      "summary" : "Follow the assistant market through sourced signals, comparisons and research decisions.",
+      "title" : "AI Personal Assistants Market Watch"
+    },
+    {
+      "category" : "business-teams",
+      "entry" : "Business Review/Business Review.md",
+      "featured" : false,
+      "name" : "Business Review",
+      "summary" : "Quarterly close, operating review and a decision pack from your own numbers.",
+      "title" : "Business Review"
+    },
+    {
+      "category" : "learn-flow",
+      "entry" : "Charts Gallery/Charts Gallery.md",
+      "featured" : false,
+      "name" : "Charts Gallery",
+      "summary" : "Every chart and diagram Flow draws, driven from an editable table you own.",
+      "title" : "Charts Gallery"
+    },
+    {
+      "category" : "research-markets",
+      "entry" : "Competitor Watch/Competitor Watch.md",
+      "featured" : false,
+      "name" : "Competitor Watch",
+      "summary" : "Dated competitor observations, refreshed evidence and changes worth reviewing.",
+      "title" : "Competitor Watch"
+    },
+    {
+      "category" : "research-markets",
+      "entry" : "Customer Research/Research Brief.md",
+      "featured" : false,
+      "name" : "Customer Research",
+      "summary" : "Interview coding, observations and the research questions they answer.",
+      "title" : "Research Brief"
+    },
+    {
+      "category" : "learn-flow",
+      "entry" : "Flow Handbook/Using Flow.md",
+      "featured" : false,
+      "name" : "Flow Handbook",
+      "summary" : "How Flow's tools, Jobs and the Night Shift work, page by page.",
+      "title" : "Using Flow"
+    },
+    {
+      "category" : "business-teams",
+      "entry" : "Health Evidence/Health Evidence.md",
+      "featured" : false,
+      "name" : "Health Evidence",
+      "summary" : "Aggregate service counts and an operational evidence review.",
+      "title" : "Health Evidence"
+    },
+    {
+      "category" : "personal-money",
+      "entry" : "Household Budget/Household Budget.md",
+      "featured" : true,
+      "name" : "Household Budget",
+      "summary" : "Turn your spending inputs into current totals and a useful monthly review.",
+      "title" : "Household Budget"
+    },
+    {
+      "category" : "personal-money",
+      "entry" : "Insurance Renewal/Insurance Renewal.md",
+      "featured" : false,
+      "name" : "Insurance Renewal",
+      "summary" : "Renewal packet, quotation changes and the questions for your broker.",
+      "title" : "Insurance Renewal"
+    },
+    {
+      "category" : "research-markets",
+      "entry" : "Investment Research/Diligence Brief.md",
+      "featured" : false,
+      "name" : "Investment Research",
+      "summary" : "Management claims, missing evidence and the diligence questions that remain.",
+      "title" : "Diligence Brief"
+    },
+    {
+      "category" : "personal-money",
+      "entry" : "Job Search/Job Search.md",
+      "featured" : false,
+      "name" : "Job Search",
+      "summary" : "Applications, next actions and evidence-based tailoring.",
+      "title" : "Job Search"
+    },
+    {
+      "category" : "business-teams",
+      "entry" : "Legal Matter/Legal Matter.md",
+      "featured" : false,
+      "name" : "Legal Matter",
+      "summary" : "A factual chronology, a source index and the evidence still missing.",
+      "title" : "Legal Matter"
+    },
+    {
+      "category" : "learn-flow",
+      "entry" : "Living Document Starter/Living Document.md",
+      "featured" : false,
+      "name" : "Living Document Starter",
+      "summary" : "Your own small recurring project, with the smallest useful Jobs.",
+      "title" : "Living Document"
+    },
+    {
+      "category" : "business-teams",
+      "entry" : "Marketing Campaign/Campaign Desk.md",
+      "featured" : false,
+      "name" : "Marketing Campaign",
+      "summary" : "Editorial calendar, campaign review and a draft announcement in one desk.",
+      "title" : "Campaign Desk"
+    },
+    {
+      "category" : "learn-flow",
+      "entry" : "Model Arena/Model Arena.md",
+      "featured" : false,
+      "name" : "Model Arena",
+      "summary" : "Published model comparisons and a record of your own evaluation.",
+      "title" : "Model Arena"
+    },
+    {
+      "category" : "research-markets",
+      "entry" : "NVIDIA Company Research/NVIDIA Company Research.md",
+      "featured" : true,
+      "name" : "NVIDIA Company Research",
+      "summary" : "Understand one company through three sections, three sources and a focused research question.",
+      "title" : "NVIDIA Company Research"
+    },
+    {
+      "category" : "business-teams",
+      "entry" : "Product Launch/Launch Readiness.md",
+      "featured" : false,
+      "name" : "Product Launch",
+      "summary" : "Milestones, blockers and the launch decisions still open.",
+      "title" : "Launch Readiness"
+    },
+    {
+      "category" : "business-teams",
+      "entry" : "Sales Account/Account Brief.md",
+      "featured" : false,
+      "name" : "Sales Account",
+      "summary" : "Discovery, requirements, meeting preparation and the proposal for one account.",
+      "title" : "Account Brief"
+    },
+    {
+      "category" : "personal-money",
+      "entry" : "Stock Portfolio/Portfolio Dashboard.md",
+      "featured" : true,
+      "name" : "Stock Portfolio",
+      "summary" : "Holdings, quote coverage and concentration, refreshed from your own files.",
+      "title" : "Portfolio Dashboard"
+    },
+    {
+      "category" : "business-teams",
+      "entry" : "Supplier Review/Supplier Review.md",
+      "featured" : false,
+      "name" : "Supplier Review",
+      "summary" : "Renewal offers, spending and the service terms left unresolved.",
+      "title" : "Supplier Review"
+    },
+    {
+      "category" : "business-teams",
+      "entry" : "Support Knowledge/Support Knowledge.md",
+      "featured" : false,
+      "name" : "Support Knowledge",
+      "summary" : "Repeated questions, stale articles and proposed answers.",
+      "title" : "Support Knowledge"
+    },
+    {
+      "category" : "personal-money",
+      "entry" : "Tax Advisor/Tax Advisor.md",
+      "featured" : false,
+      "name" : "Tax Advisor",
+      "summary" : "Tax-year inputs, a bounded estimate and questions for your preparer.",
+      "title" : "Tax Advisor"
+    },
+    {
+      "category" : "business-teams",
+      "entry" : "Team Status/Team Status.md",
+      "featured" : true,
+      "name" : "Team Status",
+      "summary" : "Keep a team's progress, blockers and next steps together.",
+      "title" : "Team Status"
+    },
+    {
+      "category" : "personal-money",
+      "entry" : "Travel Planner/Portugal Itinerary.md",
+      "featured" : false,
+      "name" : "Travel Planner",
+      "summary" : "Itinerary, reservations to check and a travel budget.",
+      "title" : "Portugal Itinerary"
+    }
+  ]
 }

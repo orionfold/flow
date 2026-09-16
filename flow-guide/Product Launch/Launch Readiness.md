@@ -1,5 +1,7 @@
 ---
 title: Launch Readiness
+category: business-teams
+summary: "Milestones, blockers and the launch decisions still open."
 tags: ["product-launch", "example"]
 jobs:
   - kind: gather

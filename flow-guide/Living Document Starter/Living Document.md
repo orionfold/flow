@@ -1,5 +1,7 @@
 ---
 title: Living Document
+category: learn-flow
+summary: "Your own small recurring project, with the smallest useful Jobs."
 tags: [starter, dashboard, night-shift]
 jobs:
   - kind: gather

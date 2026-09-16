@@ -1,5 +1,7 @@
 ---
 title: Charts Gallery
+category: learn-flow
+summary: "Every chart and diagram Flow draws, driven from an editable table you own."
 tags: [charts-gallery, reference, living-workspace]
 ---
 # Charts Gallery

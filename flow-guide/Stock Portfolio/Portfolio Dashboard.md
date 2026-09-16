@@ -1,5 +1,8 @@
 ---
 title: Portfolio Dashboard
+category: personal-money
+featured: true
+summary: "Holdings, quote coverage and concentration, refreshed from your own files."
 tags: [portfolio, dashboard, night-shift]
 jobs:
   - kind: gather

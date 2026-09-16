@@ -1,5 +1,7 @@
 ---
 title: Business Review
+category: business-teams
+summary: "Quarterly close, operating review and a decision pack from your own numbers."
 tags: ["business-review", "example"]
 jobs:
   - kind: gather

@@ -1,5 +1,7 @@
 ---
 title: Account Brief
+category: business-teams
+summary: "Discovery, requirements, meeting preparation and the proposal for one account."
 tags: ["sales-account", "example"]
 jobs:
   - kind: gather

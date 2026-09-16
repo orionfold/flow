@@ -1,5 +1,7 @@
 ---
 title: Job Search
+category: personal-money
+summary: "Applications, next actions and evidence-based tailoring."
 tags: [job-search, dashboard, personal, night-shift]
 jobs:
   - kind: gather

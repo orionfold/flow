@@ -1,5 +1,7 @@
 ---
 title: Legal Matter
+category: business-teams
+summary: "A factual chronology, a source index and the evidence still missing."
 tags: [legal, evidence, living-workspace, fictional-example]
 jobs:
   - kind: gather

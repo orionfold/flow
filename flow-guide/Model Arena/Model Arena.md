@@ -1,5 +1,7 @@
 ---
 title: Model Arena
+category: learn-flow
+summary: "Published model comparisons and a record of your own evaluation."
 tags: [models, arena, measurements]
 ---
 # Model Arena

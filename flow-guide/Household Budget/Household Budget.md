@@ -1,5 +1,8 @@
 ---
 title: Household Budget
+category: personal-money
+featured: true
+summary: "Turn your spending inputs into current totals and a useful monthly review."
 tags: [budget, dashboard, personal, night-shift]
 jobs:
   - kind: gather

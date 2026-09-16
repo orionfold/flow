@@ -1,5 +1,7 @@
 ---
 title: Portugal Itinerary
+category: personal-money
+summary: "Itinerary, reservations to check and a travel budget."
 tags: ["travel-planner", "example"]
 jobs:
   - kind: gather

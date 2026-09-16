@@ -1,5 +1,7 @@
 ---
 title: Research Brief
+category: research-markets
+summary: "Interview coding, observations and the research questions they answer."
 tags: ["customer-research", "example"]
 jobs:
   - kind: gather

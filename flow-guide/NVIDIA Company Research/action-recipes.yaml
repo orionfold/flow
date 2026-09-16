@@ -1,0 +1,11 @@
+# Three existing action definitions. Alternatives, not an unapproved chain.
+# The customer starter enables only the first. Resolve its review before
+# explicitly selecting and saving another recipe for the same owner.
+actions:
+  - kind: expand-with-sources
+    section: Company brief
+    sources: [sources/S1-quarterly-filing.md, sources/S2-inference-platform.md, sources/S3-open-model-ecosystem.md]
+  - kind: visualize
+    section: Reported momentum
+  - kind: summarize
+    section: What to watch

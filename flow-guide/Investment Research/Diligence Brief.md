@@ -1,5 +1,7 @@
 ---
 title: Diligence Brief
+category: research-markets
+summary: "Management claims, missing evidence and the diligence questions that remain."
 tags: ["investment-research", "example"]
 jobs:
   - kind: gather

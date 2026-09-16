@@ -1,5 +1,7 @@
 ---
 title: Tax Advisor
+category: personal-money
+summary: "Tax-year inputs, a bounded estimate and questions for your preparer."
 tags: [tax, dashboard, personal, night-shift]
 jobs:
   - kind: gather

@@ -1,103 +1,173 @@
 ---
 title: Competitor Watch
-tags: [competitive, dashboard, work, night-shift]
+category: research-markets
+summary: "Dated competitor observations, refreshed evidence and changes worth reviewing."
+tags: [competitive, ai-market, founder]
+refresh: manual
 jobs:
+  - kind: gather
+    definition: Market Refresh.md
+    into: data
+    as: market
   - kind: keep-sources-fresh
-    watch: [Competitors.md, captures, https://asana.com/pricing, https://clickup.com/pricing, https://linear.app/pricing, https://monday.com/pricing]
+    watch: [Market Inputs.md, Founder Profile.md, Founder Decisions.md, sources/current]
   - kind: reconcile-against-folder
-    folder: captures
-  - kind: overnight-notes
+    folder: sources/current
+  - kind: expand-with-sources
+    section: Decision context
+    sources: [sources/current, Founder Profile.md, Founder Decisions.md]
 ---
 # Competitor Watch
 
-**Decide which competitive change deserves a response from the product team.** A changed webpage is evidence to inspect, not a pricing recommendation.
+**What deserves a response, and what can you ignore?** A working research brief for a solo founder building an AI website, Mac app or web app.
 
-> Illustrative team-work-management review · source-price snapshot 2 September 2026 · USD per seat/month, annual billing. The four companies are real; “Our product” is fictional. These are dated examples, not current quotations.
+Start with eight products and twelve short public source records observed on September 14, 2026. They are dated research inputs, not a current market ranking or firsthand product evaluation. All founder decisions begin undecided.
 
-**Next action:** validate the plan, currency, minimum seats and captured price before comparing entry costs. The retained first-read note lacks exact price evidence; do not use the chart as a procurement quote. Competitor feature assessments are deliberately **unknown** until supported by a dated, tier-specific source.
+[Your product and customer](Founder%20Profile.md) · [Editable market inputs](Market%20Inputs.md) · [Decision ledger](Founder%20Decisions.md) · [Research playbook](Research%20Playbook.md)
 
-[[Competitors]] owns the comparison. The named Asana, ClickUp, Linear and monday.com pricing pages can be watched for changes. Flow reports their changed text; you review that evidence and update the comparison. The chart does not extract new prices automatically.
+## This week's decision
 
-## Entry price per seat
+**Question:** which recurring customer task deserves our next small experiment? Choose one in the founder profile. Compare the customer's alternatives, the useful result, checking effort, and what happens when they return a week later.
 
-```chart data: Competitors.md#table:Competitors
+## Decision context
+
+Compare the whole customer task before adding another AI feature. Summation and Raycast publish different ways to define and repeat work. Investigate where results accumulate, how a person corrects them and whether useful context survives a return. Published documentation describes a contract; it does not establish comparative task quality.[^S01][^S04]
+
+Review and permissions affect the cost of trusting a result. Notion's suggested edits and resource grants, together with Lovable's draft and shared-data distinction, offer concrete questions for a founder: what is proposed, what already changed, who can see an input, and which decisions remain with the person? Inspect those boundaries before treating a feature label as evidence.[^S05][^S06][^S07]
+
+Consider a small existing tool as a credible alternative to a new product feature. A purpose-specific app, an AI assistant plus notes, or a simple manual process may satisfy the task. Keep one contrary observation and one affordable experiment beside each proposed response. A quiet week with a trustworthy result can be more valuable than a long report of weak signals.[^S09]
+
+## Evidence at a glance
+
+
+<!-- data: data/market-*.json#summary -->
+| Metric | Value |
+| --- | ---: |
+| Finding records | 12 |
+| Distinct captures | 12 |
+| Human-reviewed findings | 0 |
+
+The chart and table below share one Gather output. Counts measure retained research coverage only. The main comparison remains linked to the finding-level Evidence table and source cards.
+
+```chart data: data/market-*.json#coverage
 chartType: Bar Chart
-title: First paid tier, per seat per month
-subtitle: Dated example prices; annual billing, USD per seat/month
-source: Competitors.md, Competitors table
+title: Retained findings by product
+subtitle: This 12-source seed; coverage counts, not capability or market share
+source: Market Inputs.md, Evidence table
 data:
-  - {name: "Asana", product: "Asana", entry_tier: "Starter", price_per_seat: 10.99, billing: "annual", pricing_url: "https://asana.com/pricing", note: "Free tier up to 10 seats"}
-  - {name: "ClickUp", product: "ClickUp", entry_tier: "Unlimited", price_per_seat: 7, billing: "annual", pricing_url: "https://clickup.com/pricing", note: "Free Forever tier with storage limits"}
-  - {name: "Linear", product: "Linear", entry_tier: "Basic", price_per_seat: 10, billing: "annual", pricing_url: "https://linear.app/pricing", note: "Free tier with limits on issues"}
-  - {name: "monday.com", product: "monday work management", entry_tier: "Basic", price_per_seat: 9, billing: "annual", pricing_url: "https://monday.com/pricing", note: "Free for up to two seats; seat minimums on paid tiers"}
-semantic_types: {name: Category, price_per_seat: Amount}
+  - {product: "Bolt", findings: 1}
+  - {product: "Glaze", findings: 1}
+  - {product: "Lovable", findings: 2}
+  - {product: "Notion", findings: 2}
+  - {product: "Raycast", findings: 3}
+  - {product: "Replit", findings: 1}
+  - {product: "Summation", findings: 1}
+  - {product: "Underdog", findings: 1}
+semantic_types: {product: Category, findings: Count}
 encodings:
-  y: {field: name}
-  x: {field: price_per_seat}
-  color: {field: name, scheme: teals}
+  y: {field: product}
+  x: {field: findings}
+  color: {field: product, scheme: teals}
 ```
 
-## Who charges what
+<!-- data: data/market-*.json#coverage -->
+| Product | Findings |
+| --- | --- |
+| Bolt | 1 |
+| Glaze | 1 |
+| Lovable | 2 |
+| Notion | 2 |
+| Raycast | 3 |
+| Replit | 1 |
+| Summation | 1 |
+| Underdog | 1 |
 
-<!-- data: Competitors.md#table:Competitors -->
-| Name | Product | Entry tier | Price per seat | Billing | Note |
-| --- | --- | --- | ---: | --- | --- |
-| Asana | Asana | Starter | 10.99 | annual | Free tier up to 10 seats |
-| ClickUp | ClickUp | Unlimited | 7 | annual | Free Forever tier with storage limits |
-| Linear | Linear | Basic | 10 | annual | Free tier with limits on issues |
-| monday.com | monday work management | Basic | 9 | annual | Free for up to two seats; seat minimums on paid tiers |
+## Packaging lens
 
-## Questions the comparison has not yet answered
+Three Raycast monthly individual offers retained on September 14, 2026 give a concrete, same-publisher comparison. Recheck the original page before a buying decision. This is a dated subscription exposure scenario, not cost per useful AI result or a cross-company ranking.[^S03]
 
-<!-- data: Competitors.md#table:Features -->
-| feature | us | Asana | ClickUp | Linear | monday.com |
-| --- | --- | --- | --- | --- | --- |
-| Free tier | yes | unknown | unknown | unknown | unknown |
-| Timeline view | yes | unknown | unknown | unknown | unknown |
-| Offline documents | yes | unknown | unknown | unknown | unknown |
-| AI change review with approval | yes | unknown | unknown | unknown | unknown |
-| Public API | planned | unknown | unknown | unknown | unknown |
-| Self-hosted option | no | unknown | unknown | unknown | unknown |
+<!-- data: data/market-*.json#comparableCosts -->
+| Product | Plan | Minimum monthly USD | Twelve month scenario USD | Credits | Checked at | Source URL |
+| --- | --- | --- | --- | --- | --- | --- |
+| Raycast | Pro | 10 | 120 | 500 | 2026-09-14 | https://www.raycast.com/blog/changing-how-raycast-ai-is-priced |
+| Raycast | Pro+ | 20 | 240 | 3000 | 2026-09-14 | https://www.raycast.com/blog/changing-how-raycast-ai-is-priced |
+| Raycast | Max | 50 | 600 | 7500 | 2026-09-14 | https://www.raycast.com/blog/changing-how-raycast-ai-is-priced |
 
-## Captures
 
-Everything you keep about a change: a dated note, a screenshot, a PDF of the page. The night lists the folder.
+## Founder decisions
 
-```flow-folder captures
+Use the [decision ledger](Founder%20Decisions.md) to choose act, investigate, watch or ignore. Record why, the counterevidence and the event that should reopen the decision. Jobs expands decision context; it does not choose a disposition for you.
+
+## Work on the next useful output
+
+| Document | Purpose |
+| --- | --- |
+| [Founder Briefing](Founder%20Briefing.md) | Summarize analysis you deliberately prepare |
+| [Launch Copy](Launch%20Copy.md) | Proofread a short announcement |
+| [Localized Update](Localized%20Update.md) | Translate an update while keeping its reference |
+| [Launch Notes](Launch%20Notes.md) | Turn structured observations into a table |
+| [Comparison Narrative](Comparison%20Narrative.md) | Explain a comparison table as bullets |
+| [Research Map](Research%20Map.md) | Add a diagram of the research process |
+| [Research Image](Research%20Image.md) | Describe the supplied picture for accessible alt text |
+
+Each document owns its Jobs and its review. Choose a document, inspect its method and Inputs, then Run Jobs. Ask can propose edits to the method; Apply changes the draft, and Save Jobs writes it. Neither action starts a run.
+
+## Sources worth opening
+
+
+- [S01 · Workflows — Summation](sources/current/S01-summation.md) — Separate method, trigger and delivery; make test/run effects explicit.
+- [S02 · Underdog — The Most Loyal AI](sources/current/S02-underdog.md) — State where inference, memory and network activity happen separately.
+- [S03 · Why Raycast AI pricing is changing](sources/current/S03-raycast.md) — Explain application value, model cost and recurring-work exposure separately.
+- [S04 · Automations — Raycast Manual](sources/current/S04-raycast.md) — Compare accumulated outputs and correction quality, plus sleep/permission/recovery behavior.
+- [S05 · What is new — suggested edits and model controls](sources/current/S05-notion.md) — Treat proposed editing as a baseline expectation; test evidence, scope and correction.
+- [S06 · Custom Agents sharing and permissions](sources/current/S06-notion.md) — Make adopted methods separate from adopted credentials and access grants.
+- [S07 · Lovable changelog — drafts and usage](sources/current/S07-lovable.md) — Explain what a draft isolates and what remains shared; attribute multi-tool cost.
+- [S08 · Security overview — Lovable](sources/current/S08-lovable.md) — Display coverage and freshness of checks; re-read sources before repeating old claims.
+- [S09 · Meet Glaze — Raycast](sources/current/S09-glaze.md) — Test whether a custom small app can substitute for the proposed feature.
+- [S10 · stackblitz/bolt.new — public repository](sources/current/S10-bolt.md) — Inspect reusable infrastructure; separate visible source facts from inferred implementation.
+- [S11 · Replit incident history](sources/current/S11-replit.md) — Design recovery for model/tool failure and distinguish builder versus hosted-app incidents.
+- [S12 · Raycast AI, Notes and more — US App Store](sources/current/S12-raycast.md) — Investigate where useful outputs go after an AI session and what breaks that handoff.
+
+
+## Capture inventory
+
+```flow-folder sources/current
 | File | Size | Modified | Digest |
 | --- | ---: | --- | --- |
-| 2026-09-02 — Pricing pages, first read.md | 1065 |  |  |
 ```
 
-Bundled file list; the inventory job fills timestamps and digests in your working copy.
+Run Jobs to fill the inventory from your source cards. The twelve cards are short retained paraphrases with original links and dates. The profile and decision ledger supply founder context, not competitor facts. Add a public URL to Watch sources only when you want its subsequent changes checked; a watched page is separate from the local evidence used for expansion.
 
-## Turn a source change into a decision
+## Next useful cycle
 
-1. Inspect the changed text and its public source. A fetch failure is not a price change.
-2. Save the evidence you intend to rely on in `captures/`, including checked date, exact plan, currency, billing period and seat minimum.
-3. Update [[Competitors]] only after reviewing the source. Bound views refresh from your authored values. Optional Overnight notes use the configured local model to describe the tables; verify any interpretation against the captures.
-4. Record the response you chose and its owner in a note beside the evidence. A watch does not change another company's data or commit your team to a decision.
+Inspect a material source, retain a dated finding, and update Market Inputs. A second distinct finding from the same capture increases finding count without increasing distinct captures. Mark human review only after doing it. Run saved Jobs to redraw the linked chart and tables, then review the proposed expansion beside the document.
 
-## Make it yours
+After accepting analysis, explicitly prepare the material in Founder Briefing and run its Summary Job afresh. Approval never starts another document's Jobs. This copy starts with manual timing; change Jobs timing explicitly when you are ready for automatic repeat work.
 
-1. Copy the entire **Competitor Watch** folder and add it in Flow. Its comparison and evidence note are local and readable without a network.
-2. Before the first run, review the saved jobs in **File ▸ Night Shift Jobs…**. Public page watches are optional; remove them before running if you want local-only work. Add only the specific public pages you intend to read.
-3. Open [[Competitors]] and choose **View ▸ Edit Table**. Change the example ClickUp price from 7 to 8 in **Competitors**, save, and mark it as a practice edit. After **Settings → Night Shift → Run now**, only its entry-price bar/table value should change. Restore the example or replace it with verified evidence.
-4. Replace the fictional product, comparison rows and first-read note. Record dates and sources for every factual price or capability claim; leave unresolved cells unknown.
-5. Review the run result; enable Night Shift only for scheduled updates. No Gather definition is needed for this direct-binding example; its numbers are the values you authored.
+## Source appendix
 
-## How this page is built
 
-| Block | Construct | Bound to | Redrawn by |
-| --- | --- | --- | --- |
-| Entry price | Bar Chart | `Competitors.md#table:Competitors` | the night alone |
-| Who charges what | table | `Competitors.md#table:Competitors` | the night alone |
-| Feature matrix | table | `Competitors.md#table:Features` | the night alone |
-| Captures | `flow-folder` inventory | `captures/` | the night alone |
-| Pricing pages | Source-watch job in the Jobs editor | four public pages | the night alone |
 
-A watched page is digested as its text, not its markup, so a rotated tracking token is not a change and a new price is.
+[^S01]: [Workflows — Summation](sources/current/S01-summation.md). Summation; retrieved 2026-09-14; published / public documentation.
 
-## Overnight notes
-<!-- night: notes -->
-<!-- /night: notes -->
+[^S02]: [Underdog — The Most Loyal AI](sources/current/S02-underdog.md). Underdog; retrieved 2026-09-14; published / live browser marketing.
+
+[^S03]: [Why Raycast AI pricing is changing](sources/current/S03-raycast.md). Raycast; retrieved 2026-09-14; published / official announcement.
+
+[^S04]: [Automations — Raycast Manual](sources/current/S04-raycast.md). Raycast; retrieved 2026-09-14; published / public documentation.
+
+[^S05]: [What is new — suggested edits and model controls](sources/current/S05-notion.md). Notion; retrieved 2026-09-14; published / official release log.
+
+[^S06]: [Custom Agents sharing and permissions](sources/current/S06-notion.md). Notion; retrieved 2026-09-14; published / public documentation.
+
+[^S07]: [Lovable changelog — drafts and usage](sources/current/S07-lovable.md). Lovable; retrieved 2026-09-14; published / official release log.
+
+[^S08]: [Security overview — Lovable](sources/current/S08-lovable.md). Lovable; retrieved 2026-09-14; published / live public documentation.
+
+[^S09]: [Meet Glaze — Raycast](sources/current/S09-glaze.md). Glaze; retrieved 2026-09-14; published / official launch.
+
+[^S10]: [stackblitz/bolt.new — public repository](sources/current/S10-bolt.md). Bolt; retrieved 2026-09-14; published / public source repository.
+
+[^S11]: [Replit incident history](sources/current/S11-replit.md). Replit; retrieved 2026-09-14; published / official operational record.
+
+[^S12]: [Raycast AI, Notes and more — US App Store](sources/current/S12-raycast.md). Raycast; retrieved 2026-09-14; published / developer listing and customer anecdote.

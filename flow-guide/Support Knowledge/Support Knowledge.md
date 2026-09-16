@@ -1,5 +1,7 @@
 ---
 title: Support Knowledge
+category: business-teams
+summary: "Repeated questions, stale articles and proposed answers."
 tags: [support, knowledge-management, living-workspace, fictional-example]
 jobs:
   - kind: gather

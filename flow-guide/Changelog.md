@@ -11,6 +11,7 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 
 | Release | Build | Date | In a sentence |
 | --- | --- | --- | --- |
+| 1.7 | 2173 | 16 September 2026 | One surface with a Workbench beside it, Jobs as the one name, Ask suggestions applied without a model, and reviews that say what was done |
 | 1.6.7 | 2162 | 13 September 2026 | Workspaces to make your own, single-document jobs, current definition previews and clearer recovery |
 | 1.6.6 | 2149 | 12 September 2026 | Better local model choices, reasoning controls, clearer definition drafting, and a Night Shift ready from your first saved job |
 | 1.6.5 | 2111 | 9 September 2026 | Flow names a day model for your Mac, earned the way the day works; Expand with Sources runs in one turn on this Mac; and a night pick no longer flips on one miss |
@@ -26,6 +27,52 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 | 1.5.2 | 1414 | 27 August 2026 | A pressable Update ready button |
 | 1.5.1 | 1404 | 27 August 2026 | The first Flow that arrived through Flow itself |
 | 1.5 | 1382 | 26 August 2026 | The launch |
+
+## Flow 1.7 · build 2173 · 16 September 2026
+
+One surface for reading, editing and reviewing, a Workbench beside it, Jobs as the one name for what a document does for you, and reviews that say what was done.
+
+### Start in your document
+
+- **What shipped.** A first launch opens this Welcome page straight away, with no location question and no checkbox. Ideas shows a card of the local models and keys Flow found on your Mac. The Living Document chooser lists all 24, five featured first, with search and a category filter. There is no loading screen: Flow opens on your document and folders fill in as they open.
+- **How it benefits you.** Your first minute is spent in a document, not on a form, and you can see what Flow can already use on this Mac before choosing anything.
+- **How to use it.** Follow the three links at the top of this page. In Ideas, choose **Use selected** to copy a key; models are used where they are. Choose **Start with useful work** for a Living Document, then filter by Research & Markets, Business & Teams, Personal & Money or Learn Flow.
+
+### The Workbench
+
+- **What shipped.** The panel beside your document is the Workbench everywhere — menu, tooltips and this Guide — with its own icon and one close button. Drag the grip on its divider to resize it, double-click the grip for the default width; the width is remembered and showing it no longer flashes the document. History, the review Overview and every task fit the default width, and header rules end exactly at the divider.
+- **How it benefits you.** One place beside the document for Jobs, Ideas, Search, History, reviews and Settings, sized the way you like it.
+- **How to use it.** Choose a task from the Workbench menu in the toolbar, or press its icon at the top right of the document. Pin it to keep it open.
+
+### Jobs, one name and one icon
+
+- **What shipped.** Nothing in Flow says "method" any more: a document has Jobs, you edit them on the Workbench's **Edit** tab and **Run Jobs** runs what is saved. A briefcase marks Jobs everywhere. The Jobs Workbench has one header, **Edit**, **Run** and **Relations** tabs, a section menu of the document's own headings, an **Add a source** row that offers the files the document links to, one primary button (Save Jobs while a draft is unsaved, Run Jobs once saved), and a Length slider for Expand with Sources.
+- **How it benefits you.** One vocabulary and one icon to look for, and a Jobs editor that reads top to bottom without repeating itself.
+- **How to use it.** Open the Workbench's Jobs task, edit on **Edit**, save, then **Run Jobs**. Set the expansion length with the slider; the review says when a draft fell short of it.
+
+### Ask about a document's Jobs
+
+- **What shipped.** The Ask task offers a list: **Explain current Jobs**, **Propose Jobs changes**, and up to three suggested edits written from the document's own Jobs, the files beside it and its headings. Explain and every suggestion are applied at once without running a model; a typed prompt runs the day model. Choosing a row hides the list behind one short line, with a button to bring the list back. When a model run cannot finish, the message says why in plain words.
+- **How it benefits you.** The routine edits — add a source, watch the sources, list the folder, summarize or proofread a section — take one click and no model time, and Ask keeps a pending proposal while you look around.
+- **How to use it.** Open Ask from the Jobs Workbench or the Workbench menu. Choose a suggestion, inspect the proposed Jobs, then **Apply to draft** or **Discard**; type your own request in the field to propose something the list does not offer.
+
+### Reviews that say what was done
+
+- **What shipped.** Each change reads as one sentence with the verb that happened and a quiet facts line — words now and before, sources cited, the model — with the requested length in Details. The decision row reads **I accept changes** with plain icon buttons and **Later** at the right; after the last decision the review and the Workbench close on their own. Clicking a citation in the Reader scrolls to it and opens the source in the Workbench (Settings ▸ Editors turns this off). One calm yellow at two strengths: the full yellow marks where you are looking, the lighter yellow a change awaiting your decision. Citation markers keep their number and their punctuation on the line.
+- **How it benefits you.** You read what changed and why in one line per change, decide once, and land back in your document.
+- **How to use it.** Choose **Review** when results arrive, read the Changes rows, open Details for the facts, click a citation to see its source, then decide with the row at the foot.
+
+### Popups that stay in the window
+
+- **What shipped.** The Jobs and "What Flow is using" popups open below their toolbar icon with an arrow pointing at it, extend left so they never run off the edge, keep the system's glass look with a subtle cyan-to-white wash, draw one outline, and end with a two-line note.
+- **How it benefits you.** Every readout is visible in full at any window width, including a 14-inch display.
+- **How to use it.** Press the briefcase or the burn readout in the toolbar; press again or click away to close.
+
+### Research a company and review a run without losing your place
+
+- **What shipped.** Create an owned NVIDIA Company Research document, run its Jobs and save the reviewed expansion. Progress and completion stay above the document, naming the provider and model, with Pause/Stop or Review on the second row; chart, table, inventory and Agency rows carry matching badges and the approval controls sit together.
+- **How it benefits you.** A worked example of a sourced brief from first copy to approved update, and a run you can watch without leaving the document.
+- **How to use it.** Choose **Start with useful work ▸ NVIDIA Company Research**, create your copy, add a source under Jobs ▸ Ask if you like, then **Run Jobs** and choose **Review** when it finishes.
 
 ## Flow 1.6.7 · build 2162 · 13 September 2026
 

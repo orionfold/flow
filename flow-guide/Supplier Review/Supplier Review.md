@@ -1,5 +1,7 @@
 ---
 title: Supplier Review
+category: business-teams
+summary: "Renewal offers, spending and the service terms left unresolved."
 tags: [procurement, operations, living-workspace, fictional-example]
 jobs:
   - kind: gather

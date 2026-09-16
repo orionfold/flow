@@ -1,5 +1,8 @@
 ---
 title: Team Status
+category: business-teams
+featured: true
+summary: "Keep a team's progress, blockers and next steps together."
 tags: [status, dashboard, work, night-shift]
 jobs:
   - kind: keep-sources-fresh
