@@ -6,6 +6,8 @@ tags: ["flow", "start-here"]
 
 Flow keeps your documents, their sources and the work you ask of them together. This page is the Guide's front door: three steps for your first session, then a short map for every session after.
 
+![A person at work, surrounded by charts, documents and ideas](assets/channels4_banner.jpg)
+
 ## Your first session
 
 1. **[Open Ideas](x-flow://app/ideas)** — Flow is looking for local models and keys already on this Mac and shows what it found there. Choose which to use, or decide later in **Settings ▸ Models**. Nothing is copied until you say so.

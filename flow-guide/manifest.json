@@ -229,9 +229,14 @@
       "bytes" : 1459,
       "contentHash" : "sha256:4bd94a0187327b47b829ef2a99729f837735512043abac32924a3c905d7c19a0",
       "path" : "Travel Planner/data/review-2026-09-12.json"
+    },
+    {
+      "bytes" : 138025,
+      "contentHash" : "sha256:f4e9e1e9ee6ebb1d7316d64c6d5a764b701431751a2584d4528983b7ad29d869",
+      "path" : "assets/channels4_banner.jpg"
     }
   ],
-  "contentVersion" : "1.13.0",
+  "contentVersion" : "1.13.1",
   "documents" : [
     {
       "bytes" : 18846,
@@ -1224,8 +1229,8 @@
       "path" : "Travel Planner/Travel Refresh.md"
     },
     {
-      "bytes" : 2628,
-      "contentHash" : "sha256:7423d4838710037f369f270933b0bf39c1cdcf42743ec6ecef98fe7cb9935bff",
+      "bytes" : 2721,
+      "contentHash" : "sha256:d191788c18743705b96e49c9accc9d51b0d4b67d1b372460d4369ef86d05b677",
       "path" : "Welcome.md"
     }
   ],
