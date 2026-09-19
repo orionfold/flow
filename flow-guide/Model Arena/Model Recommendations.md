@@ -2,7 +2,7 @@
 title: Model Recommendations
 tags: [flow, models, agency]
 catalogueVersion: 4
-researched: 2026-09-12
+researched: 2026-09-19
 models:
   - id: mlx-community/gemma-3-text-4b-it-4bit
     displayName: Gemma 3 4B IT (language-model-only export) 4-bit
@@ -226,7 +226,7 @@ models:
     class: night
     tiers: [32, 36, 48-64, 96-128, 256+]
     dayPickTiers: []
-    nightPickTiers: [32]
+    nightPickTiers: [32, 36]
     revision: 3e6447f082e89cc7f0bc6e5441afd38dfce760ff
     servedWindow: 8192
     kvBytesPerToken: 65536
@@ -252,7 +252,7 @@ models:
     class: night
     tiers: [36, 48-64, 96-128, 256+]
     dayPickTiers: []
-    nightPickTiers: [36, 48-64, 96-128, 256+]
+    nightPickTiers: [48-64, 96-128, 256+]
     revision: b9ad7b92aa2fd07b041f4b8b3aa459941f8abbf7
     servedWindow: 8192
     kvBytesPerToken: 65536
@@ -309,6 +309,8 @@ Every number in the tables below says how it knows. **Measured** rows were run o
 ## Why these picks
 
 **Day · 12 September 2026 · 24 GB, 32 GB, 36 GB, 48 to 64 GB, 96 to 128 GB, 256 GB and up:** Gemma 4 E4B replaces Llama 3.1 8B for Day work. Two blinded reviews preferred its source fidelity across four document briefs, each repeated three times. Llama incorrectly denied a comparison group supplied by the source; E4B preserved it. Both passed all eight Day baseline tasks, and E4B met the speed and memory limits. These are four scenarios, not a general quality benchmark; E4B still needs clearer approval-status wording in one brief. Its Night baseline was 3 of 8, so the Night pick is unchanged. Reasoning remains Recommended.
+
+**Night · 19 September 2026 · 36 GB:** Qwen 3.8 27B 4-bit replaces 5-bit on the 36 GB Mac after a comparison through normal Flow Jobs. Flow plus its model helper peaked at 20.39 GB for 4-bit and 23.65 GB for 5-bit, against the 23.19 GB Night budget. All 1,093 pressure samples in the 4-bit run were normal. A non-blind Codex review of ten matched workloads found six passes, three partial results and one failure for 4-bit, compared with seven passes and three failures for 5-bit. Long-summary structure, ambiguous diagram wording and unsupported citation placement still need review. The saved short-summary rerun passed. This is a resource-based correction, not a universal quality or speed claim. The signed benchmark rows below retain their earlier helper-only measurements; they are distinct from these app-plus-helper observations. Day E4B and larger-tier picks are unchanged.
 
 ## The tables, by memory
 
@@ -370,8 +372,8 @@ The models use MLX directories or single GGUF files, as each row states, and are
 | night (candidate for both) | Gemma 3 4B IT (language-model-only export) 4-bit | MLX, grammar dialect | 2.6 GB | 4.6 GB | 91 tok/s, 1.6 s to first word (calculated) | Not yet (0 of 3) | measured |
 | night (candidate for both) | Mistral 7B Instruct v0.2 4-bit | MLX, grammar dialect | 4.3 GB | 6.4 GB | 57 tok/s, 2.8 s to first word (calculated) | Not yet (0 of 3) | measured |
 | night | Gemma 4 26B A4B IT 4-bit | MLX, grammar dialect | 15.4 GB | 18.1 GB | 73 tok/s, 1.9 s to first word (calculated) | Meets it (8 of 8) | measured |
-| night | Qwen 3.8 27B 4-bit | MLX, grammar dialect | 16.1 GB | 19.1 GB | 17 tok/s, 11.4 s to first word (calculated) | Meets it (8 of 8) | measured |
-| night | **Qwen 3.8 27B 5-bit** (Flow's pick) | MLX, grammar dialect | 19.4 GB | 22.4 GB | 14 tok/s, 12.2 s to first word (calculated) | Meets it (8 of 8) | measured |
+| night | **Qwen 3.8 27B 4-bit** (Flow's pick) | MLX, grammar dialect | 16.1 GB | 19.1 GB | 17 tok/s, 11.4 s to first word (calculated) | Meets it (8 of 8) | measured |
+| night | Qwen 3.8 27B 5-bit | MLX, grammar dialect | 19.4 GB | 22.4 GB | 14 tok/s, 12.2 s to first word (calculated) | Meets it (8 of 8) | measured |
 
 ### 48 to 64 GB
 
@@ -430,7 +432,7 @@ Every list row, every measurement cell and every baseline run behind these table
 
 This document updates itself along with the rest of this folder, so the list reflects what is worth running today rather than what was worth running when you installed Flow.
 
-The list above was researched on 12 September 2026. Flow's release check refuses to cut a release whose list is more than thirty days old, so a list that has gone stale is a release that did not happen, not a list you have to notice.
+The list above was researched on 19 September 2026. Flow's release check refuses to cut a release whose list is more than thirty days old, so a list that has gone stale is a release that did not happen, not a list you have to notice.
 
 **Your edits are safe.** If you change this document, Flow does not overwrite it. It offers you the update and lets you decide, the same as any other document here.
 
