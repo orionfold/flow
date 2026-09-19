@@ -74,7 +74,7 @@ Review the chosen sources and route before using private material. The examples 
 
 ## What leaves your Mac
 
-Flow is built so that nothing has to leave this Mac, which makes the list of times it reaches the network short enough to print. As of Flow 1.6.6, this is all of it, and every line is something you started, can switch off, or whose outcome you control:
+Flow is built so that nothing has to leave this Mac, which makes the list of times it reaches the network short enough to print. As of Flow 1.7, this is all of it, and every line is something you started, can switch off, or whose outcome you control:
 
 | When | Where | What is sent | Your switch |
 | --- | --- | --- | --- |
@@ -85,11 +85,12 @@ Flow is built so that nothing has to leave this Mac, which makes the list of tim
 | You add a cloud provider's key | That provider | Your prompt and the text you selected, when you approve a run; the meter shows it first | Settings ▸ Models ▸ Cloud, the key is the switch; remove the key and it is off |
 | You refresh a provider's price list, or first set up OpenRouter | openrouter.ai | A request for public prices; nothing about you | Only when you ask |
 | You import a model | huggingface.co | The download request for the model you chose | Only when you press it |
+| You publish to GitHub Pages | api.github.com (GitHub, under your own account) | The document's pages, pictures, charts and data, to the repository you named, with the token you gave; only what changed since last time | Only when you press it; Forget the token in the Publish task and it is off |
 | A document embeds an image by web address | That address | The request for the image, when the document is shown | Write the image into the folder instead, and nothing is fetched |
 | You open a web address in a pane | That address | What any browser sends to load a page | Only when you enter one |
 | A run looks something up on the web, with web lookups on | The address the model chose | The request for that page, as any web request does, not your document, though the address is chosen from what it says | Settings ▸ Flow System ▸ Web Lookups, off until you turn it on |
 
-That is the whole list. As of Flow 1.6.6, Flow keeps no usage statistics, sends no crash reports, carries no analytics or advertising code, has no install identifier, and never checks a licence online to keep working. If a future Flow offers to share counts or crash reports with Orionfold, it will be a switch that starts off, and this table will list it beside the others.
+That is the whole list. As of Flow 1.7, Flow keeps no usage statistics, sends no crash reports, carries no analytics or advertising code, has no install identifier, and never checks a licence online to keep working. If a future Flow offers to share counts or crash reports with Orionfold, it will be a switch that starts off, and this table will list it beside the others.
 
 Need to tell us about a problem? Help ▸ Copy Diagnostics… puts a short block on the clipboard: the Flow and macOS versions, the kind of Mac, which domains are on, and the last crash's summary if there is one, with no paths, titles, or names in it. You see the exact text before it is copied, and it goes nowhere until you paste it.
 

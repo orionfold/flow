@@ -34,7 +34,7 @@ Quality ranks are from LMArena lmarena-ai/leaderboard-dataset text_style_control
 | 9 | Llama 3.2 3B Instruct 4-bit | MLX, grammar dialect | 1.8 GB | #352 (llama-3.2-3b-instruct) | 5.3 GB | not yet run |
 | 10 | Mistral 7B Instruct v0.2 4-bit | MLX, grammar dialect | 4.3 GB | #361 (mistral-7b-instruct-v0.2) | 7.8 GB | loads and runs |
 | 11 | Advisor 4B Q4_K_M | GGUF, grammar dialect (`model-Q4_K_M.gguf`) | 2.8 GB | no Arena row; admitted as small domain-specific: held-out 28 of 28; curveball v0.2 18 of 21 with 9 of 9 refusals and no fabricated private state (the card's own numbers, not measured here) | 5.5 GB | loads and runs |
-| 12 | Gemma 4 E4B IT 4-bit | MLX, grammar dialect | 5.2 GB | no Arena row; Flow job comparison e4b-over-llama-day-20260912, qualification 44fb48a10865220d360e41040747d0dfda243edf94a26b6cd0aff0df143461d1 | 8.4 GB | loads and runs |
+| 12 | Gemma 4 E4B IT 4-bit | MLX, grammar dialect | 5.2 GB | no Arena row; Flow job comparison e4b-over-llama-day-20260912, qualification 8eb074b8ea5bacd1024c9b65cb26562138d6ab805fab276d55b9cf93f2c1391c | 8.4 GB | loads and runs |
 
 ### The night list (accepted 8 September 2026)
 
@@ -44,85 +44,108 @@ Quality ranks are from LMArena lmarena-ai/leaderboard-dataset text_style_control
 | ---: | --- | --- | ---: | ---: | ---: | --- |
 | 1 | Gemma 4 31B IT 4-bit | MLX, grammar dialect | 18.4 GB | #65 (gemma-4-31b) | 29.0 GB (23.1 GB with a sliding cache) | not yet run |
 | 2 | Gemma 4 26B A4B IT 4-bit | MLX, grammar dialect | 15.4 GB | #85 (gemma-4-26b-a4b) | 19.9 GB (18.4 GB with a sliding cache) | loads and runs |
-| 3 | Qwen 3.8 27B 4-bit | MLX, grammar dialect | 16.1 GB | #88 (qwen3.8-27b) | 20.7 GB | loads and runs |
-| 4 | Muse Glimmer 30B 4-bit | MLX, grammar dialect | 19.4 GB | #101 (muse-glimmer) | 22.4 GB (22.1 GB with a sliding cache) | not yet run |
-| 5 | Qwen 3.5 27B 4-bit | MLX, grammar dialect | 16.1 GB | #137 (qwen3.5-27b) | 20.7 GB | not yet run |
-| 6 | Qwen 3.5 35B A3B 4-bit | MLX, grammar dialect | 20.4 GB | #152 (qwen3.5-35b-a3b) | 23.6 GB | not yet run |
-| 7 | Qwen 3 30B A3B Instruct 2507 4-bit | MLX, grammar dialect | 17.2 GB | #170 (qwen3-30b-a3b-instruct-2507) | 20.5 GB | not yet run |
-| 8 | GLM 4.7 Flash 4-bit | MLX, grammar dialect | 16.9 GB | #183 (glm-4.7-flash) | 22.5 GB | not yet run |
-| 9 | Gemma 3 27B IT 4-bit | MLX, grammar dialect | 16.9 GB | #185 (gemma-3-27b-it) | 23.5 GB (20.5 GB with a sliding cache) | not yet run |
-| 10 | Mistral Small 3.2 24B Instruct 2506 4-bit | MLX, grammar dialect | 13.3 GB | #193 (mistral-small-2506) | 17.1 GB | not yet run |
+| 3 | Qwen 3.8 27B 4-bit | MLX, grammar dialect | 16.1 GB | #88 (qwen3.8-27b) | 19.1 GB | loads and runs |
+| 4 | Qwen 3.8 27B 5-bit | MLX, grammar dialect | 19.4 GB | #88 (qwen3.8-27b) | 22.5 GB | loads and runs |
+| 5 | Muse Glimmer 30B 4-bit | MLX, grammar dialect | 19.4 GB | #101 (muse-glimmer) | 22.4 GB (22.1 GB with a sliding cache) | not yet run |
+| 6 | Qwen 3.5 27B 4-bit | MLX, grammar dialect | 16.1 GB | #137 (qwen3.5-27b) | 20.7 GB | not yet run |
+| 7 | Qwen 3.5 35B A3B 4-bit | MLX, grammar dialect | 20.4 GB | #152 (qwen3.5-35b-a3b) | 23.6 GB | not yet run |
+| 8 | Qwen 3 30B A3B Instruct 2507 4-bit | MLX, grammar dialect | 17.2 GB | #170 (qwen3-30b-a3b-instruct-2507) | 20.5 GB | not yet run |
+| 9 | GLM 4.7 Flash 4-bit | MLX, grammar dialect | 16.9 GB | #183 (glm-4.7-flash) | 22.5 GB | not yet run |
+| 10 | Gemma 3 27B IT 4-bit | MLX, grammar dialect | 16.9 GB | #185 (gemma-3-27b-it) | 23.5 GB (20.5 GB with a sliding cache) | not yet run |
+| 11 | Mistral Small 3.2 24B Instruct 2506 4-bit | MLX, grammar dialect | 13.3 GB | #193 (mistral-small-2506) | 17.1 GB | not yet run |
 
 ## What was measured, cell by cell
 
-A cohort loads one model at a time and runs the same two requests against it: **cold**, the first request after the model loads, and **warm**, the same request again with the model already resident. First word is the time to the first token; generation is the tokens a second after it; peak memory is the most the helper held during the request. Each cohort is one signed receipt, and its digest is on the heading. 39 cells in all.
+A cohort loads one model at a time and runs the same two requests against it: **cold**, the first request after the model loads, and **warm**, the same request again with the model already resident. First word is the time to the first token; generation is the tokens a second after it; peak memory is the most the helper held during the request. Each cohort is one signed receipt, and its digest is on the heading. 54 cells in all.
 
 ### Cohort m3-max-36gb-0205t1-mlx-20260909-r2
 
 3 cells per model, 100 seconds between cells, an 8192-token window, mlx-serve 0.1 on macOS 26.6, measured 9 September 2026. Signed receipt `b8f52fb8292ad1eb05233b2bb61c6f525bbe348eb245bd35dc29b7a47d482045`.
 
-| Cell | Model | Cold: first word | Cold: generation | Cold: peak memory | Warm: first word | Warm: generation | Warm: peak memory |
-| ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| 1 | Gemma 3n E4B IT (language-model-only export) 4-bit | 3.3 s | 62 tok/s | 6.4 GB | 2.3 s | 62 tok/s | 7.2 GB |
-| 2 | Gemma 4 26B A4B IT 4-bit | 3.5 s | 76 tok/s | 17.8 GB | 1.8 s | 75 tok/s | 18.1 GB |
-| 3 | Granite 4.1 8B 4-bit | 3.7 s | 45 tok/s | 6.8 GB | 3.5 s | 45 tok/s | 7.0 GB |
-| 4 | Qwen 3.6 27B 4-bit | 11.2 s | 17 tok/s | 18.2 GB | 11.0 s | 17 tok/s | 19.1 GB |
-| 5 | Qwen 3.8 27B 4-bit | 11.2 s | 17 tok/s | 18.3 GB | 11.2 s | 17 tok/s | 19.1 GB |
-| 6 | Gemma 3n E4B IT (language-model-only export) 4-bit | 2.3 s | 62 tok/s | 6.4 GB | 2.3 s | 62 tok/s | 7.2 GB |
-| 7 | Gemma 4 26B A4B IT 4-bit | 2.4 s | 75 tok/s | 17.8 GB | 1.8 s | 76 tok/s | 18.1 GB |
-| 8 | Granite 4.1 8B 4-bit | 3.5 s | 45 tok/s | 6.8 GB | 3.5 s | 45 tok/s | 7.0 GB |
-| 9 | Qwen 3.6 27B 4-bit | 11.1 s | 17 tok/s | 18.3 GB | 11.0 s | 17 tok/s | 19.1 GB |
-| 10 | Qwen 3.8 27B 4-bit | 11.2 s | 17 tok/s | 18.3 GB | 11.1 s | 17 tok/s | 19.1 GB |
-| 11 | Gemma 3n E4B IT (language-model-only export) 4-bit | 2.3 s | 62 tok/s | 6.4 GB | 2.3 s | 62 tok/s | 7.2 GB |
-| 12 | Gemma 4 26B A4B IT 4-bit | 2.3 s | 76 tok/s | 17.8 GB | 1.8 s | 76 tok/s | 18.1 GB |
-| 13 | Granite 4.1 8B 4-bit | 3.5 s | 45 tok/s | 6.8 GB | 3.5 s | 45 tok/s | 7.0 GB |
-| 14 | Qwen 3.6 27B 4-bit | 11.3 s | 17 tok/s | 18.2 GB | 11.1 s | 17 tok/s | 19.1 GB |
-| 15 | Qwen 3.8 27B 4-bit | 11.1 s | 17 tok/s | 18.3 GB | 11.0 s | 17 tok/s | 19.1 GB |
+| Cell | Model | Cold: first word | Cold: generation | Cold: peak memory | Warm: first word | Warm: generation | Warm: reading | Warm: peak memory | Heat | Mac load |
+| ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- | ---: |
+| 1 | Gemma 3n E4B IT (language-model-only export) 4-bit | 3.3 s | 62 tok/s | 6.4 GB | 2.3 s | 62 tok/s | 750 tok/s | 7.2 GB | nominal | — |
+| 2 | Gemma 4 26B A4B IT 4-bit | 3.5 s | 76 tok/s | 17.8 GB | 1.8 s | 75 tok/s | 942 tok/s | 18.1 GB | nominal | — |
+| 3 | Granite 4.1 8B 4-bit | 3.7 s | 45 tok/s | 6.8 GB | 3.5 s | 45 tok/s | 493 tok/s | 7.0 GB | nominal | — |
+| 4 | Qwen 3.6 27B 4-bit | 11.2 s | 17 tok/s | 18.2 GB | 11.0 s | 17 tok/s | 157 tok/s | 19.1 GB | nominal | — |
+| 5 | Qwen 3.8 27B 4-bit | 11.2 s | 17 tok/s | 18.3 GB | 11.2 s | 17 tok/s | 154 tok/s | 19.1 GB | nominal | — |
+| 6 | Gemma 3n E4B IT (language-model-only export) 4-bit | 2.3 s | 62 tok/s | 6.4 GB | 2.3 s | 62 tok/s | 762 tok/s | 7.2 GB | nominal | — |
+| 7 | Gemma 4 26B A4B IT 4-bit | 2.4 s | 75 tok/s | 17.8 GB | 1.8 s | 76 tok/s | 943 tok/s | 18.1 GB | nominal | — |
+| 8 | Granite 4.1 8B 4-bit | 3.5 s | 45 tok/s | 6.8 GB | 3.5 s | 45 tok/s | 492 tok/s | 7.0 GB | nominal | — |
+| 9 | Qwen 3.6 27B 4-bit | 11.1 s | 17 tok/s | 18.3 GB | 11.0 s | 17 tok/s | 157 tok/s | 19.1 GB | nominal | — |
+| 10 | Qwen 3.8 27B 4-bit | 11.2 s | 17 tok/s | 18.3 GB | 11.1 s | 17 tok/s | 156 tok/s | 19.1 GB | nominal | — |
+| 11 | Gemma 3n E4B IT (language-model-only export) 4-bit | 2.3 s | 62 tok/s | 6.4 GB | 2.3 s | 62 tok/s | 765 tok/s | 7.2 GB | nominal | — |
+| 12 | Gemma 4 26B A4B IT 4-bit | 2.3 s | 76 tok/s | 17.8 GB | 1.8 s | 76 tok/s | 942 tok/s | 18.1 GB | nominal | — |
+| 13 | Granite 4.1 8B 4-bit | 3.5 s | 45 tok/s | 6.8 GB | 3.5 s | 45 tok/s | 493 tok/s | 7.0 GB | nominal | — |
+| 14 | Qwen 3.6 27B 4-bit | 11.3 s | 17 tok/s | 18.2 GB | 11.1 s | 17 tok/s | 155 tok/s | 19.1 GB | nominal | — |
+| 15 | Qwen 3.8 27B 4-bit | 11.1 s | 17 tok/s | 18.3 GB | 11.0 s | 17 tok/s | 157 tok/s | 19.1 GB | nominal | — |
 
 ### Cohort m3-max-36gb-0205t2-mlx-20260909-r2
 
 3 cells per model, 100 seconds between cells, an 8192-token window, mlx-serve 0.1 on macOS 26.6, measured 9 September 2026. Signed receipt `cc8f33b3cadd266c75e05c7e0a189694cda36e0e1bf60d95c5016c1a0112e684`.
 
-| Cell | Model | Cold: first word | Cold: generation | Cold: peak memory | Warm: first word | Warm: generation | Warm: peak memory |
-| ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| 1 | Gemma 3 12B IT (language-model-only export) 4-bit | 5.2 s | 34 tok/s | 10.4 GB | 5.1 s | 34 tok/s | 10.4 GB |
-| 2 | Gemma 3n E4B IT (language-model-only export) 4-bit | 2.3 s | 61 tok/s | 6.4 GB | 2.3 s | 61 tok/s | 7.2 GB |
-| 3 | Gemma 3 12B IT (language-model-only export) 4-bit | 5.1 s | 34 tok/s | 10.4 GB | 5.1 s | 34 tok/s | 10.3 GB |
-| 4 | Gemma 3n E4B IT (language-model-only export) 4-bit | 2.3 s | 62 tok/s | 6.4 GB | 2.3 s | 63 tok/s | 7.2 GB |
-| 5 | Gemma 3 12B IT (language-model-only export) 4-bit | 5.2 s | 34 tok/s | 10.4 GB | 5.2 s | 34 tok/s | 10.4 GB |
-| 6 | Gemma 3n E4B IT (language-model-only export) 4-bit | 2.3 s | 61 tok/s | 6.4 GB | 2.3 s | 61 tok/s | 7.2 GB |
+| Cell | Model | Cold: first word | Cold: generation | Cold: peak memory | Warm: first word | Warm: generation | Warm: reading | Warm: peak memory | Heat | Mac load |
+| ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- | ---: |
+| 1 | Gemma 3 12B IT (language-model-only export) 4-bit | 5.2 s | 34 tok/s | 10.4 GB | 5.1 s | 34 tok/s | 338 tok/s | 10.4 GB | nominal | — |
+| 2 | Gemma 3n E4B IT (language-model-only export) 4-bit | 2.3 s | 61 tok/s | 6.4 GB | 2.3 s | 61 tok/s | 760 tok/s | 7.2 GB | nominal | — |
+| 3 | Gemma 3 12B IT (language-model-only export) 4-bit | 5.1 s | 34 tok/s | 10.4 GB | 5.1 s | 34 tok/s | 340 tok/s | 10.3 GB | nominal | — |
+| 4 | Gemma 3n E4B IT (language-model-only export) 4-bit | 2.3 s | 62 tok/s | 6.4 GB | 2.3 s | 63 tok/s | 762 tok/s | 7.2 GB | nominal | — |
+| 5 | Gemma 3 12B IT (language-model-only export) 4-bit | 5.2 s | 34 tok/s | 10.4 GB | 5.2 s | 34 tok/s | 337 tok/s | 10.4 GB | nominal | — |
+| 6 | Gemma 3n E4B IT (language-model-only export) 4-bit | 2.3 s | 61 tok/s | 6.4 GB | 2.3 s | 61 tok/s | 763 tok/s | 7.2 GB | nominal | — |
 
 ### Cohort m3-max-36gb-0205t3-mlx-20260909-r2
 
 3 cells per model, 100 seconds between cells, an 8192-token window, mlx-serve 0.1 on macOS 26.6, measured 9 September 2026. Signed receipt `0012b886019826a5c9f3950a6fef938819c40983dbdc155bb37208d816ffccc4`.
 
-| Cell | Model | Cold: first word | Cold: generation | Cold: peak memory | Warm: first word | Warm: generation | Warm: peak memory |
-| ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| 1 | Gemma 3 4B IT (language-model-only export) 4-bit | 1.6 s | 91 tok/s | 4.5 GB | 1.6 s | 92 tok/s | 4.6 GB |
-| 2 | Llama 3.1 8B Instruct 4-bit | 2.8 s | 55 tok/s | 6.2 GB | 2.8 s | 55 tok/s | 6.5 GB |
-| 3 | Mistral 7B Instruct v0.2 4-bit | 2.8 s | 57 tok/s | 6.2 GB | 2.8 s | 57 tok/s | 6.4 GB |
-| 4 | Gemma 3 4B IT (language-model-only export) 4-bit | 1.6 s | 91 tok/s | 4.5 GB | 1.6 s | 91 tok/s | 4.6 GB |
-| 5 | Llama 3.1 8B Instruct 4-bit | 2.8 s | 55 tok/s | 6.2 GB | 2.8 s | 55 tok/s | 6.5 GB |
-| 6 | Mistral 7B Instruct v0.2 4-bit | 2.8 s | 57 tok/s | 6.2 GB | 2.8 s | 57 tok/s | 6.4 GB |
-| 7 | Gemma 3 4B IT (language-model-only export) 4-bit | 1.6 s | 91 tok/s | 4.5 GB | 1.6 s | 91 tok/s | 4.6 GB |
-| 8 | Llama 3.1 8B Instruct 4-bit | 2.8 s | 55 tok/s | 6.2 GB | 2.8 s | 55 tok/s | 6.5 GB |
-| 9 | Mistral 7B Instruct v0.2 4-bit | 2.8 s | 57 tok/s | 6.2 GB | 2.8 s | 57 tok/s | 6.4 GB |
+| Cell | Model | Cold: first word | Cold: generation | Cold: peak memory | Warm: first word | Warm: generation | Warm: reading | Warm: peak memory | Heat | Mac load |
+| ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- | ---: |
+| 1 | Gemma 3 4B IT (language-model-only export) 4-bit | 1.6 s | 91 tok/s | 4.5 GB | 1.6 s | 92 tok/s | 1096 tok/s | 4.6 GB | nominal | — |
+| 2 | Llama 3.1 8B Instruct 4-bit | 2.8 s | 55 tok/s | 6.2 GB | 2.8 s | 55 tok/s | 620 tok/s | 6.5 GB | nominal | — |
+| 3 | Mistral 7B Instruct v0.2 4-bit | 2.8 s | 57 tok/s | 6.2 GB | 2.8 s | 57 tok/s | 629 tok/s | 6.4 GB | nominal | — |
+| 4 | Gemma 3 4B IT (language-model-only export) 4-bit | 1.6 s | 91 tok/s | 4.5 GB | 1.6 s | 91 tok/s | 1098 tok/s | 4.6 GB | nominal | — |
+| 5 | Llama 3.1 8B Instruct 4-bit | 2.8 s | 55 tok/s | 6.2 GB | 2.8 s | 55 tok/s | 620 tok/s | 6.5 GB | nominal | — |
+| 6 | Mistral 7B Instruct v0.2 4-bit | 2.8 s | 57 tok/s | 6.2 GB | 2.8 s | 57 tok/s | 629 tok/s | 6.4 GB | nominal | — |
+| 7 | Gemma 3 4B IT (language-model-only export) 4-bit | 1.6 s | 91 tok/s | 4.5 GB | 1.6 s | 91 tok/s | 1096 tok/s | 4.6 GB | nominal | — |
+| 8 | Llama 3.1 8B Instruct 4-bit | 2.8 s | 55 tok/s | 6.2 GB | 2.8 s | 55 tok/s | 620 tok/s | 6.5 GB | nominal | — |
+| 9 | Mistral 7B Instruct v0.2 4-bit | 2.8 s | 57 tok/s | 6.2 GB | 2.8 s | 57 tok/s | 628 tok/s | 6.4 GB | nominal | — |
 
 ### Cohort m3-max-36gb-e4b-controls-mlx-20260912-r2
 
 3 cells per model, 100 seconds between cells, an 8192-token window, mlx-serve 0.2 on macOS 26.6, measured 12 September 2026. Signed receipt `c8413aaf1c3c480fbbd533f29a84027be7533687d2527a07ce577115a9911f97`.
 
-| Cell | Model | Cold: first word | Cold: generation | Cold: peak memory | Warm: first word | Warm: generation | Warm: peak memory |
-| ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| 1 | Gemma 4 26B A4B IT 4-bit | 3.4 s | 74 tok/s | 17.8 GB | 1.9 s | 75 tok/s | 18.1 GB |
-| 2 | Gemma 4 E4B IT 4-bit | 1.1 s | 72 tok/s | 6.3 GB | 1.1 s | 72 tok/s | 6.6 GB |
-| 3 | Llama 3.1 8B Instruct 4-bit | 2.9 s | 54 tok/s | 6.2 GB | 2.8 s | 55 tok/s | 6.5 GB |
-| 4 | Gemma 4 26B A4B IT 4-bit | 3.3 s | 75 tok/s | 17.8 GB | 1.9 s | 75 tok/s | 18.1 GB |
-| 5 | Gemma 4 E4B IT 4-bit | 1.1 s | 72 tok/s | 6.3 GB | 1.1 s | 72 tok/s | 6.6 GB |
-| 6 | Llama 3.1 8B Instruct 4-bit | 2.9 s | 55 tok/s | 6.2 GB | 2.9 s | 55 tok/s | 6.5 GB |
-| 7 | Gemma 4 26B A4B IT 4-bit | 3.1 s | 73 tok/s | 17.8 GB | 1.9 s | 74 tok/s | 18.1 GB |
-| 8 | Gemma 4 E4B IT 4-bit | 1.1 s | 71 tok/s | 6.3 GB | 1.1 s | 71 tok/s | 6.6 GB |
-| 9 | Llama 3.1 8B Instruct 4-bit | 2.8 s | 54 tok/s | 6.2 GB | 2.8 s | 54 tok/s | 6.5 GB |
+| Cell | Model | Cold: first word | Cold: generation | Cold: peak memory | Warm: first word | Warm: generation | Warm: reading | Warm: peak memory | Heat | Mac load |
+| ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- | ---: |
+| 1 | Gemma 4 26B A4B IT 4-bit | 3.4 s | 74 tok/s | 17.8 GB | 1.9 s | 75 tok/s | 938 tok/s | 18.1 GB | nominal | — |
+| 2 | Gemma 4 E4B IT 4-bit | 1.1 s | 72 tok/s | 6.3 GB | 1.1 s | 72 tok/s | 1637 tok/s | 6.6 GB | nominal | — |
+| 3 | Llama 3.1 8B Instruct 4-bit | 2.9 s | 54 tok/s | 6.2 GB | 2.8 s | 55 tok/s | 617 tok/s | 6.5 GB | nominal | — |
+| 4 | Gemma 4 26B A4B IT 4-bit | 3.3 s | 75 tok/s | 17.8 GB | 1.9 s | 75 tok/s | 941 tok/s | 18.1 GB | nominal | — |
+| 5 | Gemma 4 E4B IT 4-bit | 1.1 s | 72 tok/s | 6.3 GB | 1.1 s | 72 tok/s | 1628 tok/s | 6.6 GB | nominal | — |
+| 6 | Llama 3.1 8B Instruct 4-bit | 2.9 s | 55 tok/s | 6.2 GB | 2.9 s | 55 tok/s | 614 tok/s | 6.5 GB | nominal | — |
+| 7 | Gemma 4 26B A4B IT 4-bit | 3.1 s | 73 tok/s | 17.8 GB | 1.9 s | 74 tok/s | 938 tok/s | 18.1 GB | nominal | — |
+| 8 | Gemma 4 E4B IT 4-bit | 1.1 s | 71 tok/s | 6.3 GB | 1.1 s | 71 tok/s | 1631 tok/s | 6.6 GB | nominal | — |
+| 9 | Llama 3.1 8B Instruct 4-bit | 2.8 s | 54 tok/s | 6.2 GB | 2.8 s | 54 tok/s | 618 tok/s | 6.5 GB | nominal | — |
+
+### Cohort m3-max-36gb-night-pair-mlx-20260918-r1
+
+5 cells per model, 100 seconds between cells, an 8192-token window, mlx-serve 0.2 on macOS 26.6, measured 18 September 2026. Signed receipt `6e9d4b387f549419d6a688dbbe1e1b9222633cef2b3004e6b76807fe7df7f23e`.
+
+| Cell | Model | Cold: first word | Cold: generation | Cold: peak memory | Warm: first word | Warm: generation | Warm: reading | Warm: peak memory | Heat | Mac load |
+| ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- | ---: |
+| 1 | Gemma 4 26B A4B IT 4-bit | 4.1 s | 71 tok/s | 17.8 GB | 2.0 s | 71 tok/s | 880 tok/s | 18.1 GB | nominal | 3.8 |
+| 2 | Qwen 3.8 27B 4-bit | 12.2 s | 16 tok/s | 18.3 GB | 11.4 s | 16 tok/s | 151 tok/s | 19.0 GB | nominal | 3.0 (quiet) |
+| 3 | Qwen 3.8 27B 5-bit | 11.9 s | 14 tok/s | 21.6 GB | 11.8 s | 13 tok/s | 146 tok/s | 22.3 GB | nominal | 3.2 |
+| 4 | Gemma 4 26B A4B IT 4-bit | 2.6 s | 72 tok/s | 17.8 GB | 1.9 s | 72 tok/s | 920 tok/s | 18.1 GB | nominal | 2.6 (quiet) |
+| 5 | Qwen 3.8 27B 4-bit | 11.5 s | 17 tok/s | 18.3 GB | 11.2 s | 17 tok/s | 154 tok/s | 19.1 GB | nominal | 3.5 |
+| 6 | Qwen 3.8 27B 5-bit | 11.6 s | 14 tok/s | 21.6 GB | 11.8 s | 14 tok/s | 146 tok/s | 22.3 GB | nominal | 2.1 (quiet) |
+| 7 | Gemma 4 26B A4B IT 4-bit | 2.4 s | 73 tok/s | 17.8 GB | 1.9 s | 75 tok/s | 929 tok/s | 18.1 GB | nominal | 3.4 |
+| 8 | Qwen 3.8 27B 4-bit | 11.6 s | 17 tok/s | 18.2 GB | 11.1 s | 17 tok/s | 155 tok/s | 19.1 GB | nominal | 1.9 (quiet) |
+| 9 | Qwen 3.8 27B 5-bit | 11.8 s | 14 tok/s | 21.6 GB | 12.2 s | 14 tok/s | 141 tok/s | 22.4 GB | nominal | 1.9 (quiet) |
+| 10 | Gemma 4 26B A4B IT 4-bit | 2.7 s | 73 tok/s | 17.8 GB | 1.9 s | 75 tok/s | 941 tok/s | 18.1 GB | nominal | 2.7 (quiet) |
+| 11 | Qwen 3.8 27B 4-bit | 11.6 s | 17 tok/s | 18.2 GB | 11.4 s | 17 tok/s | 151 tok/s | 19.0 GB | nominal | 2.5 (quiet) |
+| 12 | Qwen 3.8 27B 5-bit | 11.7 s | 14 tok/s | 21.6 GB | 12.3 s | 14 tok/s | 140 tok/s | 22.3 GB | nominal | 3.4 |
+| 13 | Gemma 4 26B A4B IT 4-bit | 2.4 s | 74 tok/s | 17.8 GB | 1.9 s | 73 tok/s | 929 tok/s | 18.1 GB | nominal | 2.3 (quiet) |
+| 14 | Qwen 3.8 27B 4-bit | 11.4 s | 17 tok/s | 18.3 GB | 11.4 s | 17 tok/s | 151 tok/s | 19.0 GB | nominal | 3.3 |
+| 15 | Qwen 3.8 27B 5-bit | 11.7 s | 14 tok/s | 21.6 GB | 12.3 s | 14 tok/s | 140 tok/s | 22.3 GB | nominal | 3.2 |
 
 ## The agency baseline, probe by probe
 
@@ -166,6 +189,11 @@ The baseline is 8 fixed documents in a small vault, each expanded from sources t
 | 12 September 2026, 07:25 UTC | Llama 3.1 8B Instruct 4-bit | mlx-serve `fe419159` | grammar | one-turn | Composed in 8.9 s (1 turn, 5 calls) | Composed in 7.9 s (1 turn, 5 calls) | Composed in 9.0 s (1 turn, 5 calls) | Composed in 8.4 s (1 turn, 5 calls) | Composed in 6.6 s (1 turn, 5 calls) | Composed in 5.6 s (1 turn, 5 calls) | Composed in 7.7 s (1 turn, 5 calls) | Composed in 6.6 s (1 turn, 5 calls) | **Passes** (8 of 8) | `fe41fe60933d` |
 | 12 September 2026, 07:26 UTC | Gemma 4 E4B IT 4-bit | mlx-serve `fe419159` | grammar | two-phase | Declined in 5.7 s: no draft came back between the markers | Declined in 4.7 s: no draft came back between the markers | Composed in 3.8 s (2 turns, 1 call) | Declined in 3.2 s: no draft came back between the markers | Declined in 3.1 s: no draft came back between the markers | Declined in 3.7 s: no draft came back between the markers | Composed in 5.0 s (2 turns, 1 call) | Composed in 5.1 s (2 turns, 1 call) | Does not pass (3 of 8) | `59f9936d42a7` |
 | 12 September 2026, 07:27 UTC | Gemma 4 26B A4B IT 4-bit | mlx-serve `fe419159` | grammar | two-phase | Composed in 11.9 s (2 turns, 1 call) | Composed in 10.9 s (2 turns, 1 call) | Composed in 5.8 s (2 turns, 1 call) | Composed in 9.7 s (2 turns, 5 calls) | Composed in 5.1 s (2 turns, 2 calls) | Composed in 7.6 s (2 turns, 2 calls) | Composed in 8.8 s (2 turns, 1 call) | Composed in 10.4 s (2 turns, 4 calls) | **Passes** (8 of 8) | `f18ef0653f69` |
+| 18 September 2026, 21:24 UTC | Gemma 4 26B A4B IT 4-bit | mlx-serve `eed6f401` | grammar | two-phase | Composed in 12.9 s (2 turns, 1 call; figures grounded 6 of 8) | Composed in 10.1 s (2 turns, 1 call; no figures) | Composed in 7.7 s (2 turns, 1 call; no figures) | Composed in 8.4 s (2 turns, 1 call; no figures) | Composed in 9.9 s (2 turns, 1 call; no figures) | Composed in 7.7 s (2 turns, 1 call; figures grounded 1 of 1) | Composed in 7.4 s (2 turns, 3 calls; no figures) | Composed in 7.5 s (2 turns, 1 call; figures grounded 1 of 1) | **Passes** (8 of 8) | `bd292bb69030` |
+| 18 September 2026, 21:30 UTC | Qwen 3.8 27B 4-bit | mlx-serve `eed6f401` | grammar | two-phase | Composed in 77.5 s (4 turns, 3 calls; figures grounded 6 of 8) | Composed in 85.2 s (4 turns, 5 calls; no figures) | Composed in 56.1 s (3 turns, 3 calls; no figures) | Bound in 64.7 s: callBudget(limit: 12) | Composed in 51.3 s (3 turns, 2 calls; figures grounded 8 of 9) | Composed in 57.3 s (3 turns, 4 calls; figures grounded 1 of 1) | Composed in 104.9 s (8 turns, 7 calls; no figures) | Composed in 53.0 s (5 turns, 4 calls; figures grounded 1 of 1) | Does not pass (7 of 8) | `abcab50aa4d8` |
+| 18 September 2026, 21:40 UTC | Gemma 4 E4B IT 4-bit | mlx-serve `eed6f401` | grammar | one-turn | Composed in 5.9 s (1 turn, 5 calls; figures grounded 13 of 13) | Composed in 4.6 s (1 turn, 5 calls; no figures) | Composed in 5.6 s (1 turn, 5 calls; figures grounded 14 of 14) | Composed in 5.1 s (1 turn, 5 calls; figures grounded 7 of 10) | Composed in 4.0 s (1 turn, 5 calls; figures grounded 8 of 8) | Composed in 5.5 s (1 turn, 5 calls; figures grounded 1 of 1) | Composed in 4.3 s (1 turn, 5 calls; no figures) | Composed in 5.9 s (1 turn, 5 calls; figures grounded 11 of 11) | **Passes** (8 of 8) | `2878f2044889` |
+| 18 September 2026, 21:41 UTC | Llama 3.1 8B Instruct 4-bit | mlx-serve `eed6f401` | grammar | one-turn | Composed in 15.5 s (1 turn, 5 calls; figures grounded 13 of 15) | Composed in 12.2 s (1 turn, 5 calls; figures grounded 0 of 1) | Composed in 12.4 s (1 turn, 5 calls; figures grounded 14 of 14) | Composed in 10.7 s (1 turn, 5 calls; figures grounded 14 of 14) | Composed in 9.2 s (1 turn, 5 calls; figures grounded 8 of 9) | Composed in 7.8 s (1 turn, 5 calls; figures grounded 1 of 1) | Composed in 8.2 s (1 turn, 5 calls; figures grounded 1 of 3) | Composed in 8.0 s (1 turn, 5 calls; figures grounded 14 of 14) | **Passes** (8 of 8) | `e8a85eac862b` |
+| 18 September 2026, 21:43 UTC | Qwen 3.8 27B 5-bit | mlx-serve `eed6f401` | grammar | two-phase | Composed in 66.6 s (4 turns, 7 calls; figures grounded 6 of 9) | Composed in 57.4 s (3 turns, 2 calls; no figures) | Composed in 73.7 s (5 turns, 7 calls; no figures) | Composed in 75.9 s (3 turns, 5 calls; figures grounded 6 of 6) | Composed in 89.6 s (3 turns, 2 calls; figures grounded 8 of 8) | Composed in 157.5 s (7 turns, 11 calls; figures grounded 1 of 1) | Composed in 73.5 s (3 turns, 2 calls; no figures) | Composed in 69.7 s (3 turns, 3 calls; figures grounded 15 of 16) | **Passes** (8 of 8) | `566d907eec2d` |
 
 A model appears more than once when it was run more than once; every run is kept, in the order it happened, and the best run that still counts is what [[Model Recommendations]] reports. A run marked *retired* was measured under a launch Flow no longer performs; it stays here with its probes and earns nothing. The dialect is the shape the helper held the model to: *grammar* constrains what the model can write to the shape Flow asked for, *prompt* asks for the shape in words and Flow checks the reply.
 
