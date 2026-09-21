@@ -11,6 +11,7 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 
 | Release | Build | Date | In a sentence |
 | --- | --- | --- | --- |
+| 1.8 | 2257 | 21 September 2026 | One Observations screen for what Flow measured about itself, with clear choices over what stays on this Mac and what is shared |
 | 1.7 | 2173 | 16 September 2026 | One surface with a Workbench beside it, Jobs as the one name, Ask suggestions applied without a model, and reviews that say what was done |
 | 1.6.7 | 2162 | 13 September 2026 | Workspaces to make your own, single-document jobs, current definition previews and clearer recovery |
 | 1.6.6 | 2149 | 12 September 2026 | Better local model choices, reasoning controls, clearer definition drafting, and a Night Shift ready from your first saved job |
@@ -27,6 +28,34 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 | 1.5.2 | 1414 | 27 August 2026 | A pressable Update ready button |
 | 1.5.1 | 1404 | 27 August 2026 | The first Flow that arrived through Flow itself |
 | 1.5 | 1382 | 26 August 2026 | The launch |
+
+## Flow 1.8 · build 2257 · 21 September 2026
+
+One place for what Flow observed about itself, with the choices over what stays on this Mac and what is shared sitting beside the measurements they govern.
+
+### Observations, one screen
+
+- **What shipped.** Settings gains an **Observations** screen: what Flow cost and how it performed at a glance, with feature use and per-model timings in folds below. Measurements that were spread across General and Models now live here. A comparison drawn from a single observation no longer looks as confident as one drawn from a hundred — bars are scaled against the largest group beside them, every row states how many samples it rests on, and a group with too few samples shows its range in words instead of a bar.
+- **How it benefits you.** One place to see what Flow has been doing on your Mac, and a reading of it you can trust: a number from one run is never drawn as though it were settled.
+- **How to use it.** Open **Settings ▸ Observations**. Read the three lines at the top for cost, speed and reliability, then open a fold for feature use or per-model timings.
+
+### What leaves this Mac
+
+- **What shipped.** *What leaves this Mac* sits at the foot of Observations with two adjacent choices: whether Flow records measurements on this Mac, and whether it shares anonymized ones with Orionfold after a night run. *What would be shared* shows the exact bytes for the most recent finished day before any of it leaves. Only days that have already finished are ever prepared, so nothing is sent on the day you install Flow, and turning sharing off stops a day that was prepared but not yet sent.
+- **How it benefits you.** You can read exactly what would be sent, in full, before it goes — and stop it at any point. What goes is counts and timings: never your documents, their contents, or anything that identifies you or this Mac.
+- **How to use it.** Open **Settings ▸ Observations** and scroll to *What leaves this Mac*. Open *What would be shared* to read the bytes. Both choices start on; clear either one to stop it.
+
+### How long model work and your review take
+
+- **What shipped.** *Observed performance* shows, for each model, action, role and runtime that actually ran, how long processing, consent, prompt and generation took — with sample counts and unknowns shown rather than hidden. Review shows an **Estimated review time** for the proposal you are inspecting. It pauses when Flow is in the background, the screen sleeps or locks, you switch documents or close Review, and you can pause it, exclude it or correct it. Save now works while Review is open.
+- **How it benefits you.** You can see where time actually goes — the model's work or your reading of it — and plan a night's Jobs against numbers from your own Mac.
+- **How to use it.** Open **Settings ▸ Observations** and expand *Observed performance*. In Review, the estimate sits with the proposal; press it to pause, exclude or correct it.
+
+### The optional TypeSafe AI ranking route is gone
+
+- **What shipped.** Settings ▸ Models no longer offers a TypeSafe connection or the *Use Jev for supported decision tasks* switch, and Flow's spend figures no longer break out a separate line for it.
+- **How it benefits you.** One less connection to reason about. Nothing about Flow's own work changes: searches, sourced expansions and every action already ran through Flow's standard stack, and the route was never admitted for quality.
+- **How to use it.** Nothing to do. If you stored a TypeSafe key, remove it from your keychain — Flow no longer uses it. Receipts from any run that did use the route are unchanged: they are evidence, and Flow does not rewrite them.
 
 ## Flow 1.7 · build 2173 · 16 September 2026
 
