@@ -256,7 +256,7 @@
       "path" : "assets/channels4_banner.jpg"
     }
   ],
-  "contentVersion" : "1.14.1",
+  "contentVersion" : "1.14.2",
   "documents" : [
     {
       "bytes" : 18846,
@@ -469,8 +469,8 @@
       "path" : "Business Review/Team Working Agreement.md"
     },
     {
-      "bytes" : 87807,
-      "contentHash" : "sha256:927419832fa07ad9fb8e1ccfb2db56450d112d47b4cf118dada7ef3f9696c638",
+      "bytes" : 88463,
+      "contentHash" : "sha256:e248d46ea8bdd3958473606d84c0dcfded129c569bcd2f02996095cffd0da94b",
       "path" : "Changelog.md"
     },
     {

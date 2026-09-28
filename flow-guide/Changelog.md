@@ -11,6 +11,7 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 
 | Release | Build | Date | In a sentence |
 | --- | --- | --- | --- |
+| 2.0.2 | 2772 | 28 September 2026 | Flow opens at a comfortable size the first time |
 | 2.0.1 | 2757 | 28 September 2026 | A purchase reaches Flow on its own and shows where you bought it, the plan date you paid for, a sidebar you can read, and a calmer document toolbar |
 | 2.0 | 2731 | 28 September 2026 | Bring Word, Excel, PowerPoint and PDF in, publish every format out, generate pictures, and let your own Claude Code and Codex work beside Flow |
 | 1.8 | 2257 | 21 September 2026 | One Observations screen for what Flow measured about itself, with clear choices over what stays on this Mac and what is shared |
@@ -30,6 +31,16 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 | 1.5.2 | 1414 | 27 August 2026 | A pressable Update ready button |
 | 1.5.1 | 1404 | 27 August 2026 | The first Flow that arrived through Flow itself |
 | 1.5 | 1382 | 26 August 2026 | The launch |
+
+## Flow 2.0.2 · build 2772 · 28 September 2026
+
+One fix from walking 2.0.1 as a new buyer: the first window.
+
+### A first window you can work in
+
+- **What shipped.** On a fresh install Flow opens at the size of a 14-inch MacBook's screen, centred on a larger display. On a smaller screen it fills the screen, never more.
+- **How it benefits you.** Your first look at Flow has room for the sidebar, a document and the Workbench, without resizing the window first.
+- **How to use it.** Nothing to do. Resize or move the window and Flow keeps your choice from then on.
 
 ## Flow 2.0.1 · build 2757 · 28 September 2026
 
