@@ -11,6 +11,7 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 
 | Release | Build | Date | In a sentence |
 | --- | --- | --- | --- |
+| 2.0.3 | 2780 | 28 September 2026 | The first window really does open at a 14-inch MacBook's size, and quieter path cards |
 | 2.0.2 | 2772 | 28 September 2026 | Flow opens at a comfortable size the first time |
 | 2.0.1 | 2757 | 28 September 2026 | A purchase reaches Flow on its own and shows where you bought it, the plan date you paid for, a sidebar you can read, and a calmer document toolbar |
 | 2.0 | 2731 | 28 September 2026 | Bring Word, Excel, PowerPoint and PDF in, publish every format out, generate pictures, and let your own Claude Code and Codex work beside Flow |
@@ -32,9 +33,25 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 | 1.5.1 | 1404 | 27 August 2026 | The first Flow that arrived through Flow itself |
 | 1.5 | 1382 | 26 August 2026 | The launch |
 
+## Flow 2.0.3 · build 2780 · 28 September 2026
+
+Two changes from walking 2.0.2 as a new buyer.
+
+### A first window you can work in — now for real
+
+- **What shipped.** On a fresh install Flow opens at the size of a 14-inch MacBook's screen, at the top left. On a smaller screen it fills the screen, never more. 2.0.2 described this change, but its window still opened small; 2.0.3 is the release that delivers it.
+- **How it benefits you.** Your first look at Flow has room for the sidebar, a document and the Workbench, without resizing the window first.
+- **How to use it.** Nothing to do. Resize or move the window and Flow keeps your choice from then on.
+
+### Quieter path cards
+
+- **What shipped.** On the Home screen, only the featured path keeps its coloured wash, and the cards no longer carry a *Featured · Path* or *Path* number in the corner.
+- **How it benefits you.** The featured path stands out, and every card starts with what it is for.
+- **How to use it.** Nothing to do. Press any card to make your own copy of that path.
+
 ## Flow 2.0.2 · build 2772 · 28 September 2026
 
-One fix from walking 2.0.1 as a new buyer: the first window.
+One fix from walking 2.0.1 as a new buyer: the first window. *The window change did not take effect in 2.0.2; 2.0.3 delivers it.*
 
 ### A first window you can work in
 
