@@ -11,6 +11,7 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 
 | Release | Build | Date | In a sentence |
 | --- | --- | --- | --- |
+| 2.0.1 | 2757 | 28 September 2026 | A purchase reaches Flow on its own and shows where you bought it, the plan date you paid for, a sidebar you can read, and a calmer document toolbar |
 | 2.0 | 2731 | 28 September 2026 | Bring Word, Excel, PowerPoint and PDF in, publish every format out, generate pictures, and let your own Claude Code and Codex work beside Flow |
 | 1.8 | 2257 | 21 September 2026 | One Observations screen for what Flow measured about itself, with clear choices over what stays on this Mac and what is shared |
 | 1.7 | 2173 | 16 September 2026 | One surface with a Workbench beside it, Jobs as the one name, Ask suggestions applied without a model, and reviews that say what was done |
@@ -29,6 +30,28 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 | 1.5.2 | 1414 | 27 August 2026 | A pressable Update ready button |
 | 1.5.1 | 1404 | 27 August 2026 | The first Flow that arrived through Flow itself |
 | 1.5 | 1382 | 26 August 2026 | The launch |
+
+## Flow 2.0.1 · build 2757 · 28 September 2026
+
+The first fixes from walking 2.0 the way a new buyer does: the purchase path, the first window, and the document toolbar.
+
+### Your purchase, collected and shown
+
+- **What shipped.** After checkout, Flow keeps collecting your licence through a temporary server error instead of giving up, and only after its full wait points you to the emailed copy. *Open Flow now* on the website opens **Settings ▸ General ▸ Your plan**, where the purchase and the wait are shown. A monthly plan reads the date you have paid through, not a year ahead. Adding a licence by hand clears an earlier wait's message.
+- **How it benefits you.** You buy, return to Flow, and see Pro turn on where you expect it, with a date that matches what you paid for.
+- **How to use it.** Buy from **Settings ▸ General ▸ Your plan** or the website, then press *Open Flow now*. If the licence arrives by email instead, use **Add Licence…** on the same screen.
+
+### A sidebar you can read
+
+- **What shipped.** The sidebar opens 277 points wide on a first launch, and whenever it would otherwise open narrower than it is meant to be.
+- **How it benefits you.** Folder names read in full on a 14-inch MacBook, without dragging the sidebar wider first.
+- **How to use it.** Nothing to do. Drag the divider to change it; Flow keeps your width.
+
+### A calmer document toolbar
+
+- **What shipped.** The floating toolbar has twice the space above and below it and a lighter shadow. Once it tucks away as you scroll down, it stays tucked until you are back at the top. The reasoning choice for the next action moved to **Agency ▸ Reasoning for Next Action**.
+- **How it benefits you.** More room around your writing, and a toolbar that does not reappear mid-page.
+- **How to use it.** Scroll to the top, or press the small button at the top right, to bring the toolbar back.
 
 ## Flow 2.0 · build 2731 · 28 September 2026
 

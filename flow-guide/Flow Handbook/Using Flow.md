@@ -64,7 +64,7 @@ On the main document, choose **File ▸ Night Shift Jobs…** to edit its Jobs. 
 
 ## Use the right model for the work
 
-Settings ▸ Models shows local and cloud routes. A document action’s reasoning control uses Recommended, On or Off when that route supports the choice. On Claude Opus 5.5, Opus 5 and Sonnet 5 the choice sets how hard the model thinks: Recommended picks a level for the action, On asks for more, and Off asks for the least the model allows. Opus 5.5 always thinks a little. Turning reasoning on can change time and resource use; inspect the output, not just the setting. Model Arena is a separate workspace with published evidence, not a live stream of your Mac’s telemetry.
+Settings ▸ Models shows local and cloud routes. A document action’s reasoning control (**Agency ▸ Reasoning for Next Action**) uses Recommended, On or Off when that route supports the choice. On Claude Opus 5.5, Opus 5 and Sonnet 5 the choice sets how hard the model thinks: Recommended picks a level for the action, On asks for more, and Off asks for the least the model allows. Opus 5.5 always thinks a little. Turning reasoning on can change time and resource use; inspect the output, not just the setting. Model Arena is a separate workspace with published evidence, not a live stream of your Mac’s telemetry.
 
 ## Keep the folder portable
 
