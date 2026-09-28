@@ -1,0 +1,34 @@
+{
+  "issues": [
+    {
+      "issue": "I01",
+      "date": "2026-08-15",
+      "title": "What a quiet month teaches",
+      "status": "Published",
+      "words": "1,180"
+    },
+    {
+      "issue": "I02",
+      "date": "2026-08-29",
+      "title": "Tools I stopped using",
+      "status": "Published",
+      "words": "1,420"
+    },
+    {
+      "issue": "I03",
+      "date": "2026-09-12",
+      "title": "Writing in the open",
+      "status": "Draft",
+      "words": "640"
+    }
+  ],
+  "drafts": [
+    {
+      "issue": "I03",
+      "date": "2026-09-12",
+      "title": "Writing in the open",
+      "status": "Draft",
+      "words": "640"
+    }
+  ]
+}

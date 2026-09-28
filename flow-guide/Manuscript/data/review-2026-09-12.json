@@ -1,0 +1,30 @@
+{
+  "chapters": [
+    {
+      "chapter": "C01",
+      "title": "The house on the estuary",
+      "status": "Proofread",
+      "words": "4,210"
+    },
+    {
+      "chapter": "C02",
+      "title": "Low water",
+      "status": "Proofread",
+      "words": "3,880"
+    },
+    {
+      "chapter": "C03",
+      "title": "The ferryman's ledger",
+      "status": "Drafting",
+      "words": "2,150"
+    }
+  ],
+  "drafting": [
+    {
+      "chapter": "C03",
+      "title": "The ferryman's ledger",
+      "status": "Drafting",
+      "words": "2,150"
+    }
+  ]
+}

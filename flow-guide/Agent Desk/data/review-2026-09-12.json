@@ -1,0 +1,48 @@
+{
+  "tasks": [
+    {
+      "id": "T1",
+      "task": "Draft the onboarding FAQ",
+      "agent": "Claude Code",
+      "status": "Reviewed",
+      "decision": "Kept"
+    },
+    {
+      "id": "T2",
+      "task": "Tighten the pricing page copy",
+      "agent": "Codex",
+      "status": "Waiting",
+      "decision": "Not yet"
+    },
+    {
+      "id": "T3",
+      "task": "Summarise the support themes",
+      "agent": "Claude Code",
+      "status": "Reviewed",
+      "decision": "Reverted one part"
+    },
+    {
+      "id": "T4",
+      "task": "Update the changelog from merged work",
+      "agent": "Codex",
+      "status": "Waiting",
+      "decision": "Not yet"
+    }
+  ],
+  "waiting": [
+    {
+      "id": "T2",
+      "task": "Tighten the pricing page copy",
+      "agent": "Codex",
+      "status": "Waiting",
+      "decision": "Not yet"
+    },
+    {
+      "id": "T4",
+      "task": "Update the changelog from merged work",
+      "agent": "Codex",
+      "status": "Waiting",
+      "decision": "Not yet"
+    }
+  ]
+}

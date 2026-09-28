@@ -11,7 +11,7 @@ Flow keeps your documents, their sources and the work you ask of them together. 
 ## Your first session
 
 1. **[Open Ideas](x-flow://app/ideas)** — Flow is looking for local models and keys already on this Mac and shows what it found there. Choose which to use, or decide later in **Settings ▸ Models**. Nothing is copied until you say so.
-2. **[Start with useful work](x-flow://app/start-with-useful-work)** — choose a Living Document, then choose where to **Create my copy**. Flow copies its supporting files and opens your document with its Jobs beside it.
+2. **[Choose a path](x-flow://app/paths)** — Home shows paths for people like you, each three steps to a finished document. Choose one and Flow makes your own copy, with its supporting files, in the Flow folder in your home folder, then opens its guide page; its Jobs run only when you ask.
 3. **[Add a folder](x-flow://app/add-folder)** — bring an existing folder of Markdown files in. Flow reads it where it is; nothing moves.
 
 | Your next question | Explore |
@@ -22,9 +22,9 @@ Flow keeps your documents, their sources and the work you ask of them together. 
 
 ## When you come back
 
-The context row above the document names what you are working on. **Start with useful work** is always there when you want another Living Document; a numbered step appears once a document has Jobs.
+The window title names what you are working on. **Home**, in the row above the document, always returns to the paths when you want another Living Document; the row adds a numbered step and **Run** once a document has Jobs, and a count when changes wait for your review.
 
-The **Workbench** opens beside the document: its Jobs under **Edit**, what a run did under **Run**, how its pieces connect under **Relations**; **Ideas**, **Search** and **Settings** live there too. **Ask** explains the Jobs and offers suggested edits that apply without a model; drag the grip on the Workbench divider to size it. Hide it to read; reveal it from the context row. **Ask** or **⌘K** explains the Jobs and finds commands.
+The **Workbench** opens beside the document: its Jobs under **Edit**, what a run did under **Run**, how its pieces connect under **Relations**; **Ideas**, **Search** and **Settings** live there too. **Ask** explains the Jobs and offers suggested edits that apply without a model; drag the grip on the Workbench divider to size it. Hide it to read; reveal it from the toolbar. **Ask** or **⌘K** explains the Jobs and finds commands.
 
 Your copy runs only when you ask. Reading an example or creating a copy does not run a Job or enable repeat timing. You can read, write, search and use charts without a model.
 

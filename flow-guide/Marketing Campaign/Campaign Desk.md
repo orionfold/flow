@@ -1,6 +1,7 @@
 ---
 title: Campaign Desk
 category: business-teams
+featured: true
 summary: "Editorial calendar, campaign review and a draft announcement in one desk."
 tags: ["marketing-campaign", "example"]
 jobs:

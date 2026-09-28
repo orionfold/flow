@@ -64,11 +64,11 @@ On the main document, choose **File ▸ Night Shift Jobs…** to edit its Jobs. 
 
 ## Use the right model for the work
 
-Settings ▸ Models shows local and cloud routes. A document action’s reasoning control uses Recommended, On or Off when that route supports the choice. Turning reasoning on can change time and resource use; inspect the output, not just the setting. Model Arena is a separate workspace with published evidence, not a live stream of your Mac’s telemetry.
+Settings ▸ Models shows local and cloud routes. A document action’s reasoning control uses Recommended, On or Off when that route supports the choice. On Claude Opus 5.5, Opus 5 and Sonnet 5 the choice sets how hard the model thinks: Recommended picks a level for the action, On asks for more, and Off asks for the least the model allows. Opus 5.5 always thinks a little. Turning reasoning on can change time and resource use; inspect the output, not just the setting. Model Arena is a separate workspace with published evidence, not a live stream of your Mac’s telemetry.
 
 ## Keep the folder portable
 
-Store essential images and sources inside the workspace. Use unique page names for local double-bracket links. To adapt a Guide example, copy the whole folder, add it to Flow, and follow its Make it yours section.
+Store essential images and sources inside the workspace. Use unique page names for local double-bracket links. To adapt a Guide example, copy the whole folder, add it to Flow, and follow its Make it yours section. [[Files Flow Writes]] names every file Flow adds beside your documents, and how to read each one without Flow.
 
 Review the chosen sources and route before using private material. The examples do not send email, publish content or connect to a CRM, medical-record or procurement system.
 
@@ -81,7 +81,7 @@ Flow is built so that nothing has to leave this Mac, which makes the list of tim
 | Flow looks for a new version: at launch, then at most once every six hours | orionfold.com | The request for the update list, carrying Flow's version and the updater's name, as any web request does | Flow ▸ Check for Updates… runs it by hand |
 | You press Flow Guide Updates… | github.com (the Guide's public home) | A request for the Guide's index, then only the documents you accept | Only when you press it |
 | You press Buy Flow Pro or Manage Plan… in Settings ▸ Billing | orionfold.supabase.co (Orionfold's billing service) | The plan and seat count you chose, or your licence file so the server can answer for it | Only when you press it |
-| A night run finishes, and only for a day that has already ended | Orionfold's measurement service | Counts and settings for one finished day. No document content, names, paths or personal information, and nothing that identifies you or this Mac | Settings ▸ Observations ▸ What leaves this Mac; the same screen shows the exact bytes before they leave |
+| Once a day, when a night run finishes or when Flow opens after a night that did not run, and only for a day that has already ended | Orionfold's measurement service | Counts and settings for one finished day, including how often plan offers were seen and whether the payment page opened. No document content, names, paths or personal information, and nothing that identifies you or this Mac | Settings ▸ Observations ▸ What leaves this Mac; the same screen shows the exact bytes before they leave |
 | You run a model through Ollama or LM Studio on this Mac | This Mac | Your prompt and the text you selected, when you approve a run | Settings ▸ Models ▸ On this Mac, one switch; a runtime pointed at another machine is refused |
 | You add a cloud provider's key | That provider | Your prompt and the text you selected, when you approve a run; the meter shows it first | Settings ▸ Models ▸ Cloud, the key is the switch; remove the key and it is off |
 | You refresh a provider's price list, or first set up OpenRouter | openrouter.ai | A request for public prices; nothing about you | Only when you ask |
@@ -102,6 +102,6 @@ title: My working brief
 tags: [review, weekly]
 ```
 
-Frontmatter keeps document properties such as the title and tags, plus Flow’s saved Jobs and Definition configuration. Those declarations travel with the Markdown file. Business rows and simple business settings live in the input tables, so everyday changes do not require YAML editing. Use the existing title, tag, Jobs and Definition controls for the properties they support; Source remains available for advanced declarations. Flow does not yet have a general form for every custom property.
+Frontmatter keeps document properties such as the title and tags, plus Flow’s saved Jobs and Definition configuration. Those declarations travel with the Markdown file. Business rows and simple business settings live in the input tables, so everyday changes do not require YAML editing. Use the existing title, tag, Jobs and Definition controls for the properties they support; Source remains available for advanced declarations. Flow does not yet have a general form for every custom property. [[Files Flow Writes]] lists every key Flow writes.
 
 Keep the named heading and column names when replacing sample rows. Use Definition editing if you want to change what is read or calculated. Follow [[Night Shift Handbook]] for the complete refresh cycle.

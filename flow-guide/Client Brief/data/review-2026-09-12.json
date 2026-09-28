@@ -1,0 +1,70 @@
+{
+  "figures": [
+    {
+      "id": "F1",
+      "figure": "Monthly recurring revenue",
+      "last_month": "$184,000",
+      "this_month": "$191,500",
+      "status": "Changed",
+      "source": "Finance workbook"
+    },
+    {
+      "id": "F2",
+      "figure": "Active accounts",
+      "last_month": "412",
+      "this_month": "418",
+      "status": "Changed",
+      "source": "Finance workbook"
+    },
+    {
+      "id": "F3",
+      "figure": "Gross margin",
+      "last_month": "71%",
+      "this_month": "71%",
+      "status": "Unchanged",
+      "source": "Finance workbook"
+    },
+    {
+      "id": "F4",
+      "figure": "Open support tickets",
+      "last_month": "38",
+      "this_month": "52",
+      "status": "Changed",
+      "source": "Support export"
+    },
+    {
+      "id": "F5",
+      "figure": "Board-approved headcount",
+      "last_month": "46",
+      "this_month": "46",
+      "status": "Unchanged",
+      "source": "August board deck"
+    }
+  ],
+  "changed": [
+    {
+      "id": "F1",
+      "figure": "Monthly recurring revenue",
+      "last_month": "$184,000",
+      "this_month": "$191,500",
+      "status": "Changed",
+      "source": "Finance workbook"
+    },
+    {
+      "id": "F2",
+      "figure": "Active accounts",
+      "last_month": "412",
+      "this_month": "418",
+      "status": "Changed",
+      "source": "Finance workbook"
+    },
+    {
+      "id": "F4",
+      "figure": "Open support tickets",
+      "last_month": "38",
+      "this_month": "52",
+      "status": "Changed",
+      "source": "Support export"
+    }
+  ]
+}

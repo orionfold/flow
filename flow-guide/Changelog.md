@@ -11,6 +11,7 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 
 | Release | Build | Date | In a sentence |
 | --- | --- | --- | --- |
+| 2.0 | 2731 | 28 September 2026 | Bring Word, Excel, PowerPoint and PDF in, publish every format out, generate pictures, and let your own Claude Code and Codex work beside Flow |
 | 1.8 | 2257 | 21 September 2026 | One Observations screen for what Flow measured about itself, with clear choices over what stays on this Mac and what is shared |
 | 1.7 | 2173 | 16 September 2026 | One surface with a Workbench beside it, Jobs as the one name, Ask suggestions applied without a model, and reviews that say what was done |
 | 1.6.7 | 2162 | 13 September 2026 | Workspaces to make your own, single-document jobs, current definition previews and clearer recovery |
@@ -28,6 +29,64 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 | 1.5.2 | 1414 | 27 August 2026 | A pressable Update ready button |
 | 1.5.1 | 1404 | 27 August 2026 | The first Flow that arrived through Flow itself |
 | 1.5 | 1382 | 26 August 2026 | The launch |
+
+## Flow 2.0 · build 2731 · 28 September 2026
+
+Flow 2.0 brings your existing work in, publishes it out in the formats people ask for, makes pictures from a description, and lets the assistants you already use work in your folders with Flow reviewing what they change.
+
+### Bring existing work in
+
+- **What shipped.** *File ▸ Import…* takes Word documents, Excel workbooks, PowerPoint presentations and PDFs. Headings, lists, tables, footnotes and pictures come through; a workbook's sheets become tables showing values as Excel shows them; a deck's slides become sections with their speaker notes beneath. A PDF is read by a model you have set up, with its estimated cost shown first, or *On this Mac* for free, and every figure it writes is checked against its page. The Workbench says what came in and what stayed behind, and a preview opens beside it.
+- **How it benefits you.** Years of documents become Flow documents you can edit, search and ask about, without retyping and without losing their structure. The original file is never touched.
+- **How to use it.** Choose **File ▸ Import…** (or *Import…* in the sidebar's + menu), pick a file, read the Workbench and the preview, then press **Add**.
+
+### Publish every format
+
+- **What shipped.** The Publish task writes Word files, Excel workbooks, PowerPoint decks and EPUB books beside the PDF and the website. Tables stay real tables, charts and pictures come along, and a folder becomes one file, deck or book. A website picks a theme — *Report*, *Essay* or *Handbook* — and every format picks how a reader finds their way: contents, a sidebar or a top bar.
+- **How it benefits you.** One source document, and whatever the reader needs — something to edit in Word, numbers to sort in Excel, slides to present, or a book to read — without rebuilding it by hand.
+- **How to use it.** Open a document or a folder and choose **File ▸ Publish…** (⇧⌘P). Choose the format, look at the preview, and save.
+
+### Pictures from a description
+
+- **What shipped.** *Agency ▸ Generate Picture* turns the paragraph you are in, or your selection, into a picture. Flow names the model and the price before anything is sent, and the picture arrives as a proposed change you keep or discard. When you publish a book, *Generate…* makes its cover. Settings ▸ Smart Routing has a *Picture model* row.
+- **How it benefits you.** An illustration or a cover in the flow of writing, with the cost known up front and nothing added until you keep it.
+- **How to use it.** Put the cursor in a descriptive paragraph and choose **Agency ▸ Generate Picture**, then **Keep** or **Discard** in Review.
+
+### Your own Claude Code and Codex, reviewed by Flow
+
+- **What shipped.** With *What it may do* set to **Full access**, Claude Code or Codex works in your folder with your own settings, plugins and permissions. Whatever another program writes into a document Flow holds — an assistant, a shell or another editor — now comes home for review as *Changed by Claude Code*, *Changed by Codex* or *Changed outside Flow*, with Keep and Revert, and History records who wrote it.
+- **How it benefits you.** Use the assistant you already pay for, the way you already use it, and still see every change before it becomes part of your document.
+- **How to use it.** Pick Claude Code or Codex in the model picker and set *What it may do* to **Full access**. When a change arrives, open Review and keep or revert each block.
+
+### A simpler window
+
+- **What shipped.** With nothing open, Flow shows *What are you working on?* — paths from a starting folder to a finished document; *Open* makes your own copy in one click, and the house button (⇧⌘H) returns there. A toolbar over each document holds Reader | Editor, formatting, dictation and the AI actions. The Workbench is an inspector on the right with tabs, and the window is titled by your document. Settings opens in its own window, one page per section.
+- **How it benefits you.** Fewer places to look: where to start, what you can do to this document, and every setting each sit in one obvious spot.
+- **How to use it.** Press the house button or **Go ▸ Home** to start from a path; open the Workbench from the toolbar; open **Flow ▸ Settings…** (⌘,) for everything else.
+
+### Flow Pro, Flow Import and Flow Publish
+
+- **What shipped.** Flow Import and Flow Publish are add-ons sold beside Flow Pro, at the same price per seat. The trial covers everything, and after it Import and Publish stay visible and say which add-on they need. Markdown stays free. A Pro subscription now renews on its own while you keep paying, and a note appears when half your Pro Days or fewer remain.
+- **How it benefits you.** Pay for the parts you use. Nothing you already imported or published changes, and a renewal never needs a file from your email.
+- **How to use it.** Open **Settings ▸ Billing** to see Flow Pro and both add-ons, subscribe, turn an add-on on or off, or cancel under **Manage Plan…**.
+
+### Claude, cheaper and on by default
+
+- **What shipped.** Claude Opus 5.5 is Flow's default Anthropic model. Each action asks for a reply sized to the job, Expand with Sources re-reads less, and a run that reused Anthropic's cache says what caching saved on its receipt. What Flow has spent is in one place, Settings ▸ Observations ▸ Cost.
+- **How it benefits you.** The same work for less, and a clear account of where the money went.
+- **How to use it.** Nothing to set. Read a run's receipt for its cost and caching saving, or **Settings ▸ Observations ▸ Cost** for the totals.
+
+### Sharing that actually sends — counts only
+
+- **What shipped.** With sharing on, finished days now go to Orionfold once a day: when a night run finishes, or when Flow opens after a night that did not run. *What would be shared* now also shows, per AI provider and Flow's own model names, how many runs and tokens a day used and, for Anthropic, how many were read from or written to its cache, and how often plan offers were seen.
+- **How it benefits you.** Orionfold can see which models and features earn their keep — whether caching pays off, which paths people take — and improve Flow's choices for you. Still counts only: no document content, names, paths or personal information, and never a price.
+- **How to use it.** Open **Settings ▸ Observations ▸ What leaves this Mac** and press *What would be shared* to read the exact bytes. Clear either choice to stop.
+
+### Your files, readable without Flow
+
+- **What shipped.** A new Handbook page, *Files Flow Writes*, names every file Flow keeps beside a document and every key it writes in front matter, and says for each whether to edit it and how to read it in Terminal.
+- **How it benefits you.** Your documents stay yours: you can inspect, back up or move them with ordinary tools.
+- **How to use it.** Open the Flow Guide and read **Handbook ▸ Files Flow Writes**.
 
 ## Flow 1.8 · build 2257 · 21 September 2026
 

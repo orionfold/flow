@@ -33,11 +33,11 @@ Gather and redraw calculations do not need a model. Overnight notes do. The prod
 
 ## Source paths travel with the folder
 
-A path such as `inputs/*.md#tables:Record` reads the matching local notes. A binding such as `data/review-*.json#summary` reads the newest matching capture by filename and the named row set. Keep the folder structure intact when you copy a workspace. A public web source makes a network request; a local definition does not connect to an external business system.
+A path such as `inputs/*.md#tables:Record` reads the matching local notes. A binding such as `data/review-*.json#summary` reads the newest matching capture by filename and the named row set. Keep the folder structure intact when you copy a workspace. The full binding and Jobs grammar is in [[Files Flow Writes]]. A public web source makes a network request; a local definition does not connect to an external business system.
 
 ## The morning is reviewable
 
-The Morning Briefing names changed documents and failed work. Open the document to inspect changes; Review Changes offers Keep or Revert, and History retains saved versions. An unchanged-input run should leave an unchanged document alone. A failed fetch is missing evidence, not a fresh value.
+The Morning Briefing names changed documents and failed work. Open the document to inspect changes; Review Changes offers Keep or Revert, and History retains saved versions. An unchanged-input run should leave an unchanged document alone. A failed fetch is missing evidence, not a fresh value. [[Files Flow Writes]] shows how to read the night's record and the saved versions without Flow.
 
 ## Choose what is automatic
 

@@ -6,6 +6,11 @@
       "path" : "AI Personal Assistants Market Watch/data/market-2026-09-15.json"
     },
     {
+      "bytes" : 1012,
+      "contentHash" : "sha256:17443f1a3d50fda0d7d8e3329eef07253317f1df01c39efe10820e0fe1672202",
+      "path" : "Agent Desk/data/review-2026-09-12.json"
+    },
+    {
       "bytes" : 177321,
       "contentHash" : "sha256:69c6e65485ceec0d5c0d9097af6bc66d7e68da47715e9264382db1a9c4d932f1",
       "path" : "Business Review/assets/boardroom-annual.jpeg"
@@ -24,6 +29,11 @@
       "bytes" : 402,
       "contentHash" : "sha256:7c1232ff536c81ad6fb92cad59c448cbff50549770cc33e34cfa923c89d9f33c",
       "path" : "Charts Gallery/data/gallery-2026-09-12.json"
+    },
+    {
+      "bytes" : 1548,
+      "contentHash" : "sha256:49c5b322b9b6b27feb901502e13b7c5c3ffd5192ebe6ee13935cb689e0a7c6b9",
+      "path" : "Client Brief/data/review-2026-09-12.json"
     },
     {
       "bytes" : 230249,
@@ -116,6 +126,11 @@
       "path" : "Living Document Starter/data/capture-2026-09-02.json"
     },
     {
+      "bytes" : 548,
+      "contentHash" : "sha256:c12633f0650516e91f4a5c00b5bcf2c59ac2359d23882a60dca4382f7870e2b9",
+      "path" : "Manuscript/data/review-2026-09-12.json"
+    },
+    {
       "bytes" : 76529,
       "contentHash" : "sha256:c4bc37cc3214b65a30f87d666611ed755501e3ab85d7d8ef7df03a8edaf573ae",
       "path" : "Marketing Campaign/assets/engagement-waves.jpeg"
@@ -154,6 +169,11 @@
       "bytes" : 498,
       "contentHash" : "sha256:a391134b6d6bc87d69e1e5321de230b38963ba26e69b8d757a0d6d8a32ea98e2",
       "path" : "NVIDIA Company Research/action-recipes.yaml"
+    },
+    {
+      "bytes" : 648,
+      "contentHash" : "sha256:1220c2537c88d38a75a258d044166ca3bd94a814639d8406e335c2485575b9a6",
+      "path" : "Newsletter Archive/data/review-2026-09-12.json"
     },
     {
       "bytes" : 185244,
@@ -236,7 +256,7 @@
       "path" : "assets/channels4_banner.jpg"
     }
   ],
-  "contentVersion" : "1.13.9",
+  "contentVersion" : "1.14.0",
   "documents" : [
     {
       "bytes" : 18846,
@@ -274,9 +294,19 @@
       "path" : "AI Personal Assistants Market Watch/Field Notes.md"
     },
     {
+      "bytes" : 682,
+      "contentHash" : "sha256:fb006cb6aa9c215693ccf2b84871d9f64496f8d66e5edcf2e7298b63d264fa3a",
+      "path" : "AI Personal Assistants Market Watch/Investor Update.md"
+    },
+    {
       "bytes" : 2853,
       "contentHash" : "sha256:acd52dfe063cd5c9e732821becca5155a275d6c59f9562799d7e2f60acb452af",
       "path" : "AI Personal Assistants Market Watch/Market Brief.md"
+    },
+    {
+      "bytes" : 2243,
+      "contentHash" : "sha256:3d1791d4650ad7279c84efaf0c06f4a7d24e3d23f515e3ab660cf9058f0a879d",
+      "path" : "AI Personal Assistants Market Watch/README.md"
     },
     {
       "bytes" : 1511,
@@ -359,6 +389,31 @@
       "path" : "AI Personal Assistants Market Watch/sources/current/S12-raycast-pricing.md"
     },
     {
+      "bytes" : 517,
+      "contentHash" : "sha256:76ce50c801f752e9f68295bc339723cf1622eff1297de0f90a0cd078bc1dacf1",
+      "path" : "Agent Desk/Agent Brief.md"
+    },
+    {
+      "bytes" : 1121,
+      "contentHash" : "sha256:2bc6cfed8ecce72dda8e37eeedcf3cd16241729be7285ed86a383e7ef34ffb8d",
+      "path" : "Agent Desk/Agent Desk.md"
+    },
+    {
+      "bytes" : 822,
+      "contentHash" : "sha256:9868356ba57fd64390dafe346d1f396cc1b6b0751f690489ef02aa30c091e599",
+      "path" : "Agent Desk/Agent Tasks.md"
+    },
+    {
+      "bytes" : 566,
+      "contentHash" : "sha256:9dacdb559e21f8defbcbad0a22500cf3c3ba70fb66044328c66254451d83afdc",
+      "path" : "Agent Desk/Desk Refresh.md"
+    },
+    {
+      "bytes" : 1822,
+      "contentHash" : "sha256:964a4567539c815d71f24922ec5a06133ebb81d3c482e071c3450820c25740e7",
+      "path" : "Agent Desk/README.md"
+    },
+    {
       "bytes" : 2492,
       "contentHash" : "sha256:37ec0f36d324ae6b4cf44d455ff7968fc643f6279484b1139372630da83153b3",
       "path" : "Business Review/Annual Review.md"
@@ -414,8 +469,8 @@
       "path" : "Business Review/Team Working Agreement.md"
     },
     {
-      "bytes" : 78601,
-      "contentHash" : "sha256:88ab69b04fa934992b49981e4a64af5bbea23fb10f91d73130032c7c02a63c7f",
+      "bytes" : 85728,
+      "contentHash" : "sha256:44701bd9abbb0ecfeaa162517a6db5f9ea87b444e3dec9b55987d7e1d2c2416d",
       "path" : "Changelog.md"
     },
     {
@@ -482,6 +537,36 @@
       "bytes" : 1557,
       "contentHash" : "sha256:515e3e099af3134afd18b38c7cddd8226abafe792fe27617c59547a5a37cb8e7",
       "path" : "Charts Gallery/Gallery Refresh.md"
+    },
+    {
+      "bytes" : 725,
+      "contentHash" : "sha256:97f9b6996e95a52f3a91d15e16b6077d9335d1a5ea1ddd6f0049a640e84274d2",
+      "path" : "Client Brief/Brief Refresh.md"
+    },
+    {
+      "bytes" : 1758,
+      "contentHash" : "sha256:371ab8a3e9d75428126117356a4ee4f4324822387570418543d2150cf6c37aa1",
+      "path" : "Client Brief/Client Brief.md"
+    },
+    {
+      "bytes" : 1096,
+      "contentHash" : "sha256:e36fc55004062faebce8927182632f39510ac6d3122fb8956cbccacdf4484007",
+      "path" : "Client Brief/Client Figures.md"
+    },
+    {
+      "bytes" : 2153,
+      "contentHash" : "sha256:c8bf8d01744e75d85b98781cd0f866f9d8e1c2f717a21ecfc98e861a8b27d85a",
+      "path" : "Client Brief/README.md"
+    },
+    {
+      "bytes" : 357,
+      "contentHash" : "sha256:374cc04af2cb4dd00720684354b6339d91951dcdc7683756c59f1328440bbb26",
+      "path" : "Client Brief/client-files/August Board Deck.md"
+    },
+    {
+      "bytes" : 339,
+      "contentHash" : "sha256:5e9134dfa6ce7756db5ea2c9c828e29216c3340d3057d7b64e836f6953a21198",
+      "path" : "Client Brief/client-files/Finance Workbook.md"
     },
     {
       "bytes" : 979,
@@ -644,13 +729,18 @@
       "path" : "Customer Research/Visit Notes.md"
     },
     {
-      "bytes" : 4585,
-      "contentHash" : "sha256:bf78ee768de7f872669fecf6ae6737e65c0307df33c9f2748a02d746c05cb2e5",
+      "bytes" : 8878,
+      "contentHash" : "sha256:10e791fcbc15a8e82f63673364ff7480acf2ca0bd53c61d293443f972bb6f2b3",
+      "path" : "Flow Handbook/Files Flow Writes.md"
+    },
+    {
+      "bytes" : 4744,
+      "contentHash" : "sha256:8f855e38c6b3fc8eb36eb6b95ce9a90a9d70ceb8d33981c356970c80da105413",
       "path" : "Flow Handbook/Night Shift Handbook.md"
     },
     {
-      "bytes" : 8545,
-      "contentHash" : "sha256:6665f972c18a22ffa036af6d80e86f64263d0aadad81bc9af95fd3ac1ddc048e",
+      "bytes" : 9074,
+      "contentHash" : "sha256:71e311eb4e5958fd8ea74e822c94c668ac1992d6a3a888d3edcf3733b2baba06",
       "path" : "Flow Handbook/Using Flow.md"
     },
     {
@@ -712,6 +802,11 @@
       "bytes" : 11712,
       "contentHash" : "sha256:dbdaca6d38dd569f760b1a0dd7e22dde19dc09e7bd8fee0edea2b6f2462185f6",
       "path" : "Household Budget/Household Budget.md"
+    },
+    {
+      "bytes" : 2224,
+      "contentHash" : "sha256:ead297c5891a21a6eb5b806e66eb7215b9d34e56da2dc8a2a00574258c0d87df",
+      "path" : "Household Budget/README.md"
     },
     {
       "bytes" : 2725,
@@ -869,6 +964,11 @@
       "path" : "Living Document Starter/Profile.md"
     },
     {
+      "bytes" : 1972,
+      "contentHash" : "sha256:11eaaaf9da7fe4e698b3d4fdc0c85cc82013fe36a7e31bc2a8c8b83b03c9924c",
+      "path" : "Living Document Starter/README.md"
+    },
+    {
       "bytes" : 4644,
       "contentHash" : "sha256:01a6cf99a5d3d14db230e33c1e64098c504d8c0450cd32267505f10d855f5b40",
       "path" : "Living Document Starter/Starter Refresh.md"
@@ -879,8 +979,38 @@
       "path" : "Living Document Starter/entries/Example Entry.md"
     },
     {
-      "bytes" : 3259,
-      "contentHash" : "sha256:1b705a5e0e6836908859e6bb28621f549b76536a5174e53eea4262308dc59e50",
+      "bytes" : 500,
+      "contentHash" : "sha256:a57061d0f17f3280798195edcdcb7067a0b716d875c6630decdb9b581d4dd880",
+      "path" : "Manuscript/Chapter Plan.md"
+    },
+    {
+      "bytes" : 602,
+      "contentHash" : "sha256:339dbb5577de5897d9c3d28393dc90e6053113f184198bc045394ea1c76a7bfd",
+      "path" : "Manuscript/Manuscript Refresh.md"
+    },
+    {
+      "bytes" : 1062,
+      "contentHash" : "sha256:b622948c692db8d4fcd7aa202db1f29839b76bd5b571086db3fa8a641f74694f",
+      "path" : "Manuscript/Manuscript.md"
+    },
+    {
+      "bytes" : 1686,
+      "contentHash" : "sha256:a9efa1cb4793fb04877dbe4f168e30a686105a22d4ecffe279f395c89defe543",
+      "path" : "Manuscript/README.md"
+    },
+    {
+      "bytes" : 300,
+      "contentHash" : "sha256:4eadf19f1f3000e516437495b9227aae61c71dab00c72442007c4e0b6cbb8406",
+      "path" : "Manuscript/chapters/Chapter 01.md"
+    },
+    {
+      "bytes" : 245,
+      "contentHash" : "sha256:f0fba0cd0cc6e7b21819b998da2fdfa4dca9ed49f52c3128a881b8ab54936d8e",
+      "path" : "Manuscript/chapters/Chapter 02.md"
+    },
+    {
+      "bytes" : 3274,
+      "contentHash" : "sha256:0710e9c2b349d28c84966c1f6c1d442b606727eb554662ade76f33c0dfc8f21d",
       "path" : "Marketing Campaign/Campaign Desk.md"
     },
     {
@@ -907,6 +1037,11 @@
       "bytes" : 1219,
       "contentHash" : "sha256:7c383e07c01f8ed4ef2c69728c8b11ec819fe4cee2017e5fd936cea66748e3f2",
       "path" : "Marketing Campaign/Launch Announcement.md"
+    },
+    {
+      "bytes" : 1655,
+      "contentHash" : "sha256:7cc9466aa9d88bb4b1d4414f4a89e8872554a4180596c0c105184169861417e1",
+      "path" : "Marketing Campaign/README.md"
     },
     {
       "bytes" : 1671,
@@ -959,6 +1094,36 @@
       "path" : "NVIDIA Company Research/sources/S3-open-model-ecosystem.md"
     },
     {
+      "bytes" : 577,
+      "contentHash" : "sha256:b1af2e0b8aa106e554f8378dace7bc52a46bc631dcc86d544f8bb47609e3a376",
+      "path" : "Newsletter Archive/Issue Log.md"
+    },
+    {
+      "bytes" : 582,
+      "contentHash" : "sha256:8045311987ba4d8877a0e2fb602a5d587c44932c59a6cfd726042404a3ddc757",
+      "path" : "Newsletter Archive/Issue Refresh.md"
+    },
+    {
+      "bytes" : 1124,
+      "contentHash" : "sha256:2a37072781a037d337062d6eee36a814621f69e886ce0e3c8c162174bf395712",
+      "path" : "Newsletter Archive/Newsletter Archive.md"
+    },
+    {
+      "bytes" : 1779,
+      "contentHash" : "sha256:1a7db021bb95ef016cac169f04b3cfeb3d0bbdd5b2ca464731f69c05bbc78de2",
+      "path" : "Newsletter Archive/README.md"
+    },
+    {
+      "bytes" : 303,
+      "contentHash" : "sha256:5ed1786d3f79a08051bd60dd948146085185820a0d8282faf0abcbed206571ed",
+      "path" : "Newsletter Archive/issues/Issue 01.md"
+    },
+    {
+      "bytes" : 268,
+      "contentHash" : "sha256:84c7f40911e51b230698b16bf8b188a3c33b4d7beea26ec403300eebe8d01326",
+      "path" : "Newsletter Archive/issues/Issue 02.md"
+    },
+    {
       "bytes" : 2319,
       "contentHash" : "sha256:957faa49a3be25540e17158bdf4eefdd351131d8a1f0b530a8bceed612acd8ee",
       "path" : "Product Launch/Launch Brief.md"
@@ -984,9 +1149,19 @@
       "path" : "Product Launch/Launch Refresh.md"
     },
     {
+      "bytes" : 1844,
+      "contentHash" : "sha256:8bf415d30349ef5390066000a5d865309777a90369ee789c93bb0817c24a9d2b",
+      "path" : "Product Launch/README.md"
+    },
+    {
       "bytes" : 2305,
       "contentHash" : "sha256:05a1a794be31d537d7340615a69c9dcbb74bbae7a5efd4e248b822cc95e0c349",
       "path" : "Product Launch/Staff Meeting.md"
+    },
+    {
+      "bytes" : 664,
+      "contentHash" : "sha256:cc6e6dd35591c01832d1d28d612285141cbd28462dc4e5aaa3224dc75a92149a",
+      "path" : "Product Launch/docs/Launch Docs.md"
     },
     {
       "bytes" : 2943,
@@ -1014,6 +1189,11 @@
       "path" : "Sales Account/Meridian Proposal.md"
     },
     {
+      "bytes" : 1724,
+      "contentHash" : "sha256:82aeb33b48990dbbeef8485cb8fc981e73566da26c46192cd825268a30c4a4a1",
+      "path" : "Sales Account/README.md"
+    },
+    {
       "bytes" : 2914,
       "contentHash" : "sha256:9e6998832330f21322f4ead378bc38f93413bade196d524cde6459992510575d",
       "path" : "Sales Account/Sales Performance.md"
@@ -1037,6 +1217,11 @@
       "bytes" : 13578,
       "contentHash" : "sha256:3a31cd279e6820ab1d6de1c910c6580298e7d9d195ef039d948ecfedb63cdfe4",
       "path" : "Stock Portfolio/Portfolio Refresh.md"
+    },
+    {
+      "bytes" : 2262,
+      "contentHash" : "sha256:d7efe06d55eb5e5700185a104359037eafd12cd6f2bec06215d2c842ad2cfed9",
+      "path" : "Stock Portfolio/README.md"
     },
     {
       "bytes" : 3086,
@@ -1179,6 +1364,11 @@
       "path" : "Team Status/Plan.md"
     },
     {
+      "bytes" : 2269,
+      "contentHash" : "sha256:2665b2e593450873a0dde41df2687e61c3fd273650dc4a78945fb19268f6d33f",
+      "path" : "Team Status/README.md"
+    },
+    {
       "bytes" : 975,
       "contentHash" : "sha256:077d6409aa417fe799cea0c2edb1a846e213f5cddbe2a6c6146903df87771b3a",
       "path" : "Team Status/Team Measurement Notes.md"
@@ -1192,6 +1382,11 @@
       "bytes" : 8735,
       "contentHash" : "sha256:205f758e7a5abfc74aed58fa1e9fdfd7a9f812000092327f3e06feb25bcb51a4",
       "path" : "Team Status/Team Status.md"
+    },
+    {
+      "bytes" : 632,
+      "contentHash" : "sha256:ace6e40853e864a2a74b6847239d0b248fb6a6e90e7864ba6fd96c9f6f1c5abe",
+      "path" : "Team Status/attachments/Status Attachments.md"
     },
     {
       "bytes" : 1285,
@@ -1229,13 +1424,508 @@
       "path" : "Travel Planner/Travel Refresh.md"
     },
     {
-      "bytes" : 2721,
-      "contentHash" : "sha256:d191788c18743705b96e49c9accc9d51b0d4b67d1b372460d4369ef86d05b677",
+      "bytes" : 2860,
+      "contentHash" : "sha256:fcc4a360b0ca8ee44ed40732a181a64f4532d6e0d9059e62a91b1468579d8688",
       "path" : "Welcome.md"
     }
   ],
-  "generated" : "2026-09-21",
+  "generated" : "2026-09-28",
   "manifestVersion" : 2,
+  "paths" : [
+    {
+      "benefits" : [
+        "time",
+        "quality"
+      ],
+      "diagram" : {
+        "captions" : [
+          "The client’s files",
+          "A brief you’d sign",
+          "Refreshed next month"
+        ],
+        "in" : [
+          "pdf",
+          "xlsx",
+          "pptx"
+        ],
+        "middle" : "brief",
+        "out" : [
+          "pdf",
+          "docx"
+        ],
+        "through" : [
+          "sources",
+          "jobs"
+        ]
+      },
+      "featured" : true,
+      "hue" : "teal",
+      "persona" : "Consultants · analysts · fractional operators",
+      "rank" : 1,
+      "readme" : "Client Brief/README.md",
+      "steps" : [
+        "Import last month’s PDFs, decks and sheets",
+        "Draft the brief with sources, and approve it",
+        "Publish to PDF or Word; refresh next month"
+      ],
+      "tags" : [
+        "Clients"
+      ],
+      "tier" : "pro",
+      "title" : "The recurring client brief",
+      "workspace" : "Client Brief"
+    },
+    {
+      "benefits" : [
+        "ownership",
+        "quality"
+      ],
+      "diagram" : {
+        "captions" : [
+          "Your repo",
+          "A spec you approved",
+          "Live docs"
+        ],
+        "in" : [
+          "code",
+          "folder"
+        ],
+        "middle" : "spec",
+        "out" : [
+          "web",
+          "pdf"
+        ],
+        "through" : [
+          "review",
+          "publish"
+        ]
+      },
+      "featured" : true,
+      "hue" : "blue",
+      "persona" : "Builders · indie hackers",
+      "rank" : 2,
+      "readme" : "Product Launch/README.md",
+      "steps" : [
+        "Add the repo folder; your git stays yours",
+        "Proofread or expand a spec, change by change",
+        "Publish to GitHub Pages or a PDF"
+      ],
+      "tags" : [
+        "Code"
+      ],
+      "tier" : "free",
+      "title" : "Docs that stay true to the code",
+      "workspace" : "Product Launch"
+    },
+    {
+      "benefits" : [
+        "trust",
+        "cost"
+      ],
+      "diagram" : {
+        "captions" : [
+          "Agents at work",
+          "You keep or revert",
+          "Every version recorded"
+        ],
+        "in" : [
+          "terminal",
+          "claude",
+          "openai"
+        ],
+        "middle" : "review",
+        "out" : [
+          "history"
+        ],
+        "through" : [
+
+        ]
+      },
+      "featured" : true,
+      "hue" : "cyan",
+      "persona" : "Claude Code and Codex users",
+      "rank" : 3,
+      "readme" : "Agent Desk/README.md",
+      "steps" : [
+        "Point your agent at a folder open in Flow",
+        "Keep or revert each change it made",
+        "History names the writer of every version"
+      ],
+      "tags" : [
+        "Agents"
+      ],
+      "tier" : "free",
+      "title" : "Review what your agents wrote",
+      "workspace" : "Agent Desk"
+    },
+    {
+      "benefits" : [
+        "privacy",
+        "time"
+      ],
+      "diagram" : {
+        "captions" : [
+          "Attachments and your voice",
+          "This week’s status",
+          "Sent to the team"
+        ],
+        "in" : [
+          "docx",
+          "pdf",
+          "dictation"
+        ],
+        "middle" : "status",
+        "out" : [
+          "docx"
+        ],
+        "through" : [
+          "ask"
+        ]
+      },
+      "featured" : false,
+      "hue" : "indigo",
+      "persona" : "Knowledge workers",
+      "rank" : 4,
+      "readme" : "Team Status/README.md",
+      "steps" : [
+        "Import the attachments; dictate your notes",
+        "Ask what changed this week; Summarize",
+        "Publish a clean Word file for the team"
+      ],
+      "tags" : [
+        "Teams"
+      ],
+      "tier" : "pro",
+      "title" : "Status from what you already have",
+      "workspace" : "Team Status"
+    },
+    {
+      "benefits" : [
+        "ownership",
+        "cost"
+      ],
+      "diagram" : {
+        "captions" : [
+          "Your Notion export",
+          "Smart Routing picks",
+          "On this Mac or your key"
+        ],
+        "in" : [
+          "md",
+          "folder"
+        ],
+        "middle" : "router",
+        "out" : [
+          "flow",
+          "claude"
+        ],
+        "through" : [
+
+        ]
+      },
+      "featured" : false,
+      "hue" : "purple",
+      "persona" : "Coming from Notion",
+      "rank" : 5,
+      "readme" : "Living Document Starter/README.md",
+      "steps" : [
+        "Export from Notion; add the folder",
+        "Pick a model: on this Mac or your own key",
+        "Every AI edit is a change you approve"
+      ],
+      "tags" : [
+        "Own your notes"
+      ],
+      "tier" : "free",
+      "title" : "Leave rented notes",
+      "workspace" : "Living Document Starter"
+    },
+    {
+      "benefits" : [
+        "time",
+        "trust"
+      ],
+      "diagram" : {
+        "captions" : [
+          "Competitors and metrics",
+          "An update that checks out",
+          "Sent to investors"
+        ],
+        "in" : [
+          "web",
+          "xlsx"
+        ],
+        "middle" : "update",
+        "out" : [
+          "pptx"
+        ],
+        "through" : [
+          "night",
+          "sources"
+        ]
+      },
+      "featured" : false,
+      "hue" : "orange",
+      "persona" : "Founders",
+      "rank" : 6,
+      "readme" : "AI Personal Assistants Market Watch/README.md",
+      "steps" : [
+        "Import the metrics workbook and last month’s deck",
+        "Watch competitors overnight; the Morning Briefing says what moved",
+        "Publish PowerPoint or PDF, every claim sourced"
+      ],
+      "tags" : [
+        "Founders"
+      ],
+      "tier" : "pro",
+      "title" : "The investor update and the watch",
+      "workspace" : "AI Personal Assistants Market Watch"
+    },
+    {
+      "benefits" : [
+        "quality",
+        "time"
+      ],
+      "diagram" : {
+        "captions" : [
+          "Sources and notes",
+          "A campaign with citations",
+          "Ready in two languages"
+        ],
+        "in" : [
+          "web",
+          "md"
+        ],
+        "middle" : "campaign",
+        "out" : [
+          "docx",
+          "web"
+        ],
+        "through" : [
+          "sources"
+        ]
+      },
+      "featured" : false,
+      "hue" : "mint",
+      "persona" : "Marketers",
+      "rank" : 7,
+      "readme" : "Marketing Campaign/README.md",
+      "steps" : [
+        "Open the source web page beside your notes",
+        "Expand with Sources, then Translate",
+        "Publish a Word file and a web page"
+      ],
+      "tags" : [
+        "Writing"
+      ],
+      "tier" : "pro",
+      "title" : "Campaign with proof",
+      "workspace" : "Marketing Campaign"
+    },
+    {
+      "benefits" : [
+        "ownership",
+        "time"
+      ],
+      "diagram" : {
+        "captions" : [
+          "Your voice and notes",
+          "This week’s issue",
+          "A book of the year"
+        ],
+        "in" : [
+          "dictation",
+          "md"
+        ],
+        "middle" : "issue",
+        "out" : [
+          "epub"
+        ],
+        "through" : [
+          "picture",
+          "publish"
+        ]
+      },
+      "featured" : false,
+      "hue" : "yellow",
+      "persona" : "Creators",
+      "rank" : 8,
+      "readme" : "Newsletter Archive/README.md",
+      "steps" : [
+        "Dictate the issue; draft it with Expand",
+        "Describe Picture writes the alt text",
+        "Collect the issues into an EPUB"
+      ],
+      "tags" : [
+        "Writing"
+      ],
+      "tier" : "pro",
+      "title" : "The weekly issue, then the book",
+      "workspace" : "Newsletter Archive"
+    },
+    {
+      "benefits" : [
+        "time",
+        "trust"
+      ],
+      "diagram" : {
+        "captions" : [
+          "Lead sheet and site",
+          "Jobs refresh the account",
+          "A brief before the call"
+        ],
+        "in" : [
+          "xlsx",
+          "web"
+        ],
+        "middle" : "jobs",
+        "out" : [
+          "xlsx"
+        ],
+        "through" : [
+
+        ]
+      },
+      "featured" : false,
+      "hue" : "brown",
+      "persona" : "Sellers",
+      "rank" : 9,
+      "readme" : "Sales Account/README.md",
+      "steps" : [
+        "Import the lead sheet from Excel",
+        "Run Jobs to refresh the account",
+        "Publish Excel with every source kept"
+      ],
+      "tags" : [
+        "Clients"
+      ],
+      "tier" : "pro",
+      "title" : "Account brief before the call",
+      "workspace" : "Sales Account"
+    },
+    {
+      "benefits" : [
+        "privacy",
+        "ownership"
+      ],
+      "diagram" : {
+        "captions" : [
+          "Holdings and quotes",
+          "A dashboard you can check",
+          "Notes from a model on this Mac"
+        ],
+        "in" : [
+          "xlsx",
+          "web"
+        ],
+        "middle" : "dashboard",
+        "out" : [
+          "chart",
+          "model"
+        ],
+        "through" : [
+          "jobs",
+          "night"
+        ]
+      },
+      "featured" : false,
+      "hue" : "green",
+      "persona" : "Investors",
+      "rank" : 10,
+      "readme" : "Stock Portfolio/README.md",
+      "steps" : [
+        "Import your holdings from a spreadsheet",
+        "Gather quotes; the charts redraw from your own files",
+        "Overnight notes describe the tables on a model on this Mac"
+      ],
+      "tags" : [
+        "Money"
+      ],
+      "tier" : "free",
+      "title" : "A portfolio that explains itself",
+      "workspace" : "Stock Portfolio"
+    },
+    {
+      "benefits" : [
+        "ownership",
+        "cost"
+      ],
+      "diagram" : {
+        "captions" : [
+          "Your Word manuscript",
+          "Proofread chapter by chapter",
+          "A book with its cover"
+        ],
+        "in" : [
+          "docx"
+        ],
+        "middle" : "book",
+        "out" : [
+          "epub"
+        ],
+        "through" : [
+          "review",
+          "picture"
+        ]
+      },
+      "featured" : false,
+      "hue" : "red",
+      "persona" : "Authors",
+      "rank" : 11,
+      "readme" : "Manuscript/README.md",
+      "steps" : [
+        "Import the Word manuscript",
+        "Proofread chapter by chapter",
+        "Generate a cover and publish the EPUB"
+      ],
+      "tags" : [
+        "Writing"
+      ],
+      "tier" : "pro",
+      "title" : "Manuscript to book",
+      "workspace" : "Manuscript"
+    },
+    {
+      "benefits" : [
+        "time",
+        "privacy"
+      ],
+      "diagram" : {
+        "captions" : [
+          "Your statements",
+          "This month’s review",
+          "Totals that redraw"
+        ],
+        "in" : [
+          "csv",
+          "folder"
+        ],
+        "middle" : "budget",
+        "out" : [
+          "chart"
+        ],
+        "through" : [
+          "jobs"
+        ]
+      },
+      "featured" : false,
+      "hue" : "pink",
+      "persona" : "Tax · budget · insurance · travel",
+      "rank" : 12,
+      "readme" : "Household Budget/README.md",
+      "steps" : [
+        "Make a copy of the Household Budget",
+        "Replace the sample statements with your own",
+        "Run Jobs to redraw this month’s totals"
+      ],
+      "tags" : [
+        "Life"
+      ],
+      "tier" : "free",
+      "title" : "Life admin, handled",
+      "workspace" : "Household Budget"
+    }
+  ],
   "workspaces" : [
     {
       "category" : "research-markets",
@@ -1244,6 +1934,14 @@
       "name" : "AI Personal Assistants Market Watch",
       "summary" : "Follow the assistant market through sourced signals, comparisons and research decisions.",
       "title" : "AI Personal Assistants Market Watch"
+    },
+    {
+      "category" : "learn-flow",
+      "entry" : "Agent Desk/Agent Desk.md",
+      "featured" : false,
+      "name" : "Agent Desk",
+      "summary" : "Hand work to Claude Code or Codex, review every change they make, and keep a record of who wrote what.",
+      "title" : "Agent Desk"
     },
     {
       "category" : "business-teams",
@@ -1260,6 +1958,14 @@
       "name" : "Charts Gallery",
       "summary" : "Every chart and diagram Flow draws, driven from an editable table you own.",
       "title" : "Charts Gallery"
+    },
+    {
+      "category" : "business-teams",
+      "entry" : "Client Brief/Client Brief.md",
+      "featured" : false,
+      "name" : "Client Brief",
+      "summary" : "A monthly client brief from the client's own files, every figure sourced, refreshed next month without starting over.",
+      "title" : "Client Brief"
     },
     {
       "category" : "research-markets",
@@ -1342,9 +2048,17 @@
       "title" : "Living Document"
     },
     {
+      "category" : "personal-money",
+      "entry" : "Manuscript/Manuscript.md",
+      "featured" : false,
+      "name" : "Manuscript",
+      "summary" : "Bring a Word manuscript in, proofread it chapter by chapter, and publish the book with its cover.",
+      "title" : "Manuscript"
+    },
+    {
       "category" : "business-teams",
       "entry" : "Marketing Campaign/Campaign Desk.md",
-      "featured" : false,
+      "featured" : true,
       "name" : "Marketing Campaign",
       "summary" : "Editorial calendar, campaign review and a draft announcement in one desk.",
       "title" : "Campaign Desk"
@@ -1364,6 +2078,14 @@
       "name" : "NVIDIA Company Research",
       "summary" : "Understand one company through three sections, three sources and a focused research question.",
       "title" : "NVIDIA Company Research"
+    },
+    {
+      "category" : "business-teams",
+      "entry" : "Newsletter Archive/Newsletter Archive.md",
+      "featured" : false,
+      "name" : "Newsletter Archive",
+      "summary" : "Write each issue by voice and by hand, keep every one as your own file, and collect them into a book.",
+      "title" : "Newsletter Archive"
     },
     {
       "category" : "business-teams",
