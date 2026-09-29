@@ -31,7 +31,7 @@ path:
 | Knowledge workers | Private, Saves time | Flow Pro, Flow Import, Flow Publish |
 
 1. **Import the attachments; dictate your notes.** Bring the week’s Word, Excel and PDF files in with **File ▸ Import…**, and speak your own notes with **Dictation** (⇧⌘D). They land beside the team’s updates as plain Markdown. See [Using Flow ▸ Read, work and keep the result](x-flow://handbook/Using%20Flow#Read%2C%20work%20and%20keep%20the%20result).
-2. **Ask what changed this week; Summarize.** **Ask** (⌘K) finds what moved across the updates, and **Summarize** drafts the report. Each change arrives for you to keep or leave. See [Using Flow ▸ Use the right model for the work](x-flow://handbook/Using%20Flow#Use%20the%20right%20model%20for%20the%20work) — choose a model on this Mac to keep the notes here.
+2. **Ask what changed this week; Summarize.** Open **Team Status** and **Ask** (⌘K) what changed this week: the rollup already carries each update, so the answer covers them all. Ask reads the document it is asked from, so ask from Team Status, not from your own notes. **Summarize** drafts the report. Each change arrives for you to keep or leave. See [Using Flow ▸ Use the right model for the work](x-flow://handbook/Using%20Flow#Use%20the%20right%20model%20for%20the%20work) — choose a model on this Mac to keep the notes here.
 3. **Publish a clean Word file for the team.** **Publish** writes a Word document the team can open anywhere, and the Markdown stays yours.
 
 **What lasts:** your notes stay on this Mac when you choose a local model, and the weekly report takes minutes instead of an afternoon.

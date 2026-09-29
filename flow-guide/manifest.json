@@ -256,7 +256,7 @@
       "path" : "assets/channels4_banner.jpg"
     }
   ],
-  "contentVersion" : "1.14.3",
+  "contentVersion" : "1.14.5",
   "documents" : [
     {
       "bytes" : 18846,
@@ -729,8 +729,8 @@
       "path" : "Customer Research/Visit Notes.md"
     },
     {
-      "bytes" : 8878,
-      "contentHash" : "sha256:10e791fcbc15a8e82f63673364ff7480acf2ca0bd53c61d293443f972bb6f2b3",
+      "bytes" : 9291,
+      "contentHash" : "sha256:b848366e7986e7222f65bcc2d1056468e00513af19308bd55f518862cf1cd061",
       "path" : "Flow Handbook/Files Flow Writes.md"
     },
     {
@@ -1039,8 +1039,8 @@
       "path" : "Marketing Campaign/Launch Announcement.md"
     },
     {
-      "bytes" : 1655,
-      "contentHash" : "sha256:7cc9466aa9d88bb4b1d4414f4a89e8872554a4180596c0c105184169861417e1",
+      "bytes" : 1675,
+      "contentHash" : "sha256:5b92b61b683eb22f54401720c41addb128f135717436b8ba03351642bf33c9da",
       "path" : "Marketing Campaign/README.md"
     },
     {
@@ -1364,8 +1364,8 @@
       "path" : "Team Status/Plan.md"
     },
     {
-      "bytes" : 2269,
-      "contentHash" : "sha256:2665b2e593450873a0dde41df2687e61c3fd273650dc4a78945fb19268f6d33f",
+      "bytes" : 2439,
+      "contentHash" : "sha256:a8187c9c59be6de230623e56ad539cadc914912016e467f1f0882a180b1635a6",
       "path" : "Team Status/README.md"
     },
     {
@@ -1429,7 +1429,7 @@
       "path" : "Welcome.md"
     }
   ],
-  "generated" : "2026-09-28",
+  "generated" : "2026-09-29",
   "manifestVersion" : 2,
   "paths" : [
     {
@@ -1711,7 +1711,7 @@
       "rank" : 7,
       "readme" : "Marketing Campaign/README.md",
       "steps" : [
-        "Open the source web page beside your notes",
+        "Open the source web page inside Flow",
         "Expand with Sources, then Translate",
         "Publish a Word file and a web page"
       ],

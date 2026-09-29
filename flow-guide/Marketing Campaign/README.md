@@ -9,7 +9,7 @@ path:
   persona: Marketers
   tags: [Writing]
   steps:
-    - Open the source web page beside your notes
+    - Open the source web page inside Flow
     - Expand with Sources, then Translate
     - Publish a Word file and a web page
   benefits: [quality, time]
@@ -30,7 +30,7 @@ path:
 | --- | --- | --- |
 | Marketers | Quality, Saves time | Flow Pro, Flow Publish |
 
-1. **Open the source web page beside your notes.** **Click a web link** in your notes: the page opens inside Flow, beside the draft (**⌘-click** sends it to your browser instead).
+1. **Open the source web page inside Flow.** **Click a web link** in your notes: the page opens inside Flow in place of the draft, and **Back** returns to it (**⌘-click** sends it to your browser instead).
 2. **Expand with Sources, then Translate.** **Expand with Sources** drafts with citations you review; **Translate** makes the second language.
 3. **Publish a Word file and a web page.** **Publish** writes both from the same Markdown.
 

@@ -21,6 +21,7 @@ Each file is the document's name plus a suffix, so `Plan.md` can have `Plan.md.f
 | `Plan.md.flow-night-unreadable` | An earlier night record this version of Flow could not read, kept exactly as it was instead of written over | Never | Nothing Flow uses; the changes it recorded are still in the document and its saved versions |
 | `Plan.md.flow-review` | Proposed changes waiting in Review Changes, and changes another app made that you have not reviewed | Never | The proposals waiting for you are gone; the document is unchanged |
 | `Plan.md.flow-draft` | A proposal a Job prepared overnight that waits for your approval | Never | The waiting proposal is gone; the document is unchanged |
+| `Plan.md.flow-publish` | How the document last went out: its formats, and for a site its repository, address, theme and navigation | Never; File ▸ Publish rewrites it each time the document goes out | Publish starts again at PDF; the document is unchanged |
 
 ### The record of changes
 
@@ -65,7 +66,7 @@ These sit between the `---` lines at the top of a document. They are meant to be
 | `jobs:` | The work Flow repeats for this document | Yes |
 | `refresh:` | When bound tables and charts redraw: `as-data-changes`, `overnight` or `manual` | Yes |
 | `last-updated:` | When the Night Shift last changed the document, and from what | Flow rewrites it after each change |
-| `publish:` | Where and how the document publishes: `formats`, `repository`, `domain`, `url`, `theme`, `pages-navigation`, `pdf-navigation`, `cover` | Yes |
+| `publish:` | Where and how the document publishes: `formats`, `repository`, `domain`, `url`, `theme`, `pages-navigation`, `pdf-navigation`, `cover`. Flow reads a block you write here; File ▸ Publish remembers its choices in `Plan.md.flow-publish` instead, so publishing never changes the document | Yes |
 
 A `jobs:` block is a list. Each item starts with `- kind:` and adds the fields that kind needs:
 
