@@ -256,7 +256,7 @@
       "path" : "assets/channels4_banner.jpg"
     }
   ],
-  "contentVersion" : "1.14.5",
+  "contentVersion" : "1.14.6",
   "documents" : [
     {
       "bytes" : 18846,
@@ -554,8 +554,8 @@
       "path" : "Client Brief/Client Figures.md"
     },
     {
-      "bytes" : 2153,
-      "contentHash" : "sha256:c8bf8d01744e75d85b98781cd0f866f9d8e1c2f717a21ecfc98e861a8b27d85a",
+      "bytes" : 2207,
+      "contentHash" : "sha256:d5257cd03e66d365dccbc805a28c614bae1ebbf09edd7e8338dfffc87677c932",
       "path" : "Client Brief/README.md"
     },
     {
@@ -729,8 +729,8 @@
       "path" : "Customer Research/Visit Notes.md"
     },
     {
-      "bytes" : 9291,
-      "contentHash" : "sha256:b848366e7986e7222f65bcc2d1056468e00513af19308bd55f518862cf1cd061",
+      "bytes" : 9317,
+      "contentHash" : "sha256:63f1b520ba12b2528cb7ac615ffeed33d7b09898aa0764e3a4dc8b14b1662708",
       "path" : "Flow Handbook/Files Flow Writes.md"
     },
     {
@@ -994,8 +994,8 @@
       "path" : "Manuscript/Manuscript.md"
     },
     {
-      "bytes" : 1686,
-      "contentHash" : "sha256:a9efa1cb4793fb04877dbe4f168e30a686105a22d4ecffe279f395c89defe543",
+      "bytes" : 1715,
+      "contentHash" : "sha256:0552f4bef7b7cc668cdd4f6703026adc52bc706173743dcb7da19fa0e609af7b",
       "path" : "Manuscript/README.md"
     },
     {
@@ -1364,8 +1364,8 @@
       "path" : "Team Status/Plan.md"
     },
     {
-      "bytes" : 2439,
-      "contentHash" : "sha256:a8187c9c59be6de230623e56ad539cadc914912016e467f1f0882a180b1635a6",
+      "bytes" : 2471,
+      "contentHash" : "sha256:e44b171859ba2842c73b31aae915a5b53bb6d9a5896482bc2a25591e74c184c6",
       "path" : "Team Status/README.md"
     },
     {
@@ -1460,6 +1460,10 @@
       },
       "featured" : true,
       "hue" : "teal",
+      "import" : {
+        "into" : "client-files",
+        "reader" : "this-mac"
+      },
       "persona" : "Consultants · analysts · fractional operators",
       "rank" : 1,
       "readme" : "Client Brief/README.md",
@@ -1584,6 +1588,10 @@
       },
       "featured" : false,
       "hue" : "indigo",
+      "import" : {
+        "into" : "attachments",
+        "reader" : ""
+      },
       "persona" : "Knowledge workers",
       "rank" : 4,
       "readme" : "Team Status/README.md",
@@ -1870,6 +1878,10 @@
       },
       "featured" : false,
       "hue" : "red",
+      "import" : {
+        "into" : "chapters",
+        "reader" : ""
+      },
       "persona" : "Authors",
       "rank" : 11,
       "readme" : "Manuscript/README.md",

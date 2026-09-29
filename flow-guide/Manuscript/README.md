@@ -15,6 +15,8 @@ path:
   benefits: [ownership, cost]
   tier: pro
   hue: red
+  import:
+    into: chapters
   diagram:
     in: [docx]
     middle: book

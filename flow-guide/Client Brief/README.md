@@ -15,6 +15,9 @@ path:
   benefits: [time, quality]
   tier: pro
   hue: teal
+  import:
+    into: client-files
+    reader: this-mac
   diagram:
     in: [pdf, xlsx, pptx]
     middle: brief

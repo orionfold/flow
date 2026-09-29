@@ -15,6 +15,8 @@ path:
   benefits: [privacy, time]
   tier: pro
   hue: indigo
+  import:
+    into: attachments
   diagram:
     in: [docx, pdf, dictation]
     middle: status

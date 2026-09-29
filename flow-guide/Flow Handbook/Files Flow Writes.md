@@ -66,7 +66,7 @@ These sit between the `---` lines at the top of a document. They are meant to be
 | `jobs:` | The work Flow repeats for this document | Yes |
 | `refresh:` | When bound tables and charts redraw: `as-data-changes`, `overnight` or `manual` | Yes |
 | `last-updated:` | When the Night Shift last changed the document, and from what | Flow rewrites it after each change |
-| `publish:` | Where and how the document publishes: `formats`, `repository`, `domain`, `url`, `theme`, `pages-navigation`, `pdf-navigation`, `cover`. Flow reads a block you write here; File ▸ Publish remembers its choices in `Plan.md.flow-publish` instead, so publishing never changes the document | Yes |
+| `publish:` | Where and how the document publishes: `formats`, `repository`, `domain`, `url`, `theme`, `pages-navigation`, `pdf-navigation`, `cover`, `title` (a book's title). Flow reads a block you write here; File ▸ Publish remembers its choices in `Plan.md.flow-publish` instead, so publishing never changes the document | Yes |
 
 A `jobs:` block is a list. Each item starts with `- kind:` and adds the fields that kind needs:
 
