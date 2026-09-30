@@ -33,7 +33,7 @@ path:
 | Authors | Ownership, Lower cost | Flow Pro, Flow Import, Flow Publish |
 
 1. **Import the Word manuscript.** **File ▸ Import…** brings the manuscript in as Markdown, one chapter at a time into `chapters/`.
-2. **Proofread chapter by chapter.** **Proofread** proposes corrections, and **Review Changes** lets you keep each one or leave your voice as it is.
+2. **Proofread chapter by chapter.** **Proofread** proposes the chapter's corrections together, and **Review Changes** shows each one before you keep them — or discard the proposal and leave your voice as it is.
 3. **Generate a cover and publish the EPUB.** **Generate book cover** draws a cover from your title, and **Publish** writes the EPUB.
 
 **What lasts:** the book stays in plain files you own, and the production costs you an afternoon.

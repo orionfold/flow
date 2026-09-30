@@ -19,8 +19,10 @@ jobs:
 **Close the month by resolving unexplained spending, then decide whether next month's plan needs changing.**
 
 > Illustrative household · August 2026 review · USD · two fictional statements, 79 rows. The saved output is dated; it is not a connection to your bank.
+>
+> **These opening paragraphs describe the sample and stay as written.** Every chart and table below redraws from your statements on each run; rewrite these lines once your own month is in.
 
-In the supplied snapshot, the sample is below its $7,810 spending plan, but $408.75 in three uncategorized transactions still needs explanation. The recorded cash-flow surplus is 32.1% of income; only $1,500 is identified as a transfer to savings. Those are different facts.
+In the supplied sample, the household is below its $7,810 spending plan, but $408.75 in three uncategorized transactions still needs explanation. The recorded cash-flow surplus is 32.1% of income; only $1,500 is identified as a transfer to savings. Those are different facts.
 
 **Next action:** identify the Venmo and Zelle recipients before assigning a category. A merchant rule is your classification, not proof of what a transaction purchased. Review refunds, transfers and duplicate/overlapping statements before interpreting the totals. No automatic reconciliation is claimed.
 
@@ -127,8 +129,9 @@ encodings:
 ## How the month accumulated
 
 ```chart data: data/spending-*.json#cumulative
-chartType: Sparkline
+chartType: Line Chart
 title: Cumulative spend through the month
+subtitle: Running total by day, dollars
 source: data/spending-*.json, newest capture
 data:
   - {day: "2026-08-01", spent: 2950}
@@ -245,7 +248,7 @@ Gather reads the supplied statements, writes a new spending capture and refreshe
 | At a glance | KPI Card | `data/spending-*.json#summary` | refresh, then the night |
 | Categories | Grouped Bar Chart | `#categoryComparison` | refresh, then the night |
 | Last months | Stacked Bar Chart | `#byMonth` | refresh, then the night |
-| Accumulated | Sparkline | `#cumulative` | refresh, then the night |
+| Accumulated | Line Chart | `#cumulative` | refresh, then the night |
 | Where it went | table | `#topMerchants` | refresh, then the night |
 | Uncaught lines | table | `#uncategorized` | refresh, then the night |
 | The plan | table | `Budget Profile.md#table:Budgets` | the night alone |

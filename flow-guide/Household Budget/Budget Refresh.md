@@ -105,6 +105,7 @@ emit:
       - {window: "", sum: spent, as: running}
       - {calculate: "date", as: day}
       - {calculate: "round(running, 0)", as: spent}
+      - {columns: [day, spent]}
   topMerchants:
     from: thisMonth
     steps:

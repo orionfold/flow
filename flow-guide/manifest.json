@@ -256,7 +256,7 @@
       "path" : "assets/channels4_banner.jpg"
     }
   ],
-  "contentVersion" : "1.14.8",
+  "contentVersion" : "1.14.9",
   "documents" : [
     {
       "bytes" : 18846,
@@ -794,18 +794,18 @@
       "path" : "Household Budget/Budget Profile.md"
     },
     {
-      "bytes" : 7152,
-      "contentHash" : "sha256:d2cc74748b2434d813f772370a20a9fa62c5d8cbb43267ae6cdc1fd3cdc31b6b",
+      "bytes" : 7184,
+      "contentHash" : "sha256:88dd0c327c2e22682de0749166283c720f5bb3b2dfe40577517e57a4c39fc251",
       "path" : "Household Budget/Budget Refresh.md"
     },
     {
-      "bytes" : 11703,
-      "contentHash" : "sha256:7170c1cf553140d2f11d5ebc977a90072bf7a53c48dcf1a97770a13490dfbb8d",
+      "bytes" : 11937,
+      "contentHash" : "sha256:ca02a7e851ee11e65c7691d9283f39cdf319114ca0d4fb9331b09a7ed95cdeea",
       "path" : "Household Budget/Household Budget.md"
     },
     {
-      "bytes" : 2224,
-      "contentHash" : "sha256:ead297c5891a21a6eb5b806e66eb7215b9d34e56da2dc8a2a00574258c0d87df",
+      "bytes" : 2320,
+      "contentHash" : "sha256:62f2dc6f4085e2287cec79012d9f364f11620e13cd9f95c9183dcb550d3c7565",
       "path" : "Household Budget/README.md"
     },
     {
@@ -994,8 +994,8 @@
       "path" : "Manuscript/Manuscript.md"
     },
     {
-      "bytes" : 1715,
-      "contentHash" : "sha256:0552f4bef7b7cc668cdd4f6703026adc52bc706173743dcb7da19fa0e609af7b",
+      "bytes" : 1780,
+      "contentHash" : "sha256:0fe4dd3a6fc3237fb1c87d803e479372313ca248258bf370041ab72b5d60f4b1",
       "path" : "Manuscript/README.md"
     },
     {
