@@ -15,6 +15,8 @@ path:
   benefits: [privacy, ownership]
   tier: free
   hue: green
+  import:
+    table: "Holdings.md#table:Holdings"
   diagram:
     in: [xlsx, web]
     middle: dashboard
@@ -30,7 +32,7 @@ path:
 | --- | --- | --- |
 | Investors | Private, Ownership | Flow Pro, Flow Import |
 
-1. **Import your holdings from a spreadsheet.** **File ▸ Import…** turns an Excel export into the [Holdings](Holdings.md) table, which you can edit in the table editor. See [Using Flow ▸ Tables, charts and diagrams](x-flow://handbook/Using%20Flow#Tables%2C%20charts%20and%20diagrams).
+1. **Import your holdings from a spreadsheet.** **File ▸ Import…** turns an Excel export into the [Holdings](Holdings.md) table: its rows replace the sample's, and Macros and Settings stay as they are. The export needs `symbol`, `shares`, `cost` and `bought` columns; edit the rows afterwards in the table editor. See [Using Flow ▸ Tables, charts and diagrams](x-flow://handbook/Using%20Flow#Tables%2C%20charts%20and%20diagrams).
 2. **Gather quotes; the charts redraw from your own files.** **Run Jobs** runs the saved **Gather** definitions, and the bound charts redraw from the captures in the folder. See [Night Shift Handbook ▸ Four jobs, plus the redraw](x-flow://handbook/Night%20Shift%20Handbook#Four%20jobs%2C%20plus%20the%20redraw).
 3. **Overnight notes describe the tables on a model on this Mac.** Turn on the Night Shift and pick a local model; the notes arrive as changes you keep or leave. **History** records every run.
 

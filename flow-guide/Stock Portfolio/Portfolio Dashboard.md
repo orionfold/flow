@@ -23,7 +23,7 @@ jobs:
 
 **Review what needs attention in the holdings you already chose.** Start with quote coverage and concentration, then read the underlying source before making a decision.
 
-> Illustrative lots · retained market-data snapshot dated 2 September 2026 · USD. The saved page is available offline; its prices and headlines are not current. This sample allocation is not a recommendation.
+> Illustrative lots · USD. As shipped, the prices and headlines come from a market-data snapshot dated 2 September 2026; **Run Jobs** replaces them with dated captures in `data/`, and each view reads the newest; **Captures in this folder** at the foot of the page lists their dates. The saved page works offline. This sample allocation is not a recommendation.
 
 **Next action:** confirm your actual shares and cost basis in [[Holdings]], then check that every position has a quote from the intended session. The example assumes positive long positions quoted in USD. It does not reconcile brokerage statements or convert currencies.
 

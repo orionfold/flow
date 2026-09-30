@@ -256,7 +256,7 @@
       "path" : "assets/channels4_banner.jpg"
     }
   ],
-  "contentVersion" : "1.14.7",
+  "contentVersion" : "1.14.8",
   "documents" : [
     {
       "bytes" : 18846,
@@ -1209,8 +1209,8 @@
       "path" : "Stock Portfolio/Holdings.md"
     },
     {
-      "bytes" : 22816,
-      "contentHash" : "sha256:93ed57284cff9e64198e7f3ae360b6d3ff1013f3256813afc1fc03f47c0d1d6e",
+      "bytes" : 22967,
+      "contentHash" : "sha256:8e2f2797db4c1bfa064498e741ac2a834812e0e26a4fb2e75249907a3099740b",
       "path" : "Stock Portfolio/Portfolio Dashboard.md"
     },
     {
@@ -1219,8 +1219,8 @@
       "path" : "Stock Portfolio/Portfolio Refresh.md"
     },
     {
-      "bytes" : 2262,
-      "contentHash" : "sha256:d7efe06d55eb5e5700185a104359037eafd12cd6f2bec06215d2c842ad2cfed9",
+      "bytes" : 2457,
+      "contentHash" : "sha256:62d1058def2006a9421f6b5aa3f3797d96124b0dab9c64d72e7600f5d6958874",
       "path" : "Stock Portfolio/README.md"
     },
     {
@@ -1429,7 +1429,7 @@
       "path" : "Welcome.md"
     }
   ],
-  "generated" : "2026-09-29",
+  "generated" : "2026-09-30",
   "manifestVersion" : 2,
   "paths" : [
     {
@@ -1838,6 +1838,11 @@
       },
       "featured" : false,
       "hue" : "green",
+      "import" : {
+        "into" : "",
+        "reader" : "",
+        "table" : "Holdings.md#table:Holdings"
+      },
       "persona" : "Investors",
       "rank" : 10,
       "readme" : "Stock Portfolio/README.md",
