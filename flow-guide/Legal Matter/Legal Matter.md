@@ -83,11 +83,11 @@ Counts measure the supplied packet, not its adequacy. The source index identifie
 2. Read [[Legal Matter Settings]] and the two snapshots in `inputs/`. Inspect the added LM-06 event and its earlier date before making any edits.
 3. Open [[legal-snapshot-2026-09-12]] and use the **Events** table's **Open in the table editor** control. Change LM-06's event date from **2026-08-28 to 2026-08-30**, then save. Use **Run now** from the moon. Expect the receipt row to move **after the invoice and before the September correspondence**, with the event count still six. Revert the experiment before using the fictional source text again.
 4. Replace the sample exhibits and transcribed event rows with records you are authorized to use. Maintain the source index and review the authored matrix yourself. Copy the complete folder so every exhibit travels with the chronology.
-5. Open [[Legal Matter Refresh]], then choose **File ▸ Edit Definition…**. Return here and use **File ▸ Night Shift Jobs…** to change which local inputs are watched. Enable Night Shift only if you want scheduled runs.
+5. Open [[Legal Matter Refresh]], then choose **File ▸ Edit Definition…**. Return here and use **File ▸ Edit Jobs…** to change which local inputs are watched. Enable Night Shift only if you want scheduled runs.
 
 ## Optional overnight notes
 
-The saved jobs collect local data and watch source changes. They do not need a model. To add a short interpretation, use **File ▸ Night Shift Jobs…** on this document and add **Overnight notes** after configuring a local Night model. Read the proposed notes against the inputs; an interpretation is not another source. Nothing is sent or published by this workspace.
+The saved jobs collect local data and watch source changes. They do not need a model. To add a short interpretation, use **File ▸ Edit Jobs…** on this document and add **Overnight notes** after configuring a local Night model. Read the proposed notes against the inputs; an interpretation is not another source. Nothing is sent or published by this workspace.
 
 <!-- night: notes -->
 <!-- /night: notes -->

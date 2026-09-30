@@ -35,7 +35,7 @@ Fictional small project, as of 2 September 2026. `amount` is planned minutes; gr
 | Settings, planned_minutes | Capacity available to this project | Change the value beside the key |
 | Items, start and due | Planned dates, YYYY-MM-DD | Keep dates in this format |
 
-Ordinary edits use the Table editor. Keep the named headings and column names stable so the saved definition can find them. Use title and tag controls for document metadata, and **File ▸ Night Shift Jobs…** on [[Living Document]] for recurring work. Source is an advanced view of the same document.
+Ordinary edits use the Table editor. Keep the named headings and column names stable so the saved definition can find them. Use title and tag controls for document metadata, and **File ▸ Edit Jobs…** on [[Living Document]] for recurring work. Source is an advanced view of the same document.
 
 ## Make it yours
 

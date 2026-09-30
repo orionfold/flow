@@ -68,9 +68,9 @@ A share changes when its numerator or the total changes. After the practice edit
 
 1. Copy the complete **Charts Gallery** folder and add the copy to Flow. Work in that copy.
 2. Open [[Gallery Data]] and use **View ▸ Edit Table** on its Records table. Change Review from **4 to 7** hours and save.
-3. Return here and choose **Settings ▸ Night Shift ▸ Run now**. Scheduling can stay off. Expect Review's bar to show **7**, its donut share to become **7 of 23**, and the summary to show **23 planned hours and four activities**. Review the Briefing and changed document.
+3. Return here and choose **Settings ▸ Jobs ▸ Run all Jobs**. Scheduling can stay off. Expect Review's bar to show **7**, its donut share to become **7 of 23**, and the summary to show **23 planned hours and four activities**. Review the Briefing and changed document.
 4. Replace the fictional activity rows with your own complete plan. Keep the Records heading and both columns; update the date, labels and authored explanation when their meaning changes. Use nonnegative hours and a positive total for the donut.
-5. Open [[Gallery Refresh]], then choose **File ▸ Edit Definition…** to inspect the total. Return here and use **File ▸ Night Shift Jobs…** to review the Gather job and source watch. There are no public reads, model calls or writes to another system.
+5. Open [[Gallery Refresh]], then choose **File ▸ Edit Definition…** to inspect the total. Return here and use **File ▸ Edit Jobs…** to review the Gather job and source watch. There are no public reads, model calls or writes to another system.
 
 ## What refresh changes
 

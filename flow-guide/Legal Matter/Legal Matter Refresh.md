@@ -34,4 +34,4 @@ The output is `data/legal-matter-<run-date>.json`. The comparison matrix and rev
 | Supplied document index | Count of source records | Completeness and authenticity of the records |
 | Packet review metadata | Matter and snapshot date | Authored comparison matrix and questions |
 
-With this definition open, choose **File ▸ Edit Definition…** to inspect these steps. The source watch is a separate job: open [[Legal Matter]] and choose **File ▸ Night Shift Jobs…**.
+With this definition open, choose **File ▸ Edit Definition…** to inspect these steps. The source watch is a separate job: open [[Legal Matter]] and choose **File ▸ Edit Jobs…**.

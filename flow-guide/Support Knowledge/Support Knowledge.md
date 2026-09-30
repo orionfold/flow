@@ -91,11 +91,11 @@ Read a repeated case. Check whether the existing article answers it clearly. If 
 2. In [[Support Knowledge Settings]], open the **Settings** table with **Open in the table editor**, change `review_threshold` from **2 to 3**, save, and use **Run now** from the moon.
 3. Expect the **review-candidate table to become empty**: Time zones has only two cases. The topic chart stays **4 / 3 / 3 / 2**, and its article stays Draft. A queue preference does not change the underlying evidence or approve an article.
 4. Replace the fictional digests, snapshots, and help articles with material you are authorized to use. Keep one primary topic per case and maintain the article index. Later dated snapshots should contain the complete selected sample.
-5. Open [[Support Knowledge Refresh]], then choose **File ▸ Edit Definition…**. Return here and use **File ▸ Night Shift Jobs…** to adjust watches; enable Night Shift for scheduled runs if useful.
+5. Open [[Support Knowledge Refresh]], then choose **File ▸ Edit Definition…**. Return here and use **File ▸ Edit Jobs…** to adjust watches; enable Night Shift for scheduled runs if useful.
 
 ## Optional overnight notes
 
-The saved jobs collect local data and watch source changes. They do not need a model. To add a short interpretation, use **File ▸ Night Shift Jobs…** on this document and add **Overnight notes** after configuring a local Night model. Read the proposed notes against the inputs; an interpretation is not another source. Nothing is sent or published by this workspace.
+The saved jobs collect local data and watch source changes. They do not need a model. To add a short interpretation, use **File ▸ Edit Jobs…** on this document and add **Overnight notes** after configuring a local Night model. Read the proposed notes against the inputs; an interpretation is not another source. Nothing is sent or published by this workspace.
 
 <!-- night: notes -->
 <!-- /night: notes -->

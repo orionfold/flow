@@ -105,8 +105,8 @@ Bound tables and charts refresh from the supplied update files and plan. Source 
 1. Copy the whole **Team Status** folder and add it in Flow. Share that folder using a storage arrangement your team already approves; one designated Mac can run the scheduled jobs.
 2. Open [[Sam Whitaker]] and choose **View ▸ Edit Table**. Change `confidence` from 35 to 45 in his **Record** row, then save. After a run, his bar and row should change; the blocker and decision D1 must remain unresolved until explicitly edited.
 3. Replace the four fictional updates, milestones, measurement notes and decisions with your team's records. Preserve one source file per owner and an honest `updated` date.
-4. Use **File ▸ Night Shift Jobs…** to review the local watches, folder inventory and optional Overnight notes. This example binds directly to authored documents; it does not need a Gather definition.
-5. Choose **Settings ▸ Night Shift ▸ Run now**; enable Night Shift only for scheduled updates. Check the run result and diff. Update the decision queue yourself after the meeting; Flow has not approved the runner image or sent anyone a task.
+4. Use **File ▸ Edit Jobs…** to review the local watches, folder inventory and optional Overnight notes. This example binds directly to authored documents; it does not need a Gather definition.
+5. Choose **Settings ▸ Jobs ▸ Run all Jobs**; enable Night Shift only for scheduled updates. Check the run result and diff. Update the decision queue yourself after the meeting; Flow has not approved the runner image or sent anyone a task.
 
 ## How this page is built
 

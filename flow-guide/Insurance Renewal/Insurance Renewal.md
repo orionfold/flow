@@ -78,13 +78,13 @@ encodings:
 2. Open [[insurance-snapshot-2026-09-12]] and use the **Policies** table's **Open in the table editor** control. Change the professional-liability `quote_amount` from **4620 to 4500**; leave `current_amount` at 4200, then save. [[Insurance Renewal Settings]] selects the policy year.
 3. Use the moon's **Run now** action. The Gather job runs [[Insurance Renewal Refresh]]. Expect the professional-liability row to show **4500 offered, 300 change, 7.1 change pct**. The cyber offer stays Pending.
 4. Replace the fictional source notes and snapshots with your own complete packet. Keep filenames dated `YYYY-MM-DD`; the newest matching snapshot wins. Keep all essentials inside the copied folder.
-5. Use **File ▸ Night Shift Jobs…** here for the source watch. For calculation changes, open [[Insurance Renewal Refresh]], then choose **File ▸ Edit Definition…**. Automatic nights require Night Shift to be enabled; otherwise run the jobs when needed.
+5. Use **File ▸ Edit Jobs…** here for the source watch. For calculation changes, open [[Insurance Renewal Refresh]], then choose **File ▸ Edit Definition…**. Automatic nights require Night Shift to be enabled; otherwise run the jobs when needed.
 
 The tables and chart redraw from captures. Your surrounding prose and questions stay authored; revise them when the evidence changes.
 
 ## Optional overnight notes
 
-The saved jobs collect local data and watch source changes. They do not need a model. To add a short interpretation, use **File ▸ Night Shift Jobs…** on this document and add **Overnight notes** after configuring a local Night model. Read the proposed notes against the inputs; an interpretation is not another source. Nothing is sent or published by this workspace.
+The saved jobs collect local data and watch source changes. They do not need a model. To add a short interpretation, use **File ▸ Edit Jobs…** on this document and add **Overnight notes** after configuring a local Night model. Read the proposed notes against the inputs; an interpretation is not another source. Nothing is sent or published by this workspace.
 
 <!-- night: notes -->
 <!-- /night: notes -->

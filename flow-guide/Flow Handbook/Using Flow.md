@@ -60,7 +60,7 @@ Search finds words across every open folder, and the sidebar's **Best** results 
 | Jobs | What should this document do, and which source or definition should it use? |
 | Definition | How should named inputs become a useful set of rows or values? |
 
-On the main document, choose **File ▸ Night Shift Jobs…** to edit its Jobs. To inspect or edit a calculation, open the linked saved definition first, then choose **File ▸ Edit Definition…**. A definition belongs to the document/folder that carries it; it is not a global schema for all your work.
+On the main document, choose **File ▸ Edit Jobs…** to edit its Jobs. To inspect or edit a calculation, open the linked saved definition first, then choose **File ▸ Edit Definition…**. A definition belongs to the document/folder that carries it; it is not a global schema for all your work.
 
 ## Use the right model for the work
 

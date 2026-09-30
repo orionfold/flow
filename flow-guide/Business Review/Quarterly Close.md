@@ -10,7 +10,7 @@ as_of: '2026-09-12'
 
 ## Quarters
 
-Use the table’s **Open in the table editor** control, or **View ▸ Edit Table**. Try changing Q4’s revenue from **5.7** to **6.0**. Then open [[Business Review]] and choose **Settings ▸ Night Shift ▸ Run now**. Annual revenue becomes **$19.5M**. The input table stays yours to edit; the report is regenerated.
+Use the table’s **Open in the table editor** control, or **View ▸ Edit Table**. Try changing Q4’s revenue from **5.7** to **6.0**. Then open [[Business Review]] and choose **Settings ▸ Jobs ▸ Run all Jobs**. Annual revenue becomes **$19.5M**. The input table stays yours to edit; the report is regenerated.
 
 | series | quarter | revenue_m | gross_margin_pct | customers | operating_income_m |
 | --- | --- | ---: | ---: | ---: | ---: |

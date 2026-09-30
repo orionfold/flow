@@ -42,12 +42,13 @@ flowchart LR
 [[Meridian Proposal]] is a scoped draft with fees, deliverables and exclusions. [[Account Discovery]] preserves the context. [[Sales Performance]] is a separate fictional prior-quarter example; it is not revenue from this account.
 
 Before the meeting, use Search to find a requirement and compare the proposal beside it. Agency can draft an agenda or suggest clearer wording; review the text and assumptions before applying.
+
 ## Make it yours
 
 1. Copy this entire folder in Finder, give the copy a name, then choose **Add Folder** in Flow. Keep its local subfolders beside the documents.
 2. Open **Account Requirements** and choose **View ▸ Edit Table** to replace the fictional records. Keep the column names and edit the cells, then save. The saved definition controls the calculation; the living report’s Jobs control recurring work.
 3. After you have evidence for the export requirement, change R3 from Open to Confirmed. Gather should leave only the Windows requirement in the questions table.
-4. With this document open, choose **File ▸ Night Shift Jobs…** to review its saved work; save any changes and close the editor. Choose **Settings ▸ Night Shift ▸ Run now**, then inspect the changed table or chart and the Briefing. Gather uses local calculations; optional Overnight notes need a configured local model. Enable Night Shift only for scheduled runs.
+4. With this document open, choose **File ▸ Edit Jobs…** to review its saved work; save any changes and close the editor. Choose **Settings ▸ Jobs ▸ Run all Jobs**, then inspect the changed table or chart and the Briefing. Gather uses local calculations; optional Overnight notes need a configured local model. Enable Night Shift only for scheduled runs.
 5. Replace the illustrative prose with your own assessment after checking the inputs. A chart can refresh its numbers; it cannot certify the conclusions around it.
 
 

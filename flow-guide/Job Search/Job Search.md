@@ -89,10 +89,10 @@ The Gather filters and orders your authored tracker; bound views refresh from it
 ## Make it yours
 
 1. Copy the complete **Job Search** folder and add it in Flow. Keep `Applications`, the local definition, saved data and `resumes/` together.
-2. Before the first run, review **File ▸ Night Shift Jobs…**. Remove the optional Apple, Stripe and Anthropic web watches for local-only work, or replace them with specific public pages you want compared.
+2. Before the first run, review **File ▸ Edit Jobs…**. Remove the optional Apple, Stripe and Anthropic web watches for local-only work, or replace them with specific public pages you want compared.
 3. Open [[Applications]], choose **View ▸ Edit Table**, change the example Linear stage to `Withdrawn`, and save. Review [[Job Search Refresh]] in the Definition editor, then run the saved job. The active timeline should shrink from five to four applications; the complete tracker must still contain six.
 4. Replace all fictional applications and [[Resume — Base Version]]. Record a stable application ID, actual next date, posting evidence and exact sent-resume version. Keep unknown terms visibly unknown.
-5. Choose **Settings ▸ Night Shift ▸ Run now**; enable Night Shift only for scheduled updates. Read the result and source changes. Drafting a tailored resume or message creates material to review; it does not submit or send it.
+5. Choose **Settings ▸ Jobs ▸ Run all Jobs**; enable Night Shift only for scheduled updates. Read the result and source changes. Drafting a tailored resume or message creates material to review; it does not submit or send it.
 
 ## Source and update map
 

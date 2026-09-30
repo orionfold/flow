@@ -85,8 +85,8 @@ Bundled file list; the inventory job fills timestamps and digests in your workin
 1. Copy the whole **Living Document Starter** folder, name it for your project and add it in Flow. The local profile, definition, entries and saved capture travel together.
 2. Open [[Profile]] and choose **View ▸ Edit Table**. In **Items**, change Peer interviews from 120 to 150 minutes, then save. After a completed run, the planned total should become 430 while the 500-minute capacity and three-item count remain unchanged.
 3. Replace the fictional owner, rows and [[Example Entry]]. Use the **Settings** table's **Open in the table editor** control to change `planned_minutes` when your capacity changes; there is no second hard-coded target in the definition.
-4. Open [[Starter Refresh]], then choose **File ▸ Edit Definition…**. Return to this Living Document and use **File ▸ Night Shift Jobs…** to inspect its saved work. Use the Table and Chart editors to adapt labels and dimensions; the underlying keys remain visible in the source.
-5. Choose **Settings ▸ Night Shift ▸ Run now**; scheduling can stay off for this practice run. Check its capture, result and refreshed values. The deterministic Gather is local; optional Overnight notes need a configured local model. No public reads or external writes are required.
+4. Open [[Starter Refresh]], then choose **File ▸ Edit Definition…**. Return to this Living Document and use **File ▸ Edit Jobs…** to inspect its saved work. Use the Table and Chart editors to adapt labels and dimensions; the underlying keys remain visible in the source.
+5. Choose **Settings ▸ Jobs ▸ Run all Jobs**; scheduling can stay off for this practice run. Check its capture, result and refreshed values. The deterministic Gather is local; optional Overnight notes need a configured local model. No public reads or external writes are required.
 
 ## What a run changes
 

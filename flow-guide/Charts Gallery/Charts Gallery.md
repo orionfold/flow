@@ -30,9 +30,9 @@ The six chart categories retain **34 chart forms**. The three diagram categories
 
 1. Copy the entire **Charts Gallery** folder in Finder, then add the copy to Flow. Its source table, definition and saved example travel together.
 2. Open [[Gallery Data]]. Under **Records**, use **View ▸ Edit Table** to change Review from **4 to 7** hours, then save the document.
-3. Open [[Charts — Living Example]] and choose **Settings ▸ Night Shift ▸ Run now**. Scheduling can stay off. Expect Review's bar to become **7 hours**, its donut share to become **7 of 23 hours**, and the summary to become **23 hours across four activities**.
+3. Open [[Charts — Living Example]] and choose **Settings ▸ Jobs ▸ Run all Jobs**. Scheduling can stay off. Expect Review's bar to become **7 hours**, its donut share to become **7 of 23 hours**, and the summary to become **23 hours across four activities**.
 4. Replace the four fictional activity rows with your own planned hours. Keep the Records heading and the `activity` and `hours` columns; replace the dated explanation too. Use nonnegative numbers and a positive total for the donut.
-5. Open [[Gallery Refresh]] and choose **File ▸ Edit Definition…** to inspect the calculation. On [[Charts — Living Example]], **File ▸ Night Shift Jobs…** shows the saved local job and source watch. The practice needs no model, account or network read.
+5. Open [[Gallery Refresh]] and choose **File ▸ Edit Definition…** to inspect the calculation. On [[Charts — Living Example]], **File ▸ Edit Jobs…** shows the saved local job and source watch. The practice needs no model, account or network read.
 
 ## Read the marks honestly
 

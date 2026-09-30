@@ -235,7 +235,7 @@ Gather reads the supplied statements, writes a new spending capture and refreshe
 1. Copy the entire **Household Budget** folder to your own location and add that folder in Flow. Keep its profile, definition, statements and data together.
 2. Open [[Budget Profile]] and choose **View ▸ Edit Table**. In **Budgets**, change the Groceries monthly limit from 900 to 950, then save. Open [[Budget Refresh]] in the Definition editor only if you want to inspect the calculation. After a run, the category target should be 950 and total budget 7,860; actual spending should be unchanged.
 3. Replace both fictional CSVs with non-overlapping exports using exactly `Date,Description,Amount`, ISO dates and signed amounts. Map debit/credit exports first. Confirm account/period coverage yourself.
-4. Choose **File ▸ Night Shift Jobs…** on this document to review its saved jobs, then use **Settings ▸ Night Shift ▸ Run now**. Scheduling can stay off for a manual run. These Gather inputs are local. Inspect the capture and run result; subsequent scheduled work depends on Night Shift being enabled and available.
+4. Choose **File ▸ Edit Jobs…** on this document to review its saved jobs, then use **Settings ▸ Jobs ▸ Run all Jobs**. Scheduling can stay off for a manual run. These Gather inputs are local. Inspect the capture and run result; subsequent scheduled work depends on Night Shift being enabled and available.
 5. Set your expected income, targets and rules. When there is no positive recorded income, the savings rate is unavailable. Positive refunds are outside this simple outflow calculation; reconcile them before treating it as a complete expense ledger.
 
 ## How this page is built

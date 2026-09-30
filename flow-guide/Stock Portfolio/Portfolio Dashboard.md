@@ -401,10 +401,10 @@ The price and headline jobs write separate dated captures. Bound charts and tabl
 ## Make it yours
 
 1. Copy the whole **Stock Portfolio** folder and add the copy in Flow. Its inputs, saved captures and definitions travel together; the saved example is readable offline.
-2. In [[Holdings]], use the **Settings** table's **Open in the table editor** control. Change the `cash` value from 12,500 to 13,000 and save, then open [[Portfolio Refresh]] and choose **File ▸ Edit Definition…**. Return to this Portfolio Dashboard to inspect its jobs with **File ▸ Night Shift Jobs…**. With the same quote inputs, total value and cash allocation increase by 500; gains on stocks do not change. A live run may also change market prices.
+2. In [[Holdings]], use the **Settings** table's **Open in the table editor** control. Change the `cash` value from 12,500 to 13,000 and save, then open [[Portfolio Refresh]] and choose **File ▸ Edit Definition…**. Return to this Portfolio Dashboard to inspect its jobs with **File ▸ Edit Jobs…**. With the same quote inputs, total value and cash allocation increase by 500; gains on stocks do not change. A live run may also change market prices.
 3. Replace all example lots with your own USD holdings and average costs. Verify the source session, units and coverage. Use separate account records if your data needs transactions, currencies or dividend accounting beyond this example.
-4. Before **Run now**, review **File ▸ Night Shift Jobs…**. To stay offline, remove the **Portfolio Refresh** and **Headlines Refresh** Gather jobs and the Fed web watch; keep the saved captures. For live public reads, retain the two Yahoo Gather jobs after inspecting their definitions. Remove the Fed watch if it is not useful to your review.
-5. Choose **Settings ▸ Night Shift ▸ Run now**; scheduling can stay off for this first check. Inspect both capture dates, the coverage rows and the run result before reading the totals as current. The Jobs editor controls scheduled work; the Definition editor shows how the sources become tables.
+4. Before **Run now**, review **File ▸ Edit Jobs…**. To stay offline, remove the **Portfolio Refresh** and **Headlines Refresh** Gather jobs and the Fed web watch; keep the saved captures. For live public reads, retain the two Yahoo Gather jobs after inspecting their definitions. Remove the Fed watch if it is not useful to your review.
+5. Choose **Settings ▸ Jobs ▸ Run all Jobs**; scheduling can stay off for this first check. Inspect both capture dates, the coverage rows and the run result before reading the totals as current. The Jobs editor controls scheduled work; the Definition editor shows how the sources become tables.
 
 ## How this page is built
 

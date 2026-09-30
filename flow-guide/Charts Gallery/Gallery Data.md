@@ -19,7 +19,7 @@ tags: [charts-gallery, input, fictional-example]
 
 ## Edit the input, then inspect the result
 
-Use **View ▸ Edit Table** on this document, change Review's hours from 4 to 7 and save. Open [[Charts — Living Example]] and choose **Settings ▸ Night Shift ▸ Run now**. The total becomes 23 hours; the four activity names stay the same. If redraw-as-data-changes is enabled, the local views may already have refreshed; the manual run remains an explicit check.
+Use **View ▸ Edit Table** on this document, change Review's hours from 4 to 7 and save. Open [[Charts — Living Example]] and choose **Settings ▸ Jobs ▸ Run all Jobs**. The total becomes 23 hours; the four activity names stay the same. If redraw-as-data-changes is enabled, the local views may already have refreshed; the manual run remains an explicit check.
 
 Keep the heading **Records** and one table beneath it. Keep `activity` and `hours` as the column names, one nonblank activity per row and finite, nonnegative numeric hours. The donut requires a positive total. Remove example rows when adding your real plan; otherwise both sets will be counted. A zero is an entered zero, not a placeholder for an unknown amount.
 

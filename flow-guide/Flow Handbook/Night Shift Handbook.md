@@ -24,10 +24,10 @@ Gather and redraw calculations do not need a model. Overnight notes do. The prod
 
 ## Set up the work in the editors
 
-1. On the main document, choose **File ▸ Night Shift Jobs…**. Choose the saved definition or sources it should use.
+1. On the main document, choose **File ▸ Edit Jobs…**. Choose the saved definition or sources it should use.
 2. Open the linked definition document, then choose **File ▸ Edit Definition…** to inspect the sources, calculation steps and emitted rows.
-3. Try one small input change, then choose **Settings ▸ Night Shift ▸ Run now**. A manual run works with scheduling off. Compare the result with the expected change in Make it yours.
-4. Use the moon in the title bar or **Settings ▸ Night Shift** to configure the overnight window. Flow’s available controls show when the Mac can run and which model is ready.
+3. Try one small input change, then choose **Settings ▸ Jobs ▸ Run all Jobs**. A manual run works with scheduling off. Compare the result with the expected change in Make it yours.
+4. Use the moon in the title bar or **Settings ▸ Jobs** to configure the overnight window. Flow’s available controls show when the Mac can run and which model is ready.
 
 **Run now works across your open folders.** For a first practice run, keep only the copied workspace open and review its saved jobs first. Reopen your other folders when you are ready to include their work.
 
@@ -54,6 +54,6 @@ The Guide’s folders are examples, not automatic integrations. Copy the one clo
 
 ## Tables are inputs; Jobs repeat the work
 
-Edit business records with the named table’s **Open in the table editor** control. On the living report, **File ▸ Night Shift Jobs…** shows the recurring work. Its linked saved definition opens with **File ▸ Edit Definition…** for changes to the calculation. Document properties and these technical declarations still travel in frontmatter; ordinary record edits do not require YAML.
+Edit business records with the named table’s **Open in the table editor** control. On the living report, **File ▸ Edit Jobs…** shows the recurring work. Its linked saved definition opens with **File ▸ Edit Definition…** for changes to the calculation. Document properties and these technical declarations still travel in frontmatter; ordinary record edits do not require YAML.
 
 A definition can read `Quarterly Close.md#table:Quarters`: the single table below the exact **Quarters** heading. A dated pattern such as `inputs/health-operations-*.md#table:Weeks` reads the newest complete packet. `inputs/*.md#tables:Record` reads the **Record** table from every matching file, useful for one update per person or one document per form. Keep headings and column names when replacing sample values; change the definition if you rename them.

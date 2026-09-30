@@ -100,11 +100,11 @@ The table is empty in the supplied example because all outcome counts reconcile 
 2. Open [[Health Evidence Settings]], choose **View ▸ Edit Table**, and change the **Settings** value for `review_threshold_pct` from **6 to 8**. Save the input. Run the jobs with the moon's **Run now** action.
 3. Expect **Weeks above the threshold** to change from **5 to 1**. The six observed rates and the pooled 7.2% remain unchanged; changing a threshold cannot change the evidence.
 4. Replace both fictional snapshot files and the source notes with non-identifying aggregates you are authorized to use. Keep the outcome definitions and denominators explicit. The latest dated snapshot supplies the complete series.
-5. Open [[Health Evidence Refresh]], then choose **File ▸ Edit Definition…**. Return here and use **File ▸ Night Shift Jobs…** to adjust the source watch when adding local folders. Enable Night Shift if you want scheduled updates.
+5. Open [[Health Evidence Refresh]], then choose **File ▸ Edit Definition…**. Return here and use **File ▸ Edit Jobs…** to adjust the source watch when adding local folders. Enable Night Shift if you want scheduled updates.
 
 ## Optional overnight notes
 
-The saved jobs collect local data and watch source changes. They do not need a model. To add a short interpretation, use **File ▸ Night Shift Jobs…** on this document and add **Overnight notes** after configuring a local Night model. Read the proposed notes against the inputs; an interpretation is not another source. Nothing is sent or published by this workspace.
+The saved jobs collect local data and watch source changes. They do not need a model. To add a short interpretation, use **File ▸ Edit Jobs…** on this document and add **Overnight notes** after configuring a local Night model. Read the proposed notes against the inputs; an interpretation is not another source. Nothing is sent or published by this workspace.
 
 <!-- night: notes -->
 <!-- /night: notes -->

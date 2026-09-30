@@ -87,11 +87,11 @@ These are actuals within the fictional six-month register, excluding fixed fees.
 2. Open [[supplier-snapshot-2026-09-12]] and use the **Suppliers** table's **Open in the table editor** control. Change Paper Harbor's `offered` amount from **16200 to 16500**, then save. Use **Run now** from the moon.
 3. Expect its offered dot and table value to become **16500**, its fee change to become **−1500**, and the offered-fee total to become **46380**. The six-month variable-purchase total stays **25300**.
 4. Replace the sample suppliers and source notes with your own records. Preserve consistent currencies and term lengths; put absent quotations in a pending note rather than entering a made-up zero. Replace both dated examples when their history is no longer useful.
-5. Open [[Supplier Review Settings]] for the input conventions. To inspect calculations, open [[Supplier Review Refresh]], then choose **File ▸ Edit Definition…**. Return here and use **File ▸ Night Shift Jobs…** to configure source watches; turn on Night Shift if you want scheduled runs.
+5. Open [[Supplier Review Settings]] for the input conventions. To inspect calculations, open [[Supplier Review Refresh]], then choose **File ▸ Edit Definition…**. Return here and use **File ▸ Edit Jobs…** to configure source watches; turn on Night Shift if you want scheduled runs.
 
 ## Optional overnight notes
 
-The saved jobs collect local data and watch source changes. They do not need a model. To add a short interpretation, use **File ▸ Night Shift Jobs…** on this document and add **Overnight notes** after configuring a local Night model. Read the proposed notes against the inputs; an interpretation is not another source. Nothing is sent or published by this workspace.
+The saved jobs collect local data and watch source changes. They do not need a model. To add a short interpretation, use **File ▸ Edit Jobs…** on this document and add **Overnight notes** after configuring a local Night model. Read the proposed notes against the inputs; an interpretation is not another source. Nothing is sent or published by this workspace.
 
 <!-- night: notes -->
 <!-- /night: notes -->

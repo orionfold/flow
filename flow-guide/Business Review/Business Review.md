@@ -65,7 +65,7 @@ encodings:
 1. Copy this entire folder in Finder, give the copy a name, then choose **Add Folder** in Flow. Keep its local subfolders beside the documents.
 2. Open [[Quarterly Close]] and choose **View ▸ Edit Table** to change the **Quarters** records. Keep the column names and edit the cells, then save. Open [[Business Review Refresh]] in Definition editing if you want to change the calculation.
 3. Try changing Q4 revenue from 5.7 to 6.0. The refreshed annual total should become **$19.5M**; then review every authored conclusion that depends on it.
-4. With this document open, choose **File ▸ Night Shift Jobs…** to review its saved work; save any changes and close the editor. Choose **Settings ▸ Night Shift ▸ Run now**, then inspect the changed table or chart and the Briefing. Gather uses local calculations; optional Overnight notes need a configured local model. Enable Night Shift only for scheduled runs.
+4. With this document open, choose **File ▸ Edit Jobs…** to review its saved work; save any changes and close the editor. Choose **Settings ▸ Jobs ▸ Run all Jobs**, then inspect the changed table or chart and the Briefing. Gather uses local calculations; optional Overnight notes need a configured local model. Enable Night Shift only for scheduled runs.
 5. Replace the illustrative prose with your own assessment after checking the inputs. A chart can refresh its numbers; it cannot certify the conclusions around it.
 
 
