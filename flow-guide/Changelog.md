@@ -11,6 +11,7 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 
 | Release | Build | Date | In a sentence |
 | --- | --- | --- | --- |
+| 2.1 | 3020 | 30 September 2026 | A first install that sets itself up, publishing and importing you can hand over, reviews that read true, and paths that finish |
 | 2.0.3 | 2780 | 28 September 2026 | The first window really does open at a 14-inch MacBook's size, and quieter path cards |
 | 2.0.2 | 2772 | 28 September 2026 | Flow opens at a comfortable size the first time |
 | 2.0.1 | 2757 | 28 September 2026 | A purchase reaches Flow on its own and shows where you bought it, the plan date you paid for, a sidebar you can read, and a calmer document toolbar |
@@ -32,6 +33,52 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 | 1.5.2 | 1414 | 27 August 2026 | A pressable Update ready button |
 | 1.5.1 | 1404 | 27 August 2026 | The first Flow that arrived through Flow itself |
 | 1.5 | 1382 | 26 August 2026 | The launch |
+
+## Flow 2.1 · build 3020 · 30 September 2026
+
+Everything found by walking Flow's paths end to end as a new buyer would, from the first install through a published book.
+
+### A first install that sets itself up
+
+- **What shipped.** On a fresh install, Ideas shows one card per thing worth doing first — a provider key Flow found, an on-device model sized to your Mac, your notes apps, a code repo, dictation, web search for Sources, a first Job — and the bulb carries a count. A detected OpenRouter key turns OpenRouter on by itself. Home gains a Welcome section with First Time Setup, Models and Providers, and Explore. The Model popup's *Model settings* opens Settings ▸ Models.
+- **How it benefits you.** Flow works on the first launch without hunting through Settings, and each card says what it will do before you press it.
+- **How to use it.** Open the Ideas bulb in the toolbar. Press ▶ on a card to run it — the press is the approval — and a finished card reads *Done*.
+
+### Publishing you can hand over
+
+- **What shipped.** Footnotes print as numbered notes in PDF, Word and PowerPoint. A published folder becomes a book titled from its documents, with each chapter named after its heading, every picture included and a contents page with the right page numbers. A generated book cover appears as soon as it arrives and is named after the book. Publish no longer writes into your document's front matter or marks its own receipt stale, and Publish ▸ Excel counts every sheet it saves.
+- **How it benefits you.** What you publish is ready to send, with no raw labels, missing pictures or surprise changes to your source files.
+- **How to use it.** **File ▸ Publish…** for a document, **File ▸ Publish Folder…** for a book.
+
+### Imports that keep every word
+
+- **What shipped.** PDF Import on this Mac keeps a paragraph's short last line and every table cell, and defaults to a reader on this Mac on the paths that promise it. Notion exports arrive with clean names, callouts and page properties. Importing from inside a folder adds to that folder. Importing holdings into Stock Portfolio fills its Holdings table.
+- **How it benefits you.** You can trust an import without proofreading it against the original.
+- **How to use it.** **File ▸ Import…**.
+
+### Reviews that read true
+
+- **What shipped.** A review opens on the change that still needs you. Changes are marked at word boundaries and only where text changed. Approve & Save finishes in a moment, even beside very large files, without blanking the page or flashing *Stale*, and the next launch no longer calls Flow's own save a change. Review ▸ Sources names what a redrawn table or chart was drawn from. A document's title and properties can no longer be deleted by a keystroke.
+- **How it benefits you.** What a review shows is what will be saved, and your approval is the last step, not a wait.
+- **How to use it.** Open the Workbench's Review tab beside any proposal.
+
+### Paths and Jobs that finish
+
+- **What shipped.** Run Jobs completes a path in one pass, including Expand with Sources after earlier steps. Local models on Flow Runtime finish longer drafts and proofreads, and a refusal says why. Overnight notes keep units, percent signs and currency, and say when a figure is monthly. A Jobs capture is dated on your own calendar day. Links between a path copy's own pages open.
+- **How it benefits you.** A path you start is a path you finish, on this Mac or in the cloud.
+- **How to use it.** **Edit Jobs…** to set a path's steps, **Run Jobs** to run them.
+
+### Ask answers questions
+
+- **What shipped.** A question typed in Ask is answered from your document, with formatting shown as formatting, not asterisks.
+- **How it benefits you.** Ask is for questions as well as changes.
+- **How to use it.** Ask a question about the open document.
+
+### The small things
+
+- **What shipped.** Your plan stays as you chose it after Subscribe. A new document opens ready to type. A relative link to another note opens that note. A newly added folder is selected and scrolled to. The sidebar keeps up with tab switches. The document toolbar tucks away before it covers the title. A dictation started before a review no longer types into the document when the review closes.
+- **How it benefits you.** Fewer surprises between you and the work.
+- **How to use it.** Nothing to do.
 
 ## Flow 2.0.3 · build 2780 · 28 September 2026
 
