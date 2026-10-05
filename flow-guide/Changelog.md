@@ -11,6 +11,7 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 
 | Release | Build | Date | In a sentence |
 | --- | --- | --- | --- |
+| 2.2 | 3182 | 5 October 2026 | Flow Chat: research, write and publish a book by talking to your folder, with Research Brief, web search and Proof Run |
 | 2.1 | 3020 | 30 September 2026 | A first install that sets itself up, publishing and importing you can hand over, reviews that read true, and paths that finish |
 | 2.0.3 | 2780 | 28 September 2026 | The first window really does open at a 14-inch MacBook's size, and quieter path cards |
 | 2.0.2 | 2772 | 28 September 2026 | Flow opens at a comfortable size the first time |
@@ -33,6 +34,40 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 | 1.5.2 | 1414 | 27 August 2026 | A pressable Update ready button |
 | 1.5.1 | 1404 | 27 August 2026 | The first Flow that arrived through Flow itself |
 | 1.5 | 1382 | 26 August 2026 | The launch |
+
+## Flow 2.2 · build 3182 · 5 October 2026
+
+Talk to your folder. Flow Chat writes, researches and runs Flow's own actions beside the document, and every change it makes can be kept or undone.
+
+### Flow Chat
+
+- **What shipped.** The Workbench's first tab is a chat about the folder you are working in, remembered per project. Ask it to create, edit, rename or delete notes, or to run Research Brief, Expand with Sources, Proofread, Summarize, Text to Table or Generate Picture on the right note. It sees the pictures in the folder, takes your next message while it is still answering, and runs on the document's own model when the document names one.
+- **How it benefits you.** A book, a brief or a report can be built one sentence at a time, without hunting for the menu that does each step.
+- **How to use it.** Open the Workbench and choose the Chat tab; its header names the folder it works in. Every reply carries Undo, and a run it starts waits for you in Review.
+
+### Research Brief and web search
+
+- **What shipped.** Agency ▸ *Research Brief* turns an idea you wrote into a brief that Expand with Sources works from: a working argument, your own words kept, the scope as numbered parts, honesty rules, a Sources table of real links and empty Draft headings. Chat and night Jobs can search the web with a search provider you add, and a reply that searched ends with the pages Flow read.
+- **How it benefits you.** A chapter starts from what is true and linked, and says plainly what it could not read.
+- **How to use it.** In Chat, "turn this into a research brief" or "search the web for …". Add a search provider in Settings ▸ Web Lookups.
+
+### Proof Run: compare two models on real work
+
+- **What shipped.** With Agency ▸ *Run Next Action on Both Models* on, Proofread, Summarize, Translate, Convert Table to Text or Expand with Sources runs on this Mac's night model and on your cloud model, a third model checks both results blind, and the one it prefers opens in Review. A Job's *Compare Models…* does the same for a step, and a document can choose where its work runs by day and at night.
+- **How it benefits you.** You choose a model from what it did on your own document, not from a benchmark.
+- **How to use it.** Turn on *Run Next Action on Both Models*, then run one of those actions.
+
+### Fewer questions, within a budget you set
+
+- **What shipped.** The *Leaves this Mac* sheet has *Don't ask again*; a paid model then goes ahead only while this month's paid runs stay within the budget you set in Settings ▸ General ▸ What leaves your Mac, and Settings ▸ Documents ▸ Expand with Sources ▸ Words added sets how much each expansion adds.
+- **How it benefits you.** Long sessions run without a sheet at every step, and never past what you agreed to spend.
+- **How to use it.** Set *Monthly budget for paid runs* in Settings ▸ General ▸ What leaves your Mac, then tick *Don't ask again* on the sheet.
+
+### The small things
+
+- **What shipped.** Typing no longer redraws the whole window. A table right under a heading draws as a table. Publish has one Title and one Subtitle for every format, the book preview follows the cover, and a working note can stay out of the book. Settings closes with Flow's last window.
+- **How it benefits you.** Flow feels lighter, and a published book carries only what you meant.
+- **How to use it.** Nothing to do.
 
 ## Flow 2.1 · build 3020 · 30 September 2026
 

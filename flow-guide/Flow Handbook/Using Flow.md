@@ -90,6 +90,7 @@ Flow is built so that nothing has to leave this Mac, which makes the list of tim
 | A document embeds an image by web address | That address | The request for the image, when the document is shown | Write the image into the folder instead, and nothing is fetched |
 | You open a web address in a pane | That address | What any browser sends to load a page | Only when you enter one |
 | A run looks something up on the web, with web lookups on | The address the model chose | The request for that page, as any web request does, not your document, though the address is chosen from what it says | Settings ▸ Flow System ▸ Web Lookups, off until you turn it on |
+| A run, a Job that names web among its sources, or a Chat message that asks searches the web, with web lookups on and a search provider chosen | The provider you chose: Exa (api.exa.ai), Tavily (api.tavily.com), or your own SearXNG server | A few words chosen from your document, or from your Chat message, as the search, with your key; Flow then fetches the pages it reads, as in the line above | Settings ▸ General ▸ Web Lookups ▸ Search provider, None until you choose one |
 
 That is the whole list. As of Flow 1.7, Flow keeps no usage statistics, sends no crash reports, carries no analytics or advertising code, has no install identifier, and never checks a licence online to keep working. If a future Flow offers to share counts or crash reports with Orionfold, it will be a switch that starts off, and this table will list it beside the others.
 
