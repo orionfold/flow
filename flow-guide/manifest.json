@@ -256,7 +256,7 @@
       "path" : "assets/channels4_banner.jpg"
     }
   ],
-  "contentVersion" : "1.16.0",
+  "contentVersion" : "1.16.1",
   "documents" : [
     {
       "bytes" : 18846,
@@ -469,8 +469,8 @@
       "path" : "Business Review/Team Working Agreement.md"
     },
     {
-      "bytes" : 97790,
-      "contentHash" : "sha256:06352261cbd70fdbf05472db4bed5421909d0dd2548236192254922e99bdbfab",
+      "bytes" : 101097,
+      "contentHash" : "sha256:845fbb4f17892fc373107133074b0998502c3bf8c43108f31dbdcae35f7361e0",
       "path" : "Changelog.md"
     },
     {
@@ -1429,7 +1429,7 @@
       "path" : "Welcome.md"
     }
   ],
-  "generated" : "2026-10-05",
+  "generated" : "2026-10-07",
   "manifestVersion" : 2,
   "paths" : [
     {

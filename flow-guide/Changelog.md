@@ -11,6 +11,7 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 
 | Release | Build | Date | In a sentence |
 | --- | --- | --- | --- |
+| 2.2.1 | 3202 | 7 October 2026 | The fixes from writing a book in Flow Chat: notes, author and sources in a published book, reviews that show themselves, and Chat that reopens at the newest reply |
 | 2.2 | 3182 | 5 October 2026 | Flow Chat: research, write and publish a book by talking to your folder, with Research Brief, web search and Proof Run |
 | 2.1 | 3020 | 30 September 2026 | A first install that sets itself up, publishing and importing you can hand over, reviews that read true, and paths that finish |
 | 2.0.3 | 2780 | 28 September 2026 | The first window really does open at a 14-inch MacBook's size, and quieter path cards |
@@ -34,6 +35,40 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 | 1.5.2 | 1414 | 27 August 2026 | A pressable Update ready button |
 | 1.5.1 | 1404 | 27 August 2026 | The first Flow that arrived through Flow itself |
 | 1.5 | 1382 | 26 August 2026 | The launch |
+
+## Flow 2.2.1 · build 3202 · 7 October 2026
+
+The release after writing a book in Flow Chat from idea to EPUB: the nine things that got in the way, fixed.
+
+### A published book names its author and shows its notes
+
+- **What shipped.** Publish has an Author field beside Title and Subtitle; Return writes all three into the folder's README or the document's own front matter, and the book's title page, its metadata and the Book Cover sheet read it from there. In an EPUB, each note under *Sources for this section* sits on one line, and a chapter that lists its notes keeps them on the page instead of leaving the label over an empty space.
+- **How it benefits you.** A book you publish from Flow carries who wrote it and what it drew on, readable in Apple Books and any other reader.
+- **How to use it.** Open Publish, type the author, press Return, then Save EPUB. A folder book whose README already names an author needs nothing.
+
+### A run you start from Chat shows its review
+
+- **What shipped.** When a Research Brief or another run you asked for in Chat is ready, Review opens on its own once Chat is idle: not while a reply is still arriving, not while you are typing, and not in the seconds after a reply ends. The reply's card shows each note once, and a row that reads *Ready in Review* opens that review from its link. Chat reopens at the newest reply, and offers no next step for a document that has left the folder.
+- **How it benefits you.** You do not have to notice a banner or hunt for the review; the work you asked for comes to you when you are ready for it.
+- **How to use it.** Ask Chat for the run and keep reading; when the reply has been on screen for a moment, Review appears.
+
+### A proposal keeps one front matter block
+
+- **What shipped.** When a run's reply opens with a copy of the document's front matter, the copy is dropped and the document's own block stays. Review also refuses a proposal that would put a second block at the top, and says so.
+- **How it benefits you.** A Research Brief no longer leaves a second `---` block and a bare title line above the chapter title.
+- **How to use it.** Nothing to do.
+
+### A captured source is cited by its original
+
+- **What shipped.** When Expand with Sources or a Research Brief draws on a note that records where it came from, such as a Competitor Watch source with its *Original* link and *Retrieved* date, the footnote cites that address and date instead of the note's own file path.
+- **How it benefits you.** A book's citations work in the book and on any other Mac.
+- **How to use it.** Nothing to do; a note that keeps its *Original* row is cited by it.
+
+### What leaves your Mac says why a shift did not run
+
+- **What shipped.** When Jobs are declined, the day's shared summary carries a count per reason beside the count of declined shifts, and the Home add-ons row reads the Pro Days balance before it records that it drew.
+- **How it benefits you.** The shared record says why a night did nothing, with nothing else added.
+- **How to use it.** Settings ▸ General ▸ What leaves your Mac shows the day's summary.
 
 ## Flow 2.2 · build 3182 · 5 October 2026
 
