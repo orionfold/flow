@@ -89,7 +89,7 @@ Import the new files into `client-files/`, update [Client Figures](Client%20Figu
 
 ## Acceptance
 
-When the brief is ready, tick what was delivered, type your name and press **Sign off**. Flow shows exactly what it will record, then writes one signed record beside this document — who signed, when, and which items were ticked. The brief's own text does not change, and History shows the signature. If the checklist changes afterwards, the record stays and the card asks for a new signature. **Agency ▸ Sign-off** drafts a checklist like this one from selected text, and the card's **⊟** opens it in the component editor.
+When the brief is ready, tick what was delivered, type your name and press **Sign off**. Flow shows exactly what it will record, then writes one signed record beside this document — who signed, when, and which items were ticked. The brief's own text does not change, and History shows the signature. If the checklist changes afterwards, the record stays and the card asks for a new signature. **Agency ▸ Sign-off** drafts a checklist like this one from selected text, and the card's **⊟** opens it in the component editor. Ask Chat for an acceptance checklist and it draws the card in its reply before you keep it; the signing still happens here, in the document.
 
 ```flowui
 component: Approval Card

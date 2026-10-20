@@ -261,7 +261,7 @@
       "path" : "assets/channels4_banner.jpg"
     }
   ],
-  "contentVersion" : "1.16.4",
+  "contentVersion" : "1.16.5",
   "documents" : [
     {
       "bytes" : 18846,
@@ -549,8 +549,8 @@
       "path" : "Client Brief/Brief Refresh.md"
     },
     {
-      "bytes" : 4824,
-      "contentHash" : "sha256:26c086101b064f68bfe285cd070df9cfb50b221123476e68b6739171f31ef5f4",
+      "bytes" : 4965,
+      "contentHash" : "sha256:25f7839b09c3316525b5a5511be50aa32885b77bf724a201e811bba6086a200c",
       "path" : "Client Brief/Client Brief.md"
     },
     {
