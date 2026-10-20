@@ -15,7 +15,7 @@ tags: [charts-gallery, reference, fictional-example]
 | Flowchart | Explain steps and decisions, including the paths a person can take |
 | Sequence diagram | Show actors exchanging messages in order |
 | State diagram | Define allowed states and the events between them |
-| Gantt (Mermaid) | Write a dependency-oriented schedule as text |
+| Gantt (diagram) | Write a dependency-oriented schedule as text |
 | User journey | Summarize a sequence of tasks and an explicitly subjective experience rating |
 | Kanban board | Group an authored task list by status |
 
@@ -103,7 +103,7 @@ stateDiagram-v2
 
 [[Charts Gallery]]
 
-### Gantt (Mermaid)
+### Gantt (diagram)
 
 Write a dependency-oriented schedule as text. This example is separate from the chart Gantt; neither proves a planned task completed.
 

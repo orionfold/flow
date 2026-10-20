@@ -35,7 +35,7 @@ path:
 
 1. **Import last month’s PDFs, decks and sheets.** **File ▸ Import…** reads PDF, PowerPoint, Excel and Word into `client-files/` as Markdown you can search and cite. See [Using Flow ▸ Read, work and keep the result](x-flow://handbook/Using%20Flow#Read%2C%20work%20and%20keep%20the%20result).
 2. **Draft the brief with sources, and approve it.** **Expand with Sources** drafts *This month* with a citation on every claim; **Review Changes** lets you keep what is right. Choose a model on this Mac for client material.
-3. **Publish to PDF or Word; refresh next month.** **Publish** writes the file the client receives. Next month, import the new files and **Run Jobs**: the changed figures redraw.
+3. **Publish to PDF or Word; refresh next month.** **Publish** writes the file the client receives. Next month, import the new files and **Run Jobs**: the cards, the chart and the changed figures redraw.
 
 **What lasts:** every figure in the brief points at the client’s own file, and next month starts from this one.
 

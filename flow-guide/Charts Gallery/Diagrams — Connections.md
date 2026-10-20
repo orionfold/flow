@@ -16,8 +16,8 @@ tags: [charts-gallery, reference, fictional-example]
 | Timeline | Present dated milestones in order |
 | Quadrant chart | Discuss items scored on two explicit axes |
 | Sankey diagram | Follow amounts between named stages |
-| Pie (Mermaid) | Show a few embedded amounts within a Mermaid document |
-| XY chart (Mermaid) | Combine simple embedded bar and line series using one explained axis |
+| Pie (diagram) | Show a few embedded amounts within a diagram |
+| XY chart (diagram) | Combine simple embedded bar and line series using one explained axis |
 | Git graph | Explain a small branch-and-merge history |
 
 An outline, a chronology and a numerical flow should not share a form merely because all contain connections.
@@ -118,9 +118,9 @@ Upgraded to Pro,Stayed on Pro,284
 
 [[Charts Gallery]]
 
-### Pie (Mermaid)
+### Pie (diagram)
 
-Show a few embedded amounts within a Mermaid document. It is authored data; the chart-fence pie is the choice here when values must bind to a local source.
+Show a few embedded amounts within a diagram. It is authored data; the chart-fence pie is the choice here when values must bind to a local source.
 
 Source: a short list of labels and amounts: the same material as a chart pie, when you want it inside a diagram-only document or rendered on GitHub.
 
@@ -135,7 +135,7 @@ pie showData
 
 [[Charts Gallery]]
 
-### XY chart (Mermaid)
+### XY chart (diagram)
 
 Combine simple embedded bar and line series using one explained axis. Keep units compatible and identify each series in the surrounding prose.
 

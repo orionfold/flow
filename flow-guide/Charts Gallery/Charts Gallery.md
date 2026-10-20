@@ -24,7 +24,7 @@ Start with [[Charts — Living Example]]: edit a four-row table and see the same
 | What entities, components or boundaries belong together? | [[Diagrams — Structures]] | 7 |
 | How should ideas, events or quantities connect? | [[Diagrams — Connections]] | 7 |
 
-The six chart categories retain **34 chart forms**. The three diagram categories retain **20 Mermaid forms**. Each page has a route back here and a next page; browse in order or go straight to the question you have.
+The six chart categories retain **34 chart forms**. The three diagram categories retain **20 diagram forms**. Each page has a route back here and a next page; browse in order or go straight to the question you have.
 
 ## Make it yours
 

@@ -66,5 +66,48 @@
       "status": "Changed",
       "source": "Support export"
     }
+  ],
+  "kpis": [
+    {
+      "metric": "Monthly recurring revenue, $",
+      "value": 191500,
+      "goal": 200000
+    },
+    {
+      "metric": "Active accounts",
+      "value": 418,
+      "goal": 425
+    },
+    {
+      "metric": "Gross margin, %",
+      "value": 71,
+      "goal": 72
+    }
+  ],
+  "revenue": [
+    {
+      "month": "2026-04",
+      "revenue": 171400
+    },
+    {
+      "month": "2026-05",
+      "revenue": 174900
+    },
+    {
+      "month": "2026-06",
+      "revenue": 178200
+    },
+    {
+      "month": "2026-07",
+      "revenue": 181000
+    },
+    {
+      "month": "2026-08",
+      "revenue": 184000
+    },
+    {
+      "month": "2026-09",
+      "revenue": 191500
+    }
   ]
 }

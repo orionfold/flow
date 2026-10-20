@@ -31,8 +31,13 @@
       "path" : "Charts Gallery/data/gallery-2026-09-12.json"
     },
     {
-      "bytes" : 1548,
-      "contentHash" : "sha256:49c5b322b9b6b27feb901502e13b7c5c3ffd5192ebe6ee13935cb689e0a7c6b9",
+      "bytes" : 230249,
+      "contentHash" : "sha256:4527907142cbb665a453794ae59390eeb3a30a07f9dfcc78ee7a4dbdaa10f3d5",
+      "path" : "Client Brief/assets/office-desk.jpeg"
+    },
+    {
+      "bytes" : 2236,
+      "contentHash" : "sha256:61f1d54c8c11b32df6c946cd58637f89bc0f54d24baaad1e5699c744a5ff9132",
       "path" : "Client Brief/data/review-2026-09-12.json"
     },
     {
@@ -256,7 +261,7 @@
       "path" : "assets/channels4_banner.jpg"
     }
   ],
-  "contentVersion" : "1.16.1",
+  "contentVersion" : "1.16.4",
   "documents" : [
     {
       "bytes" : 18846,
@@ -475,7 +480,7 @@
     },
     {
       "bytes" : 3586,
-      "contentHash" : "sha256:9ac6adbd1a558e2fd1fb0bf8fecd800caa91170d0ce0adb9cc17d84c30b3cd30",
+      "contentHash" : "sha256:36228b7f72256f7da2b5e7a5d7e2703bc427cf87d8d9715abaa7f985babd3f4a",
       "path" : "Charts Gallery/Charts Gallery.md"
     },
     {
@@ -514,13 +519,13 @@
       "path" : "Charts Gallery/Charts — Time Series.md"
     },
     {
-      "bytes" : 6359,
-      "contentHash" : "sha256:105be6f6238ce1bb5982c198d2944c2b505754f5d28c351bb6b5314daf5c763b",
+      "bytes" : 6341,
+      "contentHash" : "sha256:2a529efd324f245a3604b3a293003493cf5ef502796be2f98a823dcfe75b521a",
       "path" : "Charts Gallery/Diagrams — Connections.md"
     },
     {
       "bytes" : 6600,
-      "contentHash" : "sha256:d2b7dcebbc2c8dfbf65fd5eaf1c8bda6c5258577c39730ebe32d3f99799a2161",
+      "contentHash" : "sha256:0f951b2a0da0cc4089319ffebf74552f0d8727a17d403c5e1e7d2a02387bc21e",
       "path" : "Charts Gallery/Diagrams — Processes.md"
     },
     {
@@ -539,23 +544,23 @@
       "path" : "Charts Gallery/Gallery Refresh.md"
     },
     {
-      "bytes" : 725,
-      "contentHash" : "sha256:97f9b6996e95a52f3a91d15e16b6077d9335d1a5ea1ddd6f0049a640e84274d2",
+      "bytes" : 1044,
+      "contentHash" : "sha256:84ff78a463dbdecc2e8521457351520cf38bb699af6bb9d8146b00d941493c5b",
       "path" : "Client Brief/Brief Refresh.md"
     },
     {
-      "bytes" : 1758,
-      "contentHash" : "sha256:371ab8a3e9d75428126117356a4ee4f4324822387570418543d2150cf6c37aa1",
+      "bytes" : 4824,
+      "contentHash" : "sha256:26c086101b064f68bfe285cd070df9cfb50b221123476e68b6739171f31ef5f4",
       "path" : "Client Brief/Client Brief.md"
     },
     {
-      "bytes" : 1096,
-      "contentHash" : "sha256:e36fc55004062faebce8927182632f39510ac6d3122fb8956cbccacdf4484007",
+      "bytes" : 1707,
+      "contentHash" : "sha256:05c5fc9b04a7285a5a2776c828e2b408fd4dba47752263ed195f427f609e50e6",
       "path" : "Client Brief/Client Figures.md"
     },
     {
-      "bytes" : 2207,
-      "contentHash" : "sha256:d5257cd03e66d365dccbc805a28c614bae1ebbf09edd7e8338dfffc87677c932",
+      "bytes" : 2232,
+      "contentHash" : "sha256:1bfc6250ddf0324983debbf3f95908eda82dc64edb142258c0625308f1057ebd",
       "path" : "Client Brief/README.md"
     },
     {
@@ -739,8 +744,8 @@
       "path" : "Flow Handbook/Night Shift Handbook.md"
     },
     {
-      "bytes" : 9595,
-      "contentHash" : "sha256:fa040e5d4daabc4b23e5e701e637a279eae3969e8d080c07428e2f0012d66752",
+      "bytes" : 10146,
+      "contentHash" : "sha256:619e8da5844a24ae5525d4948332d69921a72166e8d6740319700dcaaf44d804",
       "path" : "Flow Handbook/Using Flow.md"
     },
     {
@@ -1064,13 +1069,13 @@
       "path" : "Model Arena/Model Comparisons.md"
     },
     {
-      "bytes" : 34441,
-      "contentHash" : "sha256:8e0e85b4bb8e8c2c19719d7f54f292bb205d4ebd9bcbd4d27d119b2281a0b3d6",
+      "bytes" : 34442,
+      "contentHash" : "sha256:1d55ffaeb1cabfa487c1e651eee76895b120af2a847fd3de49d8890a9fe95d28",
       "path" : "Model Arena/Model Evidence.md"
     },
     {
-      "bytes" : 34071,
-      "contentHash" : "sha256:59d6921d1eab8addfbd527dfcac886bec889bb58754550a3e99098befdae5f99",
+      "bytes" : 34072,
+      "contentHash" : "sha256:a29833c9a85b85610ac21480b538e3768b49484ad798e9ddbdc74bfa617ea58e",
       "path" : "Model Arena/Model Recommendations.md"
     },
     {
@@ -1429,7 +1434,7 @@
       "path" : "Welcome.md"
     }
   ],
-  "generated" : "2026-10-07",
+  "generated" : "2026-10-20",
   "manifestVersion" : 2,
   "paths" : [
     {

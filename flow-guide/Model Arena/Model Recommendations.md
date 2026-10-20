@@ -274,7 +274,7 @@ models:
 
 # Model Recommendations
 
-Flow's editor, reader, vault, search, tables and charts work with no model at all. **Agency does not.** Summarising a document, proposing an edit, checking a draft against your own guidance: all of it needs a model somewhere.
+Flow's editor, reader, folder, search, tables and charts work with no model at all. **Agency does not.** Summarising a document, proposing an edit, checking a draft against your own guidance: all of it needs a model somewhere.
 
 There are three ways to give Flow one, and none of them is better than the others in general. Which is better depends on your Mac.
 

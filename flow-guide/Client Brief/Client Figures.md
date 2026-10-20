@@ -6,7 +6,7 @@ as_of: '2026-09-12'
 ---
 # Client Figures
 
-**Illustrative client inputs.** These are the figures the monthly brief cites. Replace them with the figures from this month's client files, keep the IDs stable, and save; then run the Jobs on [Client Brief](Client%20Brief.md).
+**Illustrative client inputs.** These are the figures the monthly brief cites. Replace them with the figures from this month's client files, keep the IDs stable, and save; then run the Jobs on [Client Brief](Client%20Brief.md). The three tables feed the brief's table, its cards and its chart.
 
 ## Figures
 
@@ -17,6 +17,27 @@ as_of: '2026-09-12'
 | F3 | Gross margin | 71% | 71% | Unchanged | Finance workbook |
 | F4 | Open support tickets | 38 | 52 | Changed | Support export |
 | F5 | Board-approved headcount | 46 | 46 | Unchanged | August board deck |
+
+## Key figures
+
+Plain numbers, so the brief's cards can draw them; each goal is the one the client set for the quarter, and each is a figure where higher is better, which is what a card's bar means.
+
+| metric | value | goal |
+| --- | ---: | ---: |
+| Monthly recurring revenue, $ | 191500 | 200000 |
+| Active accounts | 418 | 425 |
+| Gross margin, % | 71 | 72 |
+
+## Revenue by month
+
+| month | revenue |
+| --- | ---: |
+| 2026-04 | 171400 |
+| 2026-05 | 174900 |
+| 2026-06 | 178200 |
+| 2026-07 | 181000 |
+| 2026-08 | 184000 |
+| 2026-09 | 191500 |
 
 ## About these inputs
 

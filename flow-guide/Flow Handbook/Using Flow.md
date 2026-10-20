@@ -8,7 +8,7 @@ tags: ["flow", "reference"]
 
 ## Read, work and keep the result
 
-Flow stores your documents as Markdown in folders you choose. Ordinary text, lists, tables, links and images remain readable elsewhere. Flow’s chart, Mermaid and living-data blocks stay in the file too; other readers may show those blocks as source unless they support them.
+Flow stores your documents as Markdown in folders you choose. Ordinary text, lists, tables, links and images remain readable elsewhere. Flow’s chart, diagram and living-data blocks stay in the file too; other readers may show those blocks as source unless they support them.
 
 | Your task | Use in Flow |
 | --- | --- |
@@ -59,6 +59,8 @@ Search finds words across every open folder, and the sidebar's **Best** results 
 | Table | Which business records or input values should change? |
 | Jobs | What should this document do, and which source or definition should it use? |
 | Definition | How should named inputs become a useful set of rows or values? |
+
+A document can carry an acceptance checklist the reader ticks and signs: select the text that names what was delivered and choose **Agency ▸ Sign-off**; the proposal arrives in Review Changes like any edit. Pressing **Sign off** on the card shows what Flow will record, then writes one signed record beside the document, never into it. The card's **⊟** opens the component editor, where you add items and fields without touching the text; **Format ▸ Insert Component…** places a fresh checklist after the caret. [[Client Brief]] carries one.
 
 On the main document, choose **File ▸ Edit Jobs…** to edit its Jobs. To inspect or edit a calculation, open the linked saved definition first, then choose **File ▸ Edit Definition…**. A definition belongs to the document/folder that carries it; it is not a global schema for all your work.
 
