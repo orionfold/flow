@@ -87,6 +87,36 @@ Recurring revenue rose to $191,500 and active accounts to 418. Open support tick
 
 Import the new files into `client-files/`, update [Client Figures](Client%20Figures.md), and **Run Jobs**: the cards, the chart and the table above redraw, and the brief shows what changed. **Publish** writes the PDF or Word file the client receives.
 
+## At a glance
+
+Two parts of this brief, side by side — the revenue chart and the figures it rests on — as one block. A block can hold a **Section** or **Columns** of charts, tables, diagrams and checklists; the chart here carries its own values, so a Jobs run leaves it alone and redraws the bound charts above.
+
+```flowui
+component: Columns
+components:
+  - component: Chart
+    chart:
+      chartType: Bar Chart
+      title: Recurring revenue, April to September
+      data:
+        - {month: "2026-04", revenue: 171400}
+        - {month: "2026-05", revenue: 174900}
+        - {month: "2026-06", revenue: 178200}
+        - {month: "2026-07", revenue: 181000}
+        - {month: "2026-08", revenue: 184000}
+        - {month: "2026-09", revenue: 191500}
+      semantic_types: {month: Category, revenue: Amount}
+      encodings:
+        x: {field: month}
+        y: {field: revenue}
+  - component: Table
+    title: September against the plan
+    rows:
+      - {Figure: "Monthly recurring revenue, $", Value: 191500, Plan: 200000}
+      - {Figure: Active accounts, Value: 418, Plan: 425}
+      - {Figure: Support backlog, Value: 52, Plan: 40}
+```
+
 ## Acceptance
 
 When the brief is ready, tick what was delivered, type your name and press **Sign off**. Flow shows exactly what it will record, then writes one signed record beside this document — who signed, when, and which items were ticked. The brief's own text does not change, and History shows the signature. If the checklist changes afterwards, the record stays and the card asks for a new signature. **Agency ▸ Sign-off** drafts a checklist like this one from selected text, and the card's **⊟** opens it in the component editor. Ask Chat for an acceptance checklist and it draws the card in its reply before you keep it; the signing still happens here, in the document.

@@ -261,7 +261,7 @@
       "path" : "assets/channels4_banner.jpg"
     }
   ],
-  "contentVersion" : "1.16.5",
+  "contentVersion" : "1.16.7",
   "documents" : [
     {
       "bytes" : 18846,
@@ -549,8 +549,8 @@
       "path" : "Client Brief/Brief Refresh.md"
     },
     {
-      "bytes" : 4965,
-      "contentHash" : "sha256:25f7839b09c3316525b5a5511be50aa32885b77bf724a201e811bba6086a200c",
+      "bytes" : 6114,
+      "contentHash" : "sha256:8e81f4221b615c038374425ed0247a13d04fbb9d5e7eddd5def6aaa4ed282355",
       "path" : "Client Brief/Client Brief.md"
     },
     {
@@ -734,6 +734,11 @@
       "path" : "Customer Research/Visit Notes.md"
     },
     {
+      "bytes" : 4389,
+      "contentHash" : "sha256:3ec57d4d69d85e4d7f995b78528c2befa1d506083e988938cd627c2a00f781bd",
+      "path" : "Flow Handbook/Components.md"
+    },
+    {
       "bytes" : 9317,
       "contentHash" : "sha256:63f1b520ba12b2528cb7ac615ffeed33d7b09898aa0764e3a4dc8b14b1662708",
       "path" : "Flow Handbook/Files Flow Writes.md"
@@ -744,8 +749,8 @@
       "path" : "Flow Handbook/Night Shift Handbook.md"
     },
     {
-      "bytes" : 10146,
-      "contentHash" : "sha256:619e8da5844a24ae5525d4948332d69921a72166e8d6740319700dcaaf44d804",
+      "bytes" : 10362,
+      "contentHash" : "sha256:a323bc327fcf2aa070f6ccd4589b486ac91a0005f846d6b124610850e5da3db2",
       "path" : "Flow Handbook/Using Flow.md"
     },
     {
@@ -1434,7 +1439,7 @@
       "path" : "Welcome.md"
     }
   ],
-  "generated" : "2026-10-20",
+  "generated" : "2026-10-21",
   "manifestVersion" : 2,
   "paths" : [
     {
