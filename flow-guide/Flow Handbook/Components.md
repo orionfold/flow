@@ -21,6 +21,23 @@ items:
 decision: {label: Sign off, action: sign-off}
 ```
 
+## Form
+
+Fields a reader fills in the document and one act Flow records after asking. A field is `text` on one line, a `number` between a min and a max, a `date`, a `choice` of one option, a `multi-choice` of any of them, or a `checklist` ticked item by item. The act is the button: `submit` records every entry beside the document; `decide` records the chosen option and the reason; `rate` records the score out of its scale; `sign-off` signs a checklist the way an Approval Card does; `update` writes each entry into the document's front matter under the key its field binds, so a status form shows the status it last wrote. An act is once per block; the update act is the one that writes, and it asks in Review Changes.
+
+```flowui
+component: Form
+title: Interview scorecard · Senior analyst
+subtitle: Harbour Analytics · panel of 2026-10-23
+fields:
+  - {label: Score, bind: score, type: number, min: 1, max: 5}
+  - {label: What stood out, bind: note}
+  - {label: Interviewer, bind: signer}
+decision: {label: Rate, action: rate}
+```
+
+Ask Chat for a decision memo or a status form and it drafts one in its reply; **Agency ▸ Form** drafts one from the selected text. The Approval Card above is a Form with a checklist and the sign-off act.
+
 ## Table
 
 Rows as maps; the first row's keys are the columns. Plain twin: a Markdown table.
@@ -110,9 +127,31 @@ text: |
   September closes on the 5th; the churn figure moves until then.
 ```
 
-## Section and Columns
+## Section, Hero and Bento
 
-`Section` groups components under a title. `Columns` draws them two across at most; a third sits below at the whole width, and everything stacks when the column is narrow.
+`Section` groups components under a title. `Hero` holds exactly two, side by side at every width — the pair a page opens with, a chart beside the figures it rests on, stays a pair in a Chat reply and in a narrow window alike. `Bento` holds two or more: two across at most, a third below at the whole width, and everything stacks when the column is narrow. A block written `Columns` in an earlier Flow is read as a Bento and keeps drawing; Flow writes `Bento` from now on.
+
+```flowui
+component: Hero
+components:
+  - component: Chart
+    chart:
+      chartType: Line Chart
+      title: Weekly mentions rose through September
+      data:
+        - {week: "2026-09-07", mentions: 120}
+        - {week: "2026-09-14", mentions: 134}
+        - {week: "2026-09-21", mentions: 151}
+      semantic_types: {week: Category, mentions: Amount}
+      encodings:
+        x: {field: week}
+        y: {field: mentions}
+  - component: Table
+    title: Figures
+    rows:
+      - {Figure: Assistants tracked, Value: 14}
+      - {Figure: New this week, Value: 2}
+```
 
 ## One composed example
 
@@ -127,7 +166,7 @@ components:
       September closes on the 5th; the churn figure moves until then.
 
       Sign only after the close.
-  - component: Columns
+  - component: Bento
     components:
       - component: Image
         src: assets/quiet-desk.jpeg

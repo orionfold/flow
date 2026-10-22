@@ -89,10 +89,10 @@ Import the new files into `client-files/`, update [Client Figures](Client%20Figu
 
 ## At a glance
 
-Two parts of this brief, side by side — the revenue chart and the figures it rests on — as one block. A block can hold a **Section** or **Columns** of charts, tables, diagrams and checklists; the chart here carries its own values, so a Jobs run leaves it alone and redraws the bound charts above.
+Two parts of this brief, side by side — the revenue chart and the figures it rests on — as one block. A block can hold a **Section**, a **Hero** (exactly two, side by side at every width) or a **Bento** (two across, stacked when the column is narrow) of charts, tables, diagrams and checklists; the chart here carries its own values, so a Jobs run leaves it alone and redraws the bound charts above.
 
 ```flowui
-component: Columns
+component: Bento
 components:
   - component: Chart
     chart:

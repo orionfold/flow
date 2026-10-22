@@ -261,7 +261,7 @@
       "path" : "assets/channels4_banner.jpg"
     }
   ],
-  "contentVersion" : "1.16.7",
+  "contentVersion" : "1.16.9",
   "documents" : [
     {
       "bytes" : 18846,
@@ -549,8 +549,8 @@
       "path" : "Client Brief/Brief Refresh.md"
     },
     {
-      "bytes" : 6114,
-      "contentHash" : "sha256:8e81f4221b615c038374425ed0247a13d04fbb9d5e7eddd5def6aaa4ed282355",
+      "bytes" : 6215,
+      "contentHash" : "sha256:8534ecc196ca36a0c7d6316c760e734d066525c22a506cc9a0ef184074cef278",
       "path" : "Client Brief/Client Brief.md"
     },
     {
@@ -734,8 +734,8 @@
       "path" : "Customer Research/Visit Notes.md"
     },
     {
-      "bytes" : 4389,
-      "contentHash" : "sha256:3ec57d4d69d85e4d7f995b78528c2befa1d506083e988938cd627c2a00f781bd",
+      "bytes" : 6511,
+      "contentHash" : "sha256:6f1aa08ec08f31b84069e7a13142db0c3447671b444037032d4a9d501cdae554",
       "path" : "Flow Handbook/Components.md"
     },
     {
@@ -1439,7 +1439,7 @@
       "path" : "Welcome.md"
     }
   ],
-  "generated" : "2026-10-21",
+  "generated" : "2026-10-22",
   "manifestVersion" : 2,
   "paths" : [
     {
