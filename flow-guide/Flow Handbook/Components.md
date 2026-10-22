@@ -127,6 +127,27 @@ text: |
   September closes on the 5th; the churn figure moves until then.
 ```
 
+## Change Summary
+
+What changed in this document lately, in History's own words — newest first, who and which day beside each line, and **Show in History** to read the rest. It holds nothing of its own: the rows are History's, so they are current every time the document opens. `since` is the first day it reaches back to (the last 30 days when absent) and `limit` how many rows show before the line that counts the rest.
+
+```flowui
+component: Change Summary
+title: What changed this month
+since: 2026-10-01
+limit: 5
+```
+
+## Sources
+
+What this document was made from, as History records it — each source with how it was used and when, a source that changed since marked as History marks it, and a source in your folder opening on a click. A document from before Flow recorded where things came from says *Lineage not recorded.*
+
+```flowui
+component: Sources
+```
+
+Put either one under a brief that a Jobs run rewrites, and a reader sees what moved and what it rests on before trusting it.
+
 ## Section, Hero and Bento
 
 `Section` groups components under a title. `Hero` holds exactly two, side by side at every width — the pair a page opens with, a chart beside the figures it rests on, stays a pair in a Chat reply and in a narrow window alike. `Bento` holds two or more: two across at most, a third below at the whole width, and everything stacks when the column is narrow. A block written `Columns` in an earlier Flow is read as a Bento and keeps drawing; Flow writes `Bento` from now on.
