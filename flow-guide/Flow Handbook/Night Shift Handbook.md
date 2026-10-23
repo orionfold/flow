@@ -50,6 +50,8 @@ Numeric tables and charts can regenerate from their inputs. An authored diagram,
 | Public source freshness | Competitor Watch |
 | Questions from evidence | Insurance Renewal or Legal Matter |
 
+A Job can end on its own. Give it a last day (**Stops on a day** in Edit Jobs, or `until: 2026-12-04` on the Job) and it runs through that day, then stays listed without running until you change or remove the day. A document can also cap what its Jobs spend on paid models: **Budget** in Edit Jobs, or `budget: 2` for $2 a month. The monthly budget in Settings still applies, and the stricter of the two wins. Runs on this Mac cost nothing and never meet the cap. A Flow from before last days existed refuses an Agency Job that carries one and keeps running the other kinds, so share a Job with an end only with someone on a current Flow.
+
 The Guide’s folders are examples, not automatic integrations. Copy the one closest to your task and replace its sample inputs.
 
 ## Tables are inputs; Jobs repeat the work

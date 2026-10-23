@@ -36,6 +36,25 @@ fields:
 decision: {label: Rate, action: rate}
 ```
 
+A Form with the update act can also set up a Job; **Elements ▸ Job Form** inserts the one below, with this document's sections and the files beside it as the choices. Its `writes:` lines are the Job as **Edit Jobs** writes it, and a value in quotes such as `"{section}"` is filled from the field with that bind. Before you press the button, the line under it says what the Job will do, where its result lands and what it may spend; a Job that writes nothing into the document says so there. The new Job waits in Review Changes until you keep it. A field the Job uses fills the Job; any other field, like the budget below, is written as its own key.
+
+```flowui
+component: Form
+title: Keep a section current
+fields:
+  - {label: Section to keep current, bind: section}
+  - {label: Sources, bind: sources, type: multi-choice, options: [notes, clippings]}
+  - {label: Monthly budget in dollars, bind: budget, type: number, min: 0, max: 20}
+  - {label: Last day, bind: until, type: date}
+decision: {label: Set up the Job, action: update}
+writes:
+  jobs:
+    - kind: expand-with-sources
+      section: "{section}"
+      sources: "{sources}"
+      until: "{until}"
+```
+
 Ask Chat for a decision memo or a status form and it drafts one in its reply; **Agency ▸ Form** drafts one from the selected text. The Approval Card above is a Form with a checklist and the sign-off act.
 
 ## Table
