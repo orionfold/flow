@@ -55,6 +55,8 @@ writes:
       until: "{until}"
 ```
 
+A Job like this keeps its section current. Each run redrafts the section from what the sources say now, keeping what still holds, replacing what changed and dropping what no longer holds. It never appends, and it holds the section at about its own length, or at the Job's `length:` when you set one. On a night when none of its files has changed since its last draft, kept or not, it skips without calling a model and says *No change in its sources since the last draft*. A run you start yourself from **Run Jobs** always redrafts.
+
 Ask Chat for a decision memo or a status form and it drafts one in its reply; **Agency ▸ Form** drafts one from the selected text. The Approval Card above is a Form with a checklist and the sign-off act.
 
 ## Table
