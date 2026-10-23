@@ -21,6 +21,7 @@ Each file is the document's name plus a suffix, so `Plan.md` can have `Plan.md.f
 | `Plan.md.flow-night-unreadable` | An earlier night record this version of Flow could not read, kept exactly as it was instead of written over | Never | Nothing Flow uses; the changes it recorded are still in the document and its saved versions |
 | `Plan.md.flow-review` | Proposed changes waiting in Review Changes, and changes another app made that you have not reviewed | Never | The proposals waiting for you are gone; the document is unchanged |
 | `Plan.md.flow-draft` | A proposal a Job prepared overnight that waits for your approval | Never | The waiting proposal is gone; the document is unchanged |
+| `Plan.md.flow-source` | The page a document follows, as Flow last took it, so a Jobs run can tell the page's changes from yours (New from Web Page) | Never | The document stops following its page until you add it again with New from Web Page |
 | `Plan.md.flow-publish` | How the document last went out: its formats, and for a site its repository, address, theme and navigation | Never; File ▸ Publish rewrites it each time the document goes out | Publish starts again at PDF; the document is unchanged |
 
 ### The record of changes
@@ -95,6 +96,7 @@ jobs:
 | `refresh-from-data` | none; redraws every bound table and chart |
 | `gather` | `definition:` the saved definition; `into:` (default `data`); `as:` (default `capture`) |
 | `overnight-notes` | none |
+| `follow-source` | none; it reads the page the document's `source:` names, and only New from Web Page writes it |
 | `expand-with-sources` | `section:`, `sources:`, `length:` in words |
 | `summarize`, `proofread`, `visualize`, `text-to-table`, `describe-picture` | `section:` |
 | `translate` | `section:`, `language:` |

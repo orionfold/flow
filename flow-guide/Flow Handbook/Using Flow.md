@@ -20,6 +20,26 @@ Flow stores your documents as Markdown in folders you choose. Ordinary text, lis
 | Inspect how a calculation works | Edit Definition and its intermediate results |
 | Understand a change | Review Changes and History |
 
+## New from Web Page
+
+**＋ ▸ New from Web Page…** (or File ▸ New from Web Page…) brings a page on the web into the current folder as a document. Type its address and press **Read Page**: Flow reads the page and shows it as the document it will be, with a line saying what came in (words, headings, tables, code, callouts, pictures) and what was left out (the site's navigation, footers, sign-up forms and link panels). Nothing is written until you press **Add**. Pictures land in the folder's `assets/`; the front matter names the page (`source:`), when it was read, and its author and licence when the page states them; and a Sources block closes the document.
+
+**Keep it updated** decides what happens next:
+
+- **Follow the source** (the default) adds a `follow-source` Job. Each Jobs run reads the page again; a change where you have not edited comes in as a change you keep or revert, and a change where you have edited is listed in the morning with both texts, never written over yours.
+- **Check when I ask** follows only when you run the document's Jobs.
+- **Snapshot** reads the page once.
+
+A page drawn by its own scripts may read empty when fetched; open it in a tab and press **Save as Document**, which uses the page as the tab has drawn it. Flow honours a site's robots.txt, sends no cookies, never runs the page's scripts, and follows only `https` pages on the web, never one on your own network.
+
+### A whole work from its contents page
+
+When the page you read is the contents page of a book or a set of documentation, the task says so (*This page lists 14 pages of one work*) and offers **Bring In All 14…**. The list shows each page with its number and title, under the work's parts when it has them, ticked; a page whose address a document in the destination already follows reads *Already here* and is not read again. **Read Pages** reads the ticked pages one at a time, on the same site only, with **Stop** beside the progress; then one line states the total and names any page not brought in. **In a new folder**, named for the work, is on by default. **Add** writes every page with its place (`order:`, and `part:` when the work has parts) and a `README.md` that lists them with links to the files, then opens the README. The sidebar and Publish list such a folder README first, then in the author's order. **Just This Page** goes back to importing the one page.
+
+### Before you rely on an import
+
+Anything you bring in, from a web page, Word, Excel, PowerPoint or a PDF, gets a checklist in the Workbench's **Sources** tab: whether the source states a licence, whom to credit, what was left out, pictures without a description, links that leave the folder, tables to compare with the source, and whether the document follows its page. Each item says its evidence in one sentence, and the checkbox is yours: the ribbon shows *Imported · 3 to check* until every item is settled, and the list then folds to one line. An item opens again if its evidence changes, for instance when a follow brings in a picture without a description. **Walk Through with Chat** takes the open items one at a time; Chat may read the source again and propose a fix for you to keep or revert in Review, and it never ticks an item for you. The checklist lives beside the document, never in it, so it is not published.
+
 ## Plain text, with structure
 
 Write *emphasis*, **strong text**, `inline code`, and [web links](https://orionfold.com/flow/). Use headings to give a reader a route through the work.
@@ -91,6 +111,7 @@ Flow is built so that nothing has to leave this Mac, which makes the list of tim
 | You publish to GitHub Pages | api.github.com (GitHub, under your own account) | The document's pages, pictures, charts and data, to the repository you named, with the token you gave; only what changed since last time | Only when you press it; Forget the token in the Publish task and it is off |
 | A document embeds an image by web address | That address | The request for the image, when the document is shown | Write the image into the folder instead, and nothing is fetched |
 | You open a web address in a pane | That address | What any browser sends to load a page | Only when you enter one |
+| You read a page with New from Web Page, and on each Jobs run of a document that follows it | That page's site | The request for its robots.txt, the page and its pictures, naming Flow as the reader; no cookies | Only when you press Read Page; choose Snapshot, or remove the document's `follow-source` Job, and it is never read again |
 | A run looks something up on the web, with web lookups on | The address the model chose | The request for that page, as any web request does, not your document, though the address is chosen from what it says | Settings ▸ Flow System ▸ Web Lookups, off until you turn it on |
 | A run, a Job that names web among its sources, or a Chat message that asks searches the web, with web lookups on and a search provider chosen | The provider you chose: Exa (api.exa.ai), Tavily (api.tavily.com), or your own SearXNG server | A few words chosen from your document, or from your Chat message, as the search, with your key; Flow then fetches the pages it reads, as in the line above | Settings ▸ General ▸ Web Lookups ▸ Search provider, None until you choose one |
 
