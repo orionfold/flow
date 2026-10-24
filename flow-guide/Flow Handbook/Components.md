@@ -36,14 +36,14 @@ fields:
 decision: {label: Rate, action: rate}
 ```
 
-A Form with the update act can also set up a Job; **Elements ▸ Job Form** inserts the one below, with this document's sections and the files beside it as the choices. Its `writes:` lines are the Job as **Edit Jobs** writes it, and a value in quotes such as `"{section}"` is filled from the field with that bind. Before you press the button, the line under it says what the Job will do, where its result lands and what it may spend; a Job that writes nothing into the document says so there. The new Job waits in Review Changes until you keep it. A field the Job uses fills the Job; any other field, like the budget below, is written as its own key.
+A Form with the update act can also set up a Job; **Elements ▸ Job Form** inserts the one below. Its choices are this document's own: `options: sections` offers the headings a Job can keep current, `options: blocks` its charts and tables, and `options: files` the files beside it. The lists follow the document as you edit it, so rename a heading and the Form offers the new name. If something you chose is gone by the time you press the button, Flow names it and asks you to choose again; it stays marked *not in this document now* until you do. Its `writes:` lines are the Job as **Edit Jobs** writes it, and a value in quotes such as `"{section}"` is filled from the field with that bind. Before you press the button, the line under it says what the Job will do, where its result lands and what it may spend; a Job that writes nothing into the document says so there. The new Job waits in Review Changes until you keep it. A field the Job uses fills the Job; any other field, like the budget below, is written as its own key.
 
 ```flowui
 component: Form
 title: Keep a section current
 fields:
-  - {label: Section to keep current, bind: section}
-  - {label: Sources, bind: sources, type: multi-choice, options: [notes, clippings]}
+  - {label: Section to keep current, bind: section, type: choice, options: sections}
+  - {label: Sources, bind: sources, type: multi-choice, options: files}
   - {label: Monthly budget in dollars, bind: budget, type: number, min: 0, max: 20}
   - {label: Last day, bind: until, type: date}
 decision: {label: Set up the Job, action: update}
@@ -56,6 +56,22 @@ writes:
 ```
 
 A Job like this keeps its section current. Each run redrafts the section from what the sources say now, keeping what still holds, replacing what changed and dropping what no longer holds. It never appends, and it holds the section at about its own length, or at the Job's `length:` when you set one. On a night when none of its files has changed since its last draft, kept or not, it skips without calling a model and says *No change in its sources since the last draft*. A run you start yourself from **Run Jobs** always redrafts.
+
+A Job can keep a chart or a table current instead of a section's prose. Name it with `block:` in place of `section:`; a chart is named by its title, and a table by its heading, as *Pricing table*. Each run asks for the rows only, in the block's own columns, and changes nothing else: the chart's type, title and encodings, and the table's header, stay yours. A chart or table bound to a data file with `data:` is not offered, because its file already keeps it current.
+
+```flowui
+component: Form
+title: Keep a chart current
+fields:
+  - {label: Chart or table to keep current, bind: block, type: choice, options: blocks}
+  - {label: Sources, bind: sources, type: multi-choice, options: files}
+decision: {label: Set up the Job, action: update}
+writes:
+  jobs:
+    - kind: expand-with-sources
+      block: "{block}"
+      sources: "{sources}"
+```
 
 Ask Chat for a decision memo or a status form and it drafts one in its reply; **Agency ▸ Form** drafts one from the selected text. The Approval Card above is a Form with a checklist and the sign-off act.
 
