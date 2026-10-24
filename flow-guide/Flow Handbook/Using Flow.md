@@ -72,6 +72,23 @@ Flow binds charts and tables to local files. A Gather definition can filter, joi
 
 Search finds words across every open folder, and the sidebar's **Best** results add **Related matches** beside them. Today Related matches use Apple's on-device sentence model: they never leave this Mac, they match at the scale of a sentence rather than a page, and they are not available in every language. When they are not there, the results say why.
 
+## Ask your folder in Chat
+
+Chat answers from the folder it works in, the nearest folder above your document that has a README. Before each reply Flow searches that folder for the words of your message and gives the model up to six passages, with the file each came from. The reply links each fact to its file, and a **From this folder** row under it lists those files; a click opens one. When the folder does not say, Chat says so rather than answering from memory. The web joins only when you ask Chat to search it.
+
+An empty Chat reads *Answers from* the folder's title, with how many documents it holds. A folder describes itself in its README's front matter, which GitHub and every Markdown app read too:
+
+```yaml
+title: The Pricing Playbook
+author: A. Writer
+version: 2.1
+license: CC-BY-4.0
+summary: How we price, from plans to renewals
+questions: [How do we price a new plan?, Who approves a discount?]
+```
+
+Every key is optional. Up to six `questions` are kept, and the empty Chat offers the first four as buttons under *Ask* and the title. The reading order is not written here; it stays each document's `order:`. A folder whose README has no title or questions gets a **Describe this folder** button in Chat, which proposes these keys from what the folder's pages say; the change waits in Review Changes like any Chat edit, and the rest of the README is left as it was.
+
 ## Jobs and definitions have different jobs
 
 | Editor | Question it answers |
