@@ -2,7 +2,7 @@
 title: Gallery Refresh
 tags: [charts-gallery, definition, fictional-example]
 sources:
-  records: Gallery Data.md#table:Records
+  records: Gallery Input.md#table:Records
 derive:
   typedRecords:
     from: records
@@ -21,13 +21,13 @@ emit:
 ---
 # Gallery Refresh
 
-[[Charts Gallery]] · [[Gallery Data]] · [[Charts — Living Example]]
+[[Charts Gallery]] · [[Gallery Input]] · [[Charts — Living Example]]
 
-This local definition totals the **Records** table in Gallery Data. With this definition open, choose **File ▸ Edit Definition…** to inspect its source and results. It does not call a model or web service.
+This local definition totals the **Records** table in Gallery Input. With this definition open, choose **File ▸ Edit Definition…** to inspect its source and results. It does not call a model or web service.
 
 | Part | Meaning |
 | --- | --- |
-| Source | `Gallery Data.md#table:Records` reads the body table under the exact Records heading |
+| Source | `Gallery Input.md#table:Records` reads the body table under the exact Records heading |
 | Hours | Sum of the entered `hours` cells; these are planned values |
 | Activities | Number of supplied table rows |
 | Output | `data/gallery-*.json#summary`, written by the living example's Gather job |

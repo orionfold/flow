@@ -206,6 +206,11 @@
       "path" : "Sales Account/data/review-2026-09-12.json"
     },
     {
+      "bytes" : 637,
+      "contentHash" : "sha256:07908f7d6a8c7ac01823daae36a1883d37b20d0994ea0a2141abfc9dc6f4bda4",
+      "path" : "Skills Gallery/data/skills-2026-10-24.json"
+    },
+    {
       "bytes" : 6940,
       "contentHash" : "sha256:ff88aeae10242347fa662764292ab9b6d48419fd60802be6a02c187fc266ec13",
       "path" : "Stock Portfolio/data/news-2026-09-02.json"
@@ -261,7 +266,7 @@
       "path" : "assets/channels4_banner.jpg"
     }
   ],
-  "contentVersion" : "1.16.19",
+  "contentVersion" : "1.16.26",
   "documents" : [
     {
       "bytes" : 18846,
@@ -479,68 +484,68 @@
       "path" : "Changelog.md"
     },
     {
-      "bytes" : 3586,
-      "contentHash" : "sha256:36228b7f72256f7da2b5e7a5d7e2703bc427cf87d8d9715abaa7f985babd3f4a",
+      "bytes" : 3587,
+      "contentHash" : "sha256:badd6c854e28d8dd13c87b6b8a7090a114b05600f2d0c8a23ad0e56000a9b8ce",
       "path" : "Charts Gallery/Charts Gallery.md"
     },
     {
-      "bytes" : 8212,
-      "contentHash" : "sha256:1c10a349622c5f2c653222f97d4edccc06770d380244d875ffa038a013a1e533",
+      "bytes" : 8213,
+      "contentHash" : "sha256:402442eff1949cbb4c2a5edb168a27b935339421e2ebf93e9994c15c407b74a4",
       "path" : "Charts Gallery/Charts — Comparisons.md"
     },
     {
-      "bytes" : 8551,
-      "contentHash" : "sha256:7d1df678005cc39e759b732beb8fefcc88f057de31e782c75e930ab7ca9b5365",
+      "bytes" : 8552,
+      "contentHash" : "sha256:1f646462da02a4126e5e7738b92528a6659b1ed0c8d1096a634b4766b7126b81",
       "path" : "Charts Gallery/Charts — Composition.md"
     },
     {
-      "bytes" : 12788,
-      "contentHash" : "sha256:c02da2366acb5c188637cf76e3af59c36cfcbc98bfdc2961dda1e82c3bf29353",
+      "bytes" : 12789,
+      "contentHash" : "sha256:27e5f9b1f89cf4915dc0824d6098a43f4177b8ef5a0b0763860a9c1dc04286ff",
       "path" : "Charts Gallery/Charts — Distributions.md"
     },
     {
-      "bytes" : 4427,
-      "contentHash" : "sha256:56211ae557e037e16fc19b877a46afe1516a93547f03aa835afc5184a1b33870",
+      "bytes" : 4428,
+      "contentHash" : "sha256:5e275b02fd1d727e5b55ce3e4a06a85128a85f0127f4047b16ba8d24054ea950",
       "path" : "Charts Gallery/Charts — Goals and Plans.md"
     },
     {
-      "bytes" : 4004,
-      "contentHash" : "sha256:95883849cef498feda0d2f5baee74ca60d738a111350eaa643d15330d25bb522",
+      "bytes" : 4010,
+      "contentHash" : "sha256:8d687a6cb2cc7f9b4083c2029c91d569b68552bdc7171cf166189425db7abdc6",
       "path" : "Charts Gallery/Charts — Living Example.md"
     },
     {
-      "bytes" : 10032,
-      "contentHash" : "sha256:7ab7de0996168cf5e228a2066b7bdab9b279d56ab65e1730a97c19f9c2c63471",
+      "bytes" : 10033,
+      "contentHash" : "sha256:ae2cefeec58ac6d9a9aebc813919ab1f8346340658a4a4c0975ec423603dc0da",
       "path" : "Charts Gallery/Charts — Patterns.md"
     },
     {
-      "bytes" : 9783,
-      "contentHash" : "sha256:4789db0b0654010b6ab260d48fa083974f9a082c6cf20cc52ee763961a2b91f4",
+      "bytes" : 9784,
+      "contentHash" : "sha256:fd2cb7150988c0823a590dd4a091292c4375cdb683afb6c832c02c93fc76e677",
       "path" : "Charts Gallery/Charts — Time Series.md"
     },
     {
-      "bytes" : 6341,
-      "contentHash" : "sha256:2a529efd324f245a3604b3a293003493cf5ef502796be2f98a823dcfe75b521a",
+      "bytes" : 6342,
+      "contentHash" : "sha256:78bc3c75e13203776b4197080403609be1b7533fd1fe0f4e00ee5a2ea59692b1",
       "path" : "Charts Gallery/Diagrams — Connections.md"
     },
     {
-      "bytes" : 6600,
-      "contentHash" : "sha256:0f951b2a0da0cc4089319ffebf74552f0d8727a17d403c5e1e7d2a02387bc21e",
+      "bytes" : 6601,
+      "contentHash" : "sha256:50b75a129fa79a231c17f2b5afc66236bb6c5132755621c3fc7d0f8a4f4ee6db",
       "path" : "Charts Gallery/Diagrams — Processes.md"
     },
     {
-      "bytes" : 8092,
-      "contentHash" : "sha256:9d6d65849e465a8d7fe3647255c08bdc9292bf2da1d4c90e2bdacb4dfcdeba8f",
+      "bytes" : 8093,
+      "contentHash" : "sha256:05b413ba1e9f523e531ed6ce75a141a94abfcd302127e318831ccbb6eea0323c",
       "path" : "Charts Gallery/Diagrams — Structures.md"
     },
     {
-      "bytes" : 1596,
-      "contentHash" : "sha256:fd1caea19f75ee0b3bc297b5328011a57c269ceb4fdaae13f6802537abd15170",
-      "path" : "Charts Gallery/Gallery Data.md"
+      "bytes" : 1598,
+      "contentHash" : "sha256:db7324471a833bb5e7e1de3e83504032459b925d99db31cf9124d27302c1bd4b",
+      "path" : "Charts Gallery/Gallery Input.md"
     },
     {
-      "bytes" : 1557,
-      "contentHash" : "sha256:515e3e099af3134afd18b38c7cddd8226abafe792fe27617c59547a5a37cb8e7",
+      "bytes" : 1561,
+      "contentHash" : "sha256:fa4d0a4cce371176ab270f91abbca14f01d2ece63bed0679827081a7652634b5",
       "path" : "Charts Gallery/Gallery Refresh.md"
     },
     {
@@ -747,6 +752,11 @@
       "bytes" : 5361,
       "contentHash" : "sha256:89838d1bbc73c17be05b7fcd8878a60b588a2422640ae7a224886714caa67c91",
       "path" : "Flow Handbook/Night Shift Handbook.md"
+    },
+    {
+      "bytes" : 7661,
+      "contentHash" : "sha256:cbd692814a6de0f539a8171cf351f90ccd79117a907ee253a5dfde630c4226f5",
+      "path" : "Flow Handbook/Skills.md"
     },
     {
       "bytes" : 17674,
@@ -1209,6 +1219,41 @@
       "path" : "Sales Account/Sales Performance.md"
     },
     {
+      "bytes" : 3913,
+      "contentHash" : "sha256:80d4a31ff1a7aeac4ea406a193afa4328a2c012b85cf8feec5dc6dfac7f578be",
+      "path" : "Skills Gallery/Skills Gallery.md"
+    },
+    {
+      "bytes" : 1429,
+      "contentHash" : "sha256:067d0c31cffe1e2b5df3fb58a757a970e204ba52b0985c58b4b6ef141045ddef",
+      "path" : "Skills Gallery/Skills Input.md"
+    },
+    {
+      "bytes" : 1582,
+      "contentHash" : "sha256:c63988e81c6294e4cc920d68d61425132dc6dd5290f0282ec3b1f20c470653f2",
+      "path" : "Skills Gallery/Skills Refresh.md"
+    },
+    {
+      "bytes" : 9216,
+      "contentHash" : "sha256:ab4a7c880af2dc21d55d072feacc7d77a7dbccc8e38f5eb443176e26c6611abb",
+      "path" : "Skills Gallery/Skills — Decide.md"
+    },
+    {
+      "bytes" : 15910,
+      "contentHash" : "sha256:110086a4478b3d8838dffabd0bb4adaca2a7db45721bf9fe7e01e811a2a1290d",
+      "path" : "Skills Gallery/Skills — Explain.md"
+    },
+    {
+      "bytes" : 3948,
+      "contentHash" : "sha256:f4fb517459702da4f52011f8fe75aa3ac5769689a06c508ebf07988a13a973d4",
+      "path" : "Skills Gallery/Skills — Living Example.md"
+    },
+    {
+      "bytes" : 5542,
+      "contentHash" : "sha256:db51aa5d9a82ede38d821cb3970871d3622e66e8d34c5209f404ef4c8ea75b21",
+      "path" : "Skills Gallery/Skills — Plan.md"
+    },
+    {
       "bytes" : 2780,
       "contentHash" : "sha256:d20338b14a1f98620950b4b8ba3246a635cef8f3c5e25c2804a2158eca4c28fc",
       "path" : "Stock Portfolio/Headlines Refresh.md"
@@ -1439,7 +1484,7 @@
       "path" : "Welcome.md"
     }
   ],
-  "generated" : "2026-10-24",
+  "generated" : "2026-10-25",
   "manifestVersion" : 2,
   "paths" : [
     {
@@ -2129,6 +2174,14 @@
       "name" : "Sales Account",
       "summary" : "Discovery, requirements, meeting preparation and the proposal for one account.",
       "title" : "Account Brief"
+    },
+    {
+      "category" : "learn-flow",
+      "entry" : "Skills Gallery/Skills Gallery.md",
+      "featured" : false,
+      "name" : "Skills Gallery",
+      "summary" : "Every skill Flow ships, each with a passage and what it drew, and a skill's chart that stays current from a table you own.",
+      "title" : "Skills Gallery"
     },
     {
       "category" : "personal-money",

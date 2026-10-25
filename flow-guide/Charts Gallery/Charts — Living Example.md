@@ -7,11 +7,11 @@ jobs:
     into: data
     as: gallery
   - kind: keep-sources-fresh
-    watch: [Gallery Data.md]
+    watch: [Gallery Input.md]
 ---
 # Charts — Living Example
 
-[[Charts Gallery]] · Input: [[Gallery Data]] · Next: [[Charts — Comparisons]]
+[[Charts Gallery]] · Input: [[Gallery Input]] · Next: [[Charts — Comparisons]]
 
 **One source, two questions.** The same planned hours answer “how much for each activity?” in a bar chart and “what share of this plan?” in a donut. Compare the views before choosing one for your own document.
 
@@ -23,7 +23,7 @@ jobs:
 chartType: Bar Chart
 title: Planned hours by activity
 subtitle: Hours; one shared baseline
-source: Newest gallery capture from Gallery Data; fictional plan
+source: Newest gallery capture from Gallery Input; fictional plan
 data:
   - {activity: "Research", hours: 8}
   - {activity: "Writing", hours: 6}
@@ -44,7 +44,7 @@ Use the bar chart to compare exact amounts and small differences. Category colou
 chartType: Donut Chart
 title: Each activity's share of the entered plan
 subtitle: Hours; all four rows form the supplied whole
-source: Newest gallery capture from Gallery Data; fictional plan
+source: Newest gallery capture from Gallery Input; fictional plan
 data:
   - {activity: "Research", hours: 8}
   - {activity: "Writing", hours: 6}
@@ -67,7 +67,7 @@ A share changes when its numerator or the total changes. After the practice edit
 ## Make it yours
 
 1. Copy the complete **Charts Gallery** folder and add the copy to Flow. Work in that copy.
-2. Open [[Gallery Data]] and use **View ▸ Edit Table** on its Records table. Change Review from **4 to 7** hours and save.
+2. Open [[Gallery Input]] and use **View ▸ Edit Table** on its Records table. Change Review from **4 to 7** hours and save.
 3. Return here and choose **Settings ▸ Jobs ▸ Run all Jobs**. Scheduling can stay off. Expect Review's bar to show **7**, its donut share to become **7 of 23**, and the summary to show **23 planned hours and four activities**. Review the Briefing and changed document.
 4. Replace the fictional activity rows with your own complete plan. Keep the Records heading and both columns; update the date, labels and authored explanation when their meaning changes. Use nonnegative hours and a positive total for the donut.
 5. Open [[Gallery Refresh]], then choose **File ▸ Edit Definition…** to inspect the total. Return here and use **File ▸ Edit Jobs…** to review the Gather job and source watch. There are no public reads, model calls or writes to another system.
@@ -78,4 +78,4 @@ Gather reads the saved source table and writes its rows and summary to one captu
 
 Automatic local redraw may run as data changes when that setting is on. Run now gives you an explicit refresh without enabling an overnight schedule. A failed run is not evidence that the saved visual is current.
 
-Back: [[Charts Gallery]] · Input: [[Gallery Data]] · Definition: [[Gallery Refresh]] · Next: [[Charts — Comparisons]]
+Back: [[Charts Gallery]] · Input: [[Gallery Input]] · Definition: [[Gallery Refresh]] · Next: [[Charts — Comparisons]]

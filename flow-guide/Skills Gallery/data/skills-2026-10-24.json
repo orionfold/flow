@@ -1,0 +1,38 @@
+{
+  "initiatives": [
+    {
+      "initiative": "Self-serve intake",
+      "value": 8,
+      "effort": 2,
+      "quadrant": "Quick win"
+    },
+    {
+      "initiative": "Billing rewrite",
+      "value": 7,
+      "effort": 9,
+      "quadrant": "Big bet"
+    },
+    {
+      "initiative": "Dark mode",
+      "value": 3,
+      "effort": 2,
+      "quadrant": "Fill-in"
+    },
+    {
+      "initiative": "Search replatform",
+      "value": 3,
+      "effort": 8,
+      "quadrant": "Reconsider"
+    }
+  ],
+  "summary": [
+    {
+      "metric": "Initiatives",
+      "value": 4
+    },
+    {
+      "metric": "Quick wins",
+      "value": 1
+    }
+  ]
+}

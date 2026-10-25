@@ -1,8 +1,8 @@
 ---
-title: Gallery Data
+title: Gallery Input
 tags: [charts-gallery, input, fictional-example]
 ---
-# Gallery Data
+# Gallery Input
 
 [[Charts Gallery]] · [[Charts — Living Example]]
 
