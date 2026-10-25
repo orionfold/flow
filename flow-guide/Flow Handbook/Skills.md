@@ -18,6 +18,12 @@ The receipt for the run names the skill and its version beside the model that ra
 
 To see what each skill draws before you run one, open [[Skills Gallery]]: every skill's worked example, what it read and what it drew, and a living map that Jobs keep current.
 
+## Find the skill for a section
+
+**Ideas** notices when a document has sections a skill could work on: at least two sections of forty words or more, each with the points, numbers or dates some skill needs, and no chart, diagram or table after it yet. It offers **Find skills for 6 sections of …**. That count is made on your Mac without a model, so it only says where to look.
+
+You can also ask in Chat — **Which skill fits each section of …?** is offered as a suggestion — and Chat answers in the conversation: each section, its skill and why, with the same suggestions waiting in Ideas. Pressing the card, or the **Suggest Ideas** button at the top of Ideas, opens a sheet that lists the sections it will read, what it costs and which model runs it — the one you pinned in the toolbar, or Smart Routing's pick — before anything runs. When that model is off your Mac, the sheet asks before the sections leave. **Suggest Ideas** asks that model to name the one skill that fits each section, if any, and checks every answer: a skill not in the list, or one whose needs the section does not meet, is dropped. Nothing in the document changes. Each suggestion becomes an idea — **Run Option Comparison on "2. Option Comparison"**, with the model's reason — and pressing it opens that skill's sheet on that section, where you see the run's own cost and decide.
+
 ## Which model runs a skill
 
 Flow measured each skill on the models it can run, on one planning document, and reads each draft back: did it pass the skill's check, and did it invent nothing and say what was missing. A skill runs on the model that drew it best of those you have set up. On that test a frontier model such as Claude Code drew all twelve method skills whole, while a small model on your Mac drew few of them well. The rule that does this is **Skills: the model that drew each best**, first in **Settings ▸ Smart Routing ▸ Rules**. It only prefers: a model you pinned still runs everything, **Stays on this Mac** still keeps a skill on your Mac, and a run that would leave your Mac still asks first. To change it for one skill, add a rule there that applies **When it runs a skill** and pick the skill. Settings ▸ Skills shows each skill's model and the reason.
