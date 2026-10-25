@@ -6,7 +6,8 @@ description: Draw who carries each step of a piece of work, one lane per person 
 license: MIT
 kind: method
 output: [mermaid]
-version: 1.0.0
+needs: [points 2]
+version: 1.1.0
 ---
 # Delegation Map
 
@@ -21,10 +22,12 @@ able to see.
    a lane called *Unassigned*.
 2. **Group the steps into lanes**, one per owner, in the order the owners
    first appear.
-3. **Draw one flowchart**: `flowchart LR`, one `subgraph` per lane titled
+3. **Draw one flowchart**: `flowchart TB`, one `subgraph` per lane titled
    with the owner, one node per step in its lane, and an arrow for each
    step that follows another. Label an arrow when the text says what is
-   handed over ("signed contract").
+   handed over ("signed contract"). The steps run down the page and the
+   lanes stand side by side, so a longer process grows downward rather
+   than off the page's edge.
 4. **Name the hand-offs**: one line after the diagram counting the arrows
    that cross lanes and naming any that the text says are slow or unclear.
 

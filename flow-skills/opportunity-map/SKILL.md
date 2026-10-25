@@ -6,7 +6,8 @@ description: Lay a list of initiatives, ideas or bets on a value-and-effort map,
 license: MIT
 kind: method
 output: [chart, table]
-version: 1.0.0
+needs: [points 2]
+version: 1.1.0
 ---
 # Opportunity Map
 
@@ -30,7 +31,11 @@ fill-ins and the ones to drop are visible at a glance.
    - *Fill-in* — value below, effort below;
    - *Reconsider* — value below, effort above.
 4. **Draw the map** as one scatter chart: effort on x, value on y, one point
-   per initiative, keeping each row's quadrant as a column. Title it with what the map shows
+   per initiative, its name the first column and its quadrant a column
+   coloured by `color: {field: quadrant}`. Declare both scores in
+   `semantic_types` as `{semanticType: Score, intrinsicDomain: [1, 10]}`, so
+   the map spans the whole scale with its quadrant lines at 5.5 and each
+   point carries its name. Title it with what the map shows
    (for example "Two quick wins lead the list"), not "Opportunity map".
 5. **Write the table** under the chart, one row per initiative, sorted by
    quadrant (quick wins first) and then by value: Initiative, Value,

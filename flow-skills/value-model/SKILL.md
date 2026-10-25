@@ -2,11 +2,12 @@
 name: value-model
 title: Value Model
 line: The value a change creates, from its stated assumptions
-description: Build a small value model from the assumptions a text states — volume, rate, unit value — show the result as a chart, and give the person a form to change each assumption. Use when a document argues that something is worth doing and gives numbers for it.
+description: Build a small value model from the assumptions a text states — volume, rate, unit value — list each assumption with where it came from, and show the result as a chart. Use when a document argues that something is worth doing and gives numbers for it.
 license: MIT
 kind: method
-output: [flowui, chart]
-version: 1.0.0
+output: [table, chart]
+needs: [numbers 2]
+version: 1.1.0
 ---
 # Value Model
 
@@ -28,18 +29,20 @@ them first.
 3. **Compute the outcome** as the product of the drivers, over the text's
    period, and say the arithmetic in one sentence ("1,200 tickets a month ×
    a third × $18 = $7,200 a month").
-4. **Write the assumptions form**: one Form whose fields are the drivers,
-   each a number field with a plain bind name and the bounds the text
-   implies (a share between 0 and 100), and one *update* act, so a person
-   can revise the assumptions and keep them in the document.
+4. **Write the assumptions table**: one row per driver — Assumption,
+   Value, Unit and *From*, who or what in the text gives it ("support's
+   lead", "finance"). The values are the ones step 3 computed with, so a
+   person who changes one can see what the result rests on and run the
+   skill again on the revised text.
 5. **Draw the result** as one bar chart: the outcome's parts or the
    before-and-after, every value from step 3. Title it with the result
    ("Self-serve intake saves about $86,400 a year"), not "Value model".
 
 ## Rules
 
-- One sentence of arithmetic, one form and one chart. A short heading is
+- One sentence of arithmetic, one table and one chart. A short heading is
   allowed; nothing else.
+- No form: a form would invite a changed number the chart cannot follow.
 - Never round a stated number before computing; round only the result.
 - A driver the text does not give is a gap to name, never a number to
   supply.

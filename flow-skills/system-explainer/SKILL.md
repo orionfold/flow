@@ -6,6 +6,7 @@ description: Draw a system the text describes as its parts and the flows between
 license: MIT
 kind: figure
 output: [figure]
+needs: [points 2]
 version: 1.0.0
 ---
 # System Explainer

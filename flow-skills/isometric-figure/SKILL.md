@@ -6,6 +6,7 @@ description: Draw the layers, tiers or levels the text describes as an isometric
 license: MIT
 kind: figure
 output: [figure]
+needs: [points 2]
 version: 1.0.0
 ---
 # Isometric Figure

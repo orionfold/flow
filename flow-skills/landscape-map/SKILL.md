@@ -6,6 +6,7 @@ description: Map the players, products or approaches a text surveys into groups,
 license: MIT
 kind: method
 output: [mermaid, table]
+needs: [points 3]
 version: 1.0.0
 ---
 # Landscape Map

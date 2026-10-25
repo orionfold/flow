@@ -27,6 +27,17 @@ short-handed until January, which matters for any move.
 | Renew Deskly | Stay at $30 a seat | No move while short-handed | Price up 20% |
 | Move to Helpline | $40 a seat, a month to move | Connects to billing too; an hour a day saved | A month's move while short-handed |
 
+### Decision tree
+
+```mermaid
+flowchart TD
+  D{Renew Deskly or move to Helpline before 1 December?}
+  D -->|Renew Deskly| R[$30 a seat after a 20% rise; no move while short-handed]
+  D -->|Move to Helpline| Q{Is an hour a day worth a month's move before January?}
+  Q -->|Yes| H[$40 a seat; billing and CRM connected; a month to move]
+  Q -->|No| R
+```
+
 ### Recommendation
 
 No recommendation yet: the text weighs Helpline's hour a day against a

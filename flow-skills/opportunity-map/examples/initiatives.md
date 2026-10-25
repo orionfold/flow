@@ -23,9 +23,13 @@ data:
   - {initiative: Billing rewrite, effort: 9, value: 7, quadrant: Big bet}
   - {initiative: Dark mode, effort: 2, value: 3, quadrant: Fill-in}
   - {initiative: Search replatform, effort: 8, value: 3, quadrant: Reconsider}
+semantic_types:
+  effort: {semanticType: Score, intrinsicDomain: [1, 10]}
+  value: {semanticType: Score, intrinsicDomain: [1, 10]}
 encodings:
   x: {field: effort}
   y: {field: value}
+  color: {field: quadrant}
 ```
 
 | Initiative | Value | Effort | Quadrant | Why |

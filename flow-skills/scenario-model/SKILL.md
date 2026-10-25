@@ -6,6 +6,7 @@ description: Turn the ranges a text gives into a low, a base and a high case, ch
 license: MIT
 kind: method
 output: [flowui, chart]
+needs: [numbers 2]
 version: 1.0.0
 ---
 # Scenario Model

@@ -6,6 +6,7 @@ description: Turn the risks, issues, assumptions or decisions a text mentions in
 license: MIT
 kind: method
 output: [table]
+needs: [points 2]
 version: 1.0.0
 ---
 # Register

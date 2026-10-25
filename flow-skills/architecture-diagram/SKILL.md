@@ -6,7 +6,8 @@ description: Draw the parts of a system a text describes, grouped by where they 
 license: MIT
 kind: method
 output: [mermaid]
-version: 1.0.0
+needs: [points 2]
+version: 1.1.0
 ---
 # Architecture Diagram
 
@@ -24,9 +25,11 @@ party — so they are drawn, not implied.
    not place goes outside every group.
 3. **List the flows**: for each pair of parts the text connects, what
    moves between them and in which direction.
-4. **Draw one flowchart**: `flowchart LR`, one `subgraph` per boundary
+4. **Draw one flowchart**: `flowchart TB`, one `subgraph` per boundary
    titled with its name, one node per part (a cylinder `[( )]` for a store,
-   a box for everything else), and one labelled arrow per flow.
+   a box for everything else), and one labelled arrow per flow. Top to
+   bottom keeps the diagram as wide as the page however many parts there
+   are; a left-to-right row runs off the page's edge past three or four.
 5. **Name what crosses a boundary**: one line after the diagram listing
    each flow that leaves one group for another.
 

@@ -22,7 +22,7 @@ fields:
   - {label: What they are trying to do, bind: goal}
   - {label: What gets in the way, bind: obstacle}
   - {label: Your problem statement in one sentence, bind: statement}
-  - label: Done
+  - label: Check your statement
     bind: done
     type: checklist
     options:

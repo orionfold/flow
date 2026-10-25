@@ -6,6 +6,7 @@ description: Score candidates, vendors, people or proposals against the criteria
 license: MIT
 kind: method
 output: [table, flowui]
+needs: [points 2]
 version: 1.0.0
 ---
 # Scorecard

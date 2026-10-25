@@ -6,6 +6,7 @@ description: Lay the work a text plans on a timeline, grouped by workstream, wit
 license: MIT
 kind: method
 output: [mermaid]
+needs: [points 2, dates]
 version: 1.0.0
 ---
 # Roadmap

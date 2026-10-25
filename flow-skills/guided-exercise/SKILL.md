@@ -6,7 +6,8 @@ description: Turn an explanation or a method into a short exercise the reader wo
 license: MIT
 kind: method
 output: [flowui]
-version: 1.0.0
+needs: [points 2]
+version: 1.1.0
 ---
 # Guided Exercise
 
@@ -23,11 +24,14 @@ short checklist of what they practised, so finishing it means something.
    asks for something the reader writes ("Name one customer who has this
    problem"), never a test of recall.
 3. **Write the checklist**: two to four things the reader can tick once
-   done, each echoing a step of the passage.
+   done, each echoing a step of the passage, under a label that says what
+   the ticks check, in the passage's words ("Before you send it", "Check
+   your statement") — never a bare "Checklist" or "Done".
 4. **Write the exercise** as one Form (`component: Form`): a title naming
    the skill, a subtitle saying who it is for (and how long it takes only
    when the passage says), and under `fields:` one text field per prompt
-   with a plain bind name, then the checklist as one more field with
+   with a plain bind name and the prompt as its label (an answer is a
+   sentence; the form gives it room), then the checklist as one more field with
    `type: checklist` and its items as `options`, then a field for the
    reader's name, and the *sign-off* act. The checklist is a field, never a
    key of its own.

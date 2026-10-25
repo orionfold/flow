@@ -13,7 +13,7 @@
 ### A note leaves the laptop twice: for a summary, and encrypted for sync
 
 ```mermaid
-flowchart LR
+flowchart TB
   subgraph Laptop
     App[Note-taking app]
     DB[(Local database)]

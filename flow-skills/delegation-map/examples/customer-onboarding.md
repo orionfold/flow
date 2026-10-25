@@ -13,7 +13,7 @@
 ### Three hand-offs, one of them missing a contact
 
 ```mermaid
-flowchart LR
+flowchart TB
   subgraph Sales
     A[Sign contract]
     E[Quarterly check-in]

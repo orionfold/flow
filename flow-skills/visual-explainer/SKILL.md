@@ -6,6 +6,7 @@ description: Draw the one mechanism, process or cause and effect a passage expla
 license: MIT
 kind: figure
 output: [figure]
+needs: [points 2]
 version: 1.0.0
 ---
 # Visual Explainer

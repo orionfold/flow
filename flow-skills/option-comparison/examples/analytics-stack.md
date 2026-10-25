@@ -12,11 +12,11 @@
 
 ### The spreadsheets cost nothing new but cannot grow; renting is the cheapest change
 
-| Option | First-year cost | Time to live | Data stays in our cloud | Handles next year's volume |
-| --- | --- | --- | --- | --- |
-| Build on the warehouse | $120k | Four months | Yes | Not stated |
-| Rent a hosted product | $40k | Three weeks | No | Not stated |
-| Keep the spreadsheets | Nothing new | Already live | Yes | No |
+| Option | First-year cost | Time to live | Data stays in our cloud |
+| --- | --- | --- | --- |
+| Build on the warehouse | $120k | Four months | Yes |
+| Rent a hosted product | $40k | Three weeks | No |
+| Keep the spreadsheets | Nothing new | Already live | Yes |
 
 ```chart
 chartType: Bar Chart
@@ -31,5 +31,5 @@ encodings:
   y: {field: cost}
 ```
 
-Keeping the spreadsheets costs nothing new but cannot handle next year's
-volume; renting costs $80k less than building, but the data leaves our cloud.
+Renting costs $80k less than building but the data leaves our cloud, and
+the spreadsheets, which cost nothing new, cannot handle next year's volume.
