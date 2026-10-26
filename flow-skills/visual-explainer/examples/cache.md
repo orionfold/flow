@@ -21,12 +21,16 @@
     .flow { fill: none; stroke: #8e8e93; stroke-width: 2 }
     .hit { fill: none; stroke: #0a7aff; stroke-width: 3; stroke-dasharray: 6 4; animation: travel 1s linear infinite }
     @keyframes travel { to { stroke-dashoffset: -10 } }
+    @media (prefers-color-scheme: dark) {
+      .box { fill: #2c2c2e }
+      .name, .label { fill: #f5f5f7 }
+      .line { fill: #aeaeb2 }
+    }
   </style>
   <defs>
     <marker id="head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8e8e93"/></marker>
     <marker id="hit-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0a7aff"/></marker>
   </defs>
-  <rect width="640" height="260" rx="14" fill="#f5f5f7"/>
   <rect class="box" x="30" y="30" width="140" height="64" rx="10"/>
   <text class="name" x="100" y="67">App</text>
   <rect class="box" x="250" y="30" width="140" height="64" rx="10"/>

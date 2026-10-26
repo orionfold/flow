@@ -27,11 +27,18 @@
     .failed .depends { stroke: #d70015; stroke-dasharray: 5 4 }
     .failed .note { visibility: visible }
     .failed .hint { visibility: hidden }
+    @media (prefers-color-scheme: dark) {
+      .part { fill: #2c2c2e }
+      .name { fill: #f5f5f7 }
+      .label { fill: #d1d1d6 }
+      .hint { fill: #aeaeb2 }
+      .note { fill: #ff6961 }
+      .failed .queue rect { stroke: #ff6961; fill: #3a1d1f }
+    }
   </style>
   <defs>
     <marker id="head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0a7aff"/></marker>
   </defs>
-  <rect width="680" height="300" rx="14" fill="#f5f5f7"/>
   <rect class="part" x="20" y="50" width="120" height="56" rx="10"/>
   <text class="name" x="80" y="83">Storefront</text>
   <g class="queue" data-flow-press="state=failed" aria-label="The order queue: press to see it fail">

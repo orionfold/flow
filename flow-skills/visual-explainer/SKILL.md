@@ -7,7 +7,7 @@ license: MIT
 kind: figure
 output: [figure]
 needs: [points 2]
-version: 1.0.0
+version: 1.1.0
 ---
 # Visual Explainer
 
@@ -42,7 +42,8 @@ whiteboard sketch drawn while talking, not a diagram of everything.
   text does not give.
 - At most five steps and two colours plus grey, one of them for the step
   the text stresses.
-- Draw on a filled background so it reads on a light or a dark page, with
-  text at 12 or larger at the figure's own width.
+- Draw no background: the figure sits on the page, so give it no backdrop
+  rect, colour it to read on a light or a dark page, and keep text at 12 or
+  larger at the figure's own width.
 
 See `examples/cache.md` for a worked input and output.

@@ -7,7 +7,7 @@ license: MIT
 kind: figure
 output: [figure]
 needs: [points 2]
-version: 1.1.1
+version: 1.2.0
 ---
 # Isometric Figure
 
@@ -38,7 +38,7 @@ and shows what the text says that layer does.
    itself on the sides at a little transparency, and a white sheen
    (a gradient from 70% to clear) over the top face, so the slabs read
    as glass. Give the dark page its own rules under
-   `@media (prefers-color-scheme: dark)`: a dark background, light text,
+   `@media (prefers-color-scheme: dark)`: light text,
    and the hue at 35% on each top face, so the slab below shows through.
 4. **Give the root one state per layer** after a first state `all`
    (`data-flow-state="all base middle top"`), and make each slab a press
@@ -60,8 +60,9 @@ and shows what the text says that layer does.
 - Every word right of the stack stays between x = 430 and 700: a line
   holds at most 36 characters at 13, and a longer one wraps onto the next
   line. The title is the `<title>`; draw no heading over the notes.
-- Draw on a filled background so it reads on a light or a dark page, with
-  text at 12 or larger at the figure's own width: 720 wide, and 260 tall
+- Draw no background: the figure sits on the page, so give it no backdrop
+  rect, colour it to read on a light or a dark page, and keep text at 12 or
+  larger at the figure's own width: 720 wide, and 260 tall
   plus 140 for each layer after the first.
 
 See `examples/stack.md` for a worked input and output.

@@ -7,7 +7,7 @@ license: MIT
 kind: figure
 output: [figure]
 needs: [points 2]
-version: 1.0.0
+version: 1.1.0
 ---
 # System Explainer
 
@@ -43,7 +43,8 @@ reader asks next: *what happens when this part fails?*
   not describe is not drawn.
 - Grey for the parts, one colour for the path being followed, and red only
   for the failed state.
-- Draw on a filled background so it reads on a light or a dark page, with
-  text at 12 or larger at the figure's own width.
+- Draw no background: the figure sits on the page, so give it no backdrop
+  rect, colour it to read on a light or a dark page, and keep text at 12 or
+  larger at the figure's own width.
 
 See `examples/orders.md` for a worked input and output.

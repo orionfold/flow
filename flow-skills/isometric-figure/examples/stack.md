@@ -19,7 +19,6 @@
     </linearGradient>
   </defs>
   <style>
-    .bg { fill: #f5f5f7 }
     .slab { cursor: pointer; transition: transform 0.2s }
     .slab path { stroke: #ffffff; stroke-opacity: 0.7; stroke-width: 1 }
     .top { fill-opacity: 0.85 }
@@ -40,7 +39,6 @@
     .data .note-data, .model .note-model, .app .note-app { visibility: visible }
     .data .hint, .model .hint, .app .hint { visibility: hidden }
     @media (prefers-color-scheme: dark) {
-      .bg { fill: #1c1c1e }
       .name, .note { fill: #f5f5f7 }
       .hint { fill: #98989d }
       .c0 .top { fill: #2bb3a3; fill-opacity: 0.35 }
@@ -48,7 +46,6 @@
       .c2 .top { fill: #2f80ed; fill-opacity: 0.35 }
     }
   </style>
-  <rect class="bg" width="720" height="540" rx="14"/>
   <g class="slab slab-data c0" data-flow-press="state=data" aria-label="Data platform">
     <path class="left" d="M70 400 L230 480 L230 500 L70 420 z"/>
     <path class="right" d="M230 480 L390 400 L390 420 L230 500 z"/>
