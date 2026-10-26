@@ -28,7 +28,11 @@ Start with [[Skills — Living Example]]: a map an Opportunity Map run drew, kep
 | How does this system behave when a part fails? | System Explainer | [[Skills — Explain]] |
 | How does this idea build, step by step? | Visual Explainer | [[Skills — Explain]] |
 | What rests on what? | Isometric Figure | [[Skills — Explain]] |
+| What do these numbers look like, drawn to scale? | Field-Notes Diagram | [[Skills — Explain]] |
 | How would a learner practise this? | Guided Exercise | [[Skills — Explain]] |
+| What goes in, what is made, and what comes out? | Workflow Path | [[Skills — Present]] |
+| What does using it look like, step by step? | Product Mock | [[Skills — Present]] |
+| Who is it for, what does it do, and what shows it works? | Path Card | [[Skills — Present]] |
 
 ## Run one
 

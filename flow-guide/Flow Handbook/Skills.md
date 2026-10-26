@@ -49,13 +49,17 @@ The skills are general techniques. They know how to draw an opportunity map, not
 
 ## Figures
 
-Three skills draw a figure rather than a chart: a picture made for its one idea, which you can press and step through in the document.
+These skills draw a figure rather than a chart: a picture made for its one idea, which you can press and step through in the document.
 
 | Skill | What it draws |
 | --- | --- |
+| Field-Notes Diagram | A technical idea's numbers drawn to scale, field-notes style |
 | Isometric Figure | A layered stack in depth; press a layer to read what it does |
+| Path Card | A feature on one card: who it is for, the steps, the path, proof |
+| Product Mock | A user journey played out in a mock of the product's window |
 | System Explainer | A system's parts, its flows, and what a failure changes |
 | Visual Explainer | One idea from the text, drawn so it builds step by step |
+| Workflow Path | A workflow drawn as what goes in, the work, and what comes out |
 
 A figure built in steps has **Previous**, **Play** and **Next** under it, and Left and Right step it once you click it. A part drawn as a switch changes the figure when you click it or press Return or Space, and changes it back when you press it again. A figure's own motion stops when Reduce Motion is on in System Settings ▸ Accessibility, leaving it at rest; its steps still play. This one shows a skill's run, a step at a time:
 
