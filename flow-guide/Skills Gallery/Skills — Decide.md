@@ -132,7 +132,8 @@ fields:
       - The criteria match what we need
       - The weights follow our priorities
       - Each score has its reason
-  - {label: Signed by, bind: signer}
+  - label: Signed by
+    bind: signer
 decision: {label: Sign off, action: sign-off}
 ```
 

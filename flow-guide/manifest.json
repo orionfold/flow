@@ -266,7 +266,7 @@
       "path" : "assets/channels4_banner.jpg"
     }
   ],
-  "contentVersion" : "1.16.27",
+  "contentVersion" : "1.16.28",
   "documents" : [
     {
       "bytes" : 18846,
@@ -1234,13 +1234,13 @@
       "path" : "Skills Gallery/Skills Refresh.md"
     },
     {
-      "bytes" : 9216,
-      "contentHash" : "sha256:ab4a7c880af2dc21d55d072feacc7d77a7dbccc8e38f5eb443176e26c6611abb",
+      "bytes" : 9217,
+      "contentHash" : "sha256:cad5b411cda8d451e21f40156e0561a4b53394ba5cab4ca1a8d1c1155110914c",
       "path" : "Skills Gallery/Skills — Decide.md"
     },
     {
-      "bytes" : 15910,
-      "contentHash" : "sha256:110086a4478b3d8838dffabd0bb4adaca2a7db45721bf9fe7e01e811a2a1290d",
+      "bytes" : 18728,
+      "contentHash" : "sha256:eea1ef0d400b18a2a902607eaa9e8451d3e06c830422a22d7215ff6f8f2e4dbf",
       "path" : "Skills Gallery/Skills — Explain.md"
     },
     {
@@ -1249,8 +1249,8 @@
       "path" : "Skills Gallery/Skills — Living Example.md"
     },
     {
-      "bytes" : 5542,
-      "contentHash" : "sha256:db51aa5d9a82ede38d821cb3970871d3622e66e8d34c5209f404ef4c8ea75b21",
+      "bytes" : 5544,
+      "contentHash" : "sha256:0aab59a58227fa9424a5313ef0fc99ef16d194c23eeff3092164437c9e057a99",
       "path" : "Skills Gallery/Skills — Plan.md"
     },
     {
@@ -1484,7 +1484,7 @@
       "path" : "Welcome.md"
     }
   ],
-  "generated" : "2026-10-25",
+  "generated" : "2026-10-26",
   "manifestVersion" : 2,
   "paths" : [
     {

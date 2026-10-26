@@ -210,46 +210,78 @@ A layered stack in depth; press a layer to read what it does. Use it when a docu
 **What it drew**
 
 ```figure
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 390" role="img" aria-label="Three layers: the data platform at the bottom stores every customer event, the model layer on it turns events into forecasts each night, and the app layer on top shows each team its forecast." data-flow-state="all data model app">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" role="img" aria-label="Three layers: the data platform at the bottom stores every customer event, the model layer on it turns events into forecasts each night, and the app layer on top shows each team its forecast." data-flow-state="all data model app">
   <title>The product rests on three layers</title>
+  <defs>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.7"/>
+      <stop offset="0.6" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
   <style>
+    .bg { fill: #f5f5f7 }
     .slab { cursor: pointer; transition: transform 0.2s }
-    .top { fill: #d6e6fb }
-    .left { fill: #a9c8ef }
-    .right { fill: #86afe3 }
-    .slab path { stroke: #ffffff; stroke-width: 1 }
-    .name { font: 600 13px system-ui, sans-serif; fill: #10324f; text-anchor: middle }
+    .slab path { stroke: #ffffff; stroke-opacity: 0.7; stroke-width: 1 }
+    .top { fill-opacity: 0.85 }
+    .sheen { fill: url(#sheen) }
+    .c0 .top { fill: #d3f2ee } .c0 .left { fill: #2bb3a3; fill-opacity: 0.55 } .c0 .right { fill: #2bb3a3; fill-opacity: 0.8 } .c0 .obj { fill: #2bb3a3 }
+    .c1 .top { fill: #e4defd } .c1 .left { fill: #7b61ff; fill-opacity: 0.55 } .c1 .right { fill: #7b61ff; fill-opacity: 0.8 } .c1 .obj { fill: #7b61ff }
+    .c2 .top { fill: #d6e6fb } .c2 .left { fill: #2f80ed; fill-opacity: 0.55 } .c2 .right { fill: #2f80ed; fill-opacity: 0.8 } .c2 .obj { fill: #2f80ed }
+    .obj { fill-opacity: 0.9 } .obj.alt { fill-opacity: 0.65 }
+    .obj-top { fill: #ffffff; fill-opacity: 0.6 }
+    .hole { fill: #ffffff; fill-opacity: 0.8 }
+    .obj-line { stroke: #ffffff; stroke-width: 3; stroke-linecap: round; fill: none }
+    .name { font: 600 13px system-ui, sans-serif; fill: #1d1d1f; text-anchor: middle }
     .note { font: 13px system-ui, sans-serif; fill: #1d1d1f; visibility: hidden }
     .note-title { font-weight: 600 }
     .hint { font: 12px system-ui, sans-serif; fill: #6e6e73 }
     .data .slab-data, .model .slab-model, .app .slab-app { transform: translateY(-14px) }
-    .data .slab-data .top, .model .slab-model .top, .app .slab-app .top { fill: #64a8ff }
+    .data .slab-data .top, .model .slab-model .top, .app .slab-app .top { fill-opacity: 1; stroke: #0a84ff; stroke-width: 2 }
     .data .note-data, .model .note-model, .app .note-app { visibility: visible }
     .data .hint, .model .hint, .app .hint { visibility: hidden }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #1c1c1e }
+      .name, .note { fill: #f5f5f7 }
+      .hint { fill: #98989d }
+      .c0 .top { fill: #2bb3a3; fill-opacity: 0.35 }
+      .c1 .top { fill: #7b61ff; fill-opacity: 0.35 }
+      .c2 .top { fill: #2f80ed; fill-opacity: 0.35 }
+    }
   </style>
-  <rect width="640" height="390" rx="14" fill="#f5f5f7"/>
-  <g class="slab slab-data" data-flow-press="state=data" aria-label="The data platform">
-    <path class="left" d="M60 280 L200 350 L200 372 L60 302 z"/>
-    <path class="right" d="M200 350 L340 280 L340 302 L200 372 z"/>
-    <path class="top" d="M200 210 l140 70 l-140 70 l-140 -70 z"/>
-    <text class="name" x="200" y="322">Data platform</text>
+  <rect class="bg" width="720" height="540" rx="14"/>
+  <g class="slab slab-data c0" data-flow-press="state=data" aria-label="Data platform">
+    <path class="left" d="M70 400 L230 480 L230 500 L70 420 z"/>
+    <path class="right" d="M230 480 L390 400 L390 420 L230 500 z"/>
+    <path class="top" d="M230 320 l160 80 l-160 80 l-160 -80 z"/>
+    <path class="sheen" d="M230 320 l160 80 l-160 80 l-160 -80 z"/>
+    <path class="obj" d="M126 392 v-12 a24 12 0 0 0 48 0 v12 a24 12 0 0 1 -48 0 z"/>
+    <path class="obj" d="M126 377 v-12 a24 12 0 0 0 48 0 v12 a24 12 0 0 1 -48 0 z"/>
+    <path class="obj" d="M126 362 v-12 a24 12 0 0 0 48 0 v12 a24 12 0 0 1 -48 0 z"/>
+    <ellipse class="obj-top" cx="150" cy="350" rx="24" ry="12"/>
+    <text class="name" x="280" y="400">Data platform</text>
   </g>
-  <g class="slab slab-model" data-flow-press="state=model" aria-label="The model layer">
-    <path class="left" d="M60 190 L200 260 L200 282 L60 212 z"/>
-    <path class="right" d="M200 260 L340 190 L340 212 L200 282 z"/>
-    <path class="top" d="M200 120 l140 70 l-140 70 l-140 -70 z"/>
-    <text class="name" x="200" y="232">Model layer</text>
+  <g class="slab slab-model c1" data-flow-press="state=model" aria-label="Model layer">
+    <path class="left" d="M70 260 L230 340 L230 360 L70 280 z"/>
+    <path class="right" d="M230 340 L390 260 L390 280 L230 360 z"/>
+    <path class="top" d="M230 180 l160 80 l-160 80 l-160 -80 z"/>
+    <path class="sheen" d="M230 180 l160 80 l-160 80 l-160 -80 z"/>
+    <g transform="matrix(1 0.5 -1 0.5 142 244)"><path class="obj" d="M21.6 -3.9 L21.6 3.9 L16.8 3.6 L14.4 9.3 L18.1 12.5 L12.5 18.1 L9.3 14.4 L3.6 16.8 L3.9 21.6 L-3.9 21.6 L-3.6 16.8 L-9.3 14.4 L-12.5 18.1 L-18.1 12.5 L-14.4 9.3 L-16.8 3.6 L-21.6 3.9 L-21.6 -3.9 L-16.8 -3.6 L-14.4 -9.3 L-18.1 -12.5 L-12.5 -18.1 L-9.3 -14.4 L-3.6 -16.8 L-3.9 -21.6 L3.9 -21.6 L3.6 -16.8 L9.3 -14.4 L12.5 -18.1 L18.1 -12.5 L14.4 -9.3 L16.8 -3.6 z"/><circle class="hole" r="7"/></g>
+    <g transform="matrix(1 0.5 -1 0.5 172 264)"><path class="obj alt" d="M13.6 -3.3 L13.6 3.3 L10.5 3.1 L7.9 7.6 L9.7 10.1 L3.9 13.4 L2.6 10.6 L-2.6 10.6 L-3.9 13.4 L-9.7 10.1 L-7.9 7.6 L-10.5 3.1 L-13.6 3.3 L-13.6 -3.3 L-10.5 -3.1 L-7.9 -7.6 L-9.7 -10.1 L-3.9 -13.4 L-2.6 -10.6 L2.6 -10.6 L3.9 -13.4 L9.7 -10.1 L7.9 -7.6 L10.5 -3.1 z"/><circle class="hole" r="5"/></g>
+    <text class="name" x="280" y="260">Model layer</text>
   </g>
-  <g class="slab slab-app" data-flow-press="state=app" aria-label="The app layer">
-    <path class="left" d="M60 100 L200 170 L200 192 L60 122 z"/>
-    <path class="right" d="M200 170 L340 100 L340 122 L200 192 z"/>
-    <path class="top" d="M200 30 l140 70 l-140 70 l-140 -70 z"/>
-    <text class="name" x="200" y="142">App layer</text>
+  <g class="slab slab-app c2" data-flow-press="state=app" aria-label="App layer">
+    <path class="left" d="M70 120 L230 200 L230 220 L70 140 z"/>
+    <path class="right" d="M230 200 L390 120 L390 140 L230 220 z"/>
+    <path class="top" d="M230 40 l160 80 l-160 80 l-160 -80 z"/>
+    <path class="sheen" d="M230 40 l160 80 l-160 80 l-160 -80 z"/>
+    <path class="obj" d="M124 118 l0 -40 l52 -18 l0 40 z"/>
+    <path class="obj-line" d="M134 108 l0 -10 M145 104 l0 -16 M156 100 l0 -22 M167 96 l0 -12"/>
+    <text class="name" x="280" y="120">App layer</text>
   </g>
-  <text class="hint" x="380" y="200">Press a layer to read what it does.</text>
-  <text class="note note-data" x="380" y="300"><tspan class="note-title">Data platform</tspan><tspan x="380" dy="20">Stores every customer event</tspan><tspan x="380" dy="18">and keeps it for two years.</tspan></text>
-  <text class="note note-model" x="380" y="210"><tspan class="note-title">Model layer</tspan><tspan x="380" dy="20">Turns those events into</tspan><tspan x="380" dy="18">forecasts each night.</tspan></text>
-  <text class="note note-app" x="380" y="120"><tspan class="note-title">App layer</tspan><tspan x="380" dy="20">Shows each team its forecast</tspan><tspan x="380" dy="18">and lets them adjust it.</tspan></text>
+  <text class="hint" x="430" y="260">Press a layer to read what it does.</text>
+  <text class="note note-data" x="430" y="406"><tspan class="note-title">Data platform</tspan><tspan x="430" dy="20">Stores every customer event</tspan><tspan x="430" dy="18">and keeps it for two years.</tspan></text>
+  <text class="note note-model" x="430" y="266"><tspan class="note-title">Model layer</tspan><tspan x="430" dy="20">Turns those events into</tspan><tspan x="430" dy="18">forecasts each night.</tspan></text>
+  <text class="note note-app" x="430" y="126"><tspan class="note-title">App layer</tspan><tspan x="430" dy="20">Shows each team its forecast</tspan><tspan x="430" dy="18">and lets them adjust it.</tspan></text>
 </svg>
 ```
 
@@ -274,10 +306,14 @@ component: Form
 title: Exercise · Writing a problem statement
 subtitle: For a problem you are working on now
 fields:
-  - {label: Who has the problem, bind: who}
-  - {label: What they are trying to do, bind: goal}
-  - {label: What gets in the way, bind: obstacle}
-  - {label: Your problem statement in one sentence, bind: statement}
+  - label: Who has the problem
+    bind: who
+  - label: What they are trying to do
+    bind: goal
+  - label: What gets in the way
+    bind: obstacle
+  - label: Your problem statement in one sentence
+    bind: statement
   - label: Check your statement
     bind: done
     type: checklist
@@ -285,7 +321,8 @@ fields:
       - It names who, what and the obstacle
       - It mentions no solution
       - A customer would recognise it
-  - {label: Your name, bind: signer}
+  - label: Your name
+    bind: signer
 decision: {label: Sign off, action: sign-off}
 ```
 
