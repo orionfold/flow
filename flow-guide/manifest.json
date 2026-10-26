@@ -266,7 +266,7 @@
       "path" : "assets/channels4_banner.jpg"
     }
   ],
-  "contentVersion" : "1.16.28",
+  "contentVersion" : "1.16.29",
   "documents" : [
     {
       "bytes" : 18846,
@@ -1239,8 +1239,8 @@
       "path" : "Skills Gallery/Skills — Decide.md"
     },
     {
-      "bytes" : 18728,
-      "contentHash" : "sha256:eea1ef0d400b18a2a902607eaa9e8451d3e06c830422a22d7215ff6f8f2e4dbf",
+      "bytes" : 18909,
+      "contentHash" : "sha256:b19deebc7dd79c79ae59d2abd6fd8735d38909c8b367d6447f87a5d55816eca8",
       "path" : "Skills Gallery/Skills — Explain.md"
     },
     {

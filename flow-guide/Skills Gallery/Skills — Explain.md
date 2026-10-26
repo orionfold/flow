@@ -100,11 +100,18 @@ A system's parts, its flows, and what a failure changes. Use it when a document 
     .failed .depends { stroke: #d70015; stroke-dasharray: 5 4 }
     .failed .note { visibility: visible }
     .failed .hint { visibility: hidden }
+    @media (prefers-color-scheme: dark) {
+      .part { fill: #2c2c2e }
+      .name { fill: #f5f5f7 }
+      .label { fill: #d1d1d6 }
+      .hint { fill: #aeaeb2 }
+      .note { fill: #ff6961 }
+      .failed .queue rect { stroke: #ff6961; fill: #3a1d1f }
+    }
   </style>
   <defs>
     <marker id="head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0a7aff"/></marker>
   </defs>
-  <rect width="680" height="300" rx="14" fill="#f5f5f7"/>
   <rect class="part" x="20" y="50" width="120" height="56" rx="10"/>
   <text class="name" x="80" y="83">Storefront</text>
   <g class="queue" data-flow-press="state=failed" aria-label="The order queue: press to see it fail">
@@ -162,12 +169,16 @@ One idea from the text, drawn so it builds step by step. Use it when a passage e
     .flow { fill: none; stroke: #8e8e93; stroke-width: 2 }
     .hit { fill: none; stroke: #0a7aff; stroke-width: 3; stroke-dasharray: 6 4; animation: travel 1s linear infinite }
     @keyframes travel { to { stroke-dashoffset: -10 } }
+    @media (prefers-color-scheme: dark) {
+      .box { fill: #2c2c2e }
+      .name, .label { fill: #f5f5f7 }
+      .line { fill: #aeaeb2 }
+    }
   </style>
   <defs>
     <marker id="head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8e8e93"/></marker>
     <marker id="hit-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0a7aff"/></marker>
   </defs>
-  <rect width="640" height="260" rx="14" fill="#f5f5f7"/>
   <rect class="box" x="30" y="30" width="140" height="64" rx="10"/>
   <text class="name" x="100" y="67">App</text>
   <rect class="box" x="250" y="30" width="140" height="64" rx="10"/>
@@ -219,7 +230,6 @@ A layered stack in depth; press a layer to read what it does. Use it when a docu
     </linearGradient>
   </defs>
   <style>
-    .bg { fill: #f5f5f7 }
     .slab { cursor: pointer; transition: transform 0.2s }
     .slab path { stroke: #ffffff; stroke-opacity: 0.7; stroke-width: 1 }
     .top { fill-opacity: 0.85 }
@@ -240,7 +250,6 @@ A layered stack in depth; press a layer to read what it does. Use it when a docu
     .data .note-data, .model .note-model, .app .note-app { visibility: visible }
     .data .hint, .model .hint, .app .hint { visibility: hidden }
     @media (prefers-color-scheme: dark) {
-      .bg { fill: #1c1c1e }
       .name, .note { fill: #f5f5f7 }
       .hint { fill: #98989d }
       .c0 .top { fill: #2bb3a3; fill-opacity: 0.35 }
@@ -248,7 +257,6 @@ A layered stack in depth; press a layer to read what it does. Use it when a docu
       .c2 .top { fill: #2f80ed; fill-opacity: 0.35 }
     }
   </style>
-  <rect class="bg" width="720" height="540" rx="14"/>
   <g class="slab slab-data c0" data-flow-press="state=data" aria-label="Data platform">
     <path class="left" d="M70 400 L230 480 L230 500 L70 420 z"/>
     <path class="right" d="M230 480 L390 400 L390 420 L230 500 z"/>
