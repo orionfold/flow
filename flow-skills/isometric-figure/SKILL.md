@@ -7,7 +7,7 @@ license: MIT
 kind: figure
 output: [figure]
 needs: [points 2]
-version: 1.1.0
+version: 1.1.1
 ---
 # Isometric Figure
 
@@ -57,6 +57,9 @@ and shows what the text says that layer does.
   not describe.
 - No label crosses an edge or sits under the slab above it; shorten an
   object before a name.
+- Every word right of the stack stays between x = 430 and 700: a line
+  holds at most 36 characters at 13, and a longer one wraps onto the next
+  line. The title is the `<title>`; draw no heading over the notes.
 - Draw on a filled background so it reads on a light or a dark page, with
   text at 12 or larger at the figure's own width: 720 wide, and 260 tall
   plus 140 for each layer after the first.
