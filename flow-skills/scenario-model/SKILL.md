@@ -7,7 +7,7 @@ license: MIT
 kind: method
 output: [flowui, chart]
 needs: [numbers 2]
-version: 1.0.0
+version: 1.0.1
 ---
 # Scenario Model
 

@@ -40,7 +40,9 @@ fields:
       - Low
       - Base
       - High
-  - {label: Reason, bind: reason}
-  - {label: Decided by, bind: signer}
+  - label: Reason
+    bind: reason
+  - label: Decided by
+    bind: signer
 decision: {label: Record decision, action: decide}
 ```

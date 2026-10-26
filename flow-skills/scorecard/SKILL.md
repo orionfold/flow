@@ -7,7 +7,7 @@ license: MIT
 kind: method
 output: [table, flowui]
 needs: [points 2]
-version: 1.0.0
+version: 1.0.1
 ---
 # Scorecard
 

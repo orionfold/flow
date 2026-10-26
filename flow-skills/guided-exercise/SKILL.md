@@ -7,7 +7,7 @@ license: MIT
 kind: method
 output: [flowui]
 needs: [points 2]
-version: 1.1.0
+version: 1.1.1
 ---
 # Guided Exercise
 
@@ -31,7 +31,9 @@ short checklist of what they practised, so finishing it means something.
    the skill, a subtitle saying who it is for (and how long it takes only
    when the passage says), and under `fields:` one text field per prompt
    with a plain bind name and the prompt as its label (an answer is a
-   sentence; the form gives it room), then the checklist as one more field with
+   sentence; the form gives it room), each field written over lines
+   (`- label: …`, then `bind: …` under it) so a comma in a prompt stays
+   in it, then the checklist as one more field with
    `type: checklist` and its items as `options`, then a field for the
    reader's name, and the *sign-off* act. The checklist is a field, never a
    key of its own.
