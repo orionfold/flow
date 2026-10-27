@@ -1,5 +1,6 @@
 ---
 title: AI Consulting Starter
+license: CC BY 4.0
 ---
 
 # AI Consulting Starter
