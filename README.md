@@ -52,15 +52,35 @@ beside each line. [Privacy](https://orionfold.com/privacy/) ·
 
 ## What this repository is
 
-This is the **Flow Guide**: the folder of documents Flow opens on first launch,
-published here so Flow can keep it current. In Flow, **Settings ▸ Flow System ▸
-Flow Guide Updates…** fetches the newest documents from this repository and
-asks before it changes anything of yours. [`flow-guide/Changelog.md`](flow-guide/Changelog.md)
-is what is new in each release: what shipped, how it benefits you, and how to
-use it.
+Three kinds of content Flow reads, in three folders:
+
+- **[`flow-guide/`](flow-guide/)**: the **Flow Guide**, the folder of documents
+  Flow opens on first launch, published here so Flow can keep it current. In
+  Flow, **Settings ▸ General ▸ Flow Guide Updates…** fetches the newest
+  documents and asks before it changes anything of yours.
+  [`flow-guide/Changelog.md`](flow-guide/Changelog.md) is what is new in each
+  release: what shipped, how it benefits you, and how to use it.
+- **[`flow-skills/`](flow-skills/)**: the skills Flow curates, one folder each
+  with its `SKILL.md`. In Flow they are cards in Elements;
+  **Settings ▸ Skills ▸ Check for Updates…** brings in new versions.
+- **[`flow-domains/`](flow-domains/)**: **Flow Domains**, folders of living
+  documents, Elements and Chat packaged as consulting, training and decision
+  tools. Bring one into Flow with **File ▸ New from GitHub…** and the folder's
+  address.
 
 The app's source code is not here. Flow is a direct download for Mac, signed
 and notarized, outside the App Store.
+
+## Licence
+
+- **The Flow Guide and the skills** are under the [MIT License](LICENSE),
+  Copyright (c) 2026 Orionfold LLC.
+- **A Flow Domain** states its own licence in its `README.md` (`license:`), and
+  Flow shows it before you bring the folder in; that licence applies to the
+  Domain's folder.
+- **Trademarks and product images are not licensed.** "Orionfold" and "Flow"
+  are trademarks of Orionfold LLC; the images under [`assets/`](assets/) are
+  product imagery, not covered by the MIT License.
 
 ## Feedback
 
