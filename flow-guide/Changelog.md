@@ -11,6 +11,7 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 
 | Release | Build | Date | In a sentence |
 | --- | --- | --- | --- |
+| 3.0.1 | 3966 | 28 October 2026 | The window's content stays below the title bar, a notice shares the Home row, the restore line shows once, and What's New names 3.0 |
 | 3.0 | 3961 | 28 October 2026 | Skills that draw your document's case, components you can fill in and sign, a canvas of what a document rests on, Chat that answers from your folder, documents from the web and GitHub, your own agents at a door, and a faster Flow |
 | 2.2.1 | 3202 | 7 October 2026 | The fixes from writing a book in Flow Chat: notes, author and sources in a published book, reviews that show themselves, and Chat that reopens at the newest reply |
 | 2.2 | 3182 | 5 October 2026 | Flow Chat: research, write and publish a book by talking to your folder, with Research Brief, web search and Proof Run |
@@ -36,6 +37,34 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 | 1.5.2 | 1414 | 27 August 2026 | A pressable Update ready button |
 | 1.5.1 | 1404 | 27 August 2026 | The first Flow that arrived through Flow itself |
 | 1.5 | 1382 | 26 August 2026 | The launch |
+
+## Flow 3.0.1 · build 3966 · 28 October 2026
+
+The first hour on 3.0: three things the operator met on the installed build, fixed the same afternoon.
+
+### The window's content stays below the title bar
+
+- **What shipped.** With the context row showing, Flow's main surface asked for a fixed height taller than a short window, and the whole content, sidebar rail included, was centred and clipped under the toolbar. On a tall window the same thing happened the moment the content grew, for instance when First Time Setup found something on your Mac. The surface now takes exactly the height it is given, at any window size.
+- **How it benefits you.** Home, the Welcome guide row and the sidebar's icons never slide under the window title again.
+- **How to use it.** Nothing to do.
+
+### A notice shares the row when there is room
+
+- **What shipped.** The restore line and the document-changed notice sit at the trailing end of the Home row, at the width of their sentence, and take a second line only when the Jobs steps or the review chips fill the row.
+- **How it benefits you.** One row where one row is enough.
+- **How to use it.** Nothing to do; the × still dismisses it.
+
+### The restore line shows once
+
+- **What shipped.** A document that was moved or deleted while its tab was open is still named at the next launch, and that launch now writes the closed tab out of the saved workspace. The same line no longer returns every morning after you dismiss it.
+- **How it benefits you.** A notice you have read stays read.
+- **How to use it.** Nothing to do.
+
+### Explore What's New names 3.0
+
+- **What shipped.** Welcome's Explore What's New card lists Skills, Components, the canvas, Chat from your folder and your own agents, each opening where it lives in the Guide or in Settings. It had kept the 2.0 list.
+- **How it benefits you.** The card on Welcome tells you what this release brought.
+- **How to use it.** Press a row.
 
 ## Flow 3.0 · build 3961 · 28 October 2026
 
