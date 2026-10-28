@@ -11,6 +11,7 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 
 | Release | Build | Date | In a sentence |
 | --- | --- | --- | --- |
+| 3.0 | 3961 | 28 October 2026 | Skills that draw your document's case, components you can fill in and sign, a canvas of what a document rests on, Chat that answers from your folder, documents from the web and GitHub, your own agents at a door, and a faster Flow |
 | 2.2.1 | 3202 | 7 October 2026 | The fixes from writing a book in Flow Chat: notes, author and sources in a published book, reviews that show themselves, and Chat that reopens at the newest reply |
 | 2.2 | 3182 | 5 October 2026 | Flow Chat: research, write and publish a book by talking to your folder, with Research Brief, web search and Proof Run |
 | 2.1 | 3020 | 30 September 2026 | A first install that sets itself up, publishing and importing you can hand over, reviews that read true, and paths that finish |
@@ -35,6 +36,88 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 | 1.5.2 | 1414 | 27 August 2026 | A pressable Update ready button |
 | 1.5.1 | 1404 | 27 August 2026 | The first Flow that arrived through Flow itself |
 | 1.5 | 1382 | 26 August 2026 | The launch |
+
+## Flow 3.0 · build 3961 · 28 October 2026
+
+Three weeks of building the document that works for you: methods that draw your case, blocks a reader can fill in and sign, a canvas that shows what a document rests on, a Chat that answers from the folder, documents that arrive from the web and from GitHub and keep up with their source, a door for your own Claude Code and Codex, and a Flow that opens, types and starts faster. The engines underneath are current, and a document that arrives from outside is held at the boundary.
+
+### Skills: sixteen methods that draw your document's case
+
+- **What shipped.** Elements ▸ Skills holds a card per method: Opportunity Map, Value Model, Scorecard, Roadmap, Option Comparison, Scenario Model, Delegation Map, Register, Architecture Diagram, Landscape Map, Decision Brief and Guided Exercise, and four that draw a passage as a picture: Workflow Path, Field-Notes Diagram, Product Mock and Path Card. Each card shows what it draws. Pressing one opens a sheet that says what the skill will read, what it returns, its steps and whether your text has what it needs, before anything runs. A skill reads the paragraph you selected and adds its answer right after it, drawn with Flow's own charts, diagrams, tables and forms, waiting in Review Changes. Settings ▸ Skills switches each on or off and checks for newer skills. Ideas suggests which skill fits each section, and the Guide's Skills Gallery shows every skill with a passage and what it drew.
+- **How it benefits you.** A document's argument becomes a map, a model, a scorecard or a decision tree in one press, using only what the text says and naming what is missing rather than guessing.
+- **How to use it.** Select a passage, open Elements (⌘5), expand Skills, press a card, read the sheet, press Run Skill. Keep or revert the result in Review Changes; Change it… on a chart or diagram a skill drew redraws that block alone.
+
+### Components a reader can fill in and sign
+
+- **What shipped.** A Form block holds fields of six kinds and one button that submits, decides, rates, signs off or updates the document, with Flow asking before any of them and recording the act beside the document. A sign-off checklist is a card you tick and sign; History lists the signature. A Hero holds two components side by side and a Bento two or more; pictures, diffs, folder listings and callouts join charts, tables and diagrams inside a composition; Change Summary and Sources read History inside the document. Figures you can press and step through draw from a figure block, with Previous, Play and Next. A form's choices can offer the document's own sections, charts and files, and follow the document as you edit it. Ask Chat for a checklist, a check-in or a decision memo and the reply draws it.
+- **How it benefits you.** A document carries its own acceptance, its own decisions and its own figures, readable in Flow, in a Chat reply and on a published page, without a form tool beside it.
+- **How to use it.** Elements lists every block; Format ▸ Insert Component places one; the block's ⊟ opens the component editor; Agency ▸ Sign-off or Agency ▸ Form drafts one from the text you select.
+
+### The canvas, Show History and Zen
+
+- **What shipped.** Canvas mode (View ▸ Show Canvas, ⌥⌘3) shows a document three ways: Connections, what it rests on and what goes stale if it changes, drawn with how each was made; Show History (⌥⌘Y), its saved versions stepped by swipe or arrow keys; Evidence (⌥⌘4), which sources each sentence cites, as a map or a grid. History lists what a document was derived from and what feeds on it, and says when a source changed since. Zen (⌥⌘Z) folds every strip away and leaves the document. Renaming a document updates the links to it, with each change reviewable.
+- **How it benefits you.** You can see, before you trust a sentence, where it came from and what else would go stale if its source moved.
+- **How to use it.** Press Canvas in the document toolbar and choose a lens; press Zen when you want nothing but the page; rename from the title menu and tick Also update links.
+
+### Chat answers from your folder
+
+- **What shipped.** Before each reply Chat searches the folder it works in and answers from the passages it finds, with a From this folder row under the reply. Chat works with no document open, keeps the conversation when you open another document, changes the other documents in your folder when a change needs one, and marks claims to check as a list you can work through in Sources. A folder's README can say what the folder is and offer its questions. Typing in Chat stays quick beside a long document.
+- **How it benefits you.** Chat is the folder's own assistant: it knows what the folder says, says when it does not, and its every change still waits in Review.
+- **How to use it.** Choose a folder or document, press ⌘K or the toolbar's Chat button, and ask. Describe this folder proposes a README's facts and questions.
+
+### Documents from the web, from Word, Excel, PowerPoint and PDF, with a checklist beside them
+
+- **What shipped.** New from Web Page reads a page as a document and can keep following it; a contents page offers Bring In All; a shared ChatGPT chat imports with its links; a web tab opens as Safari does and can hand a page to your browser. Every import gets a short checklist in Sources of what to confirm before you rely on it, with Walk Through with Chat. A page's diagrams and figures arrive as text until you make them a fence yourself.
+- **How it benefits you.** What you read on the web becomes a document in your folder that keeps up with its source, and you know what to check before you cite it.
+- **How to use it.** ＋ ▸ New from Web Page…, paste the address, read the preview, press Add; open the Sources tab for the checklist.
+
+### Folders from GitHub, and publishing to a repository
+
+- **What shipped.** File ▸ New from GitHub… brings a repository or one folder of it in as a folder that opens on its README. Flow says when an update is waiting, with a blue arrow beside the folder, and Check for Updates shows what changed document by document, keeping your edits. Publish Folder ▸ GitHub Repository sends a folder to a repository, or into one folder of it, as one version, and refuses to overwrite work that is not yours, including a whole-repository publish over a folder you published into it.
+- **How it benefits you.** A folder of documents can be shared, brought in and kept current through GitHub without leaving Flow.
+- **How to use it.** File ▸ New from GitHub… with the address; the sidebar's arrow when an update waits; Publish ▸ GitHub Repository with owner/name or owner/name/folder.
+
+### Your own agents can use Flow, with Flow Pro
+
+- **What shipped.** Settings ▸ General ▸ Your agents opens a door for the Claude Code or Codex you run in Terminal: Read, or Read and propose, for the folders you choose. The agent can list those folders, read a folder's summary, read and search documents, and read a curated skill's method; a proposed document arrives in Review Changes under the agent's name. The door is part of Flow Pro and is open only while Flow is.
+- **How it benefits you.** The agent you already use can read what Flow holds and propose into it, and nothing lands without your review.
+- **How to use it.** Settings ▸ General ▸ Your agents, choose Read or Read and propose, copy the command shown and run it once.
+
+### Jobs keep a section, a chart or a table current
+
+- **What shipped.** A Job that drafts a section redrafts it each run at about its own length and never appends; a Job can keep a chart or a table current from its sources; a form can set up a Job; a Job can stop on a day and a document can cap what its Jobs spend. Run Jobs says when nothing changed since the last draft, and a watch says what it found. Review marks only what a run added.
+- **How it benefits you.** A living document stays the size it is and says what moved, instead of growing a new section every night.
+- **How to use it.** Edit Jobs from the title menu; Elements ▸ Job Form inserts a form that sets a Job up; Budget and Stop on a day are in Edit Jobs.
+
+### Elements, the palette of what a document can take
+
+- **What shipped.** A fifth sidebar panel, Elements (⌘5), lists every block Flow can draw and every Agency action, each with a drawing and one line, and the Agency heading says what an action would touch, cost and run on. With a chart open, Elements lists every chart and diagram kind by the question it answers, and switches the chart to it with your data kept. The document toolbar is calmer for it.
+- **How it benefits you.** Everything a document can take is in one place, with the facts beside it, before you press.
+- **How to use it.** ⌘5 with a document open; arrow keys expand a card, Return performs it.
+
+### A faster Flow
+
+- **What shipped.** Flow starts with large folders open about half the wait sooner, the document you left open arrives a quarter to half a second sooner without the Opening… line, typing stays instant anywhere in a document of a quarter of a megabyte, Ideas no longer freezes typing after a pause, Approve & Save and History no longer wait on the size of the folder, documents open at once after launch, and returning to Flow no longer grows its memory.
+- **How it benefits you.** The wait you felt in a big folder is gone from the places you felt it.
+- **How to use it.** Nothing to do.
+
+### Current engines, and diagrams drawn anywhere
+
+- **What shipped.** Flow MLX runs on this month's MLX and the GGUF engine on llama.cpp's first numbered release; a model whose files are incomplete fails to load with the reason named. Diagrams draw through a renderer that needs no window, so the night and Jobs draw a proposed diagram as they draw a chart, and a broken diagram is refused with its line and column. The renderer is at its newest release: wrapped labels sit closer, a class diagram that would overflow wraps into rows, and labels on your own fills stay readable in dark appearance.
+- **How it benefits you.** The same Mermaid text draws in the Reader, in a Chat reply, overnight and on a published page, with the house palette in light and dark.
+- **How to use it.** Nothing to do; the first reply after this update's first model start takes a couple of seconds longer, once.
+
+### A document that arrived from outside is held at the boundary
+
+- **What shipped.** A link inside a rendered diagram opens the way a Markdown link does, in the reading pane or your browser, and can no longer replace the editor with a remote page; a chart that names an href channel shows the refusal sentence instead of drawing; the editor, the canvas and the publish pages load only Flow's own page.
+- **How it benefits you.** A document from a web page, a GitHub folder or an agent can draw and link, and cannot steer Flow.
+- **How to use it.** Nothing to do; a diagram's link shows its address on hover and opens on a click.
+
+### Going back to 2.2.1 after this release empties the window
+
+- **What shipped.** A workspace this release saved with a component tab, the Ideas tab or a tab in Canvas mode cannot be read by 2.2.1, which replaces it with an empty one; your documents and your recents are untouched. A trip through 2.2.1 and back also resets which Skills are on, which keys you declined and the pulled-folder check.
+- **How it benefits you.** You know what to close before installing an older build.
+- **How to use it.** Close those tabs and leave Canvas before installing 2.2.1, and the tabs survive.
 
 ## Flow 2.2.1 · build 3202 · 7 October 2026
 
