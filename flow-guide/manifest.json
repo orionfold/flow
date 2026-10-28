@@ -266,7 +266,7 @@
       "path" : "assets/channels4_banner.jpg"
     }
   ],
-  "contentVersion" : "1.16.33",
+  "contentVersion" : "1.16.37",
   "documents" : [
     {
       "bytes" : 18846,
@@ -744,8 +744,8 @@
       "path" : "Flow Handbook/Components.md"
     },
     {
-      "bytes" : 9678,
-      "contentHash" : "sha256:de73da79c9dcd78367cfa4566bfdaffcffd14ca23a241197727ef9ea3244f1b2",
+      "bytes" : 9761,
+      "contentHash" : "sha256:70ef562824201d4493d5e9499991cd0916ca87af3acf258b7d5a2214ed70fe44",
       "path" : "Flow Handbook/Files Flow Writes.md"
     },
     {
@@ -759,8 +759,8 @@
       "path" : "Flow Handbook/Skills.md"
     },
     {
-      "bytes" : 17674,
-      "contentHash" : "sha256:ff6fc46eb0b7a2fce7e1613d442046f5f22f32e17952281b4db9838159b796b4",
+      "bytes" : 20170,
+      "contentHash" : "sha256:8fc7df84e73cbbdf48ef26d917d5f8d63f5b73a44ced4b36a1a5dd57988e1ec5",
       "path" : "Flow Handbook/Using Flow.md"
     },
     {
@@ -1489,7 +1489,7 @@
       "path" : "Welcome.md"
     }
   ],
-  "generated" : "2026-10-26",
+  "generated" : "2026-10-28",
   "manifestVersion" : 2,
   "paths" : [
     {

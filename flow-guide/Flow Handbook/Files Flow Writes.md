@@ -161,4 +161,4 @@ The author names the writer: `Flow` for versions you saved, `Flow Night Shift` f
 
 ## What Flow keeps outside the folder
 
-Some things are about you or your Mac rather than a document, so they stay out of your folders: your settings, including the Night Shift's schedule, and your folder list in Flow's preferences; API keys, your licence and publishing credentials in the Keychain; the Night Shift's last run and working state, downloaded models and usage counts in Flow's Application Support folder. None of them is needed to read your documents.
+Some things are about you or your Mac rather than a document, so they stay out of your folders: your settings, including the Night Shift's schedule, and your folder list in Flow's preferences; API keys, your licence and publishing credentials in the Keychain; the Night Shift's last run and working state, downloaded models, usage counts and the list of calls your own agents made through the door for agents (kept 30 days) in Flow's Application Support folder. None of them is needed to read your documents.
