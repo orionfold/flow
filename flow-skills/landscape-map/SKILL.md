@@ -7,7 +7,7 @@ license: MIT
 kind: method
 output: [mermaid, table]
 needs: [points 3]
-version: 1.0.0
+version: 1.1.0
 ---
 # Landscape Map
 
@@ -22,15 +22,22 @@ the evidence, so the diagram can stay simple.
 2. **Group them** by the dimension the text uses to tell them apart
    (segment, approach, buyer, stage). Use the text's own group names; a
    player it does not place goes in *Unplaced*.
-3. **Draw one mind map**: `mindmap`, the field as the root, one branch per
-   group, one leaf per player.
+3. **Draw one tree, top to bottom**: `flowchart TB`, the field as the
+   root, one node per group under it, and each group's players in a
+   column under the group — the first linked to the group with `-->`,
+   each next one placed under the one before with `~~~`, so the tree is
+   as wide as its groups, not its players. Never `mindmap`: it spreads
+   the groups to both sides of the root and runs past the column.
 4. **Write the table** under it: Player, Group, the one fact that defines
-   it in the text, and *Source* — the source the text cites for that fact,
-   or "the text" when it cites none.
+   it in the text, and *Source* — the source the text cites for that fact
+   in a few words; when it cites none, the section of the text the fact
+   sits under, or "The text, no source named" when there is no section.
 
 ## Rules
 
 - One diagram and one table. A short heading is allowed; nothing else.
+- Keep every cell short: a defining fact in one line, a source in a few
+  words, so the table fits the column.
 - Never place a player in a group the text does not support.
 - Never cite a source the text does not name.
 

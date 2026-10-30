@@ -13,16 +13,16 @@
 ### Meeting assistants split three ways
 
 ```mermaid
-mindmap
-  root((Meeting assistants))
-    Recorder bots
-      Otterly
-      Firefly
-    Built-in assistants
-      Zoom
-      Teams
-    Desktop capture
-      Granola
+flowchart TB
+  root["Meeting assistants"]
+  root --> bots["Recorder bots"]
+  root --> builtin["Built-in assistants"]
+  root --> desktop["Desktop capture"]
+  bots --> otterly["Otterly"]
+  otterly ~~~ firefly["Firefly"]
+  builtin --> zoom["Zoom"]
+  zoom ~~~ teams["Teams"]
+  desktop --> granola["Granola"]
 ```
 
 | Player | Group | Defining fact | Source |
@@ -31,4 +31,4 @@ mindmap
 | Firefly | Recorder bots | Joins the call as a participant | The vendor's site |
 | Zoom | Built-in assistants | Comes with the meeting tool | 2026 release notes |
 | Teams | Built-in assistants | Comes with the meeting tool | 2026 release notes |
-| Granola | Desktop capture | Records from the laptop without joining | The text |
+| Granola | Desktop capture | Records from the laptop without joining | The text, no source named |
