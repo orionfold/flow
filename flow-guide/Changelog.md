@@ -11,6 +11,7 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 
 | Release | Build | Date | In a sentence |
 | --- | --- | --- | --- |
+| 3.1 | 4033 | 29 October 2026 | Long pages come in as a folder of parts, filings read as documents, find in a document, and notices one at a time |
 | 3.0.1 | 3966 | 28 October 2026 | The window's content stays below the title bar, a notice shares the Home row, the restore line shows once, and What's New names 3.0 |
 | 3.0 | 3961 | 28 October 2026 | Skills that draw your document's case, components you can fill in and sign, a canvas of what a document rests on, Chat that answers from your folder, documents from the web and GitHub, your own agents at a door, and a faster Flow |
 | 2.2.1 | 3202 | 7 October 2026 | The fixes from writing a book in Flow Chat: notes, author and sources in a published book, reviews that show themselves, and Chat that reopens at the newest reply |
@@ -37,6 +38,46 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 | 1.5.2 | 1414 | 27 August 2026 | A pressable Update ready button |
 | 1.5.1 | 1404 | 27 August 2026 | The first Flow that arrived through Flow itself |
 | 1.5 | 1382 | 26 August 2026 | The launch |
+
+## Flow 3.1 · build 4033 · 29 October 2026
+
+Long pages come in whole, and a document can be searched. Written from a day of bringing the Anthropic S-1, Apple's 10-K and Moby-Dick into Flow.
+
+### A page too long for one document becomes a folder
+
+- **What shipped.** New from Web Page and File ▸ Import… now read a page up to 64 MB. Past 40,000 words, the length at which typing stops feeling instant, Flow says *Too long for one document* and offers one button, *Bring In All N…*: the parts are listed under their sections with their word counts, and Add writes them as a folder with a README that lists them in order. Each part names the page as its source and its section as its place. Import also takes an `.html` or `.htm` file saved from a browser.
+- **How it benefits you.** A filing, a report or a book arrives as documents you can open, link and edit, each one quick to type in, instead of one page that stalls or is refused.
+- **How to use it.** File ▸ New from Web Page… with the address, or File ▸ Import… with a saved page; on a long one, press *Bring In All N…*. A part holds what its name says: Moby-Dick comes in as 129 parts, a chapter or a few short ones apiece.
+
+### Filings read as documents
+
+- **What shipped.** A page laid out for print, with headings marked only by type size and weight, now arrives with its headings, its lines joined into paragraphs, its Items listed in the preview, its exhibit index kept as a linked table, and its hidden machine data left out. Pictures over 2 MB come in at the page's width.
+- **How it benefits you.** An S-1 or a 10-K opens on its cover with its Parts, Items and sections as headings, ready to read and to ask Chat about.
+- **How to use it.** Nothing to do; the Import checklist says how many headings came from their style and what was left out.
+
+### Find in a document
+
+- **What shipped.** Edit ▸ Find ▸ Find… (⌘F) opens a find bar over the document in the Reader, the Editor and Source. It shows *3 of 17*, washes every match and keeps the current one in view.
+- **How it benefits you.** Finding a word in a long document no longer means searching the whole folder.
+- **How to use it.** ⌘F, type; Return or ⌘G for the next match, Shift-Return or ⇧⌘G for the previous one, ⌘E to search for the selection, Escape to close. Search across the folder stays ⇧⌘F.
+
+### Notices sit with the document, one at a time
+
+- **What shipped.** *Edited outside Flow*, *Changed since you left* and the restore line moved into the notice area above the document. Several waiting notices show one at a time with *‹ 1 of 3 ›*. A document Chat or an import changed is no longer called an outside edit.
+- **How it benefits you.** One notice to read, where it applies, and only when something outside Flow really changed the file.
+- **How to use it.** Page through with the arrows; the × dismisses one.
+
+### Chat knows Flow's Elements, and charts read cleanly
+
+- **What shipped.** Chat answers which Elements could present a document's data from Flow's own list, and the charts it writes draw. A stacked or grouped bar chart reads its values from the axis instead of piling labels on one another. A figure a skill drew only for a dark page appears in its light form on a light page. Landscape Map draws its groups as a tree that fits the page (Guide 1.17.2).
+- **How it benefits you.** What Chat suggests works the first time, and a figure reads on whichever page you use.
+- **How to use it.** Ask Chat which Element would show your table, then accept its chart.
+
+### Smaller things
+
+- **What shipped.** A table cell that escapes a character shows the character alone. A refused Publish says how to fix the token. A long page's part never gets a doubled `..md`, and *Keep it updated* is greyed out on parts with its reason.
+- **How it benefits you.** Fewer surprises after an import or a publish.
+- **How to use it.** Nothing to do.
 
 ## Flow 3.0.1 · build 3966 · 28 October 2026
 
