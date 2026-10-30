@@ -266,7 +266,7 @@
       "path" : "assets/channels4_banner.jpg"
     }
   ],
-  "contentVersion" : "1.17.1",
+  "contentVersion" : "1.17.2",
   "documents" : [
     {
       "bytes" : 18846,
@@ -1239,8 +1239,8 @@
       "path" : "Skills Gallery/Skills — Decide.md"
     },
     {
-      "bytes" : 24042,
-      "contentHash" : "sha256:b91c69a2829a26a56bf88cb348fd8ae927a2ae9779686f5c114f16d1eb55cf79",
+      "bytes" : 24209,
+      "contentHash" : "sha256:dcb28099d9383b85cba67fa9b91e13e0a6fbab09ce508548fd0fdf7053c8d394",
       "path" : "Skills Gallery/Skills — Explain.md"
     },
     {
@@ -1489,7 +1489,7 @@
       "path" : "Welcome.md"
     }
   ],
-  "generated" : "2026-10-28",
+  "generated" : "2026-10-30",
   "manifestVersion" : 2,
   "paths" : [
     {
