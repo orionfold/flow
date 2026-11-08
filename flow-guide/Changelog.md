@@ -11,6 +11,7 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 
 | Release | Build | Date | In a sentence |
 | --- | --- | --- | --- |
+| 4.0.1 | 4386 | 7 November 2026 | The GitHub import preview keeps the folder name and actions in view |
 | 4.0 | 4383 | 7 November 2026 | Welcome and Paths, your Fold’s memory, ready reviews, and Playbooks you can publish and update |
 | 3.1 | 4033 | 29 October 2026 | Long pages come in as a folder of parts, filings read as documents, find in a document, and notices one at a time |
 | 3.0.1 | 3966 | 28 October 2026 | The window's content stays below the title bar, a notice shares the Home row, the restore line shows once, and What's New names 3.0 |
@@ -39,6 +40,14 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 | 1.5.2 | 1414 | 27 August 2026 | A pressable Update ready button |
 | 1.5.1 | 1404 | 27 August 2026 | The first Flow that arrived through Flow itself |
 | 1.5 | 1382 | 26 August 2026 | The launch |
+
+## Flow 4.0.1 · build 4386 · 7 November 2026
+
+### See the whole folder name before you add it
+
+- **What shipped.** The GitHub import preview puts **Cancel** and **Add** on their own row below the folder name.
+- **How it helps.** You can read the complete name of the AI Consulting Starter in its first preview without scrolling.
+- **How to use it.** Choose **File ▸ New from GitHub…**, paste a folder address and press **Read Folder**. Check the destination and folder name, then press **Add**.
 
 ## Flow 4.0 · build 4383 · 7 November 2026
 

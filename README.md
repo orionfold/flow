@@ -98,4 +98,4 @@ paste it.
 [Tech Specs](https://orionfold.com/flow/specifications/) ·
 [Enterprise](https://orionfold.com/flow/enterprise/)
 
-Current release: Flow 4.0 (4383).
+Current release: Flow 4.0.1 (4386).
