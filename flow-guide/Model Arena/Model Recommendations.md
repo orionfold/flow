@@ -430,9 +430,9 @@ Every list row, every measurement cell and every baseline run behind these table
 
 ## Flow keeps this list current
 
-This document updates itself along with the rest of this folder, so the list reflects what is worth running today rather than what was worth running when you installed Flow.
+Changes to Flow's published picks arrive with Guide updates.
 
-The list above was researched on 19 September 2026. Flow's release check refuses to cut a release whose list is more than thirty days old, so a list that has gone stale is a release that did not happen, not a list you have to notice.
+The picks above were researched on 19 September 2026. Before a release, Flow checks that its Arena and Hugging Face research is current. The benchmark results keep the dates they were measured.
 
 **Your edits are safe.** If you change this document, Flow does not overwrite it. It offers you the update and lets you decide, the same as any other document here.
 

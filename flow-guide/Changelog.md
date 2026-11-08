@@ -11,6 +11,7 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 
 | Release | Build | Date | In a sentence |
 | --- | --- | --- | --- |
+| 4.0 | 4383 | 7 November 2026 | Welcome and Paths, your Fold’s memory, ready reviews, and Playbooks you can publish and update |
 | 3.1 | 4033 | 29 October 2026 | Long pages come in as a folder of parts, filings read as documents, find in a document, and notices one at a time |
 | 3.0.1 | 3966 | 28 October 2026 | The window's content stays below the title bar, a notice shares the Home row, the restore line shows once, and What's New names 3.0 |
 | 3.0 | 3961 | 28 October 2026 | Skills that draw your document's case, components you can fill in and sign, a canvas of what a document rests on, Chat that answers from your folder, documents from the web and GitHub, your own agents at a door, and a faster Flow |
@@ -38,6 +39,32 @@ For current model choices and measurements, open [[Model Arena]]. Older release 
 | 1.5.2 | 1414 | 27 August 2026 | A pressable Update ready button |
 | 1.5.1 | 1404 | 27 August 2026 | The first Flow that arrived through Flow itself |
 | 1.5 | 1382 | 26 August 2026 | The launch |
+
+## Flow 4.0 · build 4383 · 7 November 2026
+
+### Find your work in the sidebar
+
+- **What shipped.** New opens Welcome and Paths. The sidebar puts your documents in Folders and gives Folds, Your turn and Jobs their own places.
+- **How it helps.** You can find what needs attention without losing the documents you have open.
+- **How to use it.** Press New above a document for Welcome and Paths. Open the Workbench beside a document for Chat, Review, History and Jobs.
+
+### Your Fold can use what you ask it to remember
+
+- **What shipped.** Your Fold keeps the preferences you ask it to remember. A run carries relevant memories and can retrieve a listed memory when it needs more context. Eligible overnight learning can name what changed in the Morning Briefing and offer Undo.
+- **How it helps.** A recurring preference can travel with the work and you can see what your Fold learned.
+- **How to use it.** Open Folds to see your Fold. In Chat, ask it to remember a preference. Read the Morning Briefing when overnight learning is enabled.
+
+### Decide the reviews that need you
+
+- **What shipped.** Your turn gathers reviews. Resolve reviews can keep the eligible updates it shows as ready. Automate reviews explains and learns the rules and offers Undo for rules it learns.
+- **How it helps.** The count tells you how many updates are ready and what remains for you. The receipt records the rule behind each Keep.
+- **How to use it.** Open Your turn. Choose Automate reviews to inspect the rules or Resolve reviews to keep the displayed ready updates. Open a document's Review to decide an individual change.
+
+### Share and update a Playbook
+
+- **What shipped.** A Playbook is a folder of living documents, Elements and Chat that packages a method. Publish sends the selected folder to GitHub. Readers can import it and apply selected changes on later updates.
+- **How it helps.** A reader can keep working in their copy and decide which upstream changes to bring in.
+- **How to use it.** Use Publish Folder and choose GitHub Repository. To bring in a published Playbook, choose File ▸ New from GitHub and enter its folder address. Use the update list to choose what to apply.
 
 ## Flow 3.1 · build 4033 · 29 October 2026
 

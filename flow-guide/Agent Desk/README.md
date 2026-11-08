@@ -7,7 +7,7 @@ path:
   featured: true
   title: Review what your agents wrote
   persona: Claude Code and Codex users
-  tags: [Agents]
+  tags: [Teams]
   steps:
     - Point your agent at a folder open in Flow
     - Keep or revert each change it made

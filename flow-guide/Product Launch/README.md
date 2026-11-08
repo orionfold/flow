@@ -7,7 +7,7 @@ path:
   featured: true
   title: Docs that stay true to the code
   persona: Builders · indie hackers
-  tags: [Code]
+  tags: [Teams]
   steps:
     - Add the repo folder; your git stays yours
     - Proofread or expand a spec, change by change

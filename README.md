@@ -52,7 +52,7 @@ beside each line. [Privacy](https://orionfold.com/privacy/) ·
 
 ## What this repository is
 
-Three kinds of content Flow reads, in three folders:
+Content Flow reads from this repository:
 
 - **[`flow-guide/`](flow-guide/)**: the **Flow Guide**, the folder of documents
   Flow opens on first launch, published here so Flow can keep it current. In
@@ -63,10 +63,12 @@ Three kinds of content Flow reads, in three folders:
 - **[`flow-skills/`](flow-skills/)**: the skills Flow curates, one folder each
   with its `SKILL.md`. In Flow they are cards in Elements;
   **Settings ▸ Skills ▸ Check for Updates…** brings in new versions.
-- **[`flow-domains/`](flow-domains/)**: **Flow Domains**, folders of living
+- **[`flow-playbooks/`](flow-playbooks/)**: **Flow Playbooks**, folders of living
   documents, Elements and Chat packaged as consulting, training and decision
-  tools. Bring one into Flow with **File ▸ New from GitHub…** and the folder's
+  tools. In Flow, choose **File ▸ New from GitHub…** and enter the folder's
   address.
+- **[`flow-domains/`](flow-domains/)**: the same published starters at the
+  addresses Flow 3.1 uses.
 
 The app's source code is not here. Flow is a direct download for Mac, signed
 and notarized, outside the App Store.
@@ -75,9 +77,9 @@ and notarized, outside the App Store.
 
 - **The Flow Guide and the skills** are under the [MIT License](LICENSE),
   Copyright (c) 2026 Orionfold LLC.
-- **A Flow Domain** states its own licence in its `README.md` (`license:`), and
+- **A Flow Playbook** states its own licence in its `README.md` (`license:`), and
   Flow shows it before you bring the folder in; that licence applies to the
-  Domain's folder.
+  Playbook's folder.
 - **Trademarks and product images are not licensed.** "Orionfold" and "Flow"
   are trademarks of Orionfold LLC; the images under [`assets/`](assets/) are
   product imagery, not covered by the MIT License.
@@ -96,4 +98,4 @@ paste it.
 [Tech Specs](https://orionfold.com/flow/specifications/) ·
 [Enterprise](https://orionfold.com/flow/enterprise/)
 
-Current release: Flow 3.1 (4033).
+Current release: Flow 4.0 (4383).

@@ -7,7 +7,7 @@ path:
   featured: false
   title: Campaign with proof
   persona: Marketers
-  tags: [Writing]
+  tags: [Clients]
   steps:
     - Open the source web page inside Flow
     - Expand with Sources, then Translate

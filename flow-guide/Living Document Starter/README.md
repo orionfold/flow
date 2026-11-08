@@ -7,7 +7,7 @@ path:
   featured: false
   title: Leave rented notes
   persona: Coming from Notion
-  tags: [Own your notes]
+  tags: [Life]
   steps:
     - Export from Notion; add the folder
     - Pick a model: on this Mac or your own key

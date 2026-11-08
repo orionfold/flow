@@ -7,7 +7,7 @@ path:
   featured: false
   title: The investor update and the watch
   persona: Founders
-  tags: [Founders]
+  tags: [Writing]
   steps:
     - Import the metrics workbook and last month’s deck
     - Watch competitors overnight; the Morning Briefing says what moved

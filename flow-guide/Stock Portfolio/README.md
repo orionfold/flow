@@ -7,7 +7,7 @@ path:
   featured: false
   title: A portfolio that explains itself
   persona: Investors
-  tags: [Money]
+  tags: [Life]
   steps:
     - Import your holdings from a spreadsheet
     - Gather quotes; the charts redraw from your own files
